@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
+		37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* ContentView.swift */; };
+		37F7C5AA25CD3891000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5A925CD3891000D8FAF /* Assets.xcassets */; };
+		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
+		37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */; };
+		37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5C225CD3892000D8FAF /* Schuylkill_AppUITests.swift */; };
+		37F7C5C825CD3892000D8FAF /* Schuylkill-App WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37F7C5CD25CD3892000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5CC25CD3892000D8FAF /* Assets.xcassets */; };
+		37F7C5D425CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		37F7C5D925CD3892000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* Schuylkill_AppApp.swift */; };
+		37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DA25CD3892000D8FAF /* ContentView.swift */; };
+		37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DC25CD3892000D8FAF /* NotificationController.swift */; };
+		37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DE25CD3892000D8FAF /* NotificationView.swift */; };
+		37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5E025CD3892000D8FAF /* ComplicationController.swift */; };
+		37F7C5E325CD3893000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5E225CD3893000D8FAF /* Assets.xcassets */; };
+		37F7C5E625CD3893000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5E525CD3893000D8FAF /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37F7C5B425CD3892000D8FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F7C59A25CD388F000D8FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F7C5A125CD388F000D8FAF;
+			remoteInfo = "Schuylkill-App";
+		};
+		37F7C5BF25CD3892000D8FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F7C59A25CD388F000D8FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F7C5A125CD388F000D8FAF;
+			remoteInfo = "Schuylkill-App";
+		};
+		37F7C5C925CD3892000D8FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F7C59A25CD388F000D8FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F7C5C625CD3892000D8FAF;
+			remoteInfo = "Schuylkill-App WatchKit App";
+		};
+		37F7C5D525CD3892000D8FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37F7C59A25CD388F000D8FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37F7C5D225CD3892000D8FAF;
+			remoteInfo = "Schuylkill-App WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37F7C5EE25CD3893000D8FAF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				37F7C5D425CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5F225CD3893000D8FAF /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				37F7C5C825CD3892000D8FAF /* Schuylkill-App WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schuylkill-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppApp.swift; sourceTree = "<group>"; };
+		37F7C5A725CD388F000D8FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37F7C5A925CD3891000D8FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37F7C5AE25CD3891000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7C5B325CD3892000D8FAF /* Schuylkill-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schuylkill-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppTests.swift; sourceTree = "<group>"; };
+		37F7C5B925CD3892000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7C5BE25CD3892000D8FAF /* Schuylkill-AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schuylkill-AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F7C5C225CD3892000D8FAF /* Schuylkill_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppUITests.swift; sourceTree = "<group>"; };
+		37F7C5C425CD3892000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schuylkill-App WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F7C5CC25CD3892000D8FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37F7C5CE25CD3892000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Schuylkill-App WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F7C5D825CD3892000D8FAF /* Schuylkill_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppApp.swift; sourceTree = "<group>"; };
+		37F7C5DA25CD3892000D8FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37F7C5DC25CD3892000D8FAF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		37F7C5DE25CD3892000D8FAF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		37F7C5E025CD3892000D8FAF /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		37F7C5E225CD3893000D8FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37F7C5E525CD3893000D8FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		37F7C5E725CD3893000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37F7C5E825CD3893000D8FAF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37F7C59F25CD388F000D8FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5B025CD3892000D8FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5BB25CD3892000D8FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5D025CD3892000D8FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		37F7C59925CD388F000D8FAF = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
+				37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */,
+				37F7C5C125CD3892000D8FAF /* Schuylkill-AppUITests */,
+				37F7C5CB25CD3892000D8FAF /* Schuylkill-App WatchKit App */,
+				37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */,
+				37F7C5A325CD388F000D8FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		37F7C5A325CD388F000D8FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */,
+				37F7C5B325CD3892000D8FAF /* Schuylkill-AppTests.xctest */,
+				37F7C5BE25CD3892000D8FAF /* Schuylkill-AppUITests.xctest */,
+				37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */,
+				37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37F7C5A425CD388F000D8FAF /* Schuylkill-App */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
+				37F7C5A725CD388F000D8FAF /* ContentView.swift */,
+				37F7C5A925CD3891000D8FAF /* Assets.xcassets */,
+				37F7C5AE25CD3891000D8FAF /* Info.plist */,
+				37F7C5AB25CD3891000D8FAF /* Preview Content */,
+			);
+			path = "Schuylkill-App";
+			sourceTree = "<group>";
+		};
+		37F7C5AB25CD3891000D8FAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */,
+				37F7C5B925CD3892000D8FAF /* Info.plist */,
+			);
+			path = "Schuylkill-AppTests";
+			sourceTree = "<group>";
+		};
+		37F7C5C125CD3892000D8FAF /* Schuylkill-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5C225CD3892000D8FAF /* Schuylkill_AppUITests.swift */,
+				37F7C5C425CD3892000D8FAF /* Info.plist */,
+			);
+			path = "Schuylkill-AppUITests";
+			sourceTree = "<group>";
+		};
+		37F7C5CB25CD3892000D8FAF /* Schuylkill-App WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5CC25CD3892000D8FAF /* Assets.xcassets */,
+				37F7C5CE25CD3892000D8FAF /* Info.plist */,
+			);
+			path = "Schuylkill-App WatchKit App";
+			sourceTree = "<group>";
+		};
+		37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5D825CD3892000D8FAF /* Schuylkill_AppApp.swift */,
+				37F7C5DA25CD3892000D8FAF /* ContentView.swift */,
+				37F7C5DC25CD3892000D8FAF /* NotificationController.swift */,
+				37F7C5DE25CD3892000D8FAF /* NotificationView.swift */,
+				37F7C5E025CD3892000D8FAF /* ComplicationController.swift */,
+				37F7C5E225CD3893000D8FAF /* Assets.xcassets */,
+				37F7C5E725CD3893000D8FAF /* Info.plist */,
+				37F7C5E825CD3893000D8FAF /* PushNotificationPayload.apns */,
+				37F7C5E425CD3893000D8FAF /* Preview Content */,
+			);
+			path = "Schuylkill-App WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		37F7C5E425CD3893000D8FAF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5E525CD3893000D8FAF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37F7C5A125CD388F000D8FAF /* Schuylkill-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7C5F325CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App" */;
+			buildPhases = (
+				37F7C59E25CD388F000D8FAF /* Sources */,
+				37F7C59F25CD388F000D8FAF /* Frameworks */,
+				37F7C5A025CD388F000D8FAF /* Resources */,
+				37F7C5F225CD3893000D8FAF /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F7C5CA25CD3892000D8FAF /* PBXTargetDependency */,
+			);
+			name = "Schuylkill-App";
+			productName = "Schuylkill-App";
+			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		37F7C5B225CD3892000D8FAF /* Schuylkill-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7C5F625CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppTests" */;
+			buildPhases = (
+				37F7C5AF25CD3892000D8FAF /* Sources */,
+				37F7C5B025CD3892000D8FAF /* Frameworks */,
+				37F7C5B125CD3892000D8FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F7C5B525CD3892000D8FAF /* PBXTargetDependency */,
+			);
+			name = "Schuylkill-AppTests";
+			productName = "Schuylkill-AppTests";
+			productReference = 37F7C5B325CD3892000D8FAF /* Schuylkill-AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		37F7C5BD25CD3892000D8FAF /* Schuylkill-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7C5F925CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppUITests" */;
+			buildPhases = (
+				37F7C5BA25CD3892000D8FAF /* Sources */,
+				37F7C5BB25CD3892000D8FAF /* Frameworks */,
+				37F7C5BC25CD3892000D8FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F7C5C025CD3892000D8FAF /* PBXTargetDependency */,
+			);
+			name = "Schuylkill-AppUITests";
+			productName = "Schuylkill-AppUITests";
+			productReference = 37F7C5BE25CD3892000D8FAF /* Schuylkill-AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		37F7C5C625CD3892000D8FAF /* Schuylkill-App WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7C5EF25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit App" */;
+			buildPhases = (
+				37F7C5C525CD3892000D8FAF /* Resources */,
+				37F7C5EE25CD3893000D8FAF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37F7C5D625CD3892000D8FAF /* PBXTargetDependency */,
+			);
+			name = "Schuylkill-App WatchKit App";
+			productName = "Schuylkill-App WatchKit App";
+			productReference = 37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		37F7C5D225CD3892000D8FAF /* Schuylkill-App WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37F7C5EB25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit Extension" */;
+			buildPhases = (
+				37F7C5CF25CD3892000D8FAF /* Sources */,
+				37F7C5D025CD3892000D8FAF /* Frameworks */,
+				37F7C5D125CD3892000D8FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Schuylkill-App WatchKit Extension";
+			productName = "Schuylkill-App WatchKit Extension";
+			productReference = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37F7C59A25CD388F000D8FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					37F7C5A125CD388F000D8FAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					37F7C5B225CD3892000D8FAF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 37F7C5A125CD388F000D8FAF;
+					};
+					37F7C5BD25CD3892000D8FAF = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 37F7C5A125CD388F000D8FAF;
+					};
+					37F7C5C625CD3892000D8FAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					37F7C5D225CD3892000D8FAF = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 37F7C59D25CD388F000D8FAF /* Build configuration list for PBXProject "Schuylkill-App" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37F7C59925CD388F000D8FAF;
+			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37F7C5A125CD388F000D8FAF /* Schuylkill-App */,
+				37F7C5B225CD3892000D8FAF /* Schuylkill-AppTests */,
+				37F7C5BD25CD3892000D8FAF /* Schuylkill-AppUITests */,
+				37F7C5C625CD3892000D8FAF /* Schuylkill-App WatchKit App */,
+				37F7C5D225CD3892000D8FAF /* Schuylkill-App WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37F7C5A025CD388F000D8FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
+				37F7C5AA25CD3891000D8FAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5B125CD3892000D8FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5BC25CD3892000D8FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5C525CD3892000D8FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5CD25CD3892000D8FAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5D125CD3892000D8FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5E625CD3893000D8FAF /* Preview Assets.xcassets in Resources */,
+				37F7C5E325CD3893000D8FAF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37F7C59E25CD388F000D8FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */,
+				37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5AF25CD3892000D8FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5BA25CD3892000D8FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37F7C5CF25CD3892000D8FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
+				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
+				37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */,
+				37F7C5D925CD3892000D8FAF /* Schuylkill_AppApp.swift in Sources */,
+				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37F7C5B525CD3892000D8FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F7C5A125CD388F000D8FAF /* Schuylkill-App */;
+			targetProxy = 37F7C5B425CD3892000D8FAF /* PBXContainerItemProxy */;
+		};
+		37F7C5C025CD3892000D8FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F7C5A125CD388F000D8FAF /* Schuylkill-App */;
+			targetProxy = 37F7C5BF25CD3892000D8FAF /* PBXContainerItemProxy */;
+		};
+		37F7C5CA25CD3892000D8FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F7C5C625CD3892000D8FAF /* Schuylkill-App WatchKit App */;
+			targetProxy = 37F7C5C925CD3892000D8FAF /* PBXContainerItemProxy */;
+		};
+		37F7C5D625CD3892000D8FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37F7C5D225CD3892000D8FAF /* Schuylkill-App WatchKit Extension */;
+			targetProxy = 37F7C5D525CD3892000D8FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37F7C5E925CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37F7C5EA25CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		37F7C5EC25CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schuylkill-App WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		37F7C5ED25CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schuylkill-App WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		37F7C5F025CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				IBSC_MODULE = Schuylkill_App_WatchKit_Extension;
+				INFOPLIST_FILE = "Schuylkill-App WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		37F7C5F125CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				IBSC_MODULE = Schuylkill_App_WatchKit_Extension;
+				INFOPLIST_FILE = "Schuylkill-App WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		37F7C5F425CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schuylkill-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37F7C5F525CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Schuylkill-App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37F7C5F725CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				INFOPLIST_FILE = "Schuylkill-AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schuylkill-App.app/Schuylkill-App";
+			};
+			name = Debug;
+		};
+		37F7C5F825CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				INFOPLIST_FILE = "Schuylkill-AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Schuylkill-App.app/Schuylkill-App";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37F7C5FA25CD3893000D8FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				INFOPLIST_FILE = "Schuylkill-AppUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Schuylkill-App";
+			};
+			name = Debug;
+		};
+		37F7C5FB25CD3893000D8FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SH63DNZ77Y;
+				INFOPLIST_FILE = "Schuylkill-AppUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Schuylkill-App";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37F7C59D25CD388F000D8FAF /* Build configuration list for PBXProject "Schuylkill-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5E925CD3893000D8FAF /* Debug */,
+				37F7C5EA25CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F7C5EB25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5EC25CD3893000D8FAF /* Debug */,
+				37F7C5ED25CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F7C5EF25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5F025CD3893000D8FAF /* Debug */,
+				37F7C5F125CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F7C5F325CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5F425CD3893000D8FAF /* Debug */,
+				37F7C5F525CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F7C5F625CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5F725CD3893000D8FAF /* Debug */,
+				37F7C5F825CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37F7C5F925CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37F7C5FA25CD3893000D8FAF /* Debug */,
+				37F7C5FB25CD3893000D8FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37F7C59A25CD388F000D8FAF /* Project object */;
+}
