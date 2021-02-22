@@ -3,10 +3,101 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3772D69C25CD6F7B008F04DD /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D69B25CD6F7B008F04DD /* Disk */; };
+		3772D6B025CD736F008F04DD /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6AF25CD736F008F04DD /* FirebaseAppDistribution-Beta */; };
+		3772D6B225CD736F008F04DD /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6B125CD736F008F04DD /* FirebaseInstallations */; };
+		3772D6B425CD736F008F04DD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6B325CD736F008F04DD /* FirebaseMessaging */; };
+		3772D6B625CD736F008F04DD /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6B525CD736F008F04DD /* FirebaseDynamicLinks */; };
+		3772D6B825CD736F008F04DD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6B725CD736F008F04DD /* FirebaseFirestoreSwift-Beta */; };
+		3772D6BA25CD736F008F04DD /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6B925CD736F008F04DD /* FirebaseInAppMessaging-Beta */; };
+		3772D6BC25CD736F008F04DD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6BB25CD736F008F04DD /* FirebaseAuth */; };
+		3772D6BE25CD736F008F04DD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6BD25CD736F008F04DD /* FirebaseAnalytics */; };
+		3772D6C025CD736F008F04DD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6BF25CD736F008F04DD /* FirebaseStorage */; };
+		3772D6C225CD736F008F04DD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6C125CD736F008F04DD /* FirebaseFirestore */; };
+		3772D6C425CD736F008F04DD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6C325CD736F008F04DD /* FirebaseDatabase */; };
+		3772D6C625CD736F008F04DD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6C525CD736F008F04DD /* FirebaseFunctions */; };
+		3772D6C825CD736F008F04DD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6C725CD736F008F04DD /* FirebaseCrashlytics */; };
+		3772D6CA25CD736F008F04DD /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6C925CD736F008F04DD /* FirebaseRemoteConfig */; };
+		3772D6CC25CD736F008F04DD /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D6CB25CD736F008F04DD /* FirebaseStorageSwift-Beta */; };
+		379E62E125E2314300B894BA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
+		379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
+		379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
+		379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631A25E23B1D00B894BA /* Location+Extensions.swift */; };
+		379E633425E242F000B894BA /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633325E242F000B894BA /* AccelerometerData.swift */; };
+		379E634F25E242FD00B894BA /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633A25E242FD00B894BA /* AmplifyModels.swift */; };
+		379E635025E242FD00B894BA /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633B25E242FD00B894BA /* AccelerometerReading.swift */; };
+		379E635125E242FD00B894BA /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */; };
+		379E635225E242FD00B894BA /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633D25E242FD00B894BA /* MotionAttitude.swift */; };
+		379E635325E242FD00B894BA /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633E25E242FD00B894BA /* Muscle.swift */; };
+		379E635425E242FD00B894BA /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */; };
+		379E635525E242FD00B894BA /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634025E242FD00B894BA /* FitnessCenter.swift */; };
+		379E635625E242FD00B894BA /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634125E242FD00B894BA /* ExerciseMachine.swift */; };
+		379E635725E242FD00B894BA /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634225E242FD00B894BA /* GymWorkout.swift */; };
+		379E635825E242FD00B894BA /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */; };
+		379E635925E242FD00B894BA /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */; };
+		379E635B25E242FD00B894BA /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634625E242FD00B894BA /* Location+Schema.swift */; };
+		379E635C25E242FD00B894BA /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634725E242FD00B894BA /* ExerciseRep.swift */; };
+		379E635D25E242FD00B894BA /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */; };
+		379E635E25E242FD00B894BA /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634925E242FD00B894BA /* GymWorkout+Schema.swift */; };
+		379E635F25E242FD00B894BA /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634A25E242FD00B894BA /* ExerciseSet.swift */; };
+		379E636025E242FD00B894BA /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */; };
+		379E636125E242FD00B894BA /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */; };
+		379E636225E242FD00B894BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634D25E242FD00B894BA /* Location.swift */; };
+		379E636325E242FD00B894BA /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634E25E242FD00B894BA /* Muscle+Schema.swift */; };
+		379E636F25E2442400B894BA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E636E25E2442400B894BA /* WelcomeViewController.swift */; };
+		379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
+		379E63E425E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
+		379E63E525E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
+		379E63E625E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
+		379E63ED25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
+		379E63EE25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
+		379E63EF25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
+		379E63F625E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRCodeReaderViewController.swift */; };
+		379E63F725E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRCodeReaderViewController.swift */; };
+		379E63F825E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRCodeReaderViewController.swift */; };
+		379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
+		379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
+		379E648325E3B62700B894BA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
+		379E648425E3B62700B894BA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
+		379E648525E3B62700B894BA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
+		379E649225E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
+		379E649325E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
+		379E649425E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
+		379E649525E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
+		379E649C25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
+		379E649D25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
+		379E649E25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
+		379E649F25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
+		379E64A625E3B96600B894BA /* AccelerometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64A525E3B96600B894BA /* AccelerometerService.swift */; };
+		379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64A525E3B96600B894BA /* AccelerometerService.swift */; };
+		379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64A525E3B96600B894BA /* AccelerometerService.swift */; };
+		379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64A525E3B96600B894BA /* AccelerometerService.swift */; };
+		379E64BB25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
+		379E64BC25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
+		379E64BD25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
+		379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
+		379E64CB25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
+		379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
+		379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
+		379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
+		379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
+		379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
+		379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
+		379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
+		379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
+		379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
+		379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
+		379E64F125E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
+		37A0506F25CD781600DCA1F9 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 37A0506E25CD781600DCA1F9 /* Resolver */; };
+		37A0507925CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
+		37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
+		37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
+		37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
+		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
 		37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* ContentView.swift */; };
 		37F7C5AA25CD3891000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5A925CD3891000D8FAF /* Assets.xcassets */; };
@@ -23,6 +114,89 @@
 		37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5E025CD3892000D8FAF /* ComplicationController.swift */; };
 		37F7C5E325CD3893000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5E225CD3893000D8FAF /* Assets.xcassets */; };
 		37F7C5E625CD3893000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5E525CD3893000D8FAF /* Preview Assets.xcassets */; };
+		37F7C65125CD3C82000D8FAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65025CD3C82000D8FAF /* Command.swift */; };
+		37F7C65225CD3C82000D8FAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65025CD3C82000D8FAF /* Command.swift */; };
+		37F7C65325CD3C82000D8FAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65025CD3C82000D8FAF /* Command.swift */; };
+		37F7C65425CD3C82000D8FAF /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65025CD3C82000D8FAF /* Command.swift */; };
+		37F7C66025CD3C86000D8FAF /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */; };
+		37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */; };
+		37F7C66225CD3C86000D8FAF /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */; };
+		37F7C66325CD3C86000D8FAF /* CommandStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */; };
+		37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */; };
+		37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */; };
+		37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */; };
+		37F7C66D25CD3C8F000D8FAF /* PayloadKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */; };
+		37F7C67925CD3C94000D8FAF /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C67825CD3C94000D8FAF /* Phrase.swift */; };
+		37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C67825CD3C94000D8FAF /* Phrase.swift */; };
+		37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C67825CD3C94000D8FAF /* Phrase.swift */; };
+		37F7C67C25CD3C94000D8FAF /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C67825CD3C94000D8FAF /* Phrase.swift */; };
+		37F7C68325CD3C99000D8FAF /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */; };
+		37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */; };
+		37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */; };
+		37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */; };
+		37F7C68D25CD3C9E000D8FAF /* WatchCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */; };
+		37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */; };
+		37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */; };
+		37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */; };
+		37F7C69725CD3CA4000D8FAF /* WatchPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */; };
+		37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */; };
+		37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */; };
+		37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */; };
+		37F7C6A125CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */; };
+		37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */; };
+		37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */; };
+		37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */; };
+		37F7C6AB25CD3CB1000D8FAF /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */; };
+		37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */; };
+		37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */; };
+		37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */; };
+		37F7C6BA25CD3DFD000D8FAF /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */; };
+		37F7C6BB25CD3DFD000D8FAF /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */; };
+		37F7C6BC25CD3DFD000D8FAF /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */; };
+		37F7C6BD25CD3DFD000D8FAF /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */; };
+		37F7C70925CD47B4000D8FAF /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 37F7C70825CD47B4000D8FAF /* SwifterSwift */; };
+		37F7C71125CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
+		37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
+		37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
+		37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
+		37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
+		37F7C72725CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
+		37F7C72825CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
+		37F7C74825CD5D3D000D8FAF /* RSBarcodes_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 37F7C74725CD5D3D000D8FAF /* RSBarcodes_Swift */; };
+		37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
+		37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
+		37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
+		37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
+		37F7C78025CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
+		37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
+		37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
+		37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
+		37F7C79225CD678E000D8FAF /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 37F7C79125CD678E000D8FAF /* Resolver */; };
+		37F9440725D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
+		37F9440825D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
+		37F9440925D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
+		37F9441425D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
+		37F9441525D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
+		37F9441625D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
+		37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
+		37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
+		37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
+		37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
+		37F9448225D3F00000243AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448125D3F00000243AC1 /* FirebaseAuth */; };
+		37F9448425D3F11400243AC1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448325D3F11400243AC1 /* FirebaseFunctions */; };
+		37F9448A25D3F24E00243AC1 /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448925D3F24E00243AC1 /* QRCodeReader */; };
+		37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
+		37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
+		37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
+		37F9450E25D4207500243AC1 /* Amplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F9450D25D4207500243AC1 /* Amplify.framework */; };
+		37F9452D25D47A7000243AC1 /* ExerciseMachine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */; };
+		5B005C39C4EA04B7939B1019 /* Pods_Schuylkill_App_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */; };
+		7E8D08023B20926806A386BE /* Pods_Schuylkill_App_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF744C3F9EE9B554C5C7553 /* Pods_Schuylkill_App_WatchKit_Extension.framework */; };
+		7F618245CF71383F02F02DC2 /* Pods_Schuylkill_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */; };
+		D462FE4480CB66104CCC8157 /* Pods_Schuylkill_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */; };
+		DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */; };
+		DF19359363CF6194BF6023CE /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */; };
+		E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1A220B3F7340A0B2998737 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +256,52 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		050DE9D8083DFD4A2C56B7D9 /* Pods-Schuylkill-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-AppTests.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		07B8012B21D32629FCA6AFE3 /* Pods-Schuylkill-App-Schuylkill-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App-Schuylkill-AppUITests.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App-Schuylkill-AppUITests/Pods-Schuylkill-App-Schuylkill-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		102334F4F547D97A35E74B63 /* Pods-Schuylkill-App WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit Extension/Pods-Schuylkill-App WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.release.xcconfig"; sourceTree = "<group>"; };
+		1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_Schuylkill_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379E62E025E2314300B894BA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GymWorkout+Extensions.swift"; sourceTree = "<group>"; };
+		379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitnessCenter+Extensions.swift"; sourceTree = "<group>"; };
+		379E631A25E23B1D00B894BA /* Location+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extensions.swift"; sourceTree = "<group>"; };
+		379E633325E242F000B894BA /* AccelerometerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerData.swift; path = amplify/generated/models/AccelerometerData.swift; sourceTree = SOURCE_ROOT; };
+		379E633A25E242FD00B894BA /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
+		379E633B25E242FD00B894BA /* AccelerometerReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerReading.swift; path = amplify/generated/models/AccelerometerReading.swift; sourceTree = SOURCE_ROOT; };
+		379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MotionAttitude+Schema.swift"; path = "amplify/generated/models/MotionAttitude+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E633D25E242FD00B894BA /* MotionAttitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionAttitude.swift; path = amplify/generated/models/MotionAttitude.swift; sourceTree = SOURCE_ROOT; };
+		379E633E25E242FD00B894BA /* Muscle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Muscle.swift; path = amplify/generated/models/Muscle.swift; sourceTree = SOURCE_ROOT; };
+		379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseRep+Schema.swift"; path = "amplify/generated/models/ExerciseRep+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634025E242FD00B894BA /* FitnessCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FitnessCenter.swift; path = amplify/generated/models/FitnessCenter.swift; sourceTree = SOURCE_ROOT; };
+		379E634125E242FD00B894BA /* ExerciseMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseMachine.swift; path = amplify/generated/models/ExerciseMachine.swift; sourceTree = SOURCE_ROOT; };
+		379E634225E242FD00B894BA /* GymWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GymWorkout.swift; path = amplify/generated/models/GymWorkout.swift; sourceTree = SOURCE_ROOT; };
+		379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccelerometerReading+Schema.swift"; path = "amplify/generated/models/AccelerometerReading+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseMachine+Schema.swift"; path = "amplify/generated/models/ExerciseMachine+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634625E242FD00B894BA /* Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+Schema.swift"; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634725E242FD00B894BA /* ExerciseRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseRep.swift; path = amplify/generated/models/ExerciseRep.swift; sourceTree = SOURCE_ROOT; };
+		379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccelerometerData+Schema.swift"; path = "amplify/generated/models/AccelerometerData+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634925E242FD00B894BA /* GymWorkout+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GymWorkout+Schema.swift"; path = "amplify/generated/models/GymWorkout+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634A25E242FD00B894BA /* ExerciseSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseSet.swift; path = amplify/generated/models/ExerciseSet.swift; sourceTree = SOURCE_ROOT; };
+		379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FitnessCenter+Schema.swift"; path = "amplify/generated/models/FitnessCenter+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseSet+Schema.swift"; path = "amplify/generated/models/ExerciseSet+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E634D25E242FD00B894BA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = amplify/generated/models/Location.swift; sourceTree = SOURCE_ROOT; };
+		379E634E25E242FD00B894BA /* Muscle+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Muscle+Schema.swift"; path = "amplify/generated/models/Muscle+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		379E636E25E2442400B894BA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAuthenticationService.swift; sourceTree = "<group>"; };
+		379E63E325E26B5400B894BA /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
+		379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		379E63F525E26DD400B894BA /* QRCodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeReaderViewController.swift; sourceTree = "<group>"; };
+		379E648225E3B62700B894BA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		379E649125E3B92400B894BA /* GyroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroService.swift; sourceTree = "<group>"; };
+		379E649B25E3B93E00B894BA /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
+		379E64A525E3B96600B894BA /* AccelerometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerService.swift; sourceTree = "<group>"; };
+		379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitoring.swift; sourceTree = "<group>"; };
+		379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitor.swift; sourceTree = "<group>"; };
+		379E64E325E3D8BC00B894BA /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
+		379E64ED25E3DAD400B894BA /* RuntimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeService.swift; sourceTree = "<group>"; };
+		37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injections.swift"; sourceTree = "<group>"; };
+		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schuylkill-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppApp.swift; sourceTree = "<group>"; };
 		37F7C5A725CD388F000D8FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +327,40 @@
 		37F7C5E525CD3893000D8FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37F7C5E725CD3893000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F7C5E825CD3893000D8FAF /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		37F7C62925CD3BB7000D8FAF /* Schuylkill-App WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Schuylkill-App WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		37F7C65025CD3C82000D8FAF /* Command.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandStatus.swift; sourceTree = "<group>"; };
+		37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayloadKey.swift; sourceTree = "<group>"; };
+		37F7C67825CD3C94000D8FAF /* Phrase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestDataProvider.swift; sourceTree = "<group>"; };
+		37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchCommands.swift; sourceTree = "<group>"; };
+		37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchPipe.swift; sourceTree = "<group>"; };
+		37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionChannelDelegate.swift; sourceTree = "<group>"; };
+		37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSettings.swift; sourceTree = "<group>"; };
+		37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		37F7C71025CD49BB000D8FAF /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		37F7C72525CD4A03000D8FAF /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Assign.swift"; sourceTree = "<group>"; };
+		37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationService.swift; sourceTree = "<group>"; };
+		37F9440625D3E0A900243AC1 /* AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyService.swift; sourceTree = "<group>"; };
+		37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
+		37F9442025D3E31A00243AC1 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Muscle+Extensions.swift"; sourceTree = "<group>"; };
+		37F9450D25D4207500243AC1 /* Amplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Amplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseMachine+Extensions.swift"; sourceTree = "<group>"; };
+		45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		5E1A220B3F7340A0B2998737 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		62E1E07D9DF94207824B5639 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF744C3F9EE9B554C5C7553 /* Pods_Schuylkill_App_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70DF21435604B818AFF41D45 /* Pods-Schuylkill-App-Schuylkill-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App-Schuylkill-AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App-Schuylkill-AppUITests/Pods-Schuylkill-App-Schuylkill-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9F11EDE6CDCB931CD6BBD261 /* Pods-Schuylkill-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-AppTests.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		B7772396A27F7D3AE452831C /* Pods-Schuylkill-App WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit App/Pods-Schuylkill-App WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D425320F9A834B5DA56B3A45 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/schuylkillapp/schema.graphql; sourceTree = "<group>"; };
+		DC4400838A4AAAAD0E69DF8B /* Pods-Schuylkill-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.debug.xcconfig"; sourceTree = "<group>"; };
+		F2C3D6BD62F64F1648CE93CB /* Pods-Schuylkill-App WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit Extension/Pods-Schuylkill-App WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		FDBE0F42E7DD7CC650D820B9 /* Pods-Schuylkill-App WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit App/Pods-Schuylkill-App WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +368,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3772D6C625CD736F008F04DD /* FirebaseFunctions in Frameworks */,
+				3772D6B425CD736F008F04DD /* FirebaseMessaging in Frameworks */,
+				37F7C74825CD5D3D000D8FAF /* RSBarcodes_Swift in Frameworks */,
+				37F9448A25D3F24E00243AC1 /* QRCodeReader in Frameworks */,
+				3772D6B225CD736F008F04DD /* FirebaseInstallations in Frameworks */,
+				3772D69C25CD6F7B008F04DD /* Disk in Frameworks */,
+				37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */,
+				3772D6CC25CD736F008F04DD /* FirebaseStorageSwift-Beta in Frameworks */,
+				3772D6BE25CD736F008F04DD /* FirebaseAnalytics in Frameworks */,
+				37F7C70925CD47B4000D8FAF /* SwifterSwift in Frameworks */,
+				3772D6C425CD736F008F04DD /* FirebaseDatabase in Frameworks */,
+				3772D6B625CD736F008F04DD /* FirebaseDynamicLinks in Frameworks */,
+				3772D6BA25CD736F008F04DD /* FirebaseInAppMessaging-Beta in Frameworks */,
+				37F9450E25D4207500243AC1 /* Amplify.framework in Frameworks */,
+				3772D6CA25CD736F008F04DD /* FirebaseRemoteConfig in Frameworks */,
+				3772D6C225CD736F008F04DD /* FirebaseFirestore in Frameworks */,
+				3772D6BC25CD736F008F04DD /* FirebaseAuth in Frameworks */,
+				37F7C79225CD678E000D8FAF /* Resolver in Frameworks */,
+				3772D6B825CD736F008F04DD /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				3772D6C025CD736F008F04DD /* FirebaseStorage in Frameworks */,
+				3772D6C825CD736F008F04DD /* FirebaseCrashlytics in Frameworks */,
+				3772D6B025CD736F008F04DD /* FirebaseAppDistribution-Beta in Frameworks */,
+				7F618245CF71383F02F02DC2 /* Pods_Schuylkill_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +398,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D462FE4480CB66104CCC8157 /* Pods_Schuylkill_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,6 +406,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF19359363CF6194BF6023CE /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,21 +414,137 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37A0506F25CD781600DCA1F9 /* Resolver in Frameworks */,
+				37F9448225D3F00000243AC1 /* FirebaseAuth in Frameworks */,
+				7E8D08023B20926806A386BE /* Pods_Schuylkill_App_WatchKit_Extension.framework in Frameworks */,
+				37F9448425D3F11400243AC1 /* FirebaseFunctions in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3ECB88B8E6B4C45EEF47BCD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B005C39C4EA04B7939B1019 /* Pods_Schuylkill_App_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		191B4680E1B646FAB77A9E33 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				62E1E07D9DF94207824B5639 /* amplifytools.xcconfig */,
+				45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */,
+				5E1A220B3F7340A0B2998737 /* awsconfiguration.json */,
+				D425320F9A834B5DA56B3A45 /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		379E633225E242DA00B894BA /* Amplify Models */ = {
+			isa = PBXGroup;
+			children = (
+				379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */,
+				379E633B25E242FD00B894BA /* AccelerometerReading.swift */,
+				379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */,
+				379E633A25E242FD00B894BA /* AmplifyModels.swift */,
+				379E634125E242FD00B894BA /* ExerciseMachine.swift */,
+				379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */,
+				379E634725E242FD00B894BA /* ExerciseRep.swift */,
+				379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */,
+				379E634A25E242FD00B894BA /* ExerciseSet.swift */,
+				379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */,
+				379E634025E242FD00B894BA /* FitnessCenter.swift */,
+				379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */,
+				379E634225E242FD00B894BA /* GymWorkout.swift */,
+				379E634925E242FD00B894BA /* GymWorkout+Schema.swift */,
+				379E634D25E242FD00B894BA /* Location.swift */,
+				379E634625E242FD00B894BA /* Location+Schema.swift */,
+				379E633D25E242FD00B894BA /* MotionAttitude.swift */,
+				379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */,
+				379E633E25E242FD00B894BA /* Muscle.swift */,
+				379E634E25E242FD00B894BA /* Muscle+Schema.swift */,
+				379E633325E242F000B894BA /* AccelerometerData.swift */,
+			);
+			path = "Amplify Models";
+			sourceTree = "<group>";
+		};
+		379E64B925E3BD6B00B894BA /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */,
+				379E64E325E3D8BC00B894BA /* DeviceService.swift */,
+				379E64ED25E3DAD400B894BA /* RuntimeService.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		379E64C925E3C3BB00B894BA /* Common  */ = {
+			isa = PBXGroup;
+			children = (
+				379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */,
+			);
+			path = "Common ";
+			sourceTree = "<group>";
+		};
+		37A0506D25CD781600DCA1F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37F9450D25D4207500243AC1 /* Amplify.framework */,
+				37CCF33425CEBE32009DBE02 /* AVFoundation.framework */,
+				C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */,
+				351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */,
+				6CF744C3F9EE9B554C5C7553 /* Pods_Schuylkill_App_WatchKit_Extension.framework */,
+				1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */,
+				66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		37A050B125CE02BB00DCA1F9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				379E636E25E2442400B894BA /* WelcomeViewController.swift */,
+				379E63E325E26B5400B894BA /* AuthenticationViewController.swift */,
+				379E63F525E26DD400B894BA /* QRCodeReaderViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		37CCF35525CED071009DBE02 /* SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A725CD388F000D8FAF /* ContentView.swift */,
+			);
+			path = SwiftUI;
+			sourceTree = "<group>";
+		};
 		37F7C59925CD388F000D8FAF = {
 			isa = PBXGroup;
 			children = (
+				379E633225E242DA00B894BA /* Amplify Models */,
+				379E62E025E2314300B894BA /* UserData.swift */,
+				37F944FD25D41EC300243AC1 /* AmplifyModels-Extensions */,
+				191B4680E1B646FAB77A9E33 /* AmplifyConfig */,
+				37F9440525D3E02A00243AC1 /* ViewModels */,
+				37CCF35525CED071009DBE02 /* SwiftUI */,
+				37A050B125CE02BB00DCA1F9 /* UI */,
+				37F7C77E25CD6674000D8FAF /* Services */,
+				37F7C74E25CD5D90000D8FAF /* Firebase */,
+				37F7C72425CD49F0000D8FAF /* AppSettings */,
+				37F7C70F25CD49A5000D8FAF /* Property Wrappers */,
+				37F7C64F25CD3C72000D8FAF /* Connectivity */,
 				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
 				37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */,
 				37F7C5C125CD3892000D8FAF /* Schuylkill-AppUITests */,
 				37F7C5CB25CD3892000D8FAF /* Schuylkill-App WatchKit App */,
 				37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */,
 				37F7C5A325CD388F000D8FAF /* Products */,
+				37A0506D25CD781600DCA1F9 /* Frameworks */,
+				484BCD5564A0184754D4F8C5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,11 +563,11 @@
 		37F7C5A425CD388F000D8FAF /* Schuylkill-App */ = {
 			isa = PBXGroup;
 			children = (
-				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
-				37F7C5A725CD388F000D8FAF /* ContentView.swift */,
+				37F7C63925CD3BD9000D8FAF /* AppDelegate */,
 				37F7C5A925CD3891000D8FAF /* Assets.xcassets */,
 				37F7C5AE25CD3891000D8FAF /* Info.plist */,
 				37F7C5AB25CD3891000D8FAF /* Preview Content */,
+				37F7C62925CD3BB7000D8FAF /* Schuylkill-App WatchKit App-Bridging-Header.h */,
 			);
 			path = "Schuylkill-App";
 			sourceTree = "<group>";
@@ -215,6 +610,7 @@
 		37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				37F7C6B925CD3DFD000D8FAF /* MotionManager.swift */,
 				37F7C5D825CD3892000D8FAF /* Schuylkill_AppApp.swift */,
 				37F7C5DA25CD3892000D8FAF /* ContentView.swift */,
 				37F7C5DC25CD3892000D8FAF /* NotificationController.swift */,
@@ -236,6 +632,110 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		37F7C63925CD3BD9000D8FAF /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
+				37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		37F7C64F25CD3C72000D8FAF /* Connectivity */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */,
+				37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */,
+				37F7C69625CD3CA4000D8FAF /* WatchPipe.swift */,
+				37F7C68C25CD3C9E000D8FAF /* WatchCommands.swift */,
+				37F7C68225CD3C99000D8FAF /* TestDataProvider.swift */,
+				37F7C67825CD3C94000D8FAF /* Phrase.swift */,
+				37F7C66925CD3C8F000D8FAF /* PayloadKey.swift */,
+				37F7C65F25CD3C86000D8FAF /* CommandStatus.swift */,
+				37F7C65025CD3C82000D8FAF /* Command.swift */,
+			);
+			path = Connectivity;
+			sourceTree = "<group>";
+		};
+		37F7C70F25CD49A5000D8FAF /* Property Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C71025CD49BB000D8FAF /* Storage.swift */,
+			);
+			path = "Property Wrappers";
+			sourceTree = "<group>";
+		};
+		37F7C72425CD49F0000D8FAF /* AppSettings */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C72525CD4A03000D8FAF /* AppSettings.swift */,
+			);
+			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		37F7C74E25CD5D90000D8FAF /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		37F7C77E25CD6674000D8FAF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				379E64C925E3C3BB00B894BA /* Common  */,
+				379E64B925E3BD6B00B894BA /* Protocols */,
+				37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */,
+				37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */,
+				37F9440625D3E0A900243AC1 /* AmplifyService.swift */,
+				37F9442025D3E31A00243AC1 /* FirebaseService.swift */,
+				379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */,
+				379E648225E3B62700B894BA /* LocationService.swift */,
+				379E649125E3B92400B894BA /* GyroService.swift */,
+				379E649B25E3B93E00B894BA /* MotionService.swift */,
+				379E64A525E3B96600B894BA /* AccelerometerService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		37F9440525D3E02A00243AC1 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		37F944FD25D41EC300243AC1 /* AmplifyModels-Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */,
+				37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */,
+				379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */,
+				379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */,
+				379E631A25E23B1D00B894BA /* Location+Extensions.swift */,
+			);
+			path = "AmplifyModels-Extensions";
+			sourceTree = "<group>";
+		};
+		484BCD5564A0184754D4F8C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC4400838A4AAAAD0E69DF8B /* Pods-Schuylkill-App.debug.xcconfig */,
+				1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */,
+				FDBE0F42E7DD7CC650D820B9 /* Pods-Schuylkill-App WatchKit App.debug.xcconfig */,
+				B7772396A27F7D3AE452831C /* Pods-Schuylkill-App WatchKit App.release.xcconfig */,
+				102334F4F547D97A35E74B63 /* Pods-Schuylkill-App WatchKit Extension.debug.xcconfig */,
+				F2C3D6BD62F64F1648CE93CB /* Pods-Schuylkill-App WatchKit Extension.release.xcconfig */,
+				70DF21435604B818AFF41D45 /* Pods-Schuylkill-App-Schuylkill-AppUITests.debug.xcconfig */,
+				07B8012B21D32629FCA6AFE3 /* Pods-Schuylkill-App-Schuylkill-AppUITests.release.xcconfig */,
+				050DE9D8083DFD4A2C56B7D9 /* Pods-Schuylkill-AppTests.debug.xcconfig */,
+				9F11EDE6CDCB931CD6BBD261 /* Pods-Schuylkill-AppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,10 +743,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F7C5F325CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App" */;
 			buildPhases = (
+				1C4D6D08B5CCE6A9F06D85E2 /* [CP] Check Pods Manifest.lock */,
 				37F7C59E25CD388F000D8FAF /* Sources */,
 				37F7C59F25CD388F000D8FAF /* Frameworks */,
 				37F7C5A025CD388F000D8FAF /* Resources */,
 				37F7C5F225CD3893000D8FAF /* Embed Watch Content */,
+				C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,6 +756,28 @@
 				37F7C5CA25CD3892000D8FAF /* PBXTargetDependency */,
 			);
 			name = "Schuylkill-App";
+			packageProductDependencies = (
+				37F7C70825CD47B4000D8FAF /* SwifterSwift */,
+				37F7C74725CD5D3D000D8FAF /* RSBarcodes_Swift */,
+				37F7C79125CD678E000D8FAF /* Resolver */,
+				3772D69B25CD6F7B008F04DD /* Disk */,
+				3772D6AF25CD736F008F04DD /* FirebaseAppDistribution-Beta */,
+				3772D6B125CD736F008F04DD /* FirebaseInstallations */,
+				3772D6B325CD736F008F04DD /* FirebaseMessaging */,
+				3772D6B525CD736F008F04DD /* FirebaseDynamicLinks */,
+				3772D6B725CD736F008F04DD /* FirebaseFirestoreSwift-Beta */,
+				3772D6B925CD736F008F04DD /* FirebaseInAppMessaging-Beta */,
+				3772D6BB25CD736F008F04DD /* FirebaseAuth */,
+				3772D6BD25CD736F008F04DD /* FirebaseAnalytics */,
+				3772D6BF25CD736F008F04DD /* FirebaseStorage */,
+				3772D6C125CD736F008F04DD /* FirebaseFirestore */,
+				3772D6C325CD736F008F04DD /* FirebaseDatabase */,
+				3772D6C525CD736F008F04DD /* FirebaseFunctions */,
+				3772D6C725CD736F008F04DD /* FirebaseCrashlytics */,
+				3772D6C925CD736F008F04DD /* FirebaseRemoteConfig */,
+				3772D6CB25CD736F008F04DD /* FirebaseStorageSwift-Beta */,
+				37F9448925D3F24E00243AC1 /* QRCodeReader */,
+			);
 			productName = "Schuylkill-App";
 			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
 			productType = "com.apple.product-type.application";
@@ -262,6 +786,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F7C5F625CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppTests" */;
 			buildPhases = (
+				836CFA1AFD65B85D0B7B1472 /* [CP] Check Pods Manifest.lock */,
 				37F7C5AF25CD3892000D8FAF /* Sources */,
 				37F7C5B025CD3892000D8FAF /* Frameworks */,
 				37F7C5B125CD3892000D8FAF /* Resources */,
@@ -280,9 +805,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F7C5F925CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppUITests" */;
 			buildPhases = (
+				6D451FBD8D40B4B3FCF75A88 /* [CP] Check Pods Manifest.lock */,
 				37F7C5BA25CD3892000D8FAF /* Sources */,
 				37F7C5BB25CD3892000D8FAF /* Frameworks */,
 				37F7C5BC25CD3892000D8FAF /* Resources */,
+				8166EC31E411A318DD5419A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -298,8 +825,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F7C5EF25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit App" */;
 			buildPhases = (
+				7CD96D7ED0BF721CBF566448 /* [CP] Check Pods Manifest.lock */,
 				37F7C5C525CD3892000D8FAF /* Resources */,
 				37F7C5EE25CD3893000D8FAF /* Embed App Extensions */,
+				3ECB88B8E6B4C45EEF47BCD9 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -315,6 +844,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37F7C5EB25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit Extension" */;
 			buildPhases = (
+				4930B43F108B000D5DD4D49B /* [CP] Check Pods Manifest.lock */,
 				37F7C5CF25CD3892000D8FAF /* Sources */,
 				37F7C5D025CD3892000D8FAF /* Frameworks */,
 				37F7C5D125CD3892000D8FAF /* Resources */,
@@ -324,6 +854,11 @@
 			dependencies = (
 			);
 			name = "Schuylkill-App WatchKit Extension";
+			packageProductDependencies = (
+				37A0506E25CD781600DCA1F9 /* Resolver */,
+				37F9448125D3F00000243AC1 /* FirebaseAuth */,
+				37F9448325D3F11400243AC1 /* FirebaseFunctions */,
+			);
 			productName = "Schuylkill-App WatchKit Extension";
 			productReference = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -334,6 +869,7 @@
 		37F7C59A25CD388F000D8FAF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
@@ -350,6 +886,7 @@
 					};
 					37F7C5C625CD3892000D8FAF = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					37F7C5D225CD3892000D8FAF = {
 						CreatedOnToolsVersion = 12.4;
@@ -365,6 +902,14 @@
 				Base,
 			);
 			mainGroup = 37F7C59925CD388F000D8FAF;
+			packageReferences = (
+				37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */,
+				37F7C73E25CD5CCD000D8FAF /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */,
+				37F7C74625CD5D3D000D8FAF /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */,
+				37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */,
+				3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */,
+				3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -385,6 +930,8 @@
 			files = (
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
 				37F7C5AA25CD3891000D8FAF /* Assets.xcassets in Resources */,
+				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
+				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,13 +968,218 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C4D6D08B5CCE6A9F06D85E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schuylkill-App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4930B43F108B000D5DD4D49B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schuylkill-App WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D451FBD8D40B4B3FCF75A88 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schuylkill-App-Schuylkill-AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CD96D7ED0BF721CBF566448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schuylkill-App WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8166EC31E411A318DD5419A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App-Schuylkill-AppUITests/Pods-Schuylkill-App-Schuylkill-AppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App-Schuylkill-AppUITests/Pods-Schuylkill-App-Schuylkill-AppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App-Schuylkill-AppUITests/Pods-Schuylkill-App-Schuylkill-AppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		836CFA1AFD65B85D0B7B1472 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Schuylkill-AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37F7C59E25CD388F000D8FAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F7C69725CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				379E635225E242FD00B894BA /* MotionAttitude.swift in Sources */,
+				379E63ED25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
+				379E636125E242FD00B894BA /* ExerciseSet+Schema.swift in Sources */,
+				379E635125E242FD00B894BA /* MotionAttitude+Schema.swift in Sources */,
+				379E63F625E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */,
+				379E636025E242FD00B894BA /* FitnessCenter+Schema.swift in Sources */,
+				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37F7C67925CD3C94000D8FAF /* Phrase.swift in Sources */,
+				379E635F25E242FD00B894BA /* ExerciseSet.swift in Sources */,
+				379E635425E242FD00B894BA /* ExerciseRep+Schema.swift in Sources */,
+				379E63E425E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
 				37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */,
+				379E635525E242FD00B894BA /* FitnessCenter.swift in Sources */,
+				379E635925E242FD00B894BA /* ExerciseMachine+Schema.swift in Sources */,
+				37F7C66225CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */,
+				379E636325E242FD00B894BA /* Muscle+Schema.swift in Sources */,
+				37F7C71125CD49BB000D8FAF /* Storage.swift in Sources */,
+				379E636F25E2442400B894BA /* WelcomeViewController.swift in Sources */,
+				379E635625E242FD00B894BA /* ExerciseMachine.swift in Sources */,
+				37F7C78025CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				37F7C6AB25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */,
+				37F7C6BA25CD3DFD000D8FAF /* MotionManager.swift in Sources */,
+				37F7C65125CD3C82000D8FAF /* Command.swift in Sources */,
+				379E633425E242F000B894BA /* AccelerometerData.swift in Sources */,
+				37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37F7C6A125CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				37F7C68325CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37F7C68D25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				379E64BB25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
+				37F9440725D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				379E635D25E242FD00B894BA /* AccelerometerData+Schema.swift in Sources */,
+				379E635C25E242FD00B894BA /* ExerciseRep.swift in Sources */,
+				379E636225E242FD00B894BA /* Location.swift in Sources */,
+				379E635B25E242FD00B894BA /* Location+Schema.swift in Sources */,
+				37F9441425D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
+				379E634F25E242FD00B894BA /* AmplifyModels.swift in Sources */,
+				37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */,
+				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
+				379E635825E242FD00B894BA /* AccelerometerReading+Schema.swift in Sources */,
+				37A0507925CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
+				379E64CB25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
+				379E635325E242FD00B894BA /* Muscle.swift in Sources */,
+				379E649225E3B92400B894BA /* GyroService.swift in Sources */,
+				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				379E635025E242FD00B894BA /* AccelerometerReading.swift in Sources */,
+				379E635725E242FD00B894BA /* GymWorkout.swift in Sources */,
+				379E62E125E2314300B894BA /* UserData.swift in Sources */,
+				379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */,
+				379E64A625E3B96600B894BA /* AccelerometerService.swift in Sources */,
+				379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
+				379E635E25E242FD00B894BA /* GymWorkout+Schema.swift in Sources */,
+				37F9452D25D47A7000243AC1 /* ExerciseMachine+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,7 +1187,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F7C72725CD4A03000D8FAF /* AppSettings.swift in Sources */,
+				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
+				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */,
+				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
+				37F7C66025CD3C86000D8FAF /* CommandStatus.swift in Sources */,
+				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				37F7C6BB25CD3DFD000D8FAF /* MotionManager.swift in Sources */,
+				37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */,
+				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
+				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
+				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37F9440825D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				37F9441525D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
+				379E63F725E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */,
+				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
+				379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
+				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
+				379E63E525E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
+				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				379E63EE25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
+				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				379E64BC25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,7 +1226,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F7C72825CD4A03000D8FAF /* AppSettings.swift in Sources */,
+				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
+				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */,
+				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
+				37F7C66325CD3C86000D8FAF /* CommandStatus.swift in Sources */,
+				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				37F7C6BC25CD3DFD000D8FAF /* MotionManager.swift in Sources */,
+				37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */,
+				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
+				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
+				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37F9440925D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				37F9441625D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
+				379E63F825E26DD400B894BA /* QRCodeReaderViewController.swift in Sources */,
+				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
+				379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
+				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
+				379E63E625E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
+				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				379E63EF25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
+				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				379E64BD25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,11 +1265,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				37F7C6BD25CD3DFD000D8FAF /* MotionManager.swift in Sources */,
+				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				379E649525E3B92400B894BA /* GyroService.swift in Sources */,
+				379E64F125E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
+				37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */,
 				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
+				37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
 				37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */,
+				37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */,
+				37F7C67C25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37F7C5D925CD3892000D8FAF /* Schuylkill_AppApp.swift in Sources */,
+				37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */,
+				379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
+				37F7C66D25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
+				379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
+				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,6 +1375,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -591,6 +1428,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -598,6 +1436,7 @@
 		};
 		37F7C5EC25CD3893000D8FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 102334F4F547D97A35E74B63 /* Pods-Schuylkill-App WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -622,6 +1461,7 @@
 		};
 		37F7C5ED25CD3893000D8FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C3D6BD62F64F1648CE93CB /* Pods-Schuylkill-App WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -647,18 +1487,27 @@
 		};
 		37F7C5F025CD3893000D8FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDBE0F42E7DD7CC650D820B9 /* Pods-Schuylkill-App WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SH63DNZ77Y;
 				IBSC_MODULE = Schuylkill_App_WatchKit_Extension;
 				INFOPLIST_FILE = "Schuylkill-App WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Schuylkill-App/Schuylkill-App WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.2;
@@ -667,18 +1516,26 @@
 		};
 		37F7C5F125CD3893000D8FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7772396A27F7D3AE452831C /* Pods-Schuylkill-App WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SH63DNZ77Y;
 				IBSC_MODULE = Schuylkill_App_WatchKit_Extension;
 				INFOPLIST_FILE = "Schuylkill-App WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "CommonDenominator.Schuylkill-App.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Schuylkill-App/Schuylkill-App WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
@@ -688,6 +1545,7 @@
 		};
 		37F7C5F425CD3893000D8FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4400838A4AAAAD0E69DF8B /* Pods-Schuylkill-App.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -711,6 +1569,7 @@
 		};
 		37F7C5F525CD3893000D8FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -735,6 +1594,7 @@
 		};
 		37F7C5F725CD3893000D8FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 050DE9D8083DFD4A2C56B7D9 /* Pods-Schuylkill-AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -758,6 +1618,7 @@
 		};
 		37F7C5F825CD3893000D8FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F11EDE6CDCB931CD6BBD261 /* Pods-Schuylkill-AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -782,6 +1643,7 @@
 		};
 		37F7C5FA25CD3893000D8FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70DF21435604B818AFF41D45 /* Pods-Schuylkill-App-Schuylkill-AppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -804,6 +1666,7 @@
 		};
 		37F7C5FB25CD3893000D8FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B8012B21D32629FCA6AFE3 /* Pods-Schuylkill-App-Schuylkill-AppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -835,7 +1698,7 @@
 				37F7C5EA25CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F7C5EB25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -844,7 +1707,7 @@
 				37F7C5ED25CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F7C5EF25CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -853,7 +1716,7 @@
 				37F7C5F125CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F7C5F325CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-App" */ = {
 			isa = XCConfigurationList;
@@ -862,7 +1725,7 @@
 				37F7C5F525CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F7C5F625CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppTests" */ = {
 			isa = XCConfigurationList;
@@ -871,7 +1734,7 @@
 				37F7C5F825CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		37F7C5F925CD3893000D8FAF /* Build configuration list for PBXNativeTarget "Schuylkill-AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -880,9 +1743,178 @@
 				37F7C5FB25CD3893000D8FAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://1em6js2@gitroyalty.com/saoudrizwan/Disk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.4;
+			};
+		};
+		3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.5.1;
+			};
+		};
+		37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+		37F7C73E25CD5CCD000D8FAF /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yannickl/QRCodeReader.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.1;
+			};
+		};
+		37F7C74625CD5D3D000D8FAF /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yeahdongcn/RSBarcodes_Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Resolver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3772D69B25CD6F7B008F04DD /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
+		};
+		3772D6AF25CD736F008F04DD /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		3772D6B125CD736F008F04DD /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		3772D6B325CD736F008F04DD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		3772D6B525CD736F008F04DD /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		3772D6B725CD736F008F04DD /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		3772D6B925CD736F008F04DD /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		3772D6BB25CD736F008F04DD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		3772D6BD25CD736F008F04DD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		3772D6BF25CD736F008F04DD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3772D6C125CD736F008F04DD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		3772D6C325CD736F008F04DD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		3772D6C525CD736F008F04DD /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		3772D6C725CD736F008F04DD /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		3772D6C925CD736F008F04DD /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		3772D6CB25CD736F008F04DD /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		37A0506E25CD781600DCA1F9 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		37F7C70825CD47B4000D8FAF /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
+		37F7C74725CD5D3D000D8FAF /* RSBarcodes_Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C74625CD5D3D000D8FAF /* XCRemoteSwiftPackageReference "RSBarcodes_Swift" */;
+			productName = RSBarcodes_Swift;
+		};
+		37F7C79125CD678E000D8FAF /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		37F9448125D3F00000243AC1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		37F9448325D3F11400243AC1 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		37F9448925D3F24E00243AC1 /* QRCodeReader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C73E25CD5CCD000D8FAF /* XCRemoteSwiftPackageReference "QRCodeReader.swift" */;
+			productName = QRCodeReader;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37F7C59A25CD388F000D8FAF /* Project object */;
 }

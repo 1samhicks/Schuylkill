@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20C69" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="1.0">
+    <entity name="CDAccelerometerData" representedClassName="CDAccelerometerData" parentEntity="CDDiagnostic" syncable="YES" codeGenerationType="class">
+        <attribute name="x" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="y" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="z" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDDiagnostic" representedClassName="CDDiagnostic" isAbstract="YES" syncable="YES" codeGenerationType="class">
+        <attribute name="identifier" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDExerciseRep" representedClassName="CDExerciseRep" syncable="YES" codeGenerationType="class">
+        <attribute name="begin_position" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="end_position" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="end_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="start_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="CDExerciseSet" representedClassName="CDExerciseSet" syncable="YES" codeGenerationType="class">
+        <attribute name="data" optional="YES" attributeType="Binary"/>
+        <attribute name="end_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="reps" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="start_time" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+    </entity>
+    <entity name="CDGymRequirements" representedClassName="CDGymRequirements" syncable="YES" codeGenerationType="class">
+        <attribute name="musthave" optional="YES" attributeType="Binary"/>
+        <attribute name="nicetohave" optional="YES" attributeType="Binary"/>
+        <attribute name="showagain" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDHIITPlan" representedClassName="CDHIITPlan" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDHIITWorkout" representedClassName="CDHIITWorkout" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDImperialSplits" representedClassName="CDImperialSplits" syncable="YES" codeGenerationType="class">
+        <attribute name="eighth_mile" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="half_mile" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mile" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="quarter_mile" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDLocation" representedClassName="CDLocation" parentEntity="CDDiagnostic" syncable="YES" codeGenerationType="class">
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDMetricSplits" representedClassName="CDMetricSplits" syncable="YES" codeGenerationType="class">
+        <attribute name="eight_hundred_meters" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="four_hundred_meters" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="one_hundred_meters" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="sixteen_hundred_meters" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="two_hundred_meters" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDMotionAttitude" representedClassName="CDMotionAttitude" parentEntity="CDDiagnostic" syncable="YES" codeGenerationType="class">
+        <attribute name="pitch" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="roll" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="yaw" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDMuscle" representedClassName="CDMuscle" syncable="YES" codeGenerationType="class">
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="CDProgressivePlan" representedClassName="CDProgressivePlan" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDProgressiveWorkout" representedClassName="CDProgressiveWorkout" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDRandomizedHIITPlan" representedClassName="CDRandomizedHIITPlan" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDRandomizedHIITWorkout" representedClassName="CDRandomizedHIITWorkout" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDRunRequirements" representedClassName="CDRunRequirements" syncable="YES" codeGenerationType="class">
+        <attribute name="musthave" optional="YES" attributeType="Binary"/>
+        <attribute name="nicetohave" optional="YES" attributeType="Binary"/>
+        <attribute name="showAgain" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="CDTempoWorkout" representedClassName="CDTempoWorkout" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDWorkout" representedClassName="CDWorkout" syncable="YES" codeGenerationType="class"/>
+    <entity name="CDWorkoutPlan" representedClassName="CDWorkoutPlan" syncable="YES" codeGenerationType="class"/>
+    <elements>
+        <element name="CDAccelerometerData" positionX="-94.0899658203125" positionY="-115.558837890625" width="128" height="88"/>
+        <element name="CDDiagnostic" positionX="29.08660888671875" positionY="-257.2867431640625" width="128" height="73"/>
+        <element name="CDExerciseRep" positionX="-224.4623413085938" positionY="-211.3460693359375" width="128" height="103"/>
+        <element name="CDExerciseSet" positionX="181.6280517578125" positionY="86.0262451171875" width="128" height="103"/>
+        <element name="CDGymRequirements" positionX="-192.2479248046875" positionY="-319.2926025390625" width="128" height="88"/>
+        <element name="CDHIITPlan" positionX="45" positionY="153" width="128" height="43"/>
+        <element name="CDHIITWorkout" positionX="21.7313232421875" positionY="-67.32733154296875" width="128" height="43"/>
+        <element name="CDImperialSplits" positionX="-77.1121826171875" positionY="95.279052734375" width="128" height="103"/>
+        <element name="CDLocation" positionX="-250.3963623046875" positionY="-98.2030029296875" width="128" height="73"/>
+        <element name="CDMetricSplits" positionX="-219.1190795898438" positionY="152.7420043945312" width="128" height="118"/>
+        <element name="CDMotionAttitude" positionX="165.08251953125" positionY="-171.1058959960938" width="128" height="88"/>
+        <element name="CDMuscle" positionX="199.6425170898438" positionY="-33.7066650390625" width="128" height="73"/>
+        <element name="CDProgressivePlan" positionX="54" positionY="162" width="128" height="43"/>
+        <element name="CDProgressiveWorkout" positionX="121.2398071289062" positionY="236.9491577148438" width="128" height="43"/>
+        <element name="CDRandomizedHIITPlan" positionX="36" positionY="144" width="128" height="43"/>
+        <element name="CDRandomizedHIITWorkout" positionX="182.934326171875" positionY="147.079345703125" width="128" height="43"/>
+        <element name="CDRunRequirements" positionX="-216.8187255859375" positionY="27.77105712890625" width="128" height="88"/>
+        <element name="CDTempoWorkout" positionX="42.94049072265625" positionY="83.81732177734375" width="128" height="43"/>
+        <element name="CDWorkout" positionX="132.2324829101562" positionY="41.94573974609375" width="128" height="43"/>
+        <element name="CDWorkoutPlan" positionX="-52.6373291015625" positionY="-0.35540771484375" width="128" height="43"/>
+    </elements>
+</model>
