@@ -9,7 +9,13 @@ import Foundation
 import CoreMotion
 import Combine
 
-public class GyroService : DeviceMonitor, DeviceService, RuntimeService {
+public class GyroService : DeviceMonitor, DeviceService, RuntimeService, Publisher {
+    
+    
+    public typealias Output = CMGyroData
+    
+    public typealias Failure = GyroError
+    
     
     typealias CMGyroHandler = (CMGyroData?, Error?) -> Void
     
@@ -22,5 +28,9 @@ public class GyroService : DeviceMonitor, DeviceService, RuntimeService {
         guard let rotationRate = data?.rotationRate, error == nil else {
             abort()
         }
+    }
+    
+    public func receive(subscriber: GyroService)  {
+        
     }
 }
