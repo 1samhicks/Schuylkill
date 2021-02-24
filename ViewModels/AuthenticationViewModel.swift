@@ -10,7 +10,12 @@ import Resolver
 
 struct AuthenticationViewModel {
     @LazyInjected var authenticationService : AmplifyAuthenticationService?
-    var user : UserData
+    var user : UserData?
+    
+    public init() {
+        
+    }
+    
     init(withUser user: UserData) {
         self.user = user
     }
