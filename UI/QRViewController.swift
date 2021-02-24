@@ -9,8 +9,9 @@ import Foundation
 import SwiftUI
 import UIKit
 import QRCodeReader
-import RSBarcodes_Swift
+//import RSBarcodes_Swift
 import AVFoundation
+import Resolver
 
 public struct QRView : UIViewControllerRepresentable {
     
@@ -26,6 +27,7 @@ public struct QRView : UIViewControllerRepresentable {
 }
 
 public class QRViewController : UIViewController, QRCodeReaderViewControllerDelegate {
+    @LazyInjected var viewModel : QRViewModel
     
     @IBOutlet weak var previewView: QRCodeReaderView! {
       didSet {
@@ -136,4 +138,8 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
       dismiss(animated: true, completion: nil)
     }
+}
+
+extension QRViewController : Resolving {
+    func makeViewModel() -> QRViewModel { return resolver.resolve() }
 }

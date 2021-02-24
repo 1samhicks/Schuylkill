@@ -12,6 +12,7 @@ import Amplify
 import Combine
 import AWSPluginsCore
 import AmplifyPlugins
+import Resolver
 
 public struct AuthenticationView : UIViewControllerRepresentable {
     
@@ -27,6 +28,8 @@ public struct AuthenticationView : UIViewControllerRepresentable {
 }
 
 public class AuthenticationViewController : UIViewController {
+    @Injected var viewModel : AuthenticationViewModel
+    
     var sink : AnyCancellable?
     
     public override func viewDidLoad() {
@@ -276,4 +279,8 @@ public class AuthenticationViewController : UIViewController {
             print("Error occurred while fetching the escape hatch \(error)")
         }
     }
+}
+
+extension AuthenticationViewController : Resolving {
+    func makeViewModel() -> AuthenticationViewModel { return resolver.resolve() }
 }
