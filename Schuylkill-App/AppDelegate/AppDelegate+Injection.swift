@@ -8,11 +8,19 @@
 import Foundation
 import Resolver
 
+#if MOCK
+extension Resolver {
+    static var mock = Resolver(parent: main)
+}
+#endif
+
 extension Resolver: ResolverRegistering {
-    public static func registerAllServices() {
-        register { FirebaseAuthenticationService() }.scope(.application)
-        register { AmplifyService() }.scope(.application)
-        register { FirebaseService() }.scope(.application)
-        register { AmplifyAuthenticationService() }.scope(.application)
+    public static func register() {
+        registerAllServices()
+        registerViewModels()
+        
+        #if MOCK
+        root = mock
+        #endif
     }
 }
