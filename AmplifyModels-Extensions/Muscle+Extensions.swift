@@ -14,10 +14,8 @@ extension Muscle {
         
     }
     
-    static let muscles : [Muscle] = [Muscle(friendlyName: "Abs"),
-                                     Muscle(friendlyName: "Lats"),
-                                     Muscle(friendlyName: "Pecs")]
-    static func saveAll() {
+    
+    static func saveAll(muscles : [Muscle]) {
         muscles.forEach { (m) in
             Amplify.DataStore.save(m) { result in
                switch(result) {
@@ -29,4 +27,12 @@ extension Muscle {
             }
         }
     }
+}
+
+extension Muscle {
+    #if MOCK
+    static let muscles : [Muscle] = [Muscle(friendlyName: "Abs"),
+                                     Muscle(friendlyName: "Lats"),
+                                     Muscle(friendlyName: "Pecs")]
+    #endif
 }
