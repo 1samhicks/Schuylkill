@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct MusclesViewModel {
+struct MusclesListViewModel {
     
 }

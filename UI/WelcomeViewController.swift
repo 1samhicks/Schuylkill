@@ -36,4 +36,11 @@ public class WelcomeViewController : UIViewController, CLLocationManagerDelegate
 
         view.backgroundColor = .gray
     }
+    
+    // MARK: - onboarding flow
+    
+    public override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+    }
 }

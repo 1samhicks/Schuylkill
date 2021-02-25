@@ -4,30 +4,20 @@
 //
 //  Created by Sam Hicks on 2/5/21.
 //
-
+import Foundation
 import SwiftUI
 import CoreMotion
 import WatchConnectivity
-import CoreData
 
-@main
-struct Schuylkill_AppApp: App {
-    @SceneBuilder var body: some Scene {
-        WindowGroup {
-            NavigationView {
-                ContentView()
-            }
-        }
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
-    }
-}
+#if !os(iOS)
+import WatchKit
+
 
 public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     // Hold the KVO observers as we want to keep oberving in the extension life time.
     //
     private var activationStateObservation: NSKeyValueObservation?
     private var hasContentPendingObservation: NSKeyValueObservation?
-    private var motionManager : MotionManager?
     //private var locationManager : LocationManager?
     // An array to keep the background tasks.
     //
@@ -52,6 +42,8 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     public func applicationWillResignActive() {
         
     }
+    
+
 
     public func applicationWillEnterForeground() {
         
@@ -62,3 +54,5 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     }
     
 }
+
+#endif

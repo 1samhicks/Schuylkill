@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 import UIKit
 import QRCodeReader
-//import RSBarcodes_Swift
 import AVFoundation
 import Resolver
 

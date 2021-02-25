@@ -9,12 +9,8 @@ import Foundation
 import CoreMotion
 import Combine
 
-public class GyroService : DeviceMonitor, DeviceService, RuntimeService, Publisher {
+public class GyroService : DeviceMonitor, DeviceService, RuntimeService {
     
-    
-    public typealias Output = CMGyroData
-    
-    public typealias Failure = GyroError
     
     
     typealias CMGyroHandler = (CMGyroData?, Error?) -> Void

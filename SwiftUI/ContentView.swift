@@ -15,7 +15,6 @@ struct ContentView: View {
     }
     
     func performOnAppear() {
-        Muscle.saveAll()
     }
 }
 

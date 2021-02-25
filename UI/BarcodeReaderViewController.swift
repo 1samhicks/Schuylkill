@@ -4,7 +4,6 @@
 //
 //  Created by Sam Hicks on 2/22/21.
 //
-
 import Foundation
 
 import UIKit
@@ -13,7 +12,7 @@ import RSBarcodes_Swift
 import Resolver
 
 class BarcodeReaderViewController: RSCodeReaderViewController {
-    lazy var viewModel = makeViewModel()
+    @LazyInjected var viewModel : BarcodeReaderViewModel!
     
     @IBOutlet var toggle: UIButton!
     
@@ -40,7 +39,7 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel = makeViewModel()
         // MARK: NOTE: Uncomment the following line to enable crazy mode
         // self.isCrazyMode = true
         
@@ -99,6 +98,8 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
                 destinationVC.contents = self.barcode
             }
         }
+        
+        
     }
 }
 
