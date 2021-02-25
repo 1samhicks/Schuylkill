@@ -5,12 +5,11 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-import Foundation
+/*import Foundation
 import AuthenticationServices
 import CryptoKit
 import Resolver
 import UIKit
-import FirebaseAuth
 
 public class FirebaseAuthenticationService: ObservableObject, RuntimeService {
   
@@ -18,7 +17,7 @@ public class FirebaseAuthenticationService: ObservableObject, RuntimeService {
   
   private var handle: AuthStateDidChangeListenerHandle?
   
-  init() {
+  public init() {
     registerStateListener()
   }
   
@@ -296,3 +295,4 @@ private func sha256(_ input: String) -> String {
 
   return hashString
 }
+*/

@@ -28,14 +28,14 @@ public struct AuthenticationView : UIViewControllerRepresentable {
 }
 
 public class AuthenticationViewController : UIViewController {
-    @Injected var viewModel : AuthenticationViewModel
+    @Injected var viewModel : AuthenticationViewModel!
     
     var sink : AnyCancellable?
     
     public override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        viewModel = makeViewModel()
         // Assumes `sink` is declared as an instance variable in your view controller
         sink = Amplify.Hub
             .publisher(for: .auth)
