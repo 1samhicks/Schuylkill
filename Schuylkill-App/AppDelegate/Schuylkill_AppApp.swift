@@ -9,7 +9,6 @@ import SwiftUI
 import Amplify
 import AmplifyPlugins
 import Resolver
-import Firebase
 
 @main
 struct Schuylkill_AppApp: App {
@@ -36,7 +35,7 @@ import Foundation
 import UIKit
 import WatchConnectivity
 
-class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate, MessagingDelegate {
+class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
         @LazyInjected var authenticationService: AmplifyAuthenticationService
         
         private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
@@ -87,13 +86,5 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         UIApplication.shared.registerForRemoteNotifications()
     }
     
-    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
-      print("Firebase registration token: \(String(describing: fcmToken))")
-
-      let dataDict:[String: String] = ["token": fcmToken ?? ""]
-      NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-      // TODO: If necessary send token to application server.
-      // Note: This callback is fired at each app startup and whenever a new token is generated.
-    }
 }
 
