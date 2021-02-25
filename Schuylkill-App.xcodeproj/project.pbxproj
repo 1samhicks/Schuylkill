@@ -111,7 +111,6 @@
 		37A45CC425E8433600A7CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A45CC325E8433600A7CAD1 /* HealthKit.framework */; };
 		37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
-		37D6DC2225E7C42100EF2289 /* Schuylkill-App.app in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -143,7 +142,6 @@
 		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
 		37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */; };
 		37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5C225CD3892000D8FAF /* Schuylkill_AppUITests.swift */; };
-		37F7C5C825CD3892000D8FAF /* Schuylkill-App WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		37F7C5CD25CD3892000D8FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5CC25CD3892000D8FAF /* Assets.xcassets */; };
 		37F7C5D425CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DA25CD3892000D8FAF /* ContentView.swift */; };
@@ -216,8 +214,6 @@
 		37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
 		37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
 		37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
-		37F9448225D3F00000243AC1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448125D3F00000243AC1 /* FirebaseAuth */; };
-		37F9448425D3F11400243AC1 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448325D3F11400243AC1 /* FirebaseFunctions */; };
 		37F9448A25D3F24E00243AC1 /* QRCodeReader in Frameworks */ = {isa = PBXBuildFile; productRef = 37F9448925D3F24E00243AC1 /* QRCodeReader */; };
 		37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
 		37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
@@ -271,14 +267,13 @@
 		};
 		37F7C5F225CD3893000D8FAF /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 8;
+			buildActionMask = 12;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				37F7C5C825CD3892000D8FAF /* Schuylkill-App WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 1;
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -447,9 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A0506F25CD781600DCA1F9 /* Resolver in Frameworks */,
-				37F9448225D3F00000243AC1 /* FirebaseAuth in Frameworks */,
 				7E8D08023B20926806A386BE /* Pods_Schuylkill_App_WatchKit_Extension.framework in Frameworks */,
-				37F9448425D3F11400243AC1 /* FirebaseFunctions in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -939,8 +932,6 @@
 			name = "Schuylkill-App WatchKit Extension";
 			packageProductDependencies = (
 				37A0506E25CD781600DCA1F9 /* Resolver */,
-				37F9448125D3F00000243AC1 /* FirebaseAuth */,
-				37F9448325D3F11400243AC1 /* FirebaseFunctions */,
 			);
 			productName = "Schuylkill-App WatchKit Extension";
 			productReference = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */;
@@ -1012,7 +1003,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE830F25E64E4600B07673 /* FlickrFiles in Resources */,
-				37D6DC2225E7C42100EF2289 /* Schuylkill-App.app in Resources */,
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
 				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
@@ -1961,16 +1951,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
-		};
-		37F9448125D3F00000243AC1 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		37F9448325D3F11400243AC1 /* FirebaseFunctions */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseFunctions;
 		};
 		37F9448925D3F24E00243AC1 /* QRCodeReader */ = {
 			isa = XCSwiftPackageProductDependency;

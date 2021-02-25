@@ -6,8 +6,6 @@
 //
 
 import XCTest
-import Firebase
-import FirebaseAuth
 @testable import Schuylkill_App
 
 class Schuylkill_AppTests: XCTestCase {
