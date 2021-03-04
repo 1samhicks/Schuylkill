@@ -11,10 +11,16 @@ target 'Schuylkill-App' do
     pod 'AmplifyPlugins/AWSDataStorePlugin'
     pod 'AmplifyPlugins/AWSPinpointAnalyticsPlugin'
     pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+    pod 'AmplifyPlugins/AWSS3StoragePlugin'
+    pod 'AWSS3'
+    pod 'RxSwift', '6.1.0'
+    pod 'RxCocoa', '6.1.0'
 
   target 'Schuylkill-AppTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '6.1.0'
+    pod 'RxTest', '6.1.0'
   end
 
   target 'Schuylkill-AppUITests' do

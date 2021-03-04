@@ -1,22 +1,47 @@
 //
-//  AuthenticationViewModel.swift
+//  WelcomeViewModel.swift
 //  Schuylkill-App
 //
-//  Created by Sam Hicks on 2/21/21.
+//  Created by Sam Hicks on 2/26/21.
 //
 
 import Foundation
 import Resolver
+import Combine
+import Amplify
 
-struct AuthenticationViewModel {
-    @LazyInjected var authenticationService : AmplifyAuthenticationService?
-    var user : UserData?
+class AuthenticationViewModel : ObservableObject, Identifiable, ViewModel {
+    required convenience init() {
+        self.init(userData: UserData.shared)
+    }
     
-    public init() {
+    private var authenticationService : AmplifyAuthenticationService!
+    
+    @Published var userData : UserData?
+    private var authCancellable : AnyCancellable?
+    
+    
+    init(userData : UserData = UserData.shared) {
+        self.userData = userData
+        authenticationService = AmplifyAuthenticationService()
+    }
+    
+    public func signInWithWebUI() {
+        authCancellable = authenticationService.signInWithWebUI()
+        /*let publisher = authenticationService!.resultPublisher
         
+        _ = publisher.sink { (e) in
+            self.userData?.isSignedIn = false
+        } receiveValue: { (m) in
+            self.userData?.isSignedIn = true
+        }*/
     }
     
-    init(withUser user: UserData) {
-        self.user = user
+    func fetchCurrentAuthSession()  {
+        authenticationService.fetchAuthSession()
     }
+    
+    
+    
+    
 }

@@ -7,9 +7,4 @@
 
 import Foundation
 
-open class GyroError : Error {
-    var innerError : Error
-    init(error : Error) {
-        innerError = error
-    }
-}
+

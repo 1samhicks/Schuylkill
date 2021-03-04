@@ -12,19 +12,6 @@ import QRCodeReader
 import AVFoundation
 import Resolver
 
-public struct QRView : UIViewControllerRepresentable {
-    
-    public typealias UIViewControllerType = QRViewController
-    
-    public func makeUIViewController(context: Context) -> QRViewController {
-        return QRViewController()
-    }
-    
-    public func updateUIViewController(_ uiViewController: QRViewController, context: Context) {
-        
-    }
-}
-
 public class QRViewController : UIViewController, QRCodeReaderViewControllerDelegate {
     @LazyInjected var viewModel : QRViewModel
     
@@ -115,7 +102,8 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
     public func reader(_ reader: QRCodeReaderViewController, didScanResult result: QRCodeReaderResult) {
       reader.stopScanning()
-
+        viewModel.barcode = result.value
+/*
       dismiss(animated: true) { [weak self] in
         let alert = UIAlertController(
           title: "QRCodeReader",
@@ -126,6 +114,7 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
         self?.present(alert, animated: true, completion: nil)
       }
+ */
     }
 
     public func reader(_ reader: QRCodeReaderViewController, didSwitchCamera newCaptureDevice: AVCaptureDeviceInput) {
@@ -137,6 +126,8 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
       dismiss(animated: true, completion: nil)
     }
+    
+    
 }
 
 extension QRViewController : Resolving {

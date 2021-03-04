@@ -6,6 +6,20 @@
 //
 
 import Foundation
+import Combine
+import Resolver
+import Amplify
 
-struct QRViewModel {
+class QRViewModel : ObservableObject, Identifiable, ViewModel {
+    @LazyInjected var amplifyService : AmplifyService?
+    @Published var barcode : String?
+    required init() {
+        let barcodePerson = $barcode.receive(on: DispatchQueue.main).sink { (e) in
+            print(type(of: e))
+        }
+        print(barcodePerson)
+
+    }
+    
+    
 }

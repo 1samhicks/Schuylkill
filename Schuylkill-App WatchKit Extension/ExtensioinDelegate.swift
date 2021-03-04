@@ -8,10 +8,9 @@ import Foundation
 import SwiftUI
 import CoreMotion
 import WatchConnectivity
-
+import RxSwift
 #if !os(iOS)
 import WatchKit
-
 
 public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     // Hold the KVO observers as we want to keep oberving in the extension life time.
@@ -24,15 +23,7 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()
     
     public func applicationDidFinishLaunching() {
-        /*motionManager = MotionManager(coreMotionManager: CMMotionManager(), handledBy: DeviceHandler())
         
-        locationManager = LocationManager(locationManager: CLLocationManager())
-        
-        motionManager!.startMotionDetection()
-        motionManager!.startAcceleramator()
-        motionManager!.startGyro()
-        
-        locationManager!.beginMonitoring()*/
     }
 
     public func applicationDidBecomeActive() {

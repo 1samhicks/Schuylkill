@@ -10,11 +10,13 @@ import Amplify
 import Combine
 import AWSPluginsCore
 import AmplifyPlugins
+import OSLog
 
-public class AmplifyAuthenticationService : ObservableObject {
+public class AmplifyAuthenticationService : RuntimeService {
+    
     var sink : AnyCancellable?
     
-    init() {
+    public required init() {
         // Assumes `sink` is declared as an instance variable in your view controller
         sink = Amplify.Hub
             .publisher(for: .auth)
@@ -124,11 +126,11 @@ public class AmplifyAuthenticationService : ObservableObject {
             .resultPublisher
             .sink {
                 if case let .failure(authError) = $0 {
-                    print("Sign in failed \(authError)")
+                    self.onReceiveCompletion(completed: AuthenticationError.AuthError(causedBy:authError))
                 }
             }
-            receiveValue: { _ in
-                print("Sign in succeeded")
+            receiveValue: { val in
+                self.onReceiveValue(value:AuthenticationEvent.started)
             }
     }
     
@@ -426,33 +428,33 @@ public class AmplifyAuthenticationService : ObservableObject {
     
     func fetchAuthSession() {
 
-    Amplify.Auth.fetchAuthSession { result in
-        do {
-            let session = try result.get()
+        Amplify.Auth.fetchAuthSession { result in
+            do {
+                let session = try result.get()
 
-            // Get user sub or identity id
-            if let identityProvider = session as? AuthCognitoIdentityProvider {
-                let usersub = try identityProvider.getUserSub().get()
-                let identityId = try identityProvider.getIdentityId().get()
-                print("User sub - \(usersub) and identity id \(identityId)")
+                // Get user sub or identity id
+                if let identityProvider = session as? AuthCognitoIdentityProvider {
+                    let usersub = try identityProvider.getUserSub().get()
+                    let identityId = try identityProvider.getIdentityId().get()
+                    print("User sub - \(usersub) and identity id \(identityId)")
+                }
+
+                // Get aws credentials
+                if let awsCredentialsProvider = session as? AuthAWSCredentialsProvider {
+                    let credentials = try awsCredentialsProvider.getAWSCredentials().get()
+                    print("Access key - \(credentials.accessKey) ")
+                }
+
+                // Get cognito user pool token
+                if let cognitoTokenProvider = session as? AuthCognitoTokensProvider {
+                    let tokens = try cognitoTokenProvider.getCognitoTokens().get()
+                    print("Id token - \(tokens.idToken) ")
+                }
+
+            } catch {
+                print("Fetch auth session failed with error - \(error)")
             }
-
-            // Get aws credentials
-            if let awsCredentialsProvider = session as? AuthAWSCredentialsProvider {
-                let credentials = try awsCredentialsProvider.getAWSCredentials().get()
-                print("Access key - \(credentials.accessKey) ")
-            }
-
-            // Get cognito user pool token
-            if let cognitoTokenProvider = session as? AuthCognitoTokensProvider {
-                let tokens = try cognitoTokenProvider.getCognitoTokens().get()
-                print("Id token - \(tokens.idToken) ")
-            }
-
-        } catch {
-            print("Fetch auth session failed with error - \(error)")
         }
-    }
     }
     
     func getEscapeHatch() {
@@ -469,4 +471,21 @@ public class AmplifyAuthenticationService : ObservableObject {
         }
     }
     
+    func fetchCurrentAuthSession() {
+        _ = Amplify.Auth.fetchAuthSession { result in
+            switch result {
+            case .success(let session):
+                print("Is user signed in - \(session.isSignedIn)")
+            case .failure(let error):
+                print("Fetch session failed with error \(error)")
+            }
+        }
+    }
+    
+    
+
+    
 }
+
+
+

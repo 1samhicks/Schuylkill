@@ -9,22 +9,34 @@ import Foundation
 import CoreMotion
 import Combine
 
-public class AccelerometerService : DeviceMonitor, DeviceService, RuntimeService {
-    let emptyAccelerometer : CMAccelerometerHandler = {_,_ in }
-    
-    var writeAccelerometerToManagedObjectContext : CMAccelerometerHandler = { data, error in
-        guard let acc = data?.acceleration, error == nil else {
-            var ErrorStack = String()
-            Thread.callStackSymbols.forEach {
-                print($0)
-                ErrorStack = "\(ErrorStack)\n" + $0
-            }
-            abort()
+public class AccelerometerService : DeviceService {
+    var resultSink = AnyCancellable({})
+    var serviceState: ServiceState? {
+        get {
+            return nil
         }
     }
     
+    required public init() {
+        
+    }
+    
     public func startService() {
-        motionManager.startAccelerometerUpdates(to: fifoOperationQueue,
-                                                withHandler: writeAccelerometerToManagedObjectContext)
+        resultSink = motionManager.publisher(for: \.gyroData)
+            .filter( { $0 != nil})
+            .sink() { gyro in
+            self.onReceiveValue(value: CMLogItemEvent.logItemEvent(gyro!))
+        }
+    }
+    
+    func pauseService() {
+        
+    }
+    
+    func endService() {
+    }
+    
+    var servicePublisher: DeviceServicePublisher {
+        DeviceServicePublisher.shared!
     }
 }

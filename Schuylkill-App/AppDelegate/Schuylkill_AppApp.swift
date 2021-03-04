@@ -7,7 +7,9 @@
 
 import SwiftUI
 import Amplify
+import AWSS3
 import AmplifyPlugins
+import AmplifyPlugins.Swift
 import Resolver
 
 @main
@@ -15,8 +17,8 @@ struct Schuylkill_AppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            ContentView()
-        }
+            AuthenticationView()
+    }
     }
     
     public init() {
@@ -34,10 +36,11 @@ struct Schuylkill_AppApp: App {
 import Foundation
 import UIKit
 import WatchConnectivity
+import RxSwift
+import RxCocoa
+import CoreMotion
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-        @LazyInjected var authenticationService: AmplifyAuthenticationService
-        
         private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
             return WatchSessionChannelDelegate()
         }()
@@ -45,11 +48,13 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         application.setupWatchConnectivity(delegate: wcSessionChannelDelegate)
-
+        Resolver.register()
         do {
             try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin())
             try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
+            try Amplify.add(plugin: AWSS3StoragePlugin())
             Amplify.Logging.logLevel = .verbose
             try Amplify.configure()
             print("Initialized Amplify");
@@ -57,9 +62,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             print("Could not initialize Amplify: \(error)")
         }
         
-        //FirebaseApp.configure()
         registerForRemoteNotifications()
-        //Messaging.messaging().delegate = self
         
         return true
     }

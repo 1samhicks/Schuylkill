@@ -19,4 +19,9 @@ extension OSLog {
         let message = "Registering service: \(resolved.self) named: \(name) with key: \(key) in container: \(containerName)"
         print(message)
     }
+    
+    static func serviceStateChanged(resolved: ResolverRegistrant.Type,name : Resolver.Name, newState : ServiceState) {
+        let message = "Registering service: \(resolved.self) named: \(name) has changed to State: \(newState)"
+        print(message)
+    }
 }

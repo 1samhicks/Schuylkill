@@ -6,7 +6,12 @@
 //
 
 import Foundation
-
-struct BarcodeReaderViewModel {
+import Combine
+class BarcodeReaderViewModel : ObservableObject, ViewModel {
+    
+    required init() {
+        
+    }
+    
     
 }

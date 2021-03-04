@@ -21,6 +21,10 @@ PODS:
     - AWSCore (~> 2.23.0)
     - AWSPinpoint (~> 2.23.0)
     - AWSPluginsCore (= 1.6.1)
+  - AmplifyPlugins/AWSS3StoragePlugin (1.6.1):
+    - AWSCore (~> 2.23.0)
+    - AWSPluginsCore (= 1.6.1)
+    - AWSS3 (~> 2.23.0)
   - AppSyncRealTimeClient (1.4.3):
     - Starscream (~> 3.1.0)
   - AWSAuthCore (2.23.0):
@@ -40,6 +44,18 @@ PODS:
   - AWSPluginsCore (1.6.1):
     - Amplify (= 1.6.1)
     - AWSCore (~> 2.23.0)
+  - AWSS3 (2.23.0):
+    - AWSCore (= 2.23.0)
+  - RxBlocking (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxCocoa (6.1.0):
+    - RxRelay (= 6.1.0)
+    - RxSwift (= 6.1.0)
+  - RxRelay (6.1.0):
+    - RxSwift (= 6.1.0)
+  - RxSwift (6.1.0)
+  - RxTest (6.1.0):
+    - RxSwift (= 6.1.0)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
@@ -51,6 +67,12 @@ DEPENDENCIES:
   - AmplifyPlugins/AWSCognitoAuthPlugin
   - AmplifyPlugins/AWSDataStorePlugin
   - AmplifyPlugins/AWSPinpointAnalyticsPlugin
+  - AmplifyPlugins/AWSS3StoragePlugin
+  - AWSS3
+  - RxBlocking (= 6.1.0)
+  - RxCocoa (= 6.1.0)
+  - RxSwift (= 6.1.0)
+  - RxTest (= 6.1.0)
 
 SPEC REPOS:
   trunk:
@@ -64,6 +86,12 @@ SPEC REPOS:
     - AWSMobileClient
     - AWSPinpoint
     - AWSPluginsCore
+    - AWSS3
+    - RxBlocking
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - RxTest
     - SQLite.swift
     - Starscream
 
@@ -78,9 +106,15 @@ SPEC CHECKSUMS:
   AWSMobileClient: 5701d5ac51ec0de781d848754f9d9952ead1c639
   AWSPinpoint: 434b3c8fd2cca5b2a4c2d60a4609d7eef9a9cd88
   AWSPluginsCore: f41f8a478fe3fd8839ec16278b86dededefb0628
+  AWSS3: 7f89c85b958d0979a39069003a2fe06facf78373
+  RxBlocking: 602095fba0bce7b16b56ccec89edf780c248b7d9
+  RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
+  RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
+  RxSwift: a834e5c538e89eca0cae86f403f4fbf0336786ce
+  RxTest: 9d26616eaff4a7e75f4ecae9b2c24840f2e8218d
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: e0e5cdf485274ce9e2c8691e2f1fc0ba88f0c568
+PODFILE CHECKSUM: a25e370b77947755777f6e35c9f0d9a4323e30d8
 
 COCOAPODS: 1.10.1

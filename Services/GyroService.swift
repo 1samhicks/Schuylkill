@@ -8,23 +8,39 @@
 import Foundation
 import CoreMotion
 import Combine
-
-public class GyroService : DeviceMonitor, DeviceService, RuntimeService {
-    
-    
-    
-    typealias CMGyroHandler = (CMGyroData?, Error?) -> Void
-    
-    public func startService() {
-        motionManager.startGyroUpdates(to: fifoOperationQueue,
-                                       withHandler: gyroHandler)
-    }
-    
-    let gyroHandler : CMGyroHandler = { data, error in
-        guard let rotationRate = data?.rotationRate, error == nil else {
-            abort()
+import Amplify
+public class GyroService : DeviceService {
+    var resultSink: AnyCancellable = AnyCancellable({})
+    var serviceState: ServiceState? {
+        get {
+            return nil
         }
     }
+    
+    var servicePublisher: ServicePublisher {
+        DeviceServicePublisher.shared!
+    }
+    
+    required public init() {
+    }
+    
+    public func startService() {
+        motionManager.startGyroUpdates()
+        resultSink = motionManager.publisher(for: \.gyroData)
+            .filter( { $0 != nil})
+            .sink() { gyro in
+            self.onReceiveValue(value: CMLogItemEvent.logItemEvent(gyro!))
+        }
+    }
+    
+    func pauseService() {
+         
+    }
+    
+    func endService() {
+        motionManager.stopGyroUpdates()
+    }
+    
     
     public func receive(subscriber: GyroService)  {
         

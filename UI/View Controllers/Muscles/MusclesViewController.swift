@@ -9,23 +9,12 @@ import Foundation
 import UIKit
 import SwiftUI
 import Resolver
+import Combine
 
-public struct MuscleListView : UIViewControllerRepresentable {
-    
-    public typealias UIViewControllerType = MusclesListViewController
-    
-    public func makeUIViewController(context: Context) -> MusclesListViewController {
-        MusclesListViewController()
-    }
-    
-    public func updateUIViewController(_ uiViewController: MusclesListViewController, context: Context) {
-    }
-    
-}
-
-public class MusclesListViewController : UIViewController {
+public class MuscleCollectionViewController : UIViewController {
+    @State var muscleSubscription: AnyCancellable?
     private lazy var collectionsView : MusclesCollectionView = MusclesCollectionView()
-    @Injected var viewModel : MusclesListViewModel!
+    lazy var viewModel : MusclesListViewModel = makeViewModel()
     
     
     public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -37,8 +26,8 @@ public class MusclesListViewController : UIViewController {
     }
     
     public override func viewDidLoad() {
-        viewModel = makeViewModel()
         self.addChild(collectionsView)
+        //muscleSubscription = viewModel
         
     }
     public override func viewWillAppear(_ animated: Bool) {
@@ -46,6 +35,6 @@ public class MusclesListViewController : UIViewController {
     }
 }
 
-extension MusclesListViewController : Resolving {
-    func makeViewModel() -> MusclesListViewModel { return resolver.resolve() }
+extension MuscleCollectionViewController : Resolving {
+    func makeViewModel() -> MusclesListViewModel { return MusclesListViewModel() }
 }

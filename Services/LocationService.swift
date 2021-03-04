@@ -9,8 +9,34 @@ import Foundation
 import CoreLocation
 import Combine
 
-public class LocationService : NSObject, ObservableObject, RuntimeService, CLLocationManagerDelegate {
-    private let locationManager : CLLocationManager?
+public class LocationService : NSObject, DeviceService, CLLocationManagerDelegate {
+    var resultSink: AnyCancellable = AnyCancellable({})
+    func startService() {
+        
+    }
+    
+    func pauseService() {
+         
+    }
+    
+    func endService() {
+        
+    }
+    
+    required public override init() {
+        
+    }
+    
+    var servicePublisher: ServicePublisher {
+        DeviceServicePublisher.shared!
+    }
+    
+    public func cancel() {
+        endMonitoring()
+        locationManager = nil
+    }
+    
+    private var locationManager : CLLocationManager?
     
     init(locationManager loc: CLLocationManager) {
         locationManager = loc
@@ -22,12 +48,20 @@ public class LocationService : NSObject, ObservableObject, RuntimeService, CLLoc
         locationManager!.delegate = self
     }
     
+    var serviceState : ServiceState? { get {
+        return nil
+    } }
+    
     func beginMonitoring() {
         locationManager!.startUpdatingLocation()
     }
     
     func endMonitoring() {
-        
+        locationManager!.stopUpdatingLocation()
+    }
+    
+    func locationManagerReceivedError(_ error:NSString) {
+      print(error)
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

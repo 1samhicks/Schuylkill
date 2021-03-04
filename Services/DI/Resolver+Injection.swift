@@ -7,26 +7,38 @@
 
 import Foundation
 import Resolver
-
+import Amplify
+import OSLog
 extension Resolver {
     
     public static func registerAllServices() {
-        //register { FirebaseAuthenticationService() }.scope(.application)
-        register { AmplifyService() }.scope(.application)
-            //register { FirebaseService() }.scope(.application)
-        register { AmplifyAuthenticationService() }.scope(.application)
+        Resolver.register(instance: AmplifyService())
+        Resolver.register(instance: AmplifyAuthenticationService())
+        Resolver.register(instance: AmplifyS3StorageService())
+        Resolver.register(instance: LocationService())
+        Resolver.register(instance: AccelerometerService())
+        Resolver.register(instance: MagnometerService())
     }
-    public static func registerMyNetworkServices() {
-
-        // Register protocols XYZFetching and XYZUpdating and create implementation object
-        register { AmplifyService() }
-            .implements(RuntimeService.self)
-
-        // Register XYZNetworkService and return instance in factory closure
-        //register { XYZNetworkService(session: resolve()) }
-
-        // Register XYZSessionService and return instance in factory closure
-        //register { XYZSessionService() }
-    }
-    
 }
+
+extension Resolver {
+    /**
+     public static func register<Service>(_ type: Service.Type = Service.self, name: Resolver.Name? = nil,
+                                            factory: @escaping ResolverFactory<Service>) -> ResolverOptions<Service> {
+     */
+    public static func register<R : ResolverRegistrant>(instance: R,withScope scope: ResolverScope = .application)
+    {
+        let typeOf = type(of:instance)
+        let name = Resolver.Name.initialize(instance.name)
+        let key = ObjectIdentifier(R.self).hashValue
+        
+        Resolver.main.register(typeOf,name: Resolver.Name.initialize(instance.name),factory: { typeOf.init() } ).scope(scope)
+        
+        
+        
+        OSLog.registerService(resolved: typeOf, name: name, key: key, containerName: "Resolver.main")
+        
+    }
+}
+
+

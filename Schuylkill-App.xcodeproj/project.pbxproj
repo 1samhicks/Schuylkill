@@ -9,40 +9,89 @@
 /* Begin PBXBuildFile section */
 		371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
+		3764EFB625EBDD76000799A9 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
+		3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */; };
+		3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */; };
+		3764EFDB25EBE264000799A9 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFDA25EBE264000799A9 /* ApplicationError.swift */; };
+		3764EFE225EBEBAC000799A9 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFE125EBEBAC000799A9 /* Events.swift */; };
+		3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */; };
+		3764F00125EBFD31000799A9 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
+		3764F03B25EDF186000799A9 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
+		3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
+		3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
+		3764F04A25EE0CF8000799A9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F04925EE0CF8000799A9 /* Logger.swift */; };
+		3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F04925EE0CF8000799A9 /* Logger.swift */; };
+		3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F04925EE0CF8000799A9 /* Logger.swift */; };
+		3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F05725EE0D65000799A9 /* Bundle+Naming.swift */; };
+		3764F05925EE0D65000799A9 /* Bundle+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F05725EE0D65000799A9 /* Bundle+Naming.swift */; };
+		3764F05A25EE0D65000799A9 /* Bundle+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F05725EE0D65000799A9 /* Bundle+Naming.swift */; };
+		3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */; };
+		3764F07125EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */; };
+		3764F07225EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */; };
+		3764F07925EE31B2000799A9 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F07825EE31B2000799A9 /* DeviceError.swift */; };
+		3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F07825EE31B2000799A9 /* DeviceError.swift */; };
+		3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F07825EE31B2000799A9 /* DeviceError.swift */; };
+		3764F08225EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
+		3764F08325EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
+		3764F08425EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
+		3764F0AC25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
+		3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
+		3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
+		3764F0B525EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
+		3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
+		3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
+		3764F0C425EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
+		3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
+		3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
+		3764F0EE25EF3432000799A9 /* Model+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0ED25EF3431000799A9 /* Model+Extensions.swift */; };
+		3764F0F625EF397E000799A9 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0F525EF397D000799A9 /* Deletable.swift */; };
+		3764F14B25EF4978000799A9 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13625EF4976000799A9 /* AmplifyModels.swift */; };
+		3764F14C25EF4978000799A9 /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13725EF4976000799A9 /* ExerciseMachine.swift */; };
+		3764F14D25EF4978000799A9 /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */; };
+		3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13925EF4977000799A9 /* ExerciseRep.swift */; };
+		3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13A25EF4977000799A9 /* Muscle+Schema.swift */; };
+		3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13B25EF4977000799A9 /* FitnessCenter.swift */; };
+		3764F15225EF4978000799A9 /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */; };
+		3764F15325EF4978000799A9 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13E25EF4977000799A9 /* Location.swift */; };
+		3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14025EF4977000799A9 /* AccelerometerReading.swift */; };
+		3764F15625EF4978000799A9 /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */; };
+		3764F15725EF4978000799A9 /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14225EF4977000799A9 /* GymWorkout.swift */; };
+		3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */; };
+		3764F15925EF4978000799A9 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14425EF4977000799A9 /* Location+Schema.swift */; };
+		3764F15A25EF4978000799A9 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14525EF4978000799A9 /* Muscle.swift */; };
+		3764F15B25EF4978000799A9 /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */; };
+		3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */; };
+		3764F15D25EF4978000799A9 /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */; };
+		3764F15E25EF4978000799A9 /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14925EF4978000799A9 /* MotionAttitude.swift */; };
+		3764F15F25EF4978000799A9 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14A25EF4978000799A9 /* ExerciseSet.swift */; };
+		3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3764F17325EF5348000799A9 /* Onboarding.storyboard */; };
+		3764F18025EF5374000799A9 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F17F25EF5374000799A9 /* QRView.swift */; };
+		3764F18725EF53F8000799A9 /* MuscleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F18625EF53F8000799A9 /* MuscleListView.swift */; };
+		3764F19325EF6152000799A9 /* AmplifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19225EF6152000799A9 /* AmplifyError.swift */; };
+		3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
+		3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
+		3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
+		3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
 		3772D69C25CD6F7B008F04DD /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D69B25CD6F7B008F04DD /* Disk */; };
+		377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */; };
+		377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
+		377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
+		377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
+		377A502C25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
+		377A503325E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
+		377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
+		377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
+		377A503625E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
+		377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
+		377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
+		377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
+		377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		379E62E125E2314300B894BA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
 		379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
 		379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
 		379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631A25E23B1D00B894BA /* Location+Extensions.swift */; };
-		379E633425E242F000B894BA /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633325E242F000B894BA /* AccelerometerData.swift */; };
-		379E634F25E242FD00B894BA /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633A25E242FD00B894BA /* AmplifyModels.swift */; };
-		379E635025E242FD00B894BA /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633B25E242FD00B894BA /* AccelerometerReading.swift */; };
-		379E635125E242FD00B894BA /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */; };
-		379E635225E242FD00B894BA /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633D25E242FD00B894BA /* MotionAttitude.swift */; };
-		379E635325E242FD00B894BA /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633E25E242FD00B894BA /* Muscle.swift */; };
-		379E635425E242FD00B894BA /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */; };
-		379E635525E242FD00B894BA /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634025E242FD00B894BA /* FitnessCenter.swift */; };
-		379E635625E242FD00B894BA /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634125E242FD00B894BA /* ExerciseMachine.swift */; };
-		379E635725E242FD00B894BA /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634225E242FD00B894BA /* GymWorkout.swift */; };
-		379E635825E242FD00B894BA /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */; };
-		379E635925E242FD00B894BA /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */; };
-		379E635B25E242FD00B894BA /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634625E242FD00B894BA /* Location+Schema.swift */; };
-		379E635C25E242FD00B894BA /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634725E242FD00B894BA /* ExerciseRep.swift */; };
-		379E635D25E242FD00B894BA /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */; };
-		379E635E25E242FD00B894BA /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634925E242FD00B894BA /* GymWorkout+Schema.swift */; };
-		379E635F25E242FD00B894BA /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634A25E242FD00B894BA /* ExerciseSet.swift */; };
-		379E636025E242FD00B894BA /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */; };
-		379E636125E242FD00B894BA /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */; };
-		379E636225E242FD00B894BA /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634D25E242FD00B894BA /* Location.swift */; };
-		379E636325E242FD00B894BA /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E634E25E242FD00B894BA /* Muscle+Schema.swift */; };
-		379E636F25E2442400B894BA /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E636E25E2442400B894BA /* WelcomeViewController.swift */; };
+		379E636F25E2442400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E636E25E2442400B894BA /* AuthenticationViewController.swift */; };
 		379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
-		379E63E425E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
-		379E63E525E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
-		379E63E625E26B5400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63E325E26B5400B894BA /* AuthenticationViewController.swift */; };
-		379E63ED25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
-		379E63EE25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
-		379E63EF25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */; };
 		379E63F625E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
 		379E63F725E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
 		379E63F825E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
@@ -125,20 +174,11 @@
 		37EE830F25E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831025E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831125E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
-		37EE831F25E64E9800B07673 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831C25E64E9700B07673 /* FlickrSearchResults.swift */; };
-		37EE832025E64E9800B07673 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831C25E64E9700B07673 /* FlickrSearchResults.swift */; };
-		37EE832125E64E9800B07673 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831C25E64E9700B07673 /* FlickrSearchResults.swift */; };
-		37EE832225E64E9800B07673 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831D25E64E9800B07673 /* FlickrPhoto.swift */; };
-		37EE832325E64E9800B07673 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831D25E64E9800B07673 /* FlickrPhoto.swift */; };
-		37EE832425E64E9800B07673 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831D25E64E9800B07673 /* FlickrPhoto.swift */; };
-		37EE832525E64E9800B07673 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831E25E64E9800B07673 /* Flickr.swift */; };
-		37EE832625E64E9800B07673 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831E25E64E9800B07673 /* Flickr.swift */; };
-		37EE832725E64E9800B07673 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE831E25E64E9800B07673 /* Flickr.swift */; };
 		37EE833225E654BF00B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
 		37EE833825E654C000B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
 		37EE833925E654C100B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
 		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
-		37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* ContentView.swift */; };
+		37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */; };
 		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
 		37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */; };
 		37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5C225CD3892000D8FAF /* Schuylkill_AppUITests.swift */; };
@@ -222,7 +262,9 @@
 		37F9452D25D47A7000243AC1 /* ExerciseMachine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */; };
 		5B005C39C4EA04B7939B1019 /* Pods_Schuylkill_App_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */; };
 		7E8D08023B20926806A386BE /* Pods_Schuylkill_App_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF744C3F9EE9B554C5C7553 /* Pods_Schuylkill_App_WatchKit_Extension.framework */; };
+		7E91F8EF8AF04F90882A0B35 /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */; };
 		7F618245CF71383F02F02DC2 /* Pods_Schuylkill_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */; };
+		D389D17849A14398B17E9032 /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B839CF79FEA4003875B2087 /* AccelerometerData.swift */; };
 		D462FE4480CB66104CCC8157 /* Pods_Schuylkill_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */; };
 		DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */; };
 		DF19359363CF6194BF6023CE /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */; };
@@ -284,35 +326,63 @@
 		1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.release.xcconfig"; sourceTree = "<group>"; };
 		1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_Schuylkill_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyServiceModelPublisher.swift; sourceTree = "<group>"; };
+		3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSubscriptionBehavior.swift; sourceTree = "<group>"; };
+		3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
+		3764EFDA25EBE264000799A9 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
+		3764EFE125EBEBAC000799A9 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
+		3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+ServicePublisher.swift"; sourceTree = "<group>"; };
+		3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Naming.swift"; sourceTree = "<group>"; };
+		3764F03A25EDF186000799A9 /* Resolver+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Registration.swift"; sourceTree = "<group>"; };
+		3764F04925EE0CF8000799A9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3764F05725EE0D65000799A9 /* Bundle+Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Naming.swift"; sourceTree = "<group>"; };
+		3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSubscriptionBehavior.swift; sourceTree = "<group>"; };
+		3764F07825EE31B2000799A9 /* DeviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceError.swift; sourceTree = "<group>"; };
+		3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceServicePublisher.swift; sourceTree = "<group>"; };
+		3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDisplayView.swift; sourceTree = "<group>"; };
+		3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
+		3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AmplifyService+Muscles.swift"; sourceTree = "<group>"; };
+		3764F0ED25EF3431000799A9 /* Model+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Extensions.swift"; sourceTree = "<group>"; };
+		3764F0F525EF397D000799A9 /* Deletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
+		3764F13625EF4976000799A9 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
+		3764F13725EF4976000799A9 /* ExerciseMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseMachine.swift; path = amplify/generated/models/ExerciseMachine.swift; sourceTree = SOURCE_ROOT; };
+		3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MotionAttitude+Schema.swift"; path = "amplify/generated/models/MotionAttitude+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F13925EF4977000799A9 /* ExerciseRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseRep.swift; path = amplify/generated/models/ExerciseRep.swift; sourceTree = SOURCE_ROOT; };
+		3764F13A25EF4977000799A9 /* Muscle+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Muscle+Schema.swift"; path = "amplify/generated/models/Muscle+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F13B25EF4977000799A9 /* FitnessCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FitnessCenter.swift; path = amplify/generated/models/FitnessCenter.swift; sourceTree = SOURCE_ROOT; };
+		3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseRep+Schema.swift"; path = "amplify/generated/models/ExerciseRep+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F13E25EF4977000799A9 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = amplify/generated/models/Location.swift; sourceTree = SOURCE_ROOT; };
+		3764F14025EF4977000799A9 /* AccelerometerReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerReading.swift; path = amplify/generated/models/AccelerometerReading.swift; sourceTree = SOURCE_ROOT; };
+		3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FitnessCenter+Schema.swift"; path = "amplify/generated/models/FitnessCenter+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14225EF4977000799A9 /* GymWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GymWorkout.swift; path = amplify/generated/models/GymWorkout.swift; sourceTree = SOURCE_ROOT; };
+		3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseMachine+Schema.swift"; path = "amplify/generated/models/ExerciseMachine+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14425EF4977000799A9 /* Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+Schema.swift"; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14525EF4978000799A9 /* Muscle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Muscle.swift; path = amplify/generated/models/Muscle.swift; sourceTree = SOURCE_ROOT; };
+		3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccelerometerReading+Schema.swift"; path = "amplify/generated/models/AccelerometerReading+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseSet+Schema.swift"; path = "amplify/generated/models/ExerciseSet+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GymWorkout+Schema.swift"; path = "amplify/generated/models/GymWorkout+Schema.swift"; sourceTree = SOURCE_ROOT; };
+		3764F14925EF4978000799A9 /* MotionAttitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionAttitude.swift; path = amplify/generated/models/MotionAttitude.swift; sourceTree = SOURCE_ROOT; };
+		3764F14A25EF4978000799A9 /* ExerciseSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseSet.swift; path = amplify/generated/models/ExerciseSet.swift; sourceTree = SOURCE_ROOT; };
+		3764F17325EF5348000799A9 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		3764F17F25EF5374000799A9 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
+		3764F18625EF53F8000799A9 /* MuscleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListView.swift; sourceTree = "<group>"; };
+		3764F19225EF6152000799A9 /* AmplifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyError.swift; sourceTree = "<group>"; };
+		3764F19E25EF6D70000799A9 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = SOURCE_ROOT; };
+		3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = SOURCE_ROOT; };
+		3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchResults.swift; sourceTree = SOURCE_ROOT; };
+		3764F1AB25F10125000799A9 /* ServiceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceState.swift; sourceTree = "<group>"; };
+		377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyS3StorageService.swift; sourceTree = "<group>"; };
+		377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		377A503C25E9191500D8C5F1 /* MagnometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnometerService.swift; sourceTree = "<group>"; };
+		377A504725E9476200D8C5F1 /* RxCoreMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCoreMotion.swift; sourceTree = "<group>"; };
+		377A504825E9476200D8C5F1 /* MotionActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
 		379E62E025E2314300B894BA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GymWorkout+Extensions.swift"; sourceTree = "<group>"; };
 		379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitnessCenter+Extensions.swift"; sourceTree = "<group>"; };
 		379E631A25E23B1D00B894BA /* Location+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+Extensions.swift"; sourceTree = "<group>"; };
-		379E633325E242F000B894BA /* AccelerometerData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerData.swift; path = amplify/generated/models/AccelerometerData.swift; sourceTree = SOURCE_ROOT; };
-		379E633A25E242FD00B894BA /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = SOURCE_ROOT; };
-		379E633B25E242FD00B894BA /* AccelerometerReading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccelerometerReading.swift; path = amplify/generated/models/AccelerometerReading.swift; sourceTree = SOURCE_ROOT; };
-		379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "MotionAttitude+Schema.swift"; path = "amplify/generated/models/MotionAttitude+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E633D25E242FD00B894BA /* MotionAttitude.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MotionAttitude.swift; path = amplify/generated/models/MotionAttitude.swift; sourceTree = SOURCE_ROOT; };
-		379E633E25E242FD00B894BA /* Muscle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Muscle.swift; path = amplify/generated/models/Muscle.swift; sourceTree = SOURCE_ROOT; };
-		379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseRep+Schema.swift"; path = "amplify/generated/models/ExerciseRep+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634025E242FD00B894BA /* FitnessCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FitnessCenter.swift; path = amplify/generated/models/FitnessCenter.swift; sourceTree = SOURCE_ROOT; };
-		379E634125E242FD00B894BA /* ExerciseMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseMachine.swift; path = amplify/generated/models/ExerciseMachine.swift; sourceTree = SOURCE_ROOT; };
-		379E634225E242FD00B894BA /* GymWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GymWorkout.swift; path = amplify/generated/models/GymWorkout.swift; sourceTree = SOURCE_ROOT; };
-		379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccelerometerReading+Schema.swift"; path = "amplify/generated/models/AccelerometerReading+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseMachine+Schema.swift"; path = "amplify/generated/models/ExerciseMachine+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634625E242FD00B894BA /* Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Location+Schema.swift"; path = "amplify/generated/models/Location+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634725E242FD00B894BA /* ExerciseRep.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseRep.swift; path = amplify/generated/models/ExerciseRep.swift; sourceTree = SOURCE_ROOT; };
-		379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "AccelerometerData+Schema.swift"; path = "amplify/generated/models/AccelerometerData+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634925E242FD00B894BA /* GymWorkout+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GymWorkout+Schema.swift"; path = "amplify/generated/models/GymWorkout+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634A25E242FD00B894BA /* ExerciseSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseSet.swift; path = amplify/generated/models/ExerciseSet.swift; sourceTree = SOURCE_ROOT; };
-		379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FitnessCenter+Schema.swift"; path = "amplify/generated/models/FitnessCenter+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "ExerciseSet+Schema.swift"; path = "amplify/generated/models/ExerciseSet+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E634D25E242FD00B894BA /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = amplify/generated/models/Location.swift; sourceTree = SOURCE_ROOT; };
-		379E634E25E242FD00B894BA /* Muscle+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Muscle+Schema.swift"; path = "amplify/generated/models/Muscle+Schema.swift"; sourceTree = SOURCE_ROOT; };
-		379E636E25E2442400B894BA /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		379E636E25E2442400B894BA /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAuthenticationService.swift; sourceTree = "<group>"; };
-		379E63E325E26B5400B894BA /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
-		379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		379E63F525E26DD400B894BA /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		379E648225E3B62700B894BA /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		379E649125E3B92400B894BA /* GyroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroService.swift; sourceTree = "<group>"; };
@@ -343,12 +413,9 @@
 		37EE82E725E630C500B07673 /* MusclesCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusclesCollectionView.swift; sourceTree = "<group>"; };
 		37EE82E825E630C500B07673 /* MuscleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
 		37EE830E25E64E4600B07673 /* FlickrFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlickrFiles; sourceTree = "<group>"; };
-		37EE831C25E64E9700B07673 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchResults.swift; sourceTree = "<group>"; };
-		37EE831D25E64E9800B07673 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = "<group>"; };
-		37EE831E25E64E9800B07673 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = "<group>"; };
 		37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schuylkill-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppApp.swift; sourceTree = "<group>"; };
-		37F7C5A725CD388F000D8FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37F7C5B325CD3892000D8FAF /* Schuylkill-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schuylkill-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppTests.swift; sourceTree = "<group>"; };
@@ -390,6 +457,7 @@
 		37F9450D25D4207500243AC1 /* Amplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Amplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExerciseMachine+Extensions.swift"; sourceTree = "<group>"; };
 		45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		4B839CF79FEA4003875B2087 /* AccelerometerData.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = AccelerometerData.swift; path = amplify/generated/models/AccelerometerData.swift; sourceTree = "<group>"; };
 		5E1A220B3F7340A0B2998737 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		62E1E07D9DF94207824B5639 /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -400,6 +468,7 @@
 		C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D425320F9A834B5DA56B3A45 /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/schuylkillapp/schema.graphql; sourceTree = "<group>"; };
 		DC4400838A4AAAAD0E69DF8B /* Pods-Schuylkill-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.debug.xcconfig"; sourceTree = "<group>"; };
+		EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.swift; name = "AccelerometerData+Schema.swift"; path = "amplify/generated/models/AccelerometerData+Schema.swift"; sourceTree = "<group>"; };
 		F2C3D6BD62F64F1648CE93CB /* Pods-Schuylkill-App WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit Extension/Pods-Schuylkill-App WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
 		FDBE0F42E7DD7CC650D820B9 /* Pods-Schuylkill-App WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App WatchKit App/Pods-Schuylkill-App WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -469,35 +538,96 @@
 			path = .;
 			sourceTree = "<group>";
 		};
-		379E633225E242DA00B894BA /* Amplify Models */ = {
+		3764EFB425EBDD67000799A9 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				37EE831E25E64E9800B07673 /* Flickr.swift */,
-				37EE831D25E64E9800B07673 /* FlickrPhoto.swift */,
-				37EE831C25E64E9700B07673 /* FlickrSearchResults.swift */,
-				379E634825E242FD00B894BA /* AccelerometerData+Schema.swift */,
-				379E633B25E242FD00B894BA /* AccelerometerReading.swift */,
-				379E634325E242FD00B894BA /* AccelerometerReading+Schema.swift */,
-				379E633A25E242FD00B894BA /* AmplifyModels.swift */,
-				379E634125E242FD00B894BA /* ExerciseMachine.swift */,
-				379E634425E242FD00B894BA /* ExerciseMachine+Schema.swift */,
-				379E634725E242FD00B894BA /* ExerciseRep.swift */,
-				379E633F25E242FD00B894BA /* ExerciseRep+Schema.swift */,
-				379E634A25E242FD00B894BA /* ExerciseSet.swift */,
-				379E634C25E242FD00B894BA /* ExerciseSet+Schema.swift */,
-				379E634025E242FD00B894BA /* FitnessCenter.swift */,
-				379E634B25E242FD00B894BA /* FitnessCenter+Schema.swift */,
-				379E634225E242FD00B894BA /* GymWorkout.swift */,
-				379E634925E242FD00B894BA /* GymWorkout+Schema.swift */,
-				379E634D25E242FD00B894BA /* Location.swift */,
-				379E634625E242FD00B894BA /* Location+Schema.swift */,
-				379E633D25E242FD00B894BA /* MotionAttitude.swift */,
-				379E633C25E242FD00B894BA /* MotionAttitude+Schema.swift */,
-				379E633E25E242FD00B894BA /* Muscle.swift */,
-				379E634E25E242FD00B894BA /* Muscle+Schema.swift */,
-				379E633325E242F000B894BA /* AccelerometerData.swift */,
+				3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */,
+				3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */,
+				3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */,
+				3764EFE125EBEBAC000799A9 /* Events.swift */,
+				3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */,
+				3764F1AB25F10125000799A9 /* ServiceState.swift */,
 			);
-			path = "Amplify Models";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3764EFCD25EBE1F2000799A9 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				3764F04825EE0CEF000799A9 /* OSLog */,
+				3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */,
+				3764EFDA25EBE264000799A9 /* ApplicationError.swift */,
+				3764F07825EE31B2000799A9 /* DeviceError.swift */,
+				3764F19225EF6152000799A9 /* AmplifyError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		3764F04825EE0CEF000799A9 /* OSLog */ = {
+			isa = PBXGroup;
+			children = (
+				3764F05725EE0D65000799A9 /* Bundle+Naming.swift */,
+				3764F04925EE0CF8000799A9 /* Logger.swift */,
+			);
+			path = OSLog;
+			sourceTree = "<group>";
+		};
+		3764F0C225EF2FE3000799A9 /* Amplify */ = {
+			isa = PBXGroup;
+			children = (
+				37F9440625D3E0A900243AC1 /* AmplifyService.swift */,
+				3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */,
+			);
+			path = Amplify;
+			sourceTree = "<group>";
+		};
+		3764F0F425EF3964000799A9 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3764F0F525EF397D000799A9 /* Deletable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		3764F16F25EF52D5000799A9 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3764F17225EF5322000799A9 /* Onboarding Flow */,
+				3764F17125EF5310000799A9 /* Authentication */,
+				37EE830325E6311400B07673 /* Muscles */,
+				379E63F525E26DD400B894BA /* QRViewController.swift */,
+				379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */,
+				379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		3764F17025EF52E9000799A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */,
+				3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */,
+				3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */,
+				3764F17F25EF5374000799A9 /* QRView.swift */,
+				3764F18625EF53F8000799A9 /* MuscleListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3764F17125EF5310000799A9 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				379E636E25E2442400B894BA /* AuthenticationViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3764F17225EF5322000799A9 /* Onboarding Flow */ = {
+			isa = PBXGroup;
+			children = (
+				3764F17325EF5348000799A9 /* Onboarding.storyboard */,
+			);
+			path = "Onboarding Flow";
 			sourceTree = "<group>";
 		};
 		379E64B925E3BD6B00B894BA /* Protocols */ = {
@@ -515,6 +645,7 @@
 			isa = PBXGroup;
 			children = (
 				379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */,
+				3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */,
 			);
 			path = "Common ";
 			sourceTree = "<group>";
@@ -523,6 +654,7 @@
 			isa = PBXGroup;
 			children = (
 				379E650D25E413BA00B894BA /* Resolver+Injection.swift */,
+				3764F03A25EDF186000799A9 /* Resolver+Registration.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -545,13 +677,9 @@
 		37A050B125CE02BB00DCA1F9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				37EE830325E6311400B07673 /* Muscles */,
+				37CCF35525CED071009DBE02 /* SwiftUI */,
+				3764F16F25EF52D5000799A9 /* View Controllers */,
 				37EE82DC25E6307D00B07673 /* Storyboards */,
-				379E636E25E2442400B894BA /* WelcomeViewController.swift */,
-				379E63E325E26B5400B894BA /* AuthenticationViewController.swift */,
-				379E63F525E26DD400B894BA /* QRViewController.swift */,
-				379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */,
-				379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -567,7 +695,7 @@
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				37F7C5A725CD388F000D8FAF /* ContentView.swift */,
+				3764F17025EF52E9000799A9 /* Views */,
 			);
 			path = SwiftUI;
 			sourceTree = "<group>";
@@ -611,17 +739,17 @@
 		37F7C59925CD388F000D8FAF = {
 			isa = PBXGroup;
 			children = (
+				37A050B125CE02BB00DCA1F9 /* UI */,
+				F95315D9A84B4C3DB29404B5 /* AmplifyModels */,
+				3764EFCD25EBE1F2000799A9 /* Errors */,
+				377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */,
 				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
 				37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */,
 				37F7C5C125CD3892000D8FAF /* Schuylkill-AppUITests */,
 				37F7C5CB25CD3892000D8FAF /* Schuylkill-App WatchKit App */,
 				37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */,
-				379E633225E242DA00B894BA /* Amplify Models */,
-				379E62E025E2314300B894BA /* UserData.swift */,
 				37F944FD25D41EC300243AC1 /* AmplifyModels-Extensions */,
 				37F9440525D3E02A00243AC1 /* ViewModels */,
-				37CCF35525CED071009DBE02 /* SwiftUI */,
-				37A050B125CE02BB00DCA1F9 /* UI */,
 				37EE828C25E61DCF00B07673 /* Resources */,
 				37F7C77E25CD6674000D8FAF /* Services */,
 				37F7C74E25CD5D90000D8FAF /* Firebase */,
@@ -721,6 +849,8 @@
 		37F7C63925CD3BD9000D8FAF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				377A504825E9476200D8C5F1 /* MotionActivityManager.swift */,
+				377A504725E9476200D8C5F1 /* RxCoreMotion.swift */,
 				37B9190125E7203100F0BE01 /* Extensions */,
 				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
 				37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */,
@@ -771,18 +901,21 @@
 		37F7C77E25CD6674000D8FAF /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				3764F0C225EF2FE3000799A9 /* Amplify */,
+				3764EFB425EBDD67000799A9 /* Common */,
 				379E650C25E4138A00B894BA /* DI */,
 				379E64C925E3C3BB00B894BA /* Common  */,
 				379E64B925E3BD6B00B894BA /* Protocols */,
 				37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */,
 				37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */,
-				37F9440625D3E0A900243AC1 /* AmplifyService.swift */,
 				37F9442025D3E31A00243AC1 /* FirebaseService.swift */,
 				379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */,
 				379E648225E3B62700B894BA /* LocationService.swift */,
 				379E649125E3B92400B894BA /* GyroService.swift */,
 				379E649B25E3B93E00B894BA /* MotionService.swift */,
 				379E64A525E3B96600B894BA /* AccelerometerService.swift */,
+				377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */,
+				377A503C25E9191500D8C5F1 /* MagnometerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -791,10 +924,12 @@
 			isa = PBXGroup;
 			children = (
 				37EE828325E61AC700B07673 /* Resolver */,
-				379E63EC25E26CB000B894BA /* AuthenticationViewModel.swift */,
 				379E651C25E4180900B894BA /* QRViewModel.swift */,
 				379E655325E41CF600B894BA /* BarcodeReaderViewModel.swift */,
 				37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */,
+				377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */,
+				379E62E025E2314300B894BA /* UserData.swift */,
+				3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -802,11 +937,16 @@
 		37F944FD25D41EC300243AC1 /* AmplifyModels-Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3764F19E25EF6D70000799A9 /* Flickr.swift */,
+				3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */,
+				3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */,
+				3764F0F425EF3964000799A9 /* Protocols */,
 				37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */,
 				37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */,
 				379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */,
 				379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */,
 				379E631A25E23B1D00B894BA /* Location+Extensions.swift */,
+				3764F0ED25EF3431000799A9 /* Model+Extensions.swift */,
 			);
 			path = "AmplifyModels-Extensions";
 			sourceTree = "<group>";
@@ -826,6 +966,35 @@
 				9F11EDE6CDCB931CD6BBD261 /* Pods-Schuylkill-AppTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F95315D9A84B4C3DB29404B5 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				3764F14025EF4977000799A9 /* AccelerometerReading.swift */,
+				3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */,
+				3764F13625EF4976000799A9 /* AmplifyModels.swift */,
+				3764F13725EF4976000799A9 /* ExerciseMachine.swift */,
+				3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */,
+				3764F13925EF4977000799A9 /* ExerciseRep.swift */,
+				3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */,
+				3764F14A25EF4978000799A9 /* ExerciseSet.swift */,
+				3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */,
+				3764F13B25EF4977000799A9 /* FitnessCenter.swift */,
+				3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */,
+				3764F14225EF4977000799A9 /* GymWorkout.swift */,
+				3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */,
+				3764F13E25EF4977000799A9 /* Location.swift */,
+				3764F14425EF4977000799A9 /* Location+Schema.swift */,
+				3764F14925EF4978000799A9 /* MotionAttitude.swift */,
+				3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */,
+				3764F14525EF4978000799A9 /* Muscle.swift */,
+				3764F13A25EF4977000799A9 /* Muscle+Schema.swift */,
+				4B839CF79FEA4003875B2087 /* AccelerometerData.swift */,
+				EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */,
+			);
+			name = AmplifyModels;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -866,6 +1035,7 @@
 				37F7C5AF25CD3892000D8FAF /* Sources */,
 				37F7C5B025CD3892000D8FAF /* Frameworks */,
 				37F7C5B125CD3892000D8FAF /* Resources */,
+				372BDFB67A504DBC67371F24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1003,8 +1173,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE830F25E64E4600B07673 /* FlickrFiles in Resources */,
+				377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */,
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
 				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
+				3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
 				37EE82CF25E6307100B07673 /* Main.storyboard in Resources */,
 			);
@@ -1068,6 +1240,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		372BDFB67A504DBC67371F24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4930B43F108B000D5DD4D49B /* [CP] Check Pods Manifest.lock */ = {
@@ -1199,81 +1388,104 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3764F14B25EF4978000799A9 /* AmplifyModels.swift in Sources */,
+				3764F00125EBFD31000799A9 /* ViewModel+Naming.swift in Sources */,
 				37EE82E925E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C69725CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
-				379E635225E242FD00B894BA /* MotionAttitude.swift in Sources */,
 				37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */,
-				379E63ED25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
-				379E636125E242FD00B894BA /* ExerciseSet+Schema.swift in Sources */,
-				379E635125E242FD00B894BA /* MotionAttitude+Schema.swift in Sources */,
-				37EE832525E64E9800B07673 /* Flickr.swift in Sources */,
+				3764F0AC25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				379E654A25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
+				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
-				379E636025E242FD00B894BA /* FitnessCenter+Schema.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C67925CD3C94000D8FAF /* Phrase.swift in Sources */,
-				379E635F25E242FD00B894BA /* ExerciseSet.swift in Sources */,
-				379E635425E242FD00B894BA /* ExerciseRep+Schema.swift in Sources */,
-				379E63E425E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
-				37F7C5A825CD388F000D8FAF /* ContentView.swift in Sources */,
-				379E635525E242FD00B894BA /* FitnessCenter.swift in Sources */,
-				379E635925E242FD00B894BA /* ExerciseMachine+Schema.swift in Sources */,
+				3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */,
+				3764F15A25EF4978000799A9 /* Muscle.swift in Sources */,
+				3764F0B525EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
+				3764F18725EF53F8000799A9 /* MuscleListView.swift in Sources */,
+				37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */,
+				377A503325E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				3764F15225EF4978000799A9 /* ExerciseRep+Schema.swift in Sources */,
+				3764F15D25EF4978000799A9 /* GymWorkout+Schema.swift in Sources */,
 				37F7C66225CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */,
-				379E636325E242FD00B894BA /* Muscle+Schema.swift in Sources */,
-				37EE832225E64E9800B07673 /* FlickrPhoto.swift in Sources */,
+				3764F15925EF4978000799A9 /* Location+Schema.swift in Sources */,
 				37EE82EC25E630C500B07673 /* MuscleCell.swift in Sources */,
 				37F7C71125CD49BB000D8FAF /* Storage.swift in Sources */,
-				379E636F25E2442400B894BA /* WelcomeViewController.swift in Sources */,
-				379E635625E242FD00B894BA /* ExerciseMachine.swift in Sources */,
+				379E636F25E2442400B894BA /* AuthenticationViewController.swift in Sources */,
 				37F7C78025CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				3764F15B25EF4978000799A9 /* AccelerometerReading+Schema.swift in Sources */,
+				3764F18025EF5374000799A9 /* QRView.swift in Sources */,
 				37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				3764EFE225EBEBAC000799A9 /* Events.swift in Sources */,
 				379E655E25E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37F7C6AB25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */,
+				3764F0F625EF397E000799A9 /* Deletable.swift in Sources */,
+				3764EFB625EBDD76000799A9 /* AmplifyServiceModelPublisher.swift in Sources */,
+				3764F0C425EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
+				3764F0EE25EF3432000799A9 /* Model+Extensions.swift in Sources */,
 				379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */,
-				37EE831F25E64E9800B07673 /* FlickrSearchResults.swift in Sources */,
+				3764F15325EF4978000799A9 /* Location.swift in Sources */,
+				3764F03B25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65125CD3C82000D8FAF /* Command.swift in Sources */,
-				379E633425E242F000B894BA /* AccelerometerData.swift in Sources */,
+				3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */,
 				37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				3764EFDB25EBE264000799A9 /* ApplicationError.swift in Sources */,
 				37F7C6A125CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */,
+				3764F04A25EE0CF8000799A9 /* Logger.swift in Sources */,
+				3764F07925EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C68325CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */,
+				3764F15F25EF4978000799A9 /* ExerciseSet.swift in Sources */,
+				3764F15E25EF4978000799A9 /* MotionAttitude.swift in Sources */,
 				37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */,
 				37F7C68D25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				379E64BB25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F9440725D3E0A900243AC1 /* AmplifyService.swift in Sources */,
-				379E635D25E242FD00B894BA /* AccelerometerData+Schema.swift in Sources */,
-				379E635C25E242FD00B894BA /* ExerciseRep.swift in Sources */,
+				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
-				379E636225E242FD00B894BA /* Location.swift in Sources */,
 				37EE833225E654BF00B07673 /* ExtensioinDelegate.swift in Sources */,
-				379E635B25E242FD00B894BA /* Location+Schema.swift in Sources */,
 				37F9441425D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
-				379E634F25E242FD00B894BA /* AmplifyModels.swift in Sources */,
+				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
+				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
 				37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
-				379E635825E242FD00B894BA /* AccelerometerReading+Schema.swift in Sources */,
+				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
+				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
+				377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				37A0507925CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				379E64CB25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
-				379E635325E242FD00B894BA /* Muscle.swift in Sources */,
+				3764F08225EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 				379E649225E3B92400B894BA /* GyroService.swift in Sources */,
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
+				3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */,
+				3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
-				379E635025E242FD00B894BA /* AccelerometerReading.swift in Sources */,
-				379E635725E242FD00B894BA /* GymWorkout.swift in Sources */,
 				379E62E125E2314300B894BA /* UserData.swift in Sources */,
+				3764F15625EF4978000799A9 /* FitnessCenter+Schema.swift in Sources */,
 				379E650E25E413BA00B894BA /* Resolver+Injection.swift in Sources */,
+				3764F15725EF4978000799A9 /* GymWorkout.swift in Sources */,
 				379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */,
 				379E64A625E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
+				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
+				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
 				379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				3764F19325EF6152000799A9 /* AmplifyError.swift in Sources */,
 				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
-				379E635E25E242FD00B894BA /* GymWorkout+Schema.swift in Sources */,
 				379E651D25E4180900B894BA /* QRViewModel.swift in Sources */,
+				3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
 				379E650325E3E2B300B894BA /* GyroError.swift in Sources */,
 				37F9452D25D47A7000243AC1 /* ExerciseMachine+Extensions.swift in Sources */,
+				3764F14C25EF4978000799A9 /* ExerciseMachine.swift in Sources */,
+				D389D17849A14398B17E9032 /* AccelerometerData.swift in Sources */,
+				3764F14D25EF4978000799A9 /* MotionAttitude+Schema.swift in Sources */,
+				7E91F8EF8AF04F90882A0B35 /* AccelerometerData+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1281,50 +1493,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3764F07125EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				37F7C72725CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E650F25E413BA00B894BA /* Resolver+Injection.swift in Sources */,
+				377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
+				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37F7C66025CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
-				37EE832025E64E9800B07673 /* FlickrSearchResults.swift in Sources */,
 				37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */,
 				379E650425E3E2B300B894BA /* GyroError.swift in Sources */,
+				377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37EE833825E654C000B07673 /* ExtensioinDelegate.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyService.swift in Sources */,
 				37F9441525D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
 				379E63F725E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
-				37EE832325E64E9800B07673 /* FlickrPhoto.swift in Sources */,
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
-				379E63E525E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
 				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
-				37EE832625E64E9800B07673 /* Flickr.swift in Sources */,
-				379E63EE25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
+				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
 				37EE82ED25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				3764F05925EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
+				3764F08325EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 				379E64BC25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1333,50 +1552,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3764F07225EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				37F7C72825CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E651025E413BA00B894BA /* Resolver+Injection.swift in Sources */,
+				377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
+				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37F7C66325CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
-				37EE832125E64E9800B07673 /* FlickrSearchResults.swift in Sources */,
 				37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */,
 				379E650525E3E2B300B894BA /* GyroError.swift in Sources */,
+				377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37EE833925E654C100B07673 /* ExtensioinDelegate.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyService.swift in Sources */,
 				37F9441625D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
 				379E63F825E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
-				37EE832425E64E9800B07673 /* FlickrPhoto.swift in Sources */,
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
-				379E63E625E26B5400B894BA /* AuthenticationViewController.swift in Sources */,
 				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
-				37EE832725E64E9800B07673 /* Flickr.swift in Sources */,
-				379E63EF25E26CB000B894BA /* AuthenticationViewModel.swift in Sources */,
+				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
 				37EE82EE25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				3764F05A25EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
+				3764F08425EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 				379E64BD25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1386,6 +1612,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
+				377A503625E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
 				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				379E649525E3B92400B894BA /* GyroService.swift in Sources */,
@@ -1407,9 +1634,11 @@
 				37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
+				377A502C25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C66D25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
+				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
 				379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,

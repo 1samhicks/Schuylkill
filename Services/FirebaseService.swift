@@ -7,8 +7,10 @@
 
 import Foundation
 
-public class FirebaseService : ObservableObject, RuntimeService {
+/*public class FirebaseService : RuntimeService {
     
+    required public init() {
+        
+    }
     
-    
-}
+}*/
