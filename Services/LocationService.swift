@@ -12,7 +12,7 @@ import Combine
 public class LocationService : NSObject, DeviceService, CLLocationManagerDelegate {
     var resultSink: AnyCancellable = AnyCancellable({})
     func startService() {
-        
+        locationManager!.startUpdatingLocation()
     }
     
     func pauseService() {
@@ -20,21 +20,15 @@ public class LocationService : NSObject, DeviceService, CLLocationManagerDelegat
     }
     
     func endService() {
-        
+        locationManager!.stopUpdatingLocation()
+        locationManager = nil
+        resultSink.cancel()
     }
     
     required public override init() {
         
     }
     
-    var servicePublisher: ServicePublisher {
-        DeviceServicePublisher.shared!
-    }
-    
-    public func cancel() {
-        endMonitoring()
-        locationManager = nil
-    }
     
     private var locationManager : CLLocationManager?
     
@@ -52,24 +46,19 @@ public class LocationService : NSObject, DeviceService, CLLocationManagerDelegat
         return nil
     } }
     
-    func beginMonitoring() {
-        locationManager!.startUpdatingLocation()
-    }
-    
-    func endMonitoring() {
-        locationManager!.stopUpdatingLocation()
-    }
     
     func locationManagerReceivedError(_ error:NSString) {
-      print(error)
+        self.onReceiveError(error: DeviceError.LocationError(nil,error as String))
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-         
+        locations.forEach {
+            self.onReceiveValue(value: DeviceEvent.locationEvent($0))
+        }
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        
+        self.onReceiveValue(value: DeviceEvent.headingEvent(newHeading))
     }
     
     public func locationManagerShouldDisplayHeadingCalibration(_ manager: CLLocationManager) -> Bool {
@@ -82,16 +71,16 @@ public class LocationService : NSObject, DeviceService, CLLocationManagerDelegat
     }
     
     public func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        
+        self.onReceiveValue(value: DeviceEvent.enteredRegion(region))
     }
     
     public func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        
+        self.onReceiveValue(value: DeviceEvent.exitedRegion(region))
     }
     #endif
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        
+        self.onReceiveError(error: DeviceError.LocationError(error, nil))
     }
 
 

@@ -29,7 +29,7 @@ public class GyroService : DeviceService {
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter( { $0 != nil})
             .sink() { gyro in
-            self.onReceiveValue(value: CMLogItemEvent.logItemEvent(gyro!))
+            self.onReceiveValue(value: DeviceEvent.logItemEvent(gyro!))
         }
     }
     

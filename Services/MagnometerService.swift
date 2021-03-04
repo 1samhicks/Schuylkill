@@ -24,7 +24,7 @@ public class MagnometerService : DeviceService {
         resultSink = motionManager.publisher(for:\.magnetometerData)
             .filter({ $0 != nil})
             .sink() { reading in
-            self.onReceiveValue(value: CMLogItemEvent.logItemEvent(reading!))
+            self.onReceiveValue(value: DeviceEvent.logItemEvent(reading!))
         }
     }
     

@@ -21,13 +21,13 @@
             fatalError("This init should never be called! Use the .shared instance!")
         }
         
-        private let subject = PassthroughSubject<CMLogItemEvent,ApplicationError>()
+        private let subject = PassthroughSubject<DeviceEvent,ApplicationError>()
        
-        var publisher: AnyPublisher<CMLogItemEvent, ApplicationError> {
+        var publisher: AnyPublisher<DeviceEvent, ApplicationError> {
             return subject.eraseToAnyPublisher()
         }
 
-        func send(input: CMLogItemEvent) {
+        func send(input: DeviceEvent) {
             subject.send(input)
         }
 

@@ -6,7 +6,18 @@
 //
 
 import Foundation
+import Amplify
+import Resolver
+import Combine
 
-struct MusclesListViewModel {
+class MusclesListViewModel : Identifiable, ViewModel {
+    @LazyInjected var amplifyService : AmplifyService?
     
+    required init() {
+        
+    }
+    
+    func queryAll() -> AnyCancellable? {
+        return amplifyService?.getAllRecords(table: Muscle(friendlyName:"")) ?? nil
+    }
 }

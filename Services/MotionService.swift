@@ -8,22 +8,37 @@
 import Foundation
 import CoreMotion
 import Combine
+import OSLog
 
-public class MotionService : DeviceMonitor, DeviceService, RuntimeService {
+public class MotionService : DeviceService {
+    var resultSink: AnyCancellable = AnyCancellable({})
     
     typealias CMDeviceMotionHandler = (CMDeviceMotion?, Error?) -> Void
     
-    public func startService() {
-        motionManager.accelerometerUpdateInterval = 0.5
-        motionManager.deviceMotionUpdateInterval = 0.5
-        motionManager.startDeviceMotionUpdates(using: CMAttitudeReferenceFrame.xArbitraryZVertical,
-                                   to: fifoOperationQueue,
-                                   withHandler: motionHandler)
+    required public init() {
+        
     }
     
-    let motionHandler : CMDeviceMotionHandler = { motion, error in
-        guard let attitude = motion?.attitude, error == nil else {
-            abort()
+    var serviceState : ServiceState? {
+        get {
+            return nil
         }
+    }
+    
+    public func startService() {
+        
+        motionManager.accelerometerUpdateInterval = 0.1
+        motionManager.deviceMotionUpdateInterval = 0.1
+        resultSink = motionManager.publisher(for: \.deviceMotion).sink() { _ in
+            
+        }
+    }
+    
+    func pauseService() {
+        
+    }
+    
+    func endService() {
+        
     }
 }

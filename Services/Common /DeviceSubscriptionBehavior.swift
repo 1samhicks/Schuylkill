@@ -11,7 +11,7 @@ import Combine
 
 protocol DeviceSubcriptionBehavior {
     
-    var publisher: AnyPublisher<CMLogItemEvent, ApplicationError> { get }
+    var publisher: AnyPublisher<DeviceEvent, ApplicationError> { get }
 
     func send(input: CMLogItem)
 

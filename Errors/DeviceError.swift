@@ -8,5 +8,5 @@
 import Foundation
 
 public enum DeviceError: ApplicationError {
-    
+    case LocationError(Error?,String?)
 }
