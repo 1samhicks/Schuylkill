@@ -14,7 +14,7 @@ public class UserData : ObservableObject {
 
     @Published var status : [UserStatus]?
     
-    var isUserLoggedIn : Bool {
+    public var isUserLoggedIn : Bool {
         get {
             return checkStatus(for: .loggedIn)
         }
@@ -32,12 +32,17 @@ public class UserData : ObservableObject {
         }
     }
     
-    var isLocationServiceEnabled : Bool {
+    public var hasOnboarded : Bool {
+        return checkStatus(for: .hasOnboarded)
+    }
+    
+    public var isLocationServiceEnabled : Bool {
         return checkStatus(for: .locationServicesEnabled)
     }
     
     enum UserStatus {
         case loggedIn
+        case hasOnboarded
         case locationServicesEnabled
         case workoutCenterHasBeenSetup
     }
