@@ -192,6 +192,10 @@
 		37BC237E25F3BFAF0088E581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC237D25F3BFAF0088E581 /* App.swift */; };
 		37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
 		37BC239425F3C06C0088E581 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
+		37BC23A125F3C4070088E581 /* Resolver+DeviceInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23A025F3C4070088E581 /* Resolver+DeviceInjection.swift */; };
+		37BC23AD25F3C58C0088E581 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 37BC23AC25F3C58C0088E581 /* Resolver */; };
+		37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650D25E413BA00B894BA /* Resolver+Injection.swift */; };
+		37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -443,6 +447,7 @@
 		37BC234D25F3A2C40088E581 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
 		37BC236B25F3BD420088E581 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		37BC237D25F3BFAF0088E581 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		37BC23A025F3C4070088E581 /* Resolver+DeviceInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+DeviceInjection.swift"; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -560,6 +565,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BC23AD25F3C58C0088E581 /* Resolver in Frameworks */,
 				5B005C39C4EA04B7939B1019 /* Pods_Schuylkill_App_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -682,6 +688,7 @@
 			children = (
 				379E650D25E413BA00B894BA /* Resolver+Injection.swift */,
 				3764F03A25EDF186000799A9 /* Resolver+Registration.swift */,
+				37BC23A025F3C4070088E581 /* Resolver+DeviceInjection.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -1222,6 +1229,9 @@
 				37F7C5D625CD3892000D8FAF /* PBXTargetDependency */,
 			);
 			name = "Schuylkill-App WatchKit App";
+			packageProductDependencies = (
+				37BC23AC25F3C58C0088E581 /* Resolver */,
+			);
 			productName = "Schuylkill-App WatchKit App";
 			productReference = 37F7C5C725CD3892000D8FAF /* Schuylkill-App WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
@@ -1771,10 +1781,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */,
 				37BC237E25F3BFAF0088E581 /* App.swift in Sources */,
 				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				37BC223125F393730088E581 /* UserData.swift in Sources */,
 				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37BC23A125F3C4070088E581 /* Resolver+DeviceInjection.swift in Sources */,
 				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
 				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
@@ -1811,6 +1823,7 @@
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
 				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */,
 				37BC225025F3944C0088E581 /* ServiceState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2345,6 +2358,11 @@
 			productName = Disk;
 		};
 		37A0506E25CD781600DCA1F9 /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		37BC23AC25F3C58C0088E581 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;

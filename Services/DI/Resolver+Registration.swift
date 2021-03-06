@@ -7,6 +7,9 @@
 
 import Foundation
 import Resolver
+#if !os(watchOS)
+import OSLog
+#endif
 
 public protocol ResolverRegistrant {
     init()
