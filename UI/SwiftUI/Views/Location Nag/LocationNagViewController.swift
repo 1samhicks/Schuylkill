@@ -7,11 +7,14 @@
 
 import Foundation
 import UIKit
+import SettingsAppAccess
 
 public class LocationNagViewController : UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Warning"
+        let urlString = SettingsAppLocation.Settings.rawValue
+        UIApplication.shared.open(URL(string: urlString)!)
     }
     
     public override func viewWillAppear(_ animated: Bool) {

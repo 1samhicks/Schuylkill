@@ -29,20 +29,35 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>eDTS</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLIconFile</key>
+			<string></string>
+			<key>CFBundleURLName</key>
+			<string>pref</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>pref</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>"We need this to scan bar codes and QR codes"</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>&quot;We watch your arm movement and locate you on the gym floor.&quot;</string>
+	<string>"We watch your arm movement and locate you on the gym floor."</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>&quot;We watch your arm movement and locate you on the gym floor.&quot;</string>
-	<key>NSMotionUsageDescription</key>
-	<string>&quot;We track your motion to record all movement events&quot;</string>
+	<string>"We watch your arm movement and locate you on the gym floor."</string>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
-	<key>NSCameraUsageDescription</key>
-	<string>&quot;We need this to scan bar codes and QR codes&quot;</string>
+	<key>NSMotionUsageDescription</key>
+	<string>"We track your motion to record all movement events"</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
