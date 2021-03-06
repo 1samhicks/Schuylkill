@@ -8,8 +8,9 @@
 import Foundation
 import CoreMotion
 import Combine
+#if !os(watchOS)
 import OSLog
-
+#endif
 public class MotionService : DeviceService {
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
     

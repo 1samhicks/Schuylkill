@@ -13,7 +13,6 @@
 		3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */; };
 		3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */; };
 		3764EFDB25EBE264000799A9 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFDA25EBE264000799A9 /* ApplicationError.swift */; };
-		3764EFE225EBEBAC000799A9 /* Events.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFE125EBEBAC000799A9 /* Events.swift */; };
 		3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */; };
 		3764F00125EBFD31000799A9 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
 		3764F03B25EDF186000799A9 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
@@ -78,11 +77,9 @@
 		377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
 		377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
 		377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
-		377A502C25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
 		377A503325E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
 		377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
 		377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
-		377A503625E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
 		377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
@@ -102,7 +99,6 @@
 		379E649225E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
 		379E649325E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
 		379E649425E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
-		379E649525E3B92400B894BA /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
 		379E649C25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
 		379E649D25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
 		379E649E25E3B93E00B894BA /* MotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649B25E3B93E00B894BA /* MotionService.swift */; };
@@ -126,7 +122,6 @@
 		379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
 		379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
 		379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
-		379E64F125E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
 		379E650325E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
 		379E650425E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
 		379E650525E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
@@ -137,7 +132,6 @@
 		379E651D25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
 		379E651E25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
 		379E651F25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
-		379E652025E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
 		379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
 		379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
 		379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
@@ -162,6 +156,42 @@
 		37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E925F381FB0088E581 /* LocationNagViewController.swift */; };
 		37BC21F625F384FD0088E581 /* InternalApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* InternalApplicationError.swift */; };
 		37BC21FD25F38C180088E581 /* ApplicationLoadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */; };
+		37BC223125F393730088E581 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
+		37BC225025F3944C0088E581 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
+		37BC225625F3944E0088E581 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
+		37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
+		37BC227125F394D60088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
+		37BC227725F394DC0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
+		37BC227825F394DE0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
+		37BC227E25F394DE0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
+		37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
+		37BC229125F3956D0088E581 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
+		37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
+		37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
+		37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
+		37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
+		37BC22B425F395E00088E581 /* DeviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F07825EE31B2000799A9 /* DeviceError.swift */; };
+		37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */; };
+		37BC22C225F396570088E581 /* ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22C125F396570088E581 /* ServicePublisher.swift */; };
+		37BC22CD25F3969A0088E581 /* ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22C125F396570088E581 /* ServicePublisher.swift */; };
+		37BC22D425F396BA0088E581 /* AmplifyModelChangePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */; };
+		37BC22DA25F3979E0088E581 /* ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22C125F396570088E581 /* ServicePublisher.swift */; };
+		37BC22E525F3979E0088E581 /* ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22C125F396570088E581 /* ServicePublisher.swift */; };
+		37BC22EB25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */; };
+		37BC22EC25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */; };
+		37BC22F725F398780088E581 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFDA25EBE264000799A9 /* ApplicationError.swift */; };
+		37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFDA25EBE264000799A9 /* ApplicationError.swift */; };
+		37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFDA25EBE264000799A9 /* ApplicationError.swift */; };
+		37BC230425F399310088E581 /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
+		37BC230B25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
+		37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
+		37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
+		37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
+		37BC231525F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
+		37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
+		37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
+		37BC232325F39B1A0088E581 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
+		37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -177,9 +207,9 @@
 		37EE830F25E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831025E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831125E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
-		37EE833225E654BF00B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
-		37EE833825E654C000B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
-		37EE833925E654C100B07673 /* ExtensioinDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */; };
+		37EE833225E654BF00B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
+		37EE833825E654C000B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
+		37EE833925E654C100B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
 		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
 		37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */; };
 		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
@@ -333,7 +363,6 @@
 		3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSubscriptionBehavior.swift; sourceTree = "<group>"; };
 		3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
 		3764EFDA25EBE264000799A9 /* ApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationError.swift; sourceTree = "<group>"; };
-		3764EFE125EBEBAC000799A9 /* Events.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events.swift; sourceTree = "<group>"; };
 		3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyCancellable+ServicePublisher.swift"; sourceTree = "<group>"; };
 		3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Naming.swift"; sourceTree = "<group>"; };
 		3764F03A25EDF186000799A9 /* Resolver+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Registration.swift"; sourceTree = "<group>"; };
@@ -410,6 +439,13 @@
 		37BC21E925F381FB0088E581 /* LocationNagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagViewController.swift; sourceTree = "<group>"; };
 		37BC21F525F384FD0088E581 /* InternalApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalApplicationError.swift; sourceTree = "<group>"; };
 		37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLoadFactory.swift; sourceTree = "<group>"; };
+		37BC227025F394D60088E581 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		37BC228925F3953B0088E581 /* DeviceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceEvent.swift; sourceTree = "<group>"; };
+		37BC229025F3956D0088E581 /* AmplifyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyEvent.swift; sourceTree = "<group>"; };
+		37BC22C125F396570088E581 /* ServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePublisher.swift; sourceTree = "<group>"; };
+		37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModelChangePublisher.swift; sourceTree = "<group>"; };
+		37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+DeviceService.swift"; sourceTree = "<group>"; };
+		37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+AmplifyService.swift"; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -434,7 +470,7 @@
 		37F7C5CC25CD3892000D8FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37F7C5CE25CD3892000D8FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Schuylkill-App WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensioinDelegate.swift; sourceTree = "<group>"; };
+		37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		37F7C5DA25CD3892000D8FAF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		37F7C5DC25CD3892000D8FAF /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		37F7C5DE25CD3892000D8FAF /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
@@ -550,10 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */,
-				3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */,
 				3764EFE825EBED20000799A9 /* AnyCancellable+ServicePublisher.swift */,
-				3764EFE125EBEBAC000799A9 /* Events.swift */,
-				3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */,
 				3764F1AB25F10125000799A9 /* ServiceState.swift */,
 			);
 			path = Common;
@@ -634,6 +667,8 @@
 				379E64E325E3D8BC00B894BA /* DeviceService.swift */,
 				379E64ED25E3DAD400B894BA /* RuntimeService.swift */,
 				379E650225E3E2B300B894BA /* GyroError.swift */,
+				37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */,
+				37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -745,6 +780,27 @@
 			path = Barcode;
 			sourceTree = "<group>";
 		};
+		37BC226F25F394C00088E581 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				37BC227025F394D60088E581 /* Event.swift */,
+				37BC228925F3953B0088E581 /* DeviceEvent.swift */,
+				37BC229025F3956D0088E581 /* AmplifyEvent.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		37BC22C025F396250088E581 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				37BC22C125F396570088E581 /* ServicePublisher.swift */,
+				37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */,
+				3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */,
+				3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -782,9 +838,11 @@
 		37F7C59925CD388F000D8FAF = {
 			isa = PBXGroup;
 			children = (
+				37BC22C025F396250088E581 /* Publishers */,
 				37A050B125CE02BB00DCA1F9 /* UI */,
 				F95315D9A84B4C3DB29404B5 /* AmplifyModels */,
 				3764EFCD25EBE1F2000799A9 /* Errors */,
+				37BC226F25F394C00088E581 /* Events */,
 				377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */,
 				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
 				37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */,
@@ -868,7 +926,7 @@
 		37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				37F7C5D825CD3892000D8FAF /* ExtensioinDelegate.swift */,
+				37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */,
 				37F7C5DA25CD3892000D8FAF /* ContentView.swift */,
 				37F7C5DC25CD3892000D8FAF /* NotificationController.swift */,
 				37F7C5DE25CD3892000D8FAF /* NotificationView.swift */,
@@ -1463,9 +1521,9 @@
 				379E636F25E2442400B894BA /* AuthenticationViewController.swift in Sources */,
 				37F7C78025CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F15B25EF4978000799A9 /* AccelerometerReading+Schema.swift in Sources */,
+				37BC231525F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				3764F18025EF5374000799A9 /* QRView.swift in Sources */,
 				37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
-				3764EFE225EBEBAC000799A9 /* Events.swift in Sources */,
 				379E655E25E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37F7C6AB25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */,
@@ -1487,23 +1545,26 @@
 				3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */,
 				3764F04A25EE0CF8000799A9 /* Logger.swift in Sources */,
 				3764F07925EE31B2000799A9 /* DeviceError.swift in Sources */,
+				37BC230B25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37F7C68325CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */,
 				3764F15F25EF4978000799A9 /* ExerciseSet.swift in Sources */,
 				3764F15E25EF4978000799A9 /* MotionAttitude.swift in Sources */,
 				37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */,
+				37BC22D425F396BA0088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37F7C68D25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				379E64BB25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
-				37EE833225E654BF00B07673 /* ExtensioinDelegate.swift in Sources */,
+				37EE833225E654BF00B07673 /* ExtensionDelegate.swift in Sources */,
 				37F9441425D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
 				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
 				37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
+				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
 				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
@@ -1513,6 +1574,7 @@
 				379E649225E3B92400B894BA /* GyroService.swift in Sources */,
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
 				3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */,
+				37BC229125F3956D0088E581 /* AmplifyEvent.swift in Sources */,
 				3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				379E62E125E2314300B894BA /* UserData.swift in Sources */,
@@ -1522,6 +1584,7 @@
 				379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */,
 				379E64A625E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				37BC22C225F396570088E581 /* ServicePublisher.swift in Sources */,
 				377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
 				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
@@ -1536,6 +1599,7 @@
 				D389D17849A14398B17E9032 /* AccelerometerData.swift in Sources */,
 				3764F14D25EF4978000799A9 /* MotionAttitude+Schema.swift in Sources */,
 				7E91F8EF8AF04F90882A0B35 /* AccelerometerData+Schema.swift in Sources */,
+				37BC227125F394D60088E581 /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1549,10 +1613,12 @@
 				377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
+				37BC227725F394DC0088E581 /* Event.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
@@ -1565,11 +1631,13 @@
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
-				37EE833825E654C000B07673 /* ExtensioinDelegate.swift in Sources */,
+				37EE833825E654C000B07673 /* ExtensionDelegate.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
+				37BC225625F3944E0088E581 /* ServiceState.swift in Sources */,
+				37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */,
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
@@ -1581,14 +1649,18 @@
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */,
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37BC22EB25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
+				37BC22DA25F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82ED25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */,
 				3764F05925EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
@@ -1607,10 +1679,12 @@
 				377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
+				37BC227825F394DE0088E581 /* Event.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
@@ -1623,11 +1697,13 @@
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
-				37EE833925E654C100B07673 /* ExtensioinDelegate.swift in Sources */,
+				37EE833925E654C100B07673 /* ExtensionDelegate.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
+				37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */,
+				37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */,
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
@@ -1639,14 +1715,18 @@
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */,
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37BC22EC25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
+				37BC22E525F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82EE25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */,
 				3764F05A25EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
@@ -1660,36 +1740,44 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
-				377A503625E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37BC223125F393730088E581 /* UserData.swift in Sources */,
 				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
+				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
+				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
+				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
-				379E649525E3B92400B894BA /* GyroService.swift in Sources */,
-				379E64F125E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				37BC227E25F394DE0088E581 /* Event.swift in Sources */,
+				37BC22B425F395E00088E581 /* DeviceError.swift in Sources */,
+				37BC232325F39B1A0088E581 /* Resolver+Registration.swift in Sources */,
 				37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */,
 				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
 				37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
+				37BC22CD25F3969A0088E581 /* ServicePublisher.swift in Sources */,
 				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
+				37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */,
 				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
 				379E655725E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
+				37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */,
 				37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */,
 				37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
-				379E652025E4180900B894BA /* QRViewModel.swift in Sources */,
 				379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37F7C67C25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				379E650625E3E2B300B894BA /* GyroError.swift in Sources */,
 				37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
-				377A502C25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C66D25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
 				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
+				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
 				379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37BC225025F3944C0088E581 /* ServiceState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

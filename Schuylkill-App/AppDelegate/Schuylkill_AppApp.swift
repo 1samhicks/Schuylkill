@@ -19,7 +19,7 @@ struct Schuylkill_AppApp: App {
     var body: some Scene {
         WindowGroup {
             AuthenticationView()
-    }
+        }
     }
     
     public init() {

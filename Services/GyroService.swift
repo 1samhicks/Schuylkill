@@ -8,7 +8,6 @@
 import Foundation
 import CoreMotion
 import Combine
-import Amplify
 public class GyroService : DeviceService {
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     

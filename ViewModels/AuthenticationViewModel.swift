@@ -1,5 +1,5 @@
 //
-//  WelcomeViewModel.swift
+//  AuthenticationViewModel.swift
 //  Schuylkill-App
 //
 //  Created by Sam Hicks on 2/26/21.

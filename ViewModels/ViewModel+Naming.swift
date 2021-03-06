@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Amplify
 import Resolver
 
 protocol ViewModel : ResolverRegistrant {

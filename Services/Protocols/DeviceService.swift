@@ -8,8 +8,9 @@
 import Foundation
 import CoreMotion
 import Combine
+#if !os(watchOS)
 import OSLog
-
+#endif
 protocol DeviceService : RuntimeService {
     var dispatchSemaphore : DispatchSemaphore { get set }
     var resultSink: AnyCancellable { get set }
@@ -42,3 +43,5 @@ extension CMMotionManager  {
 extension OperationQueue {
     static let shared = OperationQueue()
 }
+
+
