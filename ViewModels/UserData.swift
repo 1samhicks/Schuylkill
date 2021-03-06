@@ -20,9 +20,12 @@ public class UserData : ObservableObject {
         }
         set {
             if var s = status {
-                if(newValue) {
+                if(newValue && !s.contains(.loggedIn)) {
                     s.append(.loggedIn)
-                } else {
+                } else if(newValue) {
+                    //The .loggedIn status is already in the [UserStatus] array
+                }
+                else {
                     s.removeAll(where: { $0 == .loggedIn})
                 }
             }
