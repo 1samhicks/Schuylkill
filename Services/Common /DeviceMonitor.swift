@@ -8,7 +8,7 @@
 import Foundation
 import CoreMotion
 
-public class DeviceMonitor : DeviceMonitoring {
+/*public class DeviceMonitor : DeviceMonitoring {
     private static let _manager = CMMotionManager()
     private static let _queue = OperationQueue()
     
@@ -18,4 +18,4 @@ public class DeviceMonitor : DeviceMonitoring {
     public var fifoOperationQueue : OperationQueue {
         DeviceMonitor._queue
     }
-}
+}*/

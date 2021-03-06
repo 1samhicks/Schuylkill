@@ -111,10 +111,6 @@
 		379E64BC25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
 		379E64BD25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
 		379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */; };
-		379E64CB25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
-		379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
-		379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
-		379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */; };
 		379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
 		379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
 		379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64E325E3D8BC00B894BA /* DeviceService.swift */; };
@@ -122,10 +118,6 @@
 		379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
 		379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
 		379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E64ED25E3DAD400B894BA /* RuntimeService.swift */; };
-		379E650325E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
-		379E650425E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
-		379E650525E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
-		379E650625E3E2B300B894BA /* GyroError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650225E3E2B300B894BA /* GyroError.swift */; };
 		379E650E25E413BA00B894BA /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650D25E413BA00B894BA /* Resolver+Injection.swift */; };
 		379E650F25E413BA00B894BA /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650D25E413BA00B894BA /* Resolver+Injection.swift */; };
 		379E651025E413BA00B894BA /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650D25E413BA00B894BA /* Resolver+Injection.swift */; };
@@ -399,9 +391,9 @@
 		3764F17F25EF5374000799A9 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		3764F18625EF53F8000799A9 /* MuscleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListView.swift; sourceTree = "<group>"; };
 		3764F19225EF6152000799A9 /* AmplifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyError.swift; sourceTree = "<group>"; };
-		3764F19E25EF6D70000799A9 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flickr.swift; sourceTree = SOURCE_ROOT; };
-		3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrPhoto.swift; sourceTree = SOURCE_ROOT; };
-		3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlickrSearchResults.swift; sourceTree = SOURCE_ROOT; };
+		3764F19E25EF6D70000799A9 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flickr.swift; path = "AmplifyModels-Extensions/Temporary/Flickr.swift"; sourceTree = SOURCE_ROOT; };
+		3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhoto.swift; path = "AmplifyModels-Extensions/Temporary/FlickrPhoto.swift"; sourceTree = SOURCE_ROOT; };
+		3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrSearchResults.swift; path = "AmplifyModels-Extensions/Temporary/FlickrSearchResults.swift"; sourceTree = SOURCE_ROOT; };
 		3764F1AB25F10125000799A9 /* ServiceState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceState.swift; sourceTree = "<group>"; };
 		377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyS3StorageService.swift; sourceTree = "<group>"; };
@@ -421,10 +413,8 @@
 		379E649B25E3B93E00B894BA /* MotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionService.swift; sourceTree = "<group>"; };
 		379E64A525E3B96600B894BA /* AccelerometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerService.swift; sourceTree = "<group>"; };
 		379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitoring.swift; sourceTree = "<group>"; };
-		379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitor.swift; sourceTree = "<group>"; };
 		379E64E325E3D8BC00B894BA /* DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceService.swift; sourceTree = "<group>"; };
 		379E64ED25E3DAD400B894BA /* RuntimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeService.swift; sourceTree = "<group>"; };
-		379E650225E3E2B300B894BA /* GyroError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GyroError.swift; sourceTree = "<group>"; };
 		379E650D25E413BA00B894BA /* Resolver+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Injection.swift"; sourceTree = "<group>"; };
 		379E651C25E4180900B894BA /* QRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewModel.swift; sourceTree = "<group>"; };
 		379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDisplayViewController.swift; sourceTree = "<group>"; };
@@ -666,7 +656,6 @@
 				379E64BA25E3BD7B00B894BA /* DeviceMonitoring.swift */,
 				379E64E325E3D8BC00B894BA /* DeviceService.swift */,
 				379E64ED25E3DAD400B894BA /* RuntimeService.swift */,
-				379E650225E3E2B300B894BA /* GyroError.swift */,
 				37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */,
 				37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */,
 			);
@@ -676,7 +665,6 @@
 		379E64C925E3C3BB00B894BA /* Common  */ = {
 			isa = PBXGroup;
 			children = (
-				379E64CA25E3C3E900B894BA /* DeviceMonitor.swift */,
 				3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */,
 			);
 			path = "Common ";
@@ -799,6 +787,29 @@
 				3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */,
 			);
 			path = Publishers;
+			sourceTree = "<group>";
+		};
+		37BC233425F3A1130088E581 /* Temporary */ = {
+			isa = PBXGroup;
+			children = (
+				3764F19E25EF6D70000799A9 /* Flickr.swift */,
+				3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */,
+				3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */,
+			);
+			path = Temporary;
+			sourceTree = "<group>";
+		};
+		37BC233525F3A11F0088E581 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */,
+				37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */,
+				379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */,
+				379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */,
+				379E631A25E23B1D00B894BA /* Location+Extensions.swift */,
+				3764F0ED25EF3431000799A9 /* Model+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
@@ -1039,16 +1050,9 @@
 		37F944FD25D41EC300243AC1 /* AmplifyModels-Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				3764F19E25EF6D70000799A9 /* Flickr.swift */,
-				3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */,
-				3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */,
+				37BC233525F3A11F0088E581 /* Extensions */,
+				37BC233425F3A1130088E581 /* Temporary */,
 				3764F0F425EF3964000799A9 /* Protocols */,
-				37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */,
-				37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */,
-				379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */,
-				379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */,
-				379E631A25E23B1D00B894BA /* Location+Extensions.swift */,
-				3764F0ED25EF3431000799A9 /* Model+Extensions.swift */,
 			);
 			path = "AmplifyModels-Extensions";
 			sourceTree = "<group>";
@@ -1569,7 +1573,6 @@
 				377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				37A0507925CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
-				379E64CB25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				3764F08225EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 				379E649225E3B92400B894BA /* GyroService.swift in Sources */,
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
@@ -1593,7 +1596,6 @@
 				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
 				379E651D25E4180900B894BA /* QRViewModel.swift in Sources */,
 				3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
-				379E650325E3E2B300B894BA /* GyroError.swift in Sources */,
 				37F9452D25D47A7000243AC1 /* ExerciseMachine+Extensions.swift in Sources */,
 				3764F14C25EF4978000799A9 /* ExerciseMachine.swift in Sources */,
 				D389D17849A14398B17E9032 /* AccelerometerData.swift in Sources */,
@@ -1626,7 +1628,6 @@
 				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */,
-				379E650425E3E2B300B894BA /* GyroError.swift in Sources */,
 				377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
@@ -1645,7 +1646,6 @@
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441525D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
-				379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
@@ -1692,7 +1692,6 @@
 				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */,
-				379E650525E3E2B300B894BA /* GyroError.swift in Sources */,
 				377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
@@ -1711,7 +1710,6 @@
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441625D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
-				379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
@@ -1765,7 +1763,6 @@
 				37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37F7C67C25CD3C94000D8FAF /* Phrase.swift in Sources */,
-				379E650625E3E2B300B894BA /* GyroError.swift in Sources */,
 				37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				379E64BE25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
 				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
@@ -1775,7 +1772,6 @@
 				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
 				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
-				379E64CE25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				37BC225025F3944C0088E581 /* ServiceState.swift in Sources */,
 			);
