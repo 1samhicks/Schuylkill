@@ -185,9 +185,6 @@
 		37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
 		37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
 		37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
-		37BC236C25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
-		37BC236D25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
-		37BC236E25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
 		37BC236F25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
 		37BC237E25F3BFAF0088E581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC237D25F3BFAF0088E581 /* App.swift */; };
 		37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
@@ -204,6 +201,9 @@
 		37BC23E125F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
 		37BC23E225F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
 		37BC23E325F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
+		37BC241625F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
+		37BC241725F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
+		37BC241825F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -458,6 +458,7 @@
 		37BC23A025F3C4070088E581 /* Resolver+DeviceInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+DeviceInjection.swift"; sourceTree = "<group>"; };
 		37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntryViewController.swift; sourceTree = "<group>"; };
 		37BC23E025F3FF080088E581 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		37BC241525F402530088E581 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -750,6 +751,7 @@
 			isa = PBXGroup;
 			children = (
 				37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */,
+				37BC241525F402530088E581 /* OnboardingView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -1347,7 +1349,6 @@
 				377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */,
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
 				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
-				37BC236C25F3BD420088E581 /* Interface.storyboard in Resources */,
 				3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
 				37EE82CF25E6307100B07673 /* Main.storyboard in Resources */,
@@ -1359,7 +1360,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D025E6307100B07673 /* Main.storyboard in Resources */,
-				37BC236D25F3BD420088E581 /* Interface.storyboard in Resources */,
 				37EE831025E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1369,7 +1369,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D125E6307100B07673 /* Main.storyboard in Resources */,
-				37BC236E25F3BD420088E581 /* Interface.storyboard in Resources */,
 				37EE831125E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1656,6 +1655,7 @@
 				379E64A625E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */,
 				37BC22C225F396570088E581 /* ServicePublisher.swift in Sources */,
+				37BC241625F402530088E581 /* OnboardingView.swift in Sources */,
 				377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
 				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
@@ -1710,6 +1710,7 @@
 				37BC225625F3944E0088E581 /* ServiceState.swift in Sources */,
 				37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */,
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
+				37BC241725F402530088E581 /* OnboardingView.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
@@ -1776,6 +1777,7 @@
 				37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */,
 				37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */,
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
+				37BC241825F402530088E581 /* OnboardingView.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
