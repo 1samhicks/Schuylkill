@@ -9,14 +9,15 @@ import Foundation
 import CoreMotion
 import Combine
 public class GyroService : DeviceService {
+    var state: ServiceState?
+    
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+    
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     
     var resultSink: AnyCancellable = AnyCancellable({})
-    var serviceState: ServiceState? {
-        get {
-            return nil
-        }
-    }
     
     required public init() {
     }
@@ -31,11 +32,17 @@ public class GyroService : DeviceService {
     }
     
     func pauseService() {
-         
+        dispatchSemaphore.wait()
+        state = .running
+        motionManager.stopGyroUpdates()
+        dispatchSemaphore.signal()
     }
     
     func unpauseService() {
-        
+        dispatchSemaphore.wait()
+        state = .running
+        motionManager.startGyroUpdates()
+        dispatchSemaphore.signal()
     }
     
     func endService() {

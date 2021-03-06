@@ -10,7 +10,12 @@ import CoreMotion
 import Combine
 
 public class AccelerometerService : DeviceService {
-    private var _state : ServiceState?
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+    
+    
+    var state: ServiceState?
     
     
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
@@ -23,7 +28,7 @@ public class AccelerometerService : DeviceService {
     
     public func startService() {
         dispatchSemaphore.wait()
-        serviceState = .running
+        state = .running
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter( { $0 != nil})
             .sink() { gyro in
@@ -34,14 +39,14 @@ public class AccelerometerService : DeviceService {
     
     func pauseService() {
         dispatchSemaphore.wait()
-        serviceState = .paused
+        state = .paused
         motionManager.stopAccelerometerUpdates()
         dispatchSemaphore.signal()
     }
     
     func unpauseService() {
         dispatchSemaphore.wait()
-        serviceState = .running
+        state = .running
         motionManager.startAccelerometerUpdates()
         dispatchSemaphore.signal()
     }
@@ -49,12 +54,4 @@ public class AccelerometerService : DeviceService {
     func endService() {
     }
     
-    var serviceState: ServiceState? {
-        get {
-            _state
-        }
-        set {
-            _state = newValue
-        }
-    }
 }

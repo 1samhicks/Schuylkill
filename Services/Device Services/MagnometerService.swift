@@ -10,16 +10,23 @@ import CoreMotion
 import Combine
 
 public class MagnometerService : DeviceService {
-    private var _state : ServiceState?
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+    
+    
+    var state: ServiceState?
+    
+    
     var dispatchSemaphore : DispatchSemaphore = DispatchSemaphore(value:1)
     var resultSink: AnyCancellable = AnyCancellable({})
     
     required public init() {
-        _state = .stopped
     }
     
     public func startService() {
-        
+        dispatchSemaphore.wait()
+        state = .running
         motionManager.magnetometerUpdateInterval = 0.1
         motionManager.startMagnetometerUpdates()
         resultSink = motionManager.publisher(for:\.magnetometerData)
@@ -27,46 +34,29 @@ public class MagnometerService : DeviceService {
             .sink() { reading in
             self.publishValue(value: DeviceEvent.logItemEvent(reading!))
         }
+        dispatchSemaphore.signal()
     }
     
     func pauseService() {
+        dispatchSemaphore.wait()
+        state = .paused
         motionManager.stopMagnetometerUpdates()
     }
     
     func unpauseService() {
+        dispatchSemaphore.wait()
+        state = .running
         motionManager.startMagnetometerUpdates()
+        dispatchSemaphore.signal()
     }
     
     func endService() {
         dispatchSemaphore.wait()
+        state = .finished
         motionManager.stopMagnetometerUpdates()
         resultSink.cancel()
         dispatchSemaphore.signal()
     }
     
-    var serviceState: ServiceState? {
-        get { return _state }
-        set {
-            switch newValue {
-                case .canceled:
-                    _state = .canceled
-                    fallthrough
-                case .stopped:
-                    _state = .stopped
-                    fallthrough
-                case .finished:
-                    _state = .finished
-                    endService()
-                case .running:
-                    _state = .running
-                    startService()
-                    break
-                case .paused:
-                    _state = .paused
-                    break
-                case .none:
-                    break
-                }
-    }
-    }
+    
 }

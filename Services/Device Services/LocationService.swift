@@ -9,7 +9,7 @@ import Foundation
 import CoreLocation
 import Combine
 
-public class LocationService : NSObject, DeviceService, CLLocationManagerDelegate {
+public class LocationService : DeviceService, CLLocationManagerDelegate {
     
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     

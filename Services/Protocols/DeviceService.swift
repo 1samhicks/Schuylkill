@@ -12,6 +12,8 @@ import Combine
 import OSLog
 #endif
 protocol DeviceService : RuntimeService {
+    typealias DeviceServiceStateTransition = (() -> ())?
+    var state : ServiceState? { get set } //TODO: This shouldn't be visible to the outside world
     var dispatchSemaphore : DispatchSemaphore { get set }
     var resultSink: AnyCancellable { get set }
     func startService()
@@ -20,10 +22,11 @@ protocol DeviceService : RuntimeService {
     func endService()
     var motionManager : CMMotionManager { get }
     var fifoOperationQueue : OperationQueue { get }
-    var serviceState : ServiceState? { get }
+    mutating func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition
 }
 
 extension DeviceService {
+    
 }
 
 extension DeviceService {
@@ -34,7 +37,23 @@ extension DeviceService {
     public var fifoOperationQueue : OperationQueue {
         OperationQueue.shared
     }
+    /*public mutating func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        switch newState {
+            case .notStarted:
+                return { ([weak self]) in self.state = newState }
+            case .canceled:
+                fallthrough
+            case .stopped:
+                fallthrough
+            case .finished:
+                return { self.endService()}
+            case .running:
+                return { self.startService()}
+            case .paused:
+                return { self.pauseService() }
+    }*/
 }
+
 
 extension CMMotionManager  {
     static let shared = CMMotionManager()

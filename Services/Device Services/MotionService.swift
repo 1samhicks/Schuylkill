@@ -12,6 +12,12 @@ import Combine
 import OSLog
 #endif
 public class MotionService : DeviceService {
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+    
+    var state: ServiceState?
+    
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
     
     var resultSink: AnyCancellable = AnyCancellable({})
