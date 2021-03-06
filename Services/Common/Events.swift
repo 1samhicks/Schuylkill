@@ -10,12 +10,12 @@ import Amplify
 import CoreMotion
 import CoreLocation
 
-protocol Event {
+public protocol Event {
     
 }
 
 
-enum DeviceEvent : Event {
+public enum DeviceEvent : Event {
     case logItemEvent(CMLogItem)
     case locationEvent(CLLocation)
     case headingEvent(CLHeading)
@@ -23,11 +23,11 @@ enum DeviceEvent : Event {
     case exitedRegion(CLRegion)
 }
 
-enum AmplifyMutationEvent : Event {
+public enum AmplifyMutationEvent : Event {
     case mutationEvent(MutationEvent)
 }
 
-enum AuthenticationEvent : Event {
+public enum AuthenticationEvent : Event {
     case started
     case mutationEvent(MutationEvent)
 }
