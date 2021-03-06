@@ -14,6 +14,7 @@ import Resolver
 
 @main
 struct Schuylkill_AppApp: App {
+    //var firstView = try! ApplicationLoadFactory.getFirstView()
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
@@ -72,9 +73,9 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-      
         print(deviceToken)
     }
+    
     private func registerForRemoteNotifications() {
         if #available(iOS 10.0, *) {
           // For iOS 10 display notification (sent via APNS)
