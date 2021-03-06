@@ -11,7 +11,7 @@ import Resolver
 import Amplify
 
 class QRViewModel : ObservableObject, Identifiable, ViewModel {
-    @LazyInjected var amplifyService : AmplifyService?
+    @LazyInjected var amplifyService : AmplifyAPIService?
     @Published var barcode : String?
     required init() {
         let barcodePerson = $barcode.receive(on: DispatchQueue.main).sink { (e) in
