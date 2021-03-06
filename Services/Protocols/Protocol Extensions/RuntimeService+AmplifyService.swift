@@ -53,7 +53,6 @@ extension RuntimeService {
             default: break
         }
     }
-    #endif
     
     @available(iOS 13.0, *)
     func publishValue(value: Event) {
@@ -68,4 +67,5 @@ extension RuntimeService {
             (servicePublisher as! AmplifyServiceModelPublisher).send(error : error)
         }
     }
+
 }
