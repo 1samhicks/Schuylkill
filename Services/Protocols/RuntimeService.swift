@@ -11,38 +11,31 @@ import Combine
 import CoreMotion
 
 protocol RuntimeService : ResolverRegistrant {
-    
-    var servicePublisher : ServicePublisher { get }
-    func onReceiveValue(value: Event)
-    func onReceiveError(error : Error)
+    associatedtype publisher
+    var servicePublisher : publisher { get }
+    func publishValue(value: Event)
+    func publishError(error : Error)
 }
 
 extension RuntimeService where Self : DeviceService {
-    var servicePublisher: ServicePublisher {
+    var servicePublisher : some ServicePublisher {
         return DeviceServicePublisher.shared!
     }
 }
 
-extension RuntimeService where Self : AmplifyAuthenticationService {
-    var servicePublisher : ServicePublisher {
-        return AmplifyServiceModelPublisher.shared!
-    }
-}
-
-extension RuntimeService where Self : AmplifyService {
-    var servicePublisher : ServicePublisher {
-        return AmplifyServiceModelPublisher.shared!
-    }
-}
-
 extension RuntimeService where Self : AmplifyS3StorageService {
-    var servicePublisher : ServicePublisher {
+    var servicePublisher : some ServicePublisher {
         return AmplifyServiceModelPublisher.shared!
     }
 }
 
-extension RuntimeService  {
+extension RuntimeService where Self : AmplifyAuthenticationService {
+    var servicePublisher : some ServicePublisher {
+        return AmplifyServiceModelPublisher.shared!
+    }
+}
 
+extension RuntimeService {
     @available(iOS 13.0, *)
     internal func onReceiveCompletion(completed: ApplicationError) {
         switch completed {
@@ -51,7 +44,7 @@ extension RuntimeService  {
         /*case .AuthError(let error) where AuthError.Type.self == AuthenticationError.self:
             servicePublisher.send(error: AuthenticationError.AuthError(message:error) as! ApplicationError)*/
         default:
-            servicePublisher.sendFinished()
+            break
         }
     }
     
@@ -77,12 +70,21 @@ extension RuntimeService  {
     }
     
     @available(iOS 13.0, *)
-    func onReceiveValue(value: Event) {
-            servicePublisher.send(input: value)
+    func publishValue(value: Event) {
+        if(servicePublisher is DeviceServicePublisher) {
+            (servicePublisher as! DeviceServicePublisher).send(input: value)
+        } else if(servicePublisher is AmplifyServiceModelPublisher) {
+            (servicePublisher as! AmplifyServiceModelPublisher).send(input : value)
+        }
+            
     }
     
-    func onReceiveError(error: Error)  {
-        servicePublisher.send(error: error)
+    func publishError(error: Error)  {
+        if(servicePublisher is DeviceServicePublisher) {
+            (servicePublisher as! DeviceServicePublisher).send(error: error)
+        } else if(servicePublisher is AmplifyServiceModelPublisher) {
+            (servicePublisher as! AmplifyServiceModelPublisher).send(error : error)
+        }
     }
 }
 

@@ -11,13 +11,13 @@ import Resolver
 import Combine
 
 class MusclesListViewModel : Identifiable, ViewModel {
-    @LazyInjected var amplifyService : AmplifyService?
+    @LazyInjected var amplifyService : AmplifyAPIService?
     
     required init() {
-        
+        amplifyService = AmplifyAPIService()
     }
     
-    func queryAll() -> AnyCancellable? {
+    public func queryAll() -> AnyCancellable? {
         return amplifyService?.getAllRecords(table: Muscle(friendlyName:"")) ?? nil
     }
 }

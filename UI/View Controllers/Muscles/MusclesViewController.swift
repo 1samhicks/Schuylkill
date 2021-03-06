@@ -27,7 +27,7 @@ public class MuscleCollectionViewController : UIViewController {
     
     public override func viewDidLoad() {
         self.addChild(collectionsView)
-        //muscleSubscription = viewModel
+        muscleSubscription = viewModel.queryAll()
         
     }
     public override func viewWillAppear(_ animated: Bool) {
