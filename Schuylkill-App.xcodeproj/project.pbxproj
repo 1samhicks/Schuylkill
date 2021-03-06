@@ -198,6 +198,12 @@
 		37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
 		37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
+		37BC23D725F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */; };
+		37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */; };
+		37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */; };
+		37BC23E125F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
+		37BC23E225F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
+		37BC23E325F3FF080088E581 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC23E025F3FF080088E581 /* Image.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -450,6 +456,8 @@
 		37BC236B25F3BD420088E581 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		37BC237D25F3BFAF0088E581 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		37BC23A025F3C4070088E581 /* Resolver+DeviceInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+DeviceInjection.swift"; sourceTree = "<group>"; };
+		37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntryViewController.swift; sourceTree = "<group>"; };
+		37BC23E025F3FF080088E581 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -641,6 +649,7 @@
 		3764F16F25EF52D5000799A9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				37BC23DF25F3FEFA0088E581 /* Helpers */,
 				3764F17225EF5322000799A9 /* Onboarding Flow */,
 			);
 			path = "View Controllers";
@@ -740,6 +749,7 @@
 		37BC220925F38DC30088E581 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -857,6 +867,14 @@
 				37F9442025D3E31A00243AC1 /* FirebaseService.swift */,
 			);
 			path = "Firebase Services";
+			sourceTree = "<group>";
+		};
+		37BC23DF25F3FEFA0088E581 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				37BC23E025F3FF080088E581 /* Image.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
@@ -1591,6 +1609,7 @@
 				3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */,
 				37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC21FD25F38C180088E581 /* ApplicationLoadFactory.swift in Sources */,
+				37BC23D725F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
 				37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */,
 				379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				3764EFDB25EBE264000799A9 /* ApplicationError.swift in Sources */,
@@ -1625,6 +1644,7 @@
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
 				3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */,
 				37BC229125F3956D0088E581 /* AmplifyEvent.swift in Sources */,
+				37BC23E125F3FF080088E581 /* Image.swift in Sources */,
 				3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				379E62E125E2314300B894BA /* UserData.swift in Sources */,
@@ -1670,6 +1690,7 @@
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				37BC227725F394DC0088E581 /* Event.swift in Sources */,
+				37BC23E225F3FF080088E581 /* Image.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
@@ -1683,6 +1704,7 @@
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
+				37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225625F3944E0088E581 /* ServiceState.swift in Sources */,
@@ -1734,6 +1756,7 @@
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				37BC227825F394DE0088E581 /* Event.swift in Sources */,
+				37BC23E325F3FF080088E581 /* Image.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* Schuylkill_AppUITests.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
@@ -1747,6 +1770,7 @@
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
+				37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */,
