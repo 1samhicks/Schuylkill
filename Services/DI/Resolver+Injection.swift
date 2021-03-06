@@ -7,14 +7,20 @@
 
 import Foundation
 import Resolver
-import Amplify
+
+#if !os(watchOS)
 import OSLog
+import Amplify
+#endif
+
 extension Resolver {
     
     public static func registerAllServices() {
+        #if !os(watchOS)
         Resolver.register(instance: AmplifyAPIService())
         Resolver.register(instance: AmplifyAuthenticationService())
         Resolver.register(instance: AmplifyS3StorageService())
+        #endif
         Resolver.register(instance: LocationService())
         Resolver.register(instance: AccelerometerService())
         Resolver.register(instance: MagnometerService())
@@ -35,9 +41,9 @@ extension Resolver {
         Resolver.main.register(typeOf,name: Resolver.Name.initialize(instance.name),factory: { typeOf.init() } ).scope(scope)
         
         
-        
+        #if !os(watchOS)
         OSLog.registerService(resolved: typeOf, name: name, key: key, containerName: "Resolver.main")
-        
+        #endif
     }
 }
 
