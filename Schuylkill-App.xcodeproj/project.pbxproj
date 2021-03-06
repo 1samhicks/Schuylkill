@@ -204,6 +204,9 @@
 		37BC241625F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
 		37BC241725F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
 		37BC241825F402530088E581 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC241525F402530088E581 /* OnboardingView.swift */; };
+		37BC241F25F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
+		37BC242025F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
+		37BC242125F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -459,6 +462,7 @@
 		37BC23D625F3FB2C0088E581 /* OnboardingEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingEntryViewController.swift; sourceTree = "<group>"; };
 		37BC23E025F3FF080088E581 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		37BC241525F402530088E581 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		37BC241E25F406770088E581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -961,6 +965,7 @@
 				37F7C63925CD3BD9000D8FAF /* AppDelegate */,
 				37F7C5AB25CD3891000D8FAF /* Preview Content */,
 				37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */,
+				37BC241E25F406770088E581 /* Assets.xcassets */,
 			);
 			path = "Schuylkill-App";
 			sourceTree = "<group>";
@@ -1351,6 +1356,7 @@
 				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
 				3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
+				37BC241F25F406770088E581 /* Assets.xcassets in Resources */,
 				37EE82CF25E6307100B07673 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1360,6 +1366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D025E6307100B07673 /* Main.storyboard in Resources */,
+				37BC242025F406770088E581 /* Assets.xcassets in Resources */,
 				37EE831025E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1369,6 +1376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D125E6307100B07673 /* Main.storyboard in Resources */,
+				37BC242125F406770088E581 /* Assets.xcassets in Resources */,
 				37EE831125E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

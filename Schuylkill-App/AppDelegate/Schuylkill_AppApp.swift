@@ -18,7 +18,7 @@ struct Schuylkill_AppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     var body: some Scene {
         WindowGroup {
-            AuthenticationView()
+            OnboardingView()
         }
     }
     
@@ -60,7 +60,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
             Amplify.Logging.logLevel = .verbose
-            try Amplify.configure()
+            //try Amplify.configure()
             print("Initialized Amplify");
         } catch {
             print("Could not initialize Amplify: \(error)")
