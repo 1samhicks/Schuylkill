@@ -23,17 +23,20 @@ public class GyroService : DeviceService {
     }
     
     public func startService() {
+        dispatchSemaphore.wait()
+        state = .running
         motionManager.startGyroUpdates()
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter( { $0 != nil})
             .sink() { gyro in
             self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
         }
+        dispatchSemaphore.signal()
     }
     
     func pauseService() {
         dispatchSemaphore.wait()
-        state = .running
+        state = .paused
         motionManager.stopGyroUpdates()
         dispatchSemaphore.signal()
     }
@@ -46,6 +49,10 @@ public class GyroService : DeviceService {
     }
     
     func endService() {
+        dispatchSemaphore.wait()
+        state = .finished
         motionManager.stopGyroUpdates()
+        resultSink.cancel()
+        dispatchSemaphore.signal()
     }
 }
