@@ -11,7 +11,13 @@ import Amplify
 
 @available(iOS 13.0, *)
 struct AmplifyServiceModelPublisher : AmplifyModelChangePublisher {
-   
+    func receive<S>(subscriber sub: S) where S : Subscriber, Self.Failure == S.Failure, Self.Output == S.Input {
+        //subject
+    }
+    typealias Output = AmplifyMutationEvent
+    
+    typealias Failure = AmplifyError
+    
     static let shared : Self? = AmplifyServiceModelPublisher()
     
     func send(input: Event) {

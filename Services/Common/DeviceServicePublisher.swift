@@ -11,10 +11,17 @@
     
     
     public class DeviceServicePublisher : ServicePublisher {
+        public typealias Output = DeviceEvent
+        public typealias Failure = DeviceError
+        
+        public func receive<S>(subscriber: S) where S : Subscriber, Failure == S.Failure, Output == S.Input {
+            
+        }
+        
         static let shared : DeviceServicePublisher? = DeviceServicePublisher()
         
         func send(input: Event) {
-            
+            send(input: input as! DeviceEvent)
         }
         
         private init() {
