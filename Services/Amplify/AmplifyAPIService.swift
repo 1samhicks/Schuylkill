@@ -10,7 +10,9 @@ import Amplify
 import CoreLocation
 import Combine
 
-public class AmplifyService : RuntimeService {
+public class AmplifyAPIService : RuntimeService {
+    var state: ServiceState?
+    
     func createMuscle() -> AnyCancellable {
         let muscle = Muscle(friendlyName: "Abs")
         let sink = Amplify.API.mutate(request: .create(muscle))
@@ -98,9 +100,9 @@ public class AmplifyService : RuntimeService {
         
     }
     
-    var servicePublisher: ServicePublisher {
+    var servicePublisher: some ServicePublisher {
         get {
-            return AmplifyServiceModelPublisher() as ServicePublisher
+            return AmplifyServiceModelPublisher() 
         }
     }
     

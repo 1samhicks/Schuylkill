@@ -11,7 +11,6 @@ import Amplify
 
 class AmplifyS3StorageService : RuntimeService {
     
-    
     // In your type's instance variables
     var resultSink: AnyCancellable?
     var progressSink: AnyCancellable?

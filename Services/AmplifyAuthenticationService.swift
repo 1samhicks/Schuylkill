@@ -13,10 +13,20 @@ import AmplifyPlugins
 import OSLog
 
 public class AmplifyAuthenticationService : RuntimeService {
+    var _state : ServiceState?
+    var serviceState : ServiceState? {
+        get {
+            return _state
+        }
+        set {
+            _state = newValue
+        }
+    }
     
     var sink : AnyCancellable?
     
     public required init() {
+        _state = .stopped
         // Assumes `sink` is declared as an instance variable in your view controller
         sink = Amplify.Hub
             .publisher(for: .auth)
@@ -130,7 +140,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 }
             }
             receiveValue: { val in
-                self.onReceiveValue(value:AuthenticationEvent.started)
+                self.publishValue(value:AuthenticationEvent.started)
             }
     }
     
