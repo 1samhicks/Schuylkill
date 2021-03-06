@@ -180,6 +180,11 @@
 		37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
 		37BC232325F39B1A0088E581 /* Resolver+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* Resolver+Registration.swift */; };
 		37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
+		37BC234E25F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
+		37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
+		37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
+		37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
+		37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -431,6 +436,7 @@
 		37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModelChangePublisher.swift; sourceTree = "<group>"; };
 		37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+DeviceService.swift"; sourceTree = "<group>"; };
 		37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+AmplifyService.swift"; sourceTree = "<group>"; };
+		37BC234D25F3A2C40088E581 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -824,6 +830,7 @@
 				379E649B25E3B93E00B894BA /* MotionService.swift */,
 				379E64A525E3B96600B894BA /* AccelerometerService.swift */,
 				377A503C25E9191500D8C5F1 /* MagnometerService.swift */,
+				37BC234D25F3A2C40088E581 /* PedometerService.swift */,
 			);
 			path = "Device Services";
 			sourceTree = "<group>";
@@ -1599,6 +1606,7 @@
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				379E62E125E2314300B894BA /* UserData.swift in Sources */,
 				3764F15625EF4978000799A9 /* FitnessCenter+Schema.swift in Sources */,
+				37BC234E25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				379E650E25E413BA00B894BA /* Resolver+Injection.swift in Sources */,
 				3764F15725EF4978000799A9 /* GymWorkout.swift in Sources */,
 				379E631B25E23B1D00B894BA /* Location+Extensions.swift in Sources */,
@@ -1632,6 +1640,7 @@
 				377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
@@ -1695,6 +1704,7 @@
 				377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
@@ -1758,6 +1768,7 @@
 				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
+				37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37BC227E25F394DE0088E581 /* Event.swift in Sources */,
@@ -1771,6 +1782,7 @@
 				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */,
 				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
+				37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */,
 				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
 				379E655725E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */,
