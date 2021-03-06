@@ -39,6 +39,9 @@ import WatchConnectivity
 import RxSwift
 import RxCocoa
 import CoreMotion
+import Amplify
+import AmplifyPlugins
+import Resolver
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
         private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
@@ -70,7 +73,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
       
-        //Messaging.messaging().apnsToken = deviceToken
+        print(deviceToken)
     }
     private func registerForRemoteNotifications() {
         if #available(iOS 10.0, *) {
