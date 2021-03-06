@@ -29,7 +29,7 @@ protocol DevicePublisher : ServicePublisher {
     func sendFinished()*/
 }
 
-protocol ServicePublisher  {
+protocol ServicePublisher : Publisher  {
 
     func send(input: Event)
 
