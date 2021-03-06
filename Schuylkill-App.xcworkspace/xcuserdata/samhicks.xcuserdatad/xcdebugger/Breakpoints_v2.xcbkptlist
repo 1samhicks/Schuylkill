@@ -23,32 +23,48 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C7CC2AE2-80C8-4112-82BD-191CA1C0F3FA"
+            uuid = "437A1EF9-5002-4578-A99F-9A533EBAB9A3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/AWSMobileClient/AWSAuthSDK/Sources/AWSMobileClient/AWSMobileClientExtensions.swift"
+            filePath = "Schuylkill-App/AppDelegate/Schuylkill_AppApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1118"
-            endingLineNumber = "1118"
-            landmarkName = "loadHostedUIScopesFromKeychain()"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
+            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CF6322EF-5390-4D6A-B705-CC5154CCCB41"
+            uuid = "FA411C55-248D-4A2D-80E4-373A86E459E9"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Pods/AWSMobileClient/AWSAuthSDK/Sources/AWSMobileClient/AWSMobileClientExtensions.swift"
+            filePath = "Schuylkill-App/AppDelegate/Schuylkill_AppApp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1114"
-            endingLineNumber = "1114"
-            landmarkName = "loadOAuthURIQueryParametersFromKeychain()"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "registerForRemoteNotifications()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D2651BEE-3601-4D8B-A0D1-5C5A999F8D96"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Schuylkill-App/AppDelegate/Schuylkill_AppApp.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "application(_:didRegisterForRemoteNotificationsWithDeviceToken:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
