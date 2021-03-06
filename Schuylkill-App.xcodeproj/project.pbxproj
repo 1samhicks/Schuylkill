@@ -599,13 +599,15 @@
 			path = OSLog;
 			sourceTree = "<group>";
 		};
-		3764F0C225EF2FE3000799A9 /* Amplify */ = {
+		3764F0C225EF2FE3000799A9 /* Amplify Services */ = {
 			isa = PBXGroup;
 			children = (
+				377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */,
+				379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */,
 				37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */,
 				3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */,
 			);
-			path = Amplify;
+			path = "Amplify Services";
 			sourceTree = "<group>";
 		};
 		3764F0F425EF3964000799A9 /* Protocols */ = {
@@ -648,10 +650,9 @@
 		379E64B925E3BD6B00B894BA /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				37BC234525F3A1D60088E581 /* Protocol Extensions */,
 				379E64E325E3D8BC00B894BA /* DeviceService.swift */,
 				379E64ED25E3DAD400B894BA /* RuntimeService.swift */,
-				37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */,
-				37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -804,6 +805,36 @@
 				3764F0ED25EF3431000799A9 /* Model+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		37BC234525F3A1D60088E581 /* Protocol Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */,
+				37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */,
+			);
+			path = "Protocol Extensions";
+			sourceTree = "<group>";
+		};
+		37BC234625F3A20D0088E581 /* Device Services */ = {
+			isa = PBXGroup;
+			children = (
+				379E648225E3B62700B894BA /* LocationService.swift */,
+				379E649125E3B92400B894BA /* GyroService.swift */,
+				379E649B25E3B93E00B894BA /* MotionService.swift */,
+				379E64A525E3B96600B894BA /* AccelerometerService.swift */,
+				377A503C25E9191500D8C5F1 /* MagnometerService.swift */,
+			);
+			path = "Device Services";
+			sourceTree = "<group>";
+		};
+		37BC234725F3A22D0088E581 /* Firebase Services */ = {
+			isa = PBXGroup;
+			children = (
+				37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */,
+				37F9442025D3E31A00243AC1 /* FirebaseService.swift */,
+			);
+			path = "Firebase Services";
 			sourceTree = "<group>";
 		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
@@ -1008,21 +1039,14 @@
 		37F7C77E25CD6674000D8FAF /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3764F0C225EF2FE3000799A9 /* Amplify */,
+				37BC234725F3A22D0088E581 /* Firebase Services */,
+				37BC234625F3A20D0088E581 /* Device Services */,
+				3764F0C225EF2FE3000799A9 /* Amplify Services */,
 				3764EFB425EBDD67000799A9 /* Common */,
 				379E650C25E4138A00B894BA /* DI */,
 				379E64C925E3C3BB00B894BA /* Common  */,
 				379E64B925E3BD6B00B894BA /* Protocols */,
 				37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */,
-				37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */,
-				37F9442025D3E31A00243AC1 /* FirebaseService.swift */,
-				379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */,
-				379E648225E3B62700B894BA /* LocationService.swift */,
-				379E649125E3B92400B894BA /* GyroService.swift */,
-				379E649B25E3B93E00B894BA /* MotionService.swift */,
-				379E64A525E3B96600B894BA /* AccelerometerService.swift */,
-				377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */,
-				377A503C25E9191500D8C5F1 /* MagnometerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
