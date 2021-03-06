@@ -34,11 +34,15 @@
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>"We watch your arm movement and locate you on the gym floor.</string>
+	<string>&quot;We watch your arm movement and locate you on the gym floor.&quot;</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>"We watch your arm movement and locate you on the gym floor.</string>
+	<string>&quot;We watch your arm movement and locate you on the gym floor.&quot;</string>
+	<key>NSMotionUsageDescription</key>
+	<string>&quot;We track your motion to record all movement events&quot;</string>
 	<key>NSMainNibFile</key>
 	<string>MainWindow</string>
+	<key>NSCameraUsageDescription</key>
+	<string>&quot;We need this to scan bar codes and QR codes&quot;</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
