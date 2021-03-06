@@ -12,7 +12,7 @@ import OSLog
 extension Resolver {
     
     public static func registerAllServices() {
-        Resolver.register(instance: AmplifyService())
+        Resolver.register(instance: AmplifyAPIService())
         Resolver.register(instance: AmplifyAuthenticationService())
         Resolver.register(instance: AmplifyS3StorageService())
         Resolver.register(instance: LocationService())

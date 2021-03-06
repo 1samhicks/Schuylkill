@@ -10,15 +10,13 @@ import CoreMotion
 import Combine
 import Amplify
 public class GyroService : DeviceService {
+    var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
+    
     var resultSink: AnyCancellable = AnyCancellable({})
     var serviceState: ServiceState? {
         get {
             return nil
         }
-    }
-    
-    var servicePublisher: ServicePublisher {
-        DeviceServicePublisher.shared!
     }
     
     required public init() {
@@ -29,7 +27,7 @@ public class GyroService : DeviceService {
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter( { $0 != nil})
             .sink() { gyro in
-            self.onReceiveValue(value: DeviceEvent.logItemEvent(gyro!))
+            self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
         }
     }
     
@@ -37,12 +35,11 @@ public class GyroService : DeviceService {
          
     }
     
-    func endService() {
-        motionManager.stopGyroUpdates()
+    func unpauseService() {
+        
     }
     
-    
-    public func receive(subscriber: GyroService)  {
-        
+    func endService() {
+        motionManager.stopGyroUpdates()
     }
 }

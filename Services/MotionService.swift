@@ -11,6 +11,8 @@ import Combine
 import OSLog
 
 public class MotionService : DeviceService {
+    var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
+    
     var resultSink: AnyCancellable = AnyCancellable({})
     
     typealias CMDeviceMotionHandler = (CMDeviceMotion?, Error?) -> Void
@@ -26,9 +28,8 @@ public class MotionService : DeviceService {
     }
     
     public func startService() {
-        
-        motionManager.accelerometerUpdateInterval = 0.1
         motionManager.deviceMotionUpdateInterval = 0.1
+        motionManager.startDeviceMotionUpdates()
         resultSink = motionManager.publisher(for: \.deviceMotion).sink() { _ in
             
         }
@@ -36,6 +37,9 @@ public class MotionService : DeviceService {
     
     func pauseService() {
         
+    }
+    
+    func unpauseService()  {
     }
     
     func endService() {
