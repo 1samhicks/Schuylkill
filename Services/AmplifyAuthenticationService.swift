@@ -187,7 +187,7 @@ public class AmplifyAuthenticationService : RuntimeService {
     func updateUserData(withSignInStatus status : Bool) {
         DispatchQueue.main.async() {
             let userData : UserData = .shared
-            userData.isSignedIn = status
+            userData.isUserLoggedIn = status
         }
     }
     
