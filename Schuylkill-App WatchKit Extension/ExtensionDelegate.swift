@@ -22,6 +22,7 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()
     
     public func applicationDidFinishLaunching() {
+        Resolver.registerAllServices()
         
     }
 
