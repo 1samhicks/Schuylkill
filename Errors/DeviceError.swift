@@ -8,5 +8,12 @@
 import Foundation
 
 public enum DeviceError: ApplicationError {
-    case LocationError(Error?,String?)
+    
+    /// Convenience typealias to disambiguate positional parameters of DeviceErrors
+    public typealias ErrorDescription = String?
+
+    /// Convenience typealias to disambiguate positional parameters of DeviceErrors
+    public typealias RecoverySuggestion = String?
+    
+    case LocationError(description: ErrorDescription,suggestion: RecoverySuggestion)
 }
