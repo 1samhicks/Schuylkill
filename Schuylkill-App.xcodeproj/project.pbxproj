@@ -185,6 +185,13 @@
 		37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
 		37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
 		37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E649125E3B92400B894BA /* GyroService.swift */; };
+		37BC236C25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
+		37BC236D25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
+		37BC236E25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
+		37BC236F25F3BD420088E581 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37BC236B25F3BD420088E581 /* Interface.storyboard */; };
+		37BC237E25F3BFAF0088E581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC237D25F3BFAF0088E581 /* App.swift */; };
+		37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
+		37BC239425F3C06C0088E581 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -200,9 +207,6 @@
 		37EE830F25E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831025E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831125E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
-		37EE833225E654BF00B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
-		37EE833825E654C000B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
-		37EE833925E654C100B07673 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */; };
 		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
 		37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */; };
 		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
@@ -437,6 +441,8 @@
 		37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+DeviceService.swift"; sourceTree = "<group>"; };
 		37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+AmplifyService.swift"; sourceTree = "<group>"; };
 		37BC234D25F3A2C40088E581 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
+		37BC236B25F3BD420088E581 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		37BC237D25F3BFAF0088E581 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -969,6 +975,7 @@
 		37F7C5D725CD3892000D8FAF /* Schuylkill-App WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				37BC236B25F3BD420088E581 /* Interface.storyboard */,
 				37F7C5D825CD3892000D8FAF /* ExtensionDelegate.swift */,
 				37F7C5DA25CD3892000D8FAF /* ContentView.swift */,
 				37F7C5DC25CD3892000D8FAF /* NotificationController.swift */,
@@ -978,6 +985,7 @@
 				37F7C5E725CD3893000D8FAF /* Info.plist */,
 				37F7C5E825CD3893000D8FAF /* PushNotificationPayload.apns */,
 				37F7C5E425CD3893000D8FAF /* Preview Content */,
+				37BC237D25F3BFAF0088E581 /* App.swift */,
 			);
 			path = "Schuylkill-App WatchKit Extension";
 			sourceTree = "<group>";
@@ -1309,6 +1317,7 @@
 				377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */,
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
 				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
+				37BC236C25F3BD420088E581 /* Interface.storyboard in Resources */,
 				3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
 				37EE82CF25E6307100B07673 /* Main.storyboard in Resources */,
@@ -1320,6 +1329,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D025E6307100B07673 /* Main.storyboard in Resources */,
+				37BC236D25F3BD420088E581 /* Interface.storyboard in Resources */,
 				37EE831025E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1329,6 +1339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EE82D125E6307100B07673 /* Main.storyboard in Resources */,
+				37BC236E25F3BD420088E581 /* Interface.storyboard in Resources */,
 				37EE831125E64E4600B07673 /* FlickrFiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1346,6 +1357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37F7C5E625CD3893000D8FAF /* Preview Assets.xcassets in Resources */,
+				37BC236F25F3BD420088E581 /* Interface.storyboard in Resources */,
 				37F7C5E325CD3893000D8FAF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1585,7 +1597,6 @@
 				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
-				37EE833225E654BF00B07673 /* ExtensionDelegate.swift in Sources */,
 				37F9441425D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
 				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
@@ -1658,7 +1669,6 @@
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
-				37EE833825E654C000B07673 /* ExtensionDelegate.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
@@ -1722,7 +1732,6 @@
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
-				37EE833925E654C100B07673 /* ExtensionDelegate.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
@@ -1762,15 +1771,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37BC237E25F3BFAF0088E581 /* App.swift in Sources */,
 				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				37BC223125F393730088E581 /* UserData.swift in Sources */,
 				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
+				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
 				37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */,
 				37BC227E25F394DE0088E581 /* Event.swift in Sources */,
 				37BC22B425F395E00088E581 /* DeviceError.swift in Sources */,
 				37BC232325F39B1A0088E581 /* Resolver+Registration.swift in Sources */,

@@ -9,7 +9,14 @@ import Foundation
 import CoreLocation
 import Combine
 
-public class LocationService : DeviceService, CLLocationManagerDelegate {
+public class LocationService : NSObject, DeviceService, CLLocationManagerDelegate {
+    var state: ServiceState?
+    
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+
+    
     
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     
@@ -40,11 +47,11 @@ public class LocationService : DeviceService, CLLocationManagerDelegate {
     private var locationManager : CLLocationManager?
     
     init(locationManager loc: CLLocationManager) {
+        super.init()
         locationManager = loc
         locationManager!.activityType = CLActivityType.fitness
         locationManager!.allowsBackgroundLocationUpdates = true
         
-        super.init()
         
         locationManager!.delegate = self
     }
@@ -84,6 +91,10 @@ public class LocationService : DeviceService, CLLocationManagerDelegate {
     public func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         self.publishValue(value: DeviceEvent.exitedRegion(region))
     }
+    
+    public func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
+        
+    }
     #endif
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -91,9 +102,7 @@ public class LocationService : DeviceService, CLLocationManagerDelegate {
     }
 
 
-    public func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
-        
-    }
+    
 
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
