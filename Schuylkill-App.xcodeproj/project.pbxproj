@@ -209,6 +209,9 @@
 		37BC242125F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
 		37BC242725F409BD0088E581 /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
 		37BC242D25F409BE0088E581 /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
+		37BC243925F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
+		37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
+		37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -465,6 +468,7 @@
 		37BC23E025F3FF080088E581 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		37BC241525F402530088E581 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		37BC241E25F406770088E581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37BC243825F417890088E581 /* StorageServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceError.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -621,6 +625,7 @@
 				3764F07825EE31B2000799A9 /* DeviceError.swift */,
 				3764F19225EF6152000799A9 /* AmplifyError.swift */,
 				37BC21F525F384FD0088E581 /* InternalApplicationError.swift */,
+				37BC243825F417890088E581 /* StorageServiceError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -1614,6 +1619,7 @@
 				379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */,
 				3764F15325EF4978000799A9 /* Location.swift in Sources */,
 				3764F03B25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
+				37BC243925F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C65125CD3C82000D8FAF /* Command.swift in Sources */,
 				3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */,
 				37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */,
@@ -1721,6 +1727,7 @@
 				37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */,
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241725F402530088E581 /* OnboardingView.swift in Sources */,
+				37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
@@ -1789,6 +1796,7 @@
 				37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */,
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241825F402530088E581 /* OnboardingView.swift in Sources */,
+				37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
