@@ -21,7 +21,11 @@ extension Resolver {
         Resolver.register(instance: AmplifyAuthenticationService())
         Resolver.register(instance: AmplifyS3StorageService())
         #endif
+        
         Resolver.register(instance: LocationService())
+        Resolver.register(instance: GyroService())
+        Resolver.register(instance: MotionService())
+        Resolver.register(instance: PedometerService())
         Resolver.register(instance: AccelerometerService())
         Resolver.register(instance: MagnometerService())
     }
@@ -43,6 +47,9 @@ extension Resolver {
         
         #if !os(watchOS)
         OSLog.registerService(resolved: typeOf, name: name, key: key, containerName: "Resolver.main")
+        #else
+        let message = "Registering service: \(typeOf.self) named: \(name) with key: \(key) in container: \(Resolver.main)"
+        print(message)
         #endif
     }
 }
