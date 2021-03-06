@@ -196,6 +196,8 @@
 		37BC23AD25F3C58C0088E581 /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 37BC23AC25F3C58C0088E581 /* Resolver */; };
 		37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E650D25E413BA00B894BA /* Resolver+Injection.swift */; };
 		37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
+		37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
+		37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
@@ -1699,6 +1701,7 @@
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */,
@@ -1762,6 +1765,7 @@
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */,
