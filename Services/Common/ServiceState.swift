@@ -10,6 +10,7 @@ import Foundation
 enum ServiceState  {
     case paused
     case stopped
+    case running
     case canceled
     case finished
 }

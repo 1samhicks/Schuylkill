@@ -9,14 +9,16 @@ import Foundation
 import CoreMotion
 import Combine
 import OSLog
+
 protocol DeviceService : RuntimeService {
+    var dispatchSemaphore : DispatchSemaphore { get set }
     var resultSink: AnyCancellable { get set }
     func startService()
     func pauseService()
+    func unpauseService()
     func endService()
     var motionManager : CMMotionManager { get }
     var fifoOperationQueue : OperationQueue { get }
-    
     var serviceState : ServiceState? { get }
 }
 
