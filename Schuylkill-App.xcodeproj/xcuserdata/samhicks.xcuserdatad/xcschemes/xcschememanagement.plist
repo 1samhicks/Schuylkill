@@ -133,22 +133,22 @@
 		<key>Schuylkill-App WatchKit App (Complication).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>118</integer>
+			<integer>27</integer>
 		</dict>
 		<key>Schuylkill-App WatchKit App (Notification).xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>117</integer>
+			<integer>26</integer>
 		</dict>
 		<key>Schuylkill-App WatchKit App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>115</integer>
+			<integer>24</integer>
 		</dict>
 		<key>Schuylkill-App.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>116</integer>
+			<integer>25</integer>
 		</dict>
 	</dict>
 </dict>
