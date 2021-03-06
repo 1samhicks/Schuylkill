@@ -9,14 +9,21 @@ import Foundation
 import Combine
 import CoreMotion
 
+
+extension CMPedometer {
+    static let shared = CMPedometer()
+}
+
 public class PedometerService : DeviceService {
+    var pedometer = CMPedometer.shared
+    
+    
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
     
     
     var state: ServiceState?
-    
     
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     var resultSink: AnyCancellable = AnyCancellable({})
@@ -26,20 +33,45 @@ public class PedometerService : DeviceService {
     }
     
     func startService() {
-        
-        motionManager.magnetometerUpdateInterval = 0.1
-        motionManager.startMagnetometerUpdates()
+        dispatchSemaphore.wait()
+        state = .running
+        pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
+            if let error = error {
+                self.publishError(error:DeviceError.PedometerError(innerError: error, description: "", suggestion: ""))
+            }
+            else if let event = event {
+                self.publishValue(value: DeviceEvent.pedometerEvent(event))
+            }
+        }
+        dispatchSemaphore.signal()
     }
     
     func pauseService() {
-        
+        dispatchSemaphore.wait()
+        state = .paused
+        pedometer.stopEventUpdates()
+        dispatchSemaphore.signal()
     }
     
     func unpauseService() {
-        
+        dispatchSemaphore.wait()
+        state = .running
+        pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
+            if let error = error {
+                self.publishError(error:DeviceError.PedometerError(innerError: error, description: "", suggestion: ""))
+            }
+            else if let event = event {
+                self.publishValue(value: DeviceEvent.pedometerEvent(event))
+            }
+        }
+        dispatchSemaphore.signal()
     }
     
     func endService() {
-        
+        dispatchSemaphore.wait()
+        state = .finished
+        pedometer.stopEventUpdates()
+        resultSink.cancel()
+        dispatchSemaphore.signal()
     }
 }

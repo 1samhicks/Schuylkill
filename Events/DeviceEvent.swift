@@ -16,4 +16,5 @@ public enum DeviceEvent : Event {
     case headingEvent(CLHeading)
     case enteredRegion(CLRegion)
     case exitedRegion(CLRegion)
+    case pedometerEvent(CMPedometerEvent)
 }
