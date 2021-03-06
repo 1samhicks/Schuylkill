@@ -94,8 +94,6 @@
 		379E636F25E2442400B894BA /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E636E25E2442400B894BA /* AuthenticationViewController.swift */; };
 		379E637A25E2573200B894BA /* AmplifyAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E637925E2573200B894BA /* AmplifyAuthenticationService.swift */; };
 		379E63F625E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
-		379E63F725E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
-		379E63F825E26DD400B894BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E63F525E26DD400B894BA /* QRViewController.swift */; };
 		379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
 		379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
 		379E648325E3B62700B894BA /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E648225E3B62700B894BA /* LocationService.swift */; };
@@ -604,12 +602,6 @@
 			isa = PBXGroup;
 			children = (
 				3764F17225EF5322000799A9 /* Onboarding Flow */,
-				3764F17125EF5310000799A9 /* Authentication */,
-				37EE830325E6311400B07673 /* Muscles */,
-				379E63F525E26DD400B894BA /* QRViewController.swift */,
-				379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */,
-				379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */,
-				37BC21E925F381FB0088E581 /* LocationNagViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -617,22 +609,14 @@
 		3764F17025EF52E9000799A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */,
-				3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */,
-				3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */,
-				3764F17F25EF5374000799A9 /* QRView.swift */,
-				3764F18625EF53F8000799A9 /* MuscleListView.swift */,
-				37BC21E225F381A00088E581 /* LocationNagView.swift */,
+				37BC221725F38E4C0088E581 /* Barcode */,
+				37BC220C25F38E3E0088E581 /* QR */,
+				37BC220B25F38E010088E581 /* Muscles */,
+				37BC220A25F38DE30088E581 /* Authentication */,
+				37BC220925F38DC30088E581 /* Onboarding */,
+				37BC220325F38DAD0088E581 /* Location Nag */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		3764F17125EF5310000799A9 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				379E636E25E2442400B894BA /* AuthenticationViewController.swift */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		3764F17225EF5322000799A9 /* Onboarding Flow */ = {
@@ -705,6 +689,62 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		37BC220325F38DAD0088E581 /* Location Nag */ = {
+			isa = PBXGroup;
+			children = (
+				37BC21E925F381FB0088E581 /* LocationNagViewController.swift */,
+				37BC21E225F381A00088E581 /* LocationNagView.swift */,
+			);
+			path = "Location Nag";
+			sourceTree = "<group>";
+		};
+		37BC220925F38DC30088E581 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		37BC220A25F38DE30088E581 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				379E636E25E2442400B894BA /* AuthenticationViewController.swift */,
+				37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		37BC220B25F38E010088E581 /* Muscles */ = {
+			isa = PBXGroup;
+			children = (
+				3764F18625EF53F8000799A9 /* MuscleListView.swift */,
+				37EE82E725E630C500B07673 /* MusclesCollectionView.swift */,
+				379E655D25E4F74100B894BA /* MusclesViewController.swift */,
+				37EE82E825E630C500B07673 /* MuscleCell.swift */,
+			);
+			path = Muscles;
+			sourceTree = "<group>";
+		};
+		37BC220C25F38E3E0088E581 /* QR */ = {
+			isa = PBXGroup;
+			children = (
+				3764F17F25EF5374000799A9 /* QRView.swift */,
+				379E63F525E26DD400B894BA /* QRViewController.swift */,
+			);
+			path = QR;
+			sourceTree = "<group>";
+		};
+		37BC221725F38E4C0088E581 /* Barcode */ = {
+			isa = PBXGroup;
+			children = (
+				379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */,
+				379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */,
+				3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */,
+				3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */,
+			);
+			path = Barcode;
+			sourceTree = "<group>";
+		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -737,16 +777,6 @@
 				37EE82CE25E6307100B07673 /* Main.storyboard */,
 			);
 			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		37EE830325E6311400B07673 /* Muscles */ = {
-			isa = PBXGroup;
-			children = (
-				37EE82E725E630C500B07673 /* MusclesCollectionView.swift */,
-				379E655D25E4F74100B894BA /* MusclesViewController.swift */,
-				37EE82E825E630C500B07673 /* MuscleCell.swift */,
-			);
-			path = Muscles;
 			sourceTree = "<group>";
 		};
 		37F7C59925CD388F000D8FAF = {
@@ -1546,7 +1576,6 @@
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441525D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
-				379E63F725E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E64CC25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
@@ -1605,7 +1634,6 @@
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441625D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
-				379E63F825E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E64CD25E3C3E900B894BA /* DeviceMonitor.swift in Sources */,
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
@@ -1922,7 +1950,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
 				DEVELOPMENT_TEAM = 4M38TWPVJZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Schuylkill-App/Info.plist";
+				INFOPLIST_FILE = "Schuylkill-App/Info.plist/";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1950,7 +1978,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
 				DEVELOPMENT_TEAM = 4M38TWPVJZ;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Schuylkill-App/Info.plist";
+				INFOPLIST_FILE = "Schuylkill-App/Info.plist/";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
