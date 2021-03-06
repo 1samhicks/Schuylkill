@@ -15,6 +15,7 @@ target 'Schuylkill-App' do
     pod 'AWSS3'
     pod 'RxSwift', '6.1.0'
     pod 'RxCocoa', '6.1.0'
+    pod "SettingsAppAccess"
 
   target 'Schuylkill-AppTests' do
     inherit! :search_paths

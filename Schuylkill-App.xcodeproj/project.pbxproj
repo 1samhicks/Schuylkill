@@ -72,6 +72,7 @@
 		3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
 		3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
 		3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
+		3764F21A25F3647A000799A9 /* PaperOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 3764F21925F3647A000799A9 /* PaperOnboarding */; };
 		3772D69C25CD6F7B008F04DD /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 3772D69B25CD6F7B008F04DD /* Disk */; };
 		377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */; };
 		377A502925E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A502825E90E3400D8C5F1 /* AmplifyS3StorageService.swift */; };
@@ -244,9 +245,9 @@
 		37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
 		37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */; };
 		37F7C79225CD678E000D8FAF /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 37F7C79125CD678E000D8FAF /* Resolver */; };
-		37F9440725D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
-		37F9440825D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
-		37F9440925D3E0A900243AC1 /* AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyService.swift */; };
+		37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
+		37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
+		37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
 		37F9441425D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
 		37F9441525D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
 		37F9441625D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */; };
@@ -450,7 +451,7 @@
 		37F7C72525CD4A03000D8FAF /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Assign.swift"; sourceTree = "<group>"; };
 		37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationService.swift; sourceTree = "<group>"; };
-		37F9440625D3E0A900243AC1 /* AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyService.swift; sourceTree = "<group>"; };
+		37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIService.swift; sourceTree = "<group>"; };
 		37F9441325D3E23700243AC1 /* AppDelegate+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Injection.swift"; sourceTree = "<group>"; };
 		37F9442025D3E31A00243AC1 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Muscle+Extensions.swift"; sourceTree = "<group>"; };
@@ -482,6 +483,7 @@
 				37F7C74825CD5D3D000D8FAF /* RSBarcodes_Swift in Frameworks */,
 				37F9448A25D3F24E00243AC1 /* QRCodeReader in Frameworks */,
 				3772D69C25CD6F7B008F04DD /* Disk in Frameworks */,
+				3764F21A25F3647A000799A9 /* PaperOnboarding in Frameworks */,
 				37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */,
 				37F7C70925CD47B4000D8FAF /* SwifterSwift in Frameworks */,
 				37F9450E25D4207500243AC1 /* Amplify.framework in Frameworks */,
@@ -575,7 +577,7 @@
 		3764F0C225EF2FE3000799A9 /* Amplify */ = {
 			isa = PBXGroup;
 			children = (
-				37F9440625D3E0A900243AC1 /* AmplifyService.swift */,
+				37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */,
 				3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */,
 			);
 			path = Amplify;
@@ -1022,6 +1024,7 @@
 				37F7C79125CD678E000D8FAF /* Resolver */,
 				3772D69B25CD6F7B008F04DD /* Disk */,
 				37F9448925D3F24E00243AC1 /* QRCodeReader */,
+				3764F21925F3647A000799A9 /* PaperOnboarding */,
 			);
 			productName = "Schuylkill-App";
 			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
@@ -1153,6 +1156,7 @@
 				37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */,
 				3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */,
 				3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */,
 			);
 			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
 			projectDirPath = "";
@@ -1444,7 +1448,7 @@
 				37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */,
 				37F7C68D25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
 				379E64BB25E3BD7B00B894BA /* DeviceMonitoring.swift in Sources */,
-				37F9440725D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				37EE833225E654BF00B07673 /* ExtensioinDelegate.swift in Sources */,
@@ -1524,7 +1528,7 @@
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
-				37F9440825D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441525D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
 				379E63F725E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
@@ -1583,7 +1587,7 @@
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
-				37F9440925D3E0A900243AC1 /* AmplifyService.swift in Sources */,
+				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37F9441625D3E23700243AC1 /* AppDelegate+Injection.swift in Sources */,
 				379E63F825E26DD400B894BA /* QRViewController.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
@@ -2105,6 +2109,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Ramotion/paper-onboarding.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.5;
+			};
+		};
 		3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://1em6js2@gitroyalty.com/saoudrizwan/Disk";
@@ -2156,6 +2168,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3764F21925F3647A000799A9 /* PaperOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */;
+			productName = PaperOnboarding;
+		};
 		3772D69B25CD6F7B008F04DD /* Disk */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */;
