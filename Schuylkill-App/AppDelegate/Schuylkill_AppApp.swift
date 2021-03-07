@@ -43,6 +43,9 @@ import CoreMotion
 import Amplify
 import AmplifyPlugins
 import Resolver
+import SwiftyBeaver
+
+let log = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
         private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
@@ -62,7 +65,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             Amplify.Logging.logLevel = .verbose
             //try Amplify.configure()
             print("Initialized Amplify");
-        } catch(ApplicationRuntimeError.WatchConfigurationIssue(var description, var suggestion)) {
+        } catch ApplicationRuntimeError.WatchConfigurationIssue(let description, let suggestion) {
             
         } catch {
             print("Could not initialize Amplify: \(error)")

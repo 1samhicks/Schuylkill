@@ -7,7 +7,8 @@
 
 import Foundation
 import Amplify
-enum AmplifyError : ApplicationError {
+
+enum AmplifyError : ApplicationError, ErrorHandling {
     
     
     public init?(rawValue: String) {
@@ -17,7 +18,33 @@ enum AmplifyError : ApplicationError {
     typealias rawType = String
     public typealias RawValue = String
     
-    case unknown(ErrorDescription, RecoverySuggestion, Error? = nil)
-    case QueryError(causedBy: Error)
-    case QueryError(message: ErrorDescription? = nil)
+    case unknown(causedBy: Error? = nil,ErrorDescription, RecoverySuggestion)
+    case QueryError(causedBy: Error? = nil,message: ErrorDescription, RecoverySuggestion)
+    
+    var error : Error? {
+        switch self {
+        case .unknown(let causedBy,_,_):
+            fallthrough
+        case .QueryError(let causedBy,_,_):
+            return causedBy
+        }
+    }
+    
+    var description: ErrorDescription {
+        switch self {
+            case .unknown(_, let description,_):
+                fallthrough
+            case .QueryError(_,let description,_):
+                return description
+       }
+    }
+    
+    var suggestion : RecoverySuggestion {
+        switch self {
+            case .unknown(_,_,let suggestion):
+                return suggestion
+            case .QueryError(_,_,let suggestion):
+                return suggestion
+       }
+    }
 }
