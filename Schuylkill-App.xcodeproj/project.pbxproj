@@ -142,7 +142,7 @@
 		37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
 		37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E225F381A00088E581 /* LocationNagView.swift */; };
 		37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E925F381FB0088E581 /* LocationNagViewController.swift */; };
-		37BC21F625F384FD0088E581 /* InternalApplicationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* InternalApplicationError.swift */; };
+		37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */; };
 		37BC21FD25F38C180088E581 /* ApplicationLoadFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */; };
 		37BC223125F393730088E581 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
 		37BC225025F3944C0088E581 /* ServiceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1AB25F10125000799A9 /* ServiceState.swift */; };
@@ -451,7 +451,7 @@
 		37B9190225E7204B00F0BE01 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		37BC21E225F381A00088E581 /* LocationNagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagView.swift; sourceTree = "<group>"; };
 		37BC21E925F381FB0088E581 /* LocationNagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagViewController.swift; sourceTree = "<group>"; };
-		37BC21F525F384FD0088E581 /* InternalApplicationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalApplicationError.swift; sourceTree = "<group>"; };
+		37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRuntimeError.swift; sourceTree = "<group>"; };
 		37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLoadFactory.swift; sourceTree = "<group>"; };
 		37BC227025F394D60088E581 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		37BC228925F3953B0088E581 /* DeviceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceEvent.swift; sourceTree = "<group>"; };
@@ -551,6 +551,7 @@
 				3764F21A25F3647A000799A9 /* PaperOnboarding in Frameworks */,
 				37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */,
 				37F7C70925CD47B4000D8FAF /* SwifterSwift in Frameworks */,
+				37BC245825F500550088E581 /* SwiftyBeaver in Frameworks */,
 				37F9450E25D4207500243AC1 /* Amplify.framework in Frameworks */,
 				37F7C79225CD678E000D8FAF /* Resolver in Frameworks */,
 				7F618245CF71383F02F02DC2 /* Pods_Schuylkill_App.framework in Frameworks */,
@@ -624,7 +625,7 @@
 				3764EFDA25EBE264000799A9 /* ApplicationError.swift */,
 				3764F07825EE31B2000799A9 /* DeviceError.swift */,
 				3764F19225EF6152000799A9 /* AmplifyError.swift */,
-				37BC21F525F384FD0088E581 /* InternalApplicationError.swift */,
+				37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */,
 				37BC243825F417890088E581 /* StorageServiceError.swift */,
 			);
 			path = Errors;
@@ -1203,6 +1204,7 @@
 				3772D69B25CD6F7B008F04DD /* Disk */,
 				37F9448925D3F24E00243AC1 /* QRCodeReader */,
 				3764F21925F3647A000799A9 /* PaperOnboarding */,
+				37BC245725F500550088E581 /* SwiftyBeaver */,
 			);
 			productName = "Schuylkill-App";
 			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
@@ -1338,6 +1340,7 @@
 				3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */,
 				3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */,
+				37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 			);
 			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
 			projectDirPath = "";
@@ -1584,7 +1587,7 @@
 				37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */,
 				3764F0AC25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				379E654A25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
-				37BC21F625F384FD0088E581 /* InternalApplicationError.swift in Sources */,
+				37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */,
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
@@ -1729,6 +1732,7 @@
 				37BC241725F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37BC244725F4F8B50088E581 /* UIApplication.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
@@ -1798,6 +1802,7 @@
 				37BC241825F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37BC244825F4F8B60088E581 /* UIApplication.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
@@ -2362,6 +2367,14 @@
 				minimumVersion = 7.5.1;
 			};
 		};
+		37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyBeaver/SwiftyBeaver.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.9.3;
+			};
+		};
 		37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
@@ -2416,6 +2429,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
+		};
+		37BC245725F500550088E581 /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
 		};
 		37F7C70825CD47B4000D8FAF /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;

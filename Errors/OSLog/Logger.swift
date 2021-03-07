@@ -11,9 +11,13 @@ import Resolver
 
 extension OSLog {
     private static var logger = Logger()
-    private static var subsystem = Bundle.main.bundleIdentifier!
+    private static var main = Bundle.main.bundleIdentifier!
+    private static var watchRegistration = "watch registration"
     
-    static let diRegistration = OSLog(subsystem: subsystem, category: "dependency_injection_registration")
+    static let diRegistration = OSLog(subsystem: main, category: Bundle.Naming.dependencyInjection.rawValue)
+    static let watchOSRegistration = OSLog(subsystem: watchRegistration, category: Bundle.Naming.watchsetup.rawValue)
+    
+    
     
     static func registerService(resolved: ResolverRegistrant.Type,name : Resolver.Name, key : Int, containerName: String) {
         let message = "Registering service: \(resolved.self) named: \(name) with key: \(key) in container: \(containerName)"

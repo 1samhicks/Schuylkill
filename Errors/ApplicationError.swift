@@ -15,3 +15,7 @@ public typealias ErrorDescription = String?
 /// Convenience typealias to disambiguate positional parameters of DeviceErrors
 public typealias RecoverySuggestion = String?
 
+extension RecoverySuggestion {
+    static let none = "Recovery suggestion yet to be determined"
+}
+

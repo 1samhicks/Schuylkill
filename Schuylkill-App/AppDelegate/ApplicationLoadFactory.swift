@@ -17,6 +17,6 @@ public class ApplicationLoadFactory {
         } else if(!status.isLocationServiceEnabled) {
             return LocationNagView() as! V
         }
-        throw InternalApplicationError.InconsistentState("The user is in a state not recognized","")
+        throw ApplicationRuntimeError.InconsistentState("The user is in a state not recognized","")
     }
 }

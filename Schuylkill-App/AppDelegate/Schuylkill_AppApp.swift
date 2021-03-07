@@ -51,9 +51,9 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
-        application.setupWatchConnectivity(delegate: wcSessionChannelDelegate)
         Resolver.register()
         do {
+            try application.setupWatchConnectivity(delegate: wcSessionChannelDelegate)
             try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
             try Amplify.add(plugin: AWSAPIPlugin())
@@ -62,6 +62,8 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             Amplify.Logging.logLevel = .verbose
             //try Amplify.configure()
             print("Initialized Amplify");
+        } catch(ApplicationRuntimeError.WatchConfigurationIssue(var description, var suggestion)) {
+            
         } catch {
             print("Could not initialize Amplify: \(error)")
         }

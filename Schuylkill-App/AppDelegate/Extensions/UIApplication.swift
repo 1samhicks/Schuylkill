@@ -24,15 +24,15 @@ import UIKit
             return plist
         }
         
-        func setupWatchConnectivity(delegate : WatchSessionChannelDelegate) {
-            assert(WCSession.isSupported(), "This sample requires Watch Connectivity support!")
+        func setupWatchConnectivity(delegate : WatchSessionChannelDelegate) throws {
+            guard WCSession.isSupported() else {
+                throw ApplicationRuntimeError.WatchConfigurationIssue("WCSession.isSupported() returned false for this iOS device")
+            }
+            guard !WatchSettings.sharedContainerID.isEmpty else {
+                throw ApplicationRuntimeError.WatchConfigurationIssue("Specify a shared container ID for WatchSettings.sharedContainerID to use watch settings!")
+            }
+            
             WCSession.default.delegate = delegate
             WCSession.default.activate()
-            
-            // Remind the setup of WatchSettings.sharedContainerID.
-            //
-            if WatchSettings.sharedContainerID.isEmpty {
-                print("Specify a shared container ID for WatchSettings.sharedContainerID to use watch settings!")
-            }
         }
     }

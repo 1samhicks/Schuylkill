@@ -7,6 +7,7 @@
 
 import Foundation
 
-public enum InternalApplicationError : ApplicationError {
+public enum ApplicationRuntimeError : ApplicationError {
     case InconsistentState(ErrorDescription,RecoverySuggestion)
+    case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.none)
 }

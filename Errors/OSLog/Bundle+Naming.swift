@@ -10,6 +10,6 @@ import Foundation
 extension Bundle {
     enum Naming : String {
         case dependencyInjection = "dependency_injection_registration"
-        
+        case watchsetup = "watch_setup"
     }
 }
