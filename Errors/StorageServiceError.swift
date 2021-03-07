@@ -7,9 +7,44 @@
 
 import Foundation
 
-enum StorageServiceError : ApplicationError {
+enum StorageServiceError : ApplicationError, ErrorHandling {
+    
     case uploadError(ErrorDescription,RecoverySuggestion)
     case downloadError(ErrorDescription,RecoverySuggestion)
     case listFilesError(ErrorDescription,RecoverySuggestion)
     case removeFileError(ErrorDescription,RecoverySuggestion)
+    
+    var error: Error? {
+        get {
+            return nil
+        }
+    }
+    
+    var description: ErrorDescription {
+        switch self {
+            case .uploadError(let description,_):
+                fallthrough
+            case .downloadError(let description,_):
+                fallthrough
+            case .listFilesError(let description,_):
+                fallthrough
+            case .removeFileError(let description,_):
+                return description
+       }
+    }
+    
+    var suggestion : RecoverySuggestion {
+        switch self {
+            case .uploadError(_,let suggestion):
+                fallthrough
+            case .downloadError(_,let suggestion):
+                fallthrough
+            case .listFilesError(_,let suggestion):
+                fallthrough
+            case .removeFileError(_,let suggestion):
+                return suggestion
+       }
+    }
 }
+
+

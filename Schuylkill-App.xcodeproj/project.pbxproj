@@ -212,7 +212,15 @@
 		37BC243925F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
 		37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
 		37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
+		37BC244725F4F8B50088E581 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
+		37BC244825F4F8B60088E581 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
+		37BC245825F500550088E581 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 37BC245725F500550088E581 /* SwiftyBeaver */; };
+		37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
+		37E8763B25F5333800B0F333 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8763A25F5333800B0F333 /* ErrorHandling.swift */; };
+		37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
+		37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
+		37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -469,8 +477,10 @@
 		37BC241525F402530088E581 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		37BC241E25F406770088E581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37BC243825F417890088E581 /* StorageServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceError.swift; sourceTree = "<group>"; };
+		37BC246425F505EA0088E581 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaver.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		37E8763A25F5333800B0F333 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
 		37EE828D25E61DCF00B07673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EE828E25E61DCF00B07673 /* Schuylkill-App WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Schuylkill-App WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -620,6 +630,8 @@
 		3764EFCD25EBE1F2000799A9 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
+				37E8763925F5332900B0F333 /* Protocols */,
+				37BC246325F505D10088E581 /* Swifty Beaver */,
 				3764F04825EE0CEF000799A9 /* OSLog */,
 				3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */,
 				3764EFDA25EBE264000799A9 /* ApplicationError.swift */,
@@ -891,12 +903,28 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		37BC246325F505D10088E581 /* Swifty Beaver */ = {
+			isa = PBXGroup;
+			children = (
+				37BC246425F505EA0088E581 /* SwiftyBeaver.swift */,
+			);
+			path = "Swifty Beaver";
+			sourceTree = "<group>";
+		};
 		37CCF35525CED071009DBE02 /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				3764F17025EF52E9000799A9 /* Views */,
 			);
 			path = SwiftUI;
+			sourceTree = "<group>";
+		};
+		37E8763925F5332900B0F333 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				37E8763A25F5333800B0F333 /* ErrorHandling.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		37EE828325E61AC700B07673 /* Resolver */ = {
@@ -910,6 +938,7 @@
 		37EE828C25E61DCF00B07673 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				37A45CC225E842CC00A7CAD1 /* Schuylkill-App.entitlements */,
 				37EE828D25E61DCF00B07673 /* Assets.xcassets */,
 				37EE828E25E61DCF00B07673 /* Schuylkill-App WatchKit App-Bridging-Header.h */,
 				37F7C62925CD3BB7000D8FAF /* Schuylkill-App WatchKit App-Bridging-Header.h */,
@@ -928,13 +957,13 @@
 		37F7C59925CD388F000D8FAF = {
 			isa = PBXGroup;
 			children = (
+				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
 				37BC22C025F396250088E581 /* Publishers */,
 				37A050B125CE02BB00DCA1F9 /* UI */,
 				F95315D9A84B4C3DB29404B5 /* AmplifyModels */,
 				3764EFCD25EBE1F2000799A9 /* Errors */,
 				37BC226F25F394C00088E581 /* Events */,
 				377A4FCA25E9064800D8C5F1 /* amplifyconfiguration.json */,
-				37F7C5A425CD388F000D8FAF /* Schuylkill-App */,
 				37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */,
 				37F7C5C125CD3892000D8FAF /* Schuylkill-AppUITests */,
 				37F7C5CB25CD3892000D8FAF /* Schuylkill-App WatchKit App */,
@@ -969,10 +998,8 @@
 		37F7C5A425CD388F000D8FAF /* Schuylkill-App */ = {
 			isa = PBXGroup;
 			children = (
-				37A45CC225E842CC00A7CAD1 /* Schuylkill-App.entitlements */,
 				37F7C63925CD3BD9000D8FAF /* AppDelegate */,
 				37F7C5AB25CD3891000D8FAF /* Preview Content */,
-				37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */,
 				37BC241E25F406770088E581 /* Assets.xcassets */,
 			);
 			path = "Schuylkill-App";
@@ -1009,6 +1036,7 @@
 			isa = PBXGroup;
 			children = (
 				37F7C5CC25CD3892000D8FAF /* Assets.xcassets */,
+				37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */,
 				37F7C5CE25CD3892000D8FAF /* Info.plist */,
 			);
 			path = "Schuylkill-App WatchKit App";
@@ -1589,6 +1617,7 @@
 				379E654A25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */,
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
+				37E8763B25F5333800B0F333 /* ErrorHandling.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */,
@@ -1650,6 +1679,7 @@
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
 				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
 				37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */,
+				37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */,
 				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
 				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
@@ -1704,6 +1734,7 @@
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
 				37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
+				37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -1774,6 +1805,7 @@
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
 				37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
+				37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -1846,6 +1878,7 @@
 				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
+				37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */,
 				37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
