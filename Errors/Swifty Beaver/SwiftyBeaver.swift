@@ -20,9 +20,9 @@ extension SwiftyBeaver {
         log.addDestination(file)
     }
     
-    public static func exceptionThrown(error : Error) {
+    public static func exceptionThrown(args : [String : String]) {
         
-        log.error("ouch, an error did occur!")
+        log.error(args)
     }
 }
 

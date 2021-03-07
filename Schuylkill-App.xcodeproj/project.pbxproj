@@ -218,6 +218,9 @@
 		37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
 		37E8763B25F5333800B0F333 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8763A25F5333800B0F333 /* ErrorHandling.swift */; };
+		37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
+		37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
+		37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -1731,6 +1734,7 @@
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
 				37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
+				37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -1801,6 +1805,7 @@
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
 				37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
+				37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -1873,6 +1878,7 @@
 				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
+				37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */,
 				37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
