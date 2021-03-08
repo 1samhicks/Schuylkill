@@ -63,12 +63,29 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
             try Amplify.add(plugin: AWSS3StoragePlugin())
             Amplify.Logging.logLevel = .verbose
-            //try Amplify.configure()
-            print("Initialized Amplify");
-        } catch ApplicationRuntimeError.WatchConfigurationIssue(let description, let suggestion) {
+            try Amplify.configure()
+            print("Initialized Amplify")
+        } catch ConfigurationError.invalidAmplifyConfigurationFile(let ErrorDescription, let RecoverySuggestion, let Error) {
+            SwiftyBeaver.exceptionThrown(args: ConfigurationError.invalidAmplifyConfigurationFile(ErrorDescription,RecoverySuggestion,Error).getDetails())
             
+        }
+        catch ConfigurationError.amplifyAlreadyConfigured(let ErrorDescription, let RecoverySuggestion,let Error) {
+            SwiftyBeaver.exceptionThrown(args: ConfigurationError.amplifyAlreadyConfigured(ErrorDescription,RecoverySuggestion,Error).getDetails())
+            
+        } catch LoggingError.configuration(let ErrorDescription,let RecoverySuggestion,let Error) {
+            SwiftyBeaver.exceptionThrown(args: LoggingError.configuration(ErrorDescription,RecoverySuggestion,Error).getDetails())
+            
+        } catch AnalyticsError.configuration(let ErrorDescription, let RecoverySuggestion,let Error) {
+            SwiftyBeaver.exceptionThrown(args: AnalyticsError.configuration(ErrorDescription,RecoverySuggestion,Error).getDetails())
+        }
+        catch ApplicationRuntimeError.WatchConfigurationIssue(let description, let suggestion) {
+            SwiftyBeaver.exceptionThrown(args: ApplicationRuntimeError.WatchConfigurationIssue(description, suggestion).getDetails())
+        }
+        catch PluginError.pluginConfigurationError(let ErrorDescription,let RecoverySuggestion,let Error) {
+            SwiftyBeaver.exceptionThrown(args: PluginError.pluginConfigurationError(ErrorDescription, RecoverySuggestion,Error).getDetails())
+            print("Could not initialize Amplify: \(String(describing: Error))")
         } catch {
-            print("Could not initialize Amplify: \(error)")
+            print("Error not recognized")
         }
         
         registerForRemoteNotifications()
