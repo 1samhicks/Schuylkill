@@ -1219,6 +1219,7 @@
 				37F7C5A025CD388F000D8FAF /* Resources */,
 				37F7C5F225CD3893000D8FAF /* Embed Watch Content */,
 				C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */,
+				37E8768B25F6AAC900B0F333 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1286,6 +1287,7 @@
 				37F7C5C525CD3892000D8FAF /* Resources */,
 				37F7C5EE25CD3893000D8FAF /* Embed App Extensions */,
 				3ECB88B8E6B4C45EEF47BCD9 /* Frameworks */,
+				37E8768D25F6AB9500B0F333 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1308,6 +1310,7 @@
 				37F7C5CF25CD3892000D8FAF /* Sources */,
 				37F7C5D025CD3892000D8FAF /* Frameworks */,
 				37F7C5D125CD3892000D8FAF /* Resources */,
+				37E8768C25F6AB7F00B0F333 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1478,6 +1481,57 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		37E8768B25F6AAC900B0F333 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#open ~/.bash_profile to see the shortcut referenced below\ngenEntityDiagram\n";
+		};
+		37E8768C25F6AB7F00B0F333 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#open ~/.bash_profile to see the shortcut referenced below\ngenEntityDiagram\n\n";
+		};
+		37E8768D25F6AB9500B0F333 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#open ~/.bash_profile to see the shortcut referenced below\ngenEntityDiagram\n\n";
 		};
 		4930B43F108B000D5DD4D49B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1709,7 +1763,7 @@
 				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
 				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
 				379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */,
-				3764F19325EF6152000799A9 /* AmplifyError.swift in Sources */,
+				3764F19325EF6152000799A9 /* AmplifyAPIError.swift in Sources */,
 				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
 				379E651D25E4180900B894BA /* QRViewModel.swift in Sources */,
 				3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
