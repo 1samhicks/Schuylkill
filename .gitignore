@@ -16,6 +16,7 @@ amplify-build-config.json
 amplify-gradle-config.json
 amplifytools.xcconfig
 .secret-*
+DO_NOT_CHECK_ME_IN.swift
 
 # Compiled source #
 ###################
