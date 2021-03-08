@@ -14,7 +14,7 @@ public enum AuthenticationError: ApplicationError, ErrorHandling {
         fatalError("Raw value passed into AuthenticationError: \(rawValue)")
     }
     
-    var suggestion: RecoverySuggestion {
+    var recoverySuggestion: RecoverySuggestion {
         switch self {
         case .configuration(_,_,let suggestion):
                 fallthrough
@@ -28,11 +28,11 @@ public enum AuthenticationError: ApplicationError, ErrorHandling {
                 fallthrough
         case .unknown(_,_,let suggestion):
             return suggestion
-        default: return nil
+        default: return String.empty
        }
     }
     
-    var description : ErrorDescription {
+    var errorDescription : ErrorDescription {
         switch self {
             case .AuthError(let description, _):
                 return description
@@ -46,11 +46,11 @@ public enum AuthenticationError: ApplicationError, ErrorHandling {
                 return description
             case .invalidModelName(let description):
                 return description
-            default: return nil
+            default: return String.empty
         }
     }
     
-    var error : Error? {
+    var underlyingError : Error? {
         switch self {
         /*case .AuthError(let causedBy) where (causedBy == Error):
             return causedBy*/

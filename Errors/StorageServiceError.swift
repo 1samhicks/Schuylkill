@@ -14,13 +14,13 @@ enum StorageServiceError : ApplicationError, ErrorHandling {
     case listFilesError(ErrorDescription,RecoverySuggestion)
     case removeFileError(ErrorDescription,RecoverySuggestion)
     
-    var error: Error? {
+    var underlyingError: Error? {
         get {
             return nil
         }
     }
     
-    var description: ErrorDescription {
+    var errorDescription: ErrorDescription {
         switch self {
             case .uploadError(let description,_):
                 fallthrough
@@ -33,7 +33,7 @@ enum StorageServiceError : ApplicationError, ErrorHandling {
        }
     }
     
-    var suggestion : RecoverySuggestion {
+    var recoverySuggestion : RecoverySuggestion {
         switch self {
             case .uploadError(_,let suggestion):
                 fallthrough

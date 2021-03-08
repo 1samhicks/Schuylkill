@@ -62,7 +62,7 @@ public class LocationService : NSObject, DeviceService, CLLocationManagerDelegat
     
     
     func locationManagerReceivedError(_ error:NSString) {
-        self.publishError(error: DeviceError.LocationError(description: nil,suggestion: (error as String)))
+        self.publishError(error: DeviceError.LocationError(description: ErrorDescription.empty,suggestion: (error as String)))
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -98,7 +98,7 @@ public class LocationService : NSObject, DeviceService, CLLocationManagerDelegat
     #endif
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        self.publishError(error: DeviceError.LocationError(description: error.localizedDescription, suggestion: nil))
+        self.publishError(error: DeviceError.LocationError(description: error.localizedDescription, suggestion: String.empty))
     }
 
 

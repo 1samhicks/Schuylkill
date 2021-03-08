@@ -8,19 +8,26 @@
 import Foundation
 import SwiftyBeaver
 import Amplify
+
 typealias ApplicationError = AmplifyError
 
 /// Convenience typealias to disambiguate positional parameters of DeviceErrors
-public typealias ErrorDescription = String?
+public typealias ErrorDescription = String
 
 /// Convenience typealias to disambiguate positional parameters of DeviceErrors
-public typealias RecoverySuggestion = String?
+public typealias RecoverySuggestion = String
 
 
+extension RecoverySuggestion {
+    public static let empty = ""
+}
 
+extension ErrorDescription {
+    //Since RecoverySuggestion and ErrorDescription are typealiases for String,
+    //public static let empty = "" *already exists.* RecoverySuggestion has it covered.
+}
 
-
-extension ApplicationError {
+/*extension ApplicationError {
     internal var errorName : [String : String] {
         get {
             var rawValue : String?
@@ -33,6 +40,5 @@ extension ApplicationError {
         }
     }
     }
-    
-}
+}*/
 

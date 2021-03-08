@@ -66,7 +66,6 @@
 		3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3764F17325EF5348000799A9 /* Onboarding.storyboard */; };
 		3764F18025EF5374000799A9 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F17F25EF5374000799A9 /* QRView.swift */; };
 		3764F18725EF53F8000799A9 /* MuscleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F18625EF53F8000799A9 /* MuscleListView.swift */; };
-		3764F19325EF6152000799A9 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19225EF6152000799A9 /* AmplifyAPIError.swift */; };
 		3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
 		3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
 		3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
@@ -221,6 +220,11 @@
 		37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
+		37E8766025F5511200B0F333 /* PluginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8765F25F5511200B0F333 /* PluginError.swift */; };
+		37E8766B25F5513500B0F333 /* PluginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8765F25F5511200B0F333 /* PluginError.swift */; };
+		37E8767125F5513600B0F333 /* PluginError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E8765F25F5511200B0F333 /* PluginError.swift */; };
+		37E8769A25F6B43600B0F333 /* Danger in Frameworks */ = {isa = PBXBuildFile; productRef = 37E8769925F6B43600B0F333 /* Danger */; };
+		37E8769B25F6B43600B0F333 /* Danger in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 37E8769925F6B43600B0F333 /* Danger */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -354,6 +358,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		37E8769C25F6B43700B0F333 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				37E8769B25F6B43600B0F333 /* Danger in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		37F7C5EE25CD3893000D8FAF /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,7 +438,6 @@
 		3764F17325EF5348000799A9 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3764F17F25EF5374000799A9 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		3764F18625EF53F8000799A9 /* MuscleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListView.swift; sourceTree = "<group>"; };
-		3764F19225EF6152000799A9 /* AmplifyAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIError.swift; sourceTree = "<group>"; };
 		3764F19E25EF6D70000799A9 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flickr.swift; path = "AmplifyModels-Extensions/Temporary/Flickr.swift"; sourceTree = SOURCE_ROOT; };
 		3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhoto.swift; path = "AmplifyModels-Extensions/Temporary/FlickrPhoto.swift"; sourceTree = SOURCE_ROOT; };
 		3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrSearchResults.swift; path = "AmplifyModels-Extensions/Temporary/FlickrSearchResults.swift"; sourceTree = SOURCE_ROOT; };
@@ -481,6 +495,7 @@
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37E8763A25F5333800B0F333 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		37E8765F25F5511200B0F333 /* PluginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginError.swift; sourceTree = "<group>"; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
 		37EE828D25E61DCF00B07673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37EE828E25E61DCF00B07673 /* Schuylkill-App WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Schuylkill-App WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -561,6 +576,7 @@
 				3764F21A25F3647A000799A9 /* PaperOnboarding in Frameworks */,
 				37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */,
 				37F7C70925CD47B4000D8FAF /* SwifterSwift in Frameworks */,
+				37E8769A25F6B43600B0F333 /* Danger in Frameworks */,
 				37BC245825F500550088E581 /* SwiftyBeaver in Frameworks */,
 				37F9450E25D4207500243AC1 /* Amplify.framework in Frameworks */,
 				37F7C79225CD678E000D8FAF /* Resolver in Frameworks */,
@@ -630,13 +646,13 @@
 		3764EFCD25EBE1F2000799A9 /* Errors */ = {
 			isa = PBXGroup;
 			children = (
+				37E8765E25F550EE00B0F333 /* Extensions */,
 				37E8763925F5332900B0F333 /* Protocols */,
 				37BC246325F505D10088E581 /* Swifty Beaver */,
 				3764F04825EE0CEF000799A9 /* OSLog */,
 				3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */,
 				3764EFDA25EBE264000799A9 /* ApplicationError.swift */,
 				3764F07825EE31B2000799A9 /* DeviceError.swift */,
-				3764F19225EF6152000799A9 /* AmplifyAPIError.swift */,
 				37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */,
 				37BC243825F417890088E581 /* StorageServiceError.swift */,
 			);
@@ -925,6 +941,14 @@
 				37E8763A25F5333800B0F333 /* ErrorHandling.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		37E8765E25F550EE00B0F333 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37E8765F25F5511200B0F333 /* PluginError.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		37EE828325E61AC700B07673 /* Resolver */ = {
@@ -1219,6 +1243,7 @@
 				37F7C5A025CD388F000D8FAF /* Resources */,
 				37F7C5F225CD3893000D8FAF /* Embed Watch Content */,
 				C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */,
+				37E8769C25F6B43700B0F333 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1233,6 +1258,7 @@
 				37F9448925D3F24E00243AC1 /* QRCodeReader */,
 				3764F21925F3647A000799A9 /* PaperOnboarding */,
 				37BC245725F500550088E581 /* SwiftyBeaver */,
+				37E8769925F6B43600B0F333 /* Danger */,
 			);
 			productName = "Schuylkill-App";
 			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
@@ -1369,6 +1395,7 @@
 				3772D6AE25CD736E008F04DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */,
 				37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
+				37E8769825F6B43600B0F333 /* XCRemoteSwiftPackageReference "swift" */,
 			);
 			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
 			projectDirPath = "";
@@ -1661,6 +1688,7 @@
 				379E64E425E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				3764EFDB25EBE264000799A9 /* ApplicationError.swift in Sources */,
 				37F7C6A125CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
+				37E8766025F5511200B0F333 /* PluginError.swift in Sources */,
 				3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */,
 				3764F04A25EE0CF8000799A9 /* Logger.swift in Sources */,
 				3764F07925EE31B2000799A9 /* DeviceError.swift in Sources */,
@@ -1709,7 +1737,6 @@
 				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
 				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
 				379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */,
-				3764F19325EF6152000799A9 /* AmplifyAPIError.swift in Sources */,
 				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
 				379E651D25E4180900B894BA /* QRViewModel.swift in Sources */,
 				3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
@@ -1735,6 +1762,7 @@
 				37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */,
+				37E8766B25F5513500B0F333 /* PluginError.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -1806,6 +1834,7 @@
 				37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */,
+				37E8767125F5513600B0F333 /* PluginError.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* WatchCommands.swift in Sources */,
@@ -2408,6 +2437,14 @@
 				minimumVersion = 1.9.3;
 			};
 		};
+		37E8769825F6B43600B0F333 /* XCRemoteSwiftPackageReference "swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danger/swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
 		37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwifterSwift/SwifterSwift.git";
@@ -2467,6 +2504,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
 			productName = SwiftyBeaver;
+		};
+		37E8769925F6B43600B0F333 /* Danger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37E8769825F6B43600B0F333 /* XCRemoteSwiftPackageReference "swift" */;
+			productName = Danger;
 		};
 		37F7C70825CD47B4000D8FAF /* SwifterSwift */ = {
 			isa = XCSwiftPackageProductDependency;

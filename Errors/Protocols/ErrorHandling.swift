@@ -7,26 +7,27 @@
 
 import Foundation
 import SwiftyBeaver
+import Amplify
 
 protocol ErrorHandling {
     func getDetails() -> [String : String]
-    var description : ErrorDescription { get }
-    var suggestion : RecoverySuggestion { get }
-    var error : Error? { get }
+    var errorDescription : ErrorDescription { get }
+    var recoverySuggestion : RecoverySuggestion { get }
+    var underlyingError : Error? { get }
 }
 
 extension ErrorHandling {
     
     public func getDetails() -> [String : String] {
         var d = [String : String]()
-        if let error = error {
-            d[SwiftyBeaver.Naming.error] = "\(error)"
+        if let underlyingError = underlyingError {
+            d[SwiftyBeaver.Naming.error] = "\(underlyingError)"
         }
-        if let suggestion = suggestion {
-            d[SwiftyBeaver.Naming.recovery_suggestion] = suggestion
+        if recoverySuggestion.count > 0 {
+            d[SwiftyBeaver.Naming.recovery_suggestion] = recoverySuggestion
         }
-        if let description = description {
-            d[SwiftyBeaver.Naming.error_description] = description
+        if errorDescription.count > 0 {
+            d[SwiftyBeaver.Naming.error_description] = errorDescription
         }
         return d
     }

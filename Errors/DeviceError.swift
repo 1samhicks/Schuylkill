@@ -12,7 +12,7 @@ public enum DeviceError: ApplicationError, ErrorHandling {
     case LocationError(description: ErrorDescription,suggestion: RecoverySuggestion)
     case PedometerError(innerError: Error, description : ErrorDescription,suggestion: RecoverySuggestion)
     
-    var description: ErrorDescription {
+    var errorDescription: ErrorDescription {
         switch self {
             case .LocationError(let description,_):
                 return description
@@ -21,7 +21,7 @@ public enum DeviceError: ApplicationError, ErrorHandling {
        }
     }
     
-    var suggestion : RecoverySuggestion {
+    var recoverySuggestion : RecoverySuggestion {
         switch self {
             case .LocationError(_,let suggestion):
                 return suggestion
@@ -30,7 +30,7 @@ public enum DeviceError: ApplicationError, ErrorHandling {
        }
     }
     
-    var error : Error? {
+    var underlyingError : Error? {
         switch self {
         case .PedometerError(let innerError,_,_):
             return innerError

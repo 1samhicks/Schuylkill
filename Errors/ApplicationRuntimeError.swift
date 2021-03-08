@@ -9,17 +9,25 @@ import Foundation
 
 public enum ApplicationRuntimeError : ApplicationError, ErrorHandling {
     
+<<<<<<< Updated upstream
     case InconsistentState(ErrorDescription,RecoverySuggestion = RecoverySuggestion.none)
     case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.none)
     case UnidentifiedError(ErrorDescription, RecoverySuggestion = RecoverySuggestion.none)
     
     var error: Error? {
+=======
+    case InconsistentState(ErrorDescription,RecoverySuggestion = RecoverySuggestion.empty)
+    case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
+    case UnidentifiedError(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
+    
+    var underlyingError: Error? {
+>>>>>>> Stashed changes
         get {
             return nil
         }
     }
     
-    var description: ErrorDescription {
+    var errorDescription: ErrorDescription {
         switch self {
             case .InconsistentState(let description,_):
                 fallthrough
@@ -30,7 +38,7 @@ public enum ApplicationRuntimeError : ApplicationError, ErrorHandling {
        }
     }
     
-    var suggestion : RecoverySuggestion {
+    var recoverySuggestion : RecoverySuggestion {
         switch self {
             case .InconsistentState(_,let suggestion):
                 fallthrough
