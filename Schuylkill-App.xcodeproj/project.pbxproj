@@ -66,7 +66,7 @@
 		3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3764F17325EF5348000799A9 /* Onboarding.storyboard */; };
 		3764F18025EF5374000799A9 /* QRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F17F25EF5374000799A9 /* QRView.swift */; };
 		3764F18725EF53F8000799A9 /* MuscleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F18625EF53F8000799A9 /* MuscleListView.swift */; };
-		3764F19325EF6152000799A9 /* AmplifyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19225EF6152000799A9 /* AmplifyError.swift */; };
+		3764F19325EF6152000799A9 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19225EF6152000799A9 /* AmplifyAPIError.swift */; };
 		3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
 		3764F1A225EF6D71000799A9 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
 		3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
@@ -423,7 +423,7 @@
 		3764F17325EF5348000799A9 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		3764F17F25EF5374000799A9 /* QRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRView.swift; sourceTree = "<group>"; };
 		3764F18625EF53F8000799A9 /* MuscleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleListView.swift; sourceTree = "<group>"; };
-		3764F19225EF6152000799A9 /* AmplifyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyError.swift; sourceTree = "<group>"; };
+		3764F19225EF6152000799A9 /* AmplifyAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIError.swift; sourceTree = "<group>"; };
 		3764F19E25EF6D70000799A9 /* Flickr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Flickr.swift; path = "AmplifyModels-Extensions/Temporary/Flickr.swift"; sourceTree = SOURCE_ROOT; };
 		3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrPhoto.swift; path = "AmplifyModels-Extensions/Temporary/FlickrPhoto.swift"; sourceTree = SOURCE_ROOT; };
 		3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlickrSearchResults.swift; path = "AmplifyModels-Extensions/Temporary/FlickrSearchResults.swift"; sourceTree = SOURCE_ROOT; };
@@ -636,7 +636,7 @@
 				3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */,
 				3764EFDA25EBE264000799A9 /* ApplicationError.swift */,
 				3764F07825EE31B2000799A9 /* DeviceError.swift */,
-				3764F19225EF6152000799A9 /* AmplifyError.swift */,
+				3764F19225EF6152000799A9 /* AmplifyAPIError.swift */,
 				37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */,
 				37BC243825F417890088E581 /* StorageServiceError.swift */,
 			);
@@ -1709,7 +1709,7 @@
 				3764F1A125EF6D71000799A9 /* Flickr.swift in Sources */,
 				3764F15C25EF4978000799A9 /* ExerciseSet+Schema.swift in Sources */,
 				379E64EE25E3DAD400B894BA /* RuntimeService.swift in Sources */,
-				3764F19325EF6152000799A9 /* AmplifyError.swift in Sources */,
+				3764F19325EF6152000799A9 /* AmplifyAPIError.swift in Sources */,
 				379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */,
 				379E651D25E4180900B894BA /* QRViewModel.swift in Sources */,
 				3764F05825EE0D65000799A9 /* Bundle+Naming.swift in Sources */,

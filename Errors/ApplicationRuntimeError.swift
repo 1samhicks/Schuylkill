@@ -9,7 +9,6 @@ import Foundation
 
 public enum ApplicationRuntimeError : ApplicationError, ErrorHandling {
     
-    
     case InconsistentState(ErrorDescription,RecoverySuggestion = RecoverySuggestion.none)
     case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.none)
     case UnidentifiedError(ErrorDescription, RecoverySuggestion = RecoverySuggestion.none)

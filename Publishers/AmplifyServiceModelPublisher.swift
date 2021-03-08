@@ -16,7 +16,7 @@ struct AmplifyServiceModelPublisher : AmplifyModelChangePublisher {
     }
     typealias Output = AmplifyMutationEvent
     
-    typealias Failure = AmplifyError
+    typealias Failure = AmplifyAPIError
     
     static let shared : Self? = AmplifyServiceModelPublisher()
     
