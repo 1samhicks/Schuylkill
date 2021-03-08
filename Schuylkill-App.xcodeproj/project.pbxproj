@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37077A8325F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
+		37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
+		37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
+		37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
 		371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		3764EFB625EBDD76000799A9 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
@@ -399,6 +403,7 @@
 		1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.release.xcconfig"; sourceTree = "<group>"; };
 		1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_Schuylkill_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DO_NOT_CHECK_ME_IN.swift; sourceTree = "<group>"; };
 		3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyServiceModelPublisher.swift; sourceTree = "<group>"; };
 		3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSubscriptionBehavior.swift; sourceTree = "<group>"; };
 		3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
@@ -1101,6 +1106,7 @@
 				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
 				37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */,
 				37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */,
+				37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1645,6 +1651,7 @@
 				37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */,
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
 				37E8763B25F5333800B0F333 /* ErrorHandling.swift in Sources */,
+				37077A8325F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */,
@@ -1805,6 +1812,7 @@
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
+				37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242725F409BD0088E581 /* Schuylkill_AppApp.swift in Sources */,
 				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
@@ -1877,6 +1885,7 @@
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
+				37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242D25F409BE0088E581 /* Schuylkill_AppApp.swift in Sources */,
 				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
@@ -1897,6 +1906,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */,
 				37BC237E25F3BFAF0088E581 /* App.swift in Sources */,
 				37F7C69025CD3C9E000D8FAF /* WatchCommands.swift in Sources */,

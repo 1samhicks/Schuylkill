@@ -9,6 +9,8 @@ import Foundation
 import SwiftyBeaver
 
 extension SwiftyBeaver {
+    typealias secrets = SensitiveConstants.SwiftyBeaver
+    
     public static func activate() {
         // add log destinations. at least one is needed!
         let console = ConsoleDestination()  // log to Xcode Console
@@ -18,6 +20,7 @@ extension SwiftyBeaver {
         
         log.addDestination(console)
         log.addDestination(file)
+        log.addDestination(SBPlatformDestination(appID: secrets.APP_ID, appSecret: secrets.APP_SECRET, encryptionKey: secrets.ENCRYPTION_KEY))
     }
     
     public static func exceptionThrown(args : [String : String]) {
