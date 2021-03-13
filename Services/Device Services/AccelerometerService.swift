@@ -20,39 +20,40 @@ public class AccelerometerService: DeviceService {
 
     var state: ServiceState?
 
-    var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
+    var lock : NSLock = NSLock()
     var resultSink = AnyCancellable({})
 
     required public init() {
 
     }
 
-    public func startService() {
-        dispatchSemaphore.wait()
+    
+    public func start() {
+        lock.lock()
         state = .running
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter({ $0 != nil})
             .sink { gyro in
             self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
         }
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 
-    func pauseService() {
-        dispatchSemaphore.wait()
+    func pause() {
+        lock.lock()
         state = .paused
         motionManager.stopAccelerometerUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 
-    func unpauseService() {
-        dispatchSemaphore.wait()
+    func suspend() {
+        lock.lock()
         state = .running
         motionManager.startAccelerometerUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 
-    func endService() {
+    func terminate() {
     }
 
 }
