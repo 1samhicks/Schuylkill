@@ -8,6 +8,6 @@
 import Foundation
 import Combine
 
-extension AnyCancellable  {
-    
+extension AnyCancellable {
+
 }

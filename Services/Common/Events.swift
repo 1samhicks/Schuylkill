@@ -9,9 +9,3 @@ import Foundation
 import Amplify
 import CoreMotion
 import CoreLocation
-
-
-
-
-
-
