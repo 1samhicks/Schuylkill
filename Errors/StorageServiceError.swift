@@ -8,6 +8,13 @@
 import Foundation
 
 enum StorageServiceError : ApplicationError, ErrorHandling {
+    init(errorDescription: ErrorDescription, recoverySuggestion: RecoverySuggestion, error: Error) {
+        self.init()
+    }
+    
+    init() {
+        self = .listFilesError("Set in init of StorageServiceError", "")
+    }
     
     case uploadError(ErrorDescription,RecoverySuggestion)
     case downloadError(ErrorDescription,RecoverySuggestion)
