@@ -9,12 +9,20 @@ import Foundation
 import Amplify
 
 public enum AuthenticationError: ApplicationError, ErrorHandling {
-    
-    public init?(rawValue: String) {
-        fatalError("Raw value passed into AuthenticationError: \(rawValue)")
+    public init(errorDescription: ErrorDescription, recoverySuggestion: RecoverySuggestion, error: Error) {
+        self.init()
     }
     
-    var recoverySuggestion: RecoverySuggestion {
+    public init() {
+        self = .unknown(nil, "The setting was made in the init() of AuthenticationError.", "Review code flow through constructor" )
+    }
+    
+    public init?(rawValue: String) {
+        //fatalError("Raw value passed into AuthenticationError: \(rawValue)")
+        self.init()
+    }
+    
+    public var recoverySuggestion: RecoverySuggestion {
         switch self {
         case .configuration(_,_,let suggestion):
                 fallthrough
@@ -32,7 +40,7 @@ public enum AuthenticationError: ApplicationError, ErrorHandling {
        }
     }
     
-    var errorDescription : ErrorDescription {
+    public var errorDescription : ErrorDescription {
         switch self {
             case .AuthError(let description, _):
                 return description
@@ -50,7 +58,7 @@ public enum AuthenticationError: ApplicationError, ErrorHandling {
         }
     }
     
-    var underlyingError : Error? {
+    public var underlyingError : Error? {
         switch self {
         /*case .AuthError(let causedBy) where (causedBy == Error):
             return causedBy*/
