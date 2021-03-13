@@ -12,6 +12,14 @@ import Combine
 import OSLog
 #endif
 public class MotionService : DeviceService {
+    func publishError(error: Error) {
+        
+    }
+    
+    func publishValue(value: Event) {
+        
+    }
+    
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
