@@ -7,9 +7,9 @@
 
 import Foundation
 
-enum ServiceState  {
+enum ServiceState {
     case notStarted
-    case paused 
+    case paused
     case stopped
     case running
     case canceled

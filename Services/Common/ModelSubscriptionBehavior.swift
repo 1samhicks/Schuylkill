@@ -9,8 +9,7 @@ import Foundation
 import Combine
 import CoreMotion
 
-
-protocol DevicePublisher : ServicePublisher {
+protocol DevicePublisher: ServicePublisher {
 
     func send(input: DeviceEvent)
 
@@ -18,6 +17,3 @@ protocol DevicePublisher : ServicePublisher {
 
     func sendFinished()
 }
-
-
-

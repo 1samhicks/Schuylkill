@@ -10,7 +10,7 @@ import CoreMotion
 import Combine
 
 protocol DeviceSubcriptionBehavior {
-    
+
     var publisher: AnyPublisher<DeviceEvent, Error> { get }
 
     func send(input: CMLogItem)

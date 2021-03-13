@@ -10,7 +10,6 @@ import Resolver
 
 extension Resolver {
     public static func registerAllDeviceServices() {
-
         Resolver.register(instance: LocationService())
         Resolver.register(instance: AccelerometerService())
         Resolver.register(instance: MagnometerService())
