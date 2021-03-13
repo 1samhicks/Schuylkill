@@ -13,13 +13,6 @@ import RxCocoa
 import CoreMotion
 import SwiftyBeaver
 
-//
-//  AppDelegate.swift
-//  Schuylkill
-//
-//  Created by Sam Hicks on 2/2/21.
-//
-
 let log = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {

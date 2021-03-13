@@ -50,5 +50,3 @@ private func checkScanPermissions() -> Bool {
     return false
   }
 }*/
-
-
