@@ -9,30 +9,52 @@ import Foundation
 import WatchConnectivity
 import UIKit
 
+struct AppData {
+    @Storage(key: "machine_region_distance", defaultValue: 3.0)
+        static var machine_region_distance: Double
+    @Storage(key: "current_machine", defaultValue: nil)
+        static var current_machine: ExerciseMachine?
+    @Storage(key: "current_workout", defaultValue: nil)
+        static var current_workout: GymWorkout?
+    @Storage(key: "current_fitness_center", defaultValue: nil)
+        static var current_fitness_center: FitnessCenter?
+    @Storage(key: "user_data", defaultValue: nil)
+        static var user_data: UserData?
+}
+
     extension UIApplication {
-        
-        var FIREBASE_INFO_PLIST : [[String:String]]? {
+
+        var FIREBASE_INFO_PLIST: [[String: String]]? {
             guard let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
                 return nil
             }
             let url = URL(fileURLWithPath: path)
             let data = try! Data(contentsOf: url)
-            guard let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as? [[String:String]] else {
+            guard let plist = try! PropertyListSerialization.propertyList(from: data, options: .mutableContainers, format: nil) as? [[String: String]] else {
                 return nil
             }
             print(plist)
             return plist
         }
-        
-        func setupWatchConnectivity(delegate : WatchSessionChannelDelegate) throws {
+
+        func setupWatchConnectivity(delegate: WatchSessionChannelDelegate) throws {
             guard WCSession.isSupported() else {
                 throw ApplicationRuntimeError.WatchConfigurationIssue("WCSession.isSupported() returned false for this iOS device")
             }
             guard !WatchSettings.sharedContainerID.isEmpty else {
                 throw ApplicationRuntimeError.WatchConfigurationIssue("Specify a shared container ID for WatchSettings.sharedContainerID to use watch settings!")
             }
-            
             WCSession.default.delegate = delegate
             WCSession.default.activate()
+        }
+
+        func convertErrorToString(_ error: Error) -> String {
+            return """
+            Domain: \((error as NSError).domain)
+            Code: \((error as NSError).code)
+            Description: \(error.localizedDescription)
+            Failure Reason: \((error as NSError).localizedFailureReason ?? "nil")
+            Suggestions: \((error as NSError).localizedRecoverySuggestion ?? "nil")\n
+            """
         }
     }

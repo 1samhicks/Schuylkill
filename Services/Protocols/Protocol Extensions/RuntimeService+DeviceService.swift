@@ -12,14 +12,14 @@ extension RuntimeService where Self : DeviceService {
         return DeviceServicePublisher.shared!
     }
     
-    func publishValue(value: Event) {
+    func publishValue(value: DeviceEvent) {
         if(servicePublisher is DeviceServicePublisher) {
             (servicePublisher as! DeviceServicePublisher).send(input: value)
         } 
             
     }
     
-    func publishError(error: Error)  {
+    func publishError(error: DeviceError)  {
         if(servicePublisher is DeviceServicePublisher) {
             (servicePublisher as! DeviceServicePublisher).send(error: error)
         }
