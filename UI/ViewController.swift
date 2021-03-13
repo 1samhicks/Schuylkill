@@ -58,10 +58,10 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
       $0.preferredStatusBarStyle = .lightContent
       $0.showOverlayView         = true
       $0.rectOfInterest          = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
-      
+
       $0.reader.stopScanningWhenCodeIsFound = false
     }
-    
+
     return QRCodeReaderViewController(builder: builder)
   }()
 
@@ -130,7 +130,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     dismiss(animated: true) { [weak self] in
       let alert = UIAlertController(
         title: "QRCodeReader",
-        message: String (format:"%@ (of type %@)", result.value, result.metadataType),
+        message: String(format: "%@ (of type %@)", result.value, result.metadataType),
         preferredStyle: .alert
       )
       alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

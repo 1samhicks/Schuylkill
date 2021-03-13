@@ -9,19 +9,19 @@ import Foundation
 
 public class Folder {
     private var fileHandle: FileHandle!
-    
+
     // Return folder URL, create it if not existing yet.
     // Return nil to trigger a crash if the folder creation fails.
     // Not using lazy because we need to recreate when clearLogs is called.
     //
     var _folderURL: URL?
     private func folderURL(url: URL) -> URL? {
-        
+
         guard _folderURL == nil else { return _folderURL }
-        
+
         var folderURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last!
         folderURL.appendPathComponent("Logs")
-        
+
         if !FileManager.default.fileExists(atPath: folderURL.path) {
             do {
                 try FileManager.default.createDirectory(at: folderURL, withIntermediateDirectories: true)
@@ -33,7 +33,7 @@ public class Folder {
         _folderURL = folderURL
         return folderURL
     }
-    
+
     // Return file URL, create it if not existing yet.
     // Return nil to trigger a crash if the file creation fails.
     // Not using lazy because we need to recreate when clearLogs is called.
@@ -45,10 +45,10 @@ public class Folder {
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium
         let dateString = dateFormatter.string(from: Date())
-    
-        var fileURL: URL = self._folderURL! 
+
+        var fileURL: URL = self._folderURL!
         fileURL.appendPathComponent("\(dateString).log")
-        
+
         if !FileManager.default.fileExists(atPath: fileURL.path) {
             if !FileManager.default.createFile(atPath: fileURL.path, contents: nil, attributes: nil) {
                 print("Failed to create the log file: \(fileURL)!")
@@ -58,7 +58,7 @@ public class Folder {
         _fileURL = fileURL
         return fileURL
     }
-    
+
     // Avoid creating DateFormatter for time stamp as Logger may count into execution budget.
     //
     private lazy var timeStampFormatter: DateFormatter = {
@@ -66,14 +66,14 @@ public class Folder {
         dateFormatter.timeStyle = .medium
         return dateFormatter
     }()
-    
+
     // Use this dispatch queue to make the log file access is thread-safe.
     // Public methods use performBlockAndWait to access the resource; private methods don't.
     //
     private lazy var ioQueue: DispatchQueue = {
         return DispatchQueue(label: "ioQueue")
     }()
-    
+
     private func performBlockAndWait<T>(_ block: () -> T) -> T {
         return ioQueue.sync {
             return block()
