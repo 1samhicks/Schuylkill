@@ -27,7 +27,7 @@ struct GridDragView: View {
     private func makeGrid(gridDragViewModel: GridDragViewModel) -> some View {
         let rows = gridDragViewModel.rows
         let cols = gridDragViewModel.cols
-        
+
         return ForEach(0..<rows, id: \.self) { row in
             ZStack {
                 ForEach(0..<cols, id: \.self) { col in
@@ -60,7 +60,7 @@ struct GridDragView: View {
                 }
         )
     }
-    
+
     public func calculateCellSize(rows: Int, cols: Int, size: CGSize) -> CGFloat {
         let screenHeight = size.height
         let screenWidth = size.width
@@ -75,8 +75,7 @@ struct GridDragView: View {
 
         return min(cellWidth, cellHeight)
     }
-    
-    
+
 }
 
 struct GridDragView_Previews: PreviewProvider {
@@ -106,8 +105,8 @@ struct GridDragView_Previews: PreviewProvider {
     }
 }
 
-//examples ...
-//ViewFactoryProtocol classes should be in their own file(s)
+// examples ...
+// ViewFactoryProtocol classes should be in their own file(s)
 class SquareViewFactory: ViewFactoryProtocol {
     func makeView(row: Int, col: Int) -> AnyView {
         AnyView(Rectangle()

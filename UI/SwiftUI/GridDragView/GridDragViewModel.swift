@@ -22,7 +22,7 @@ class GridDragViewModel: ObservableObject {
         }
     }
 
-    //this must be @Published, otherwise the observing View is not refreshed
+    // this must be @Published, otherwise the observing View is not refreshed
     @Published private var cellOffsets: [CGPoint] = []
 
     var dragging = false
@@ -82,15 +82,15 @@ extension GridDragViewModel {
         }
 
         if !dragging {
-            //set direction
+            // set direction
             isHorizontal = abs(translation.width) > abs(translation.height)
             lastDragTranslation = .zero
 
-            //get cells in the appropriate row or col
+            // get cells in the appropriate row or col
             draggingCellIndexes = getDraggingCells(index: index)
         }
 
-        //find and move only views in the appropriate row or col
+        // find and move only views in the appropriate row or col
 
         if isHorizontal {
             let deltaX = translation.width - lastDragTranslation.width
@@ -164,19 +164,19 @@ extension GridDragViewModel {
         if isHorizontal {
             let newCol = currentCellCol(x: newValue)
             if newCol < 0 {
-                //shift to the end
+                // shift to the end
                 newValue += (CGFloat(cols) * cellSize)
             } else if newCol >= cols {
-                //shift to the beginning
+                // shift to the beginning
                 newValue -= (CGFloat(cols) * cellSize)
             }
         } else {
             let newRow = currentCellRow(y: newValue)
             if newRow < 0 {
-                //shift to the end
+                // shift to the end
                 newValue += (CGFloat(rows) * cellSize)
             } else if newRow >= rows {
-                //shift to the beginning
+                // shift to the beginning
                 newValue -= (CGFloat(rows) * cellSize)
             }
         }
