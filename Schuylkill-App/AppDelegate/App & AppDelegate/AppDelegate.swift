@@ -16,11 +16,10 @@ import SwiftyBeaver
 let log = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
     private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
         return WatchSessionChannelDelegate()
     }()
-
-    var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         Resolver.register()
@@ -33,7 +32,6 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             try Amplify.add(plugin: AWSS3StoragePlugin())
             Amplify.Logging.logLevel = .verbose
             try Amplify.configure()
-            print("Initialized Amplify")
         } catch let e {
             SwiftyBeaver.exceptionThrown(error: e)
             let alertViewController = UIAlertController(title:"App Issue",error:e,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)
