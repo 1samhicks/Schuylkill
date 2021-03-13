@@ -15,6 +15,14 @@ extension CMPedometer {
 }
 
 public class PedometerService : DeviceService {
+    func publishError(error: Error) {
+        
+    }
+    
+    func publishValue(value: Event) {
+        
+    }
+    
     var pedometer = CMPedometer.shared
     
     
@@ -37,10 +45,10 @@ public class PedometerService : DeviceService {
         state = .running
         pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
             if let error = error {
-                self.publishError(error:DeviceError.PedometerError(innerError: error, description: "", suggestion: ""))
+                self.publishError(error:.PedometerError(innerError: error, description: "", ""))
             }
             else if let event = event {
-                self.publishValue(value: DeviceEvent.pedometerEvent(event))
+                self.publishValue(value:.pedometerEvent(event))
             }
         }
         dispatchSemaphore.signal()
@@ -58,10 +66,10 @@ public class PedometerService : DeviceService {
         state = .running
         pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
             if let error = error {
-                self.publishError(error:DeviceError.PedometerError(innerError: error, description: "", suggestion: ""))
+                self.publishError(error:.PedometerError(innerError: error,description: "",""))
             }
             else if let event = event {
-                self.publishValue(value: DeviceEvent.pedometerEvent(event))
+                self.publishValue(value:.pedometerEvent(event))
             }
         }
         dispatchSemaphore.signal()
