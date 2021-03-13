@@ -12,9 +12,12 @@ import AWSPluginsCore
 import AmplifyPlugins
 import OSLog
 
-public class AmplifyAuthenticationService : RuntimeService {
-    var _state : ServiceState?
-    var serviceState : ServiceState? {
+public class AmplifyAuthenticationService: RuntimeService {
+
+    var _state: ServiceState?
+    var sink: AnyCancellable?
+
+    var serviceState: ServiceState? {
         get {
             return _state
         }
@@ -22,9 +25,15 @@ public class AmplifyAuthenticationService : RuntimeService {
             _state = newValue
         }
     }
-    
-    var sink : AnyCancellable?
-    
+
+    func publishValue(value: Event) {
+
+    }
+
+    func publishError(error: Error) {
+
+    }
+
     public required init() {
         _state = .stopped
         // Assumes `sink` is declared as an instance variable in your view controller
@@ -49,8 +58,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 }
             }
     }
-    
-    
+
     func signUp(username: String, password: String, email: String) -> AnyCancellable {
         let userAttributes = [AuthUserAttribute(.email, value: email)]
         let options = AuthSignUpRequest.Options(userAttributes: userAttributes)
@@ -71,7 +79,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             }
         return sink
     }
-    
+
     func confirmSignUp(for username: String, with confirmationCode: String) -> AnyCancellable {
         Amplify.Auth.confirmSignUp(for: username, confirmationCode: confirmationCode)
             .resultPublisher
@@ -84,7 +92,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Confirm signUp succeeded")
             }
     }
-    
+
     func signUp(username: String, password: String, email: String, phonenumber: String) -> AnyCancellable {
         let userAttributes = [AuthUserAttribute(.email, value: email), AuthUserAttribute(.phoneNumber, value: phonenumber)]
         let options = AuthSignUpRequest.Options(userAttributes: userAttributes)
@@ -104,7 +112,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             }
         return sink
     }
-    
+
     func signIn(username: String, password: String) -> AnyCancellable {
         Amplify.Auth.signIn(username: username, password: password)
             .resultPublisher
@@ -117,7 +125,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Sign in succeeded")
             }
     }
-    
+
     func confirmSignIn() -> AnyCancellable {
         Amplify.Auth.confirmSignIn(challengeResponse: "<confirmation code received via SMS>")
             .resultPublisher
@@ -130,20 +138,20 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Confirm sign in succeeded. Next step: \(signInResult.nextStep)")
             }
     }
-    
+
     func signInWithWebUI() -> AnyCancellable {
         Amplify.Auth.signInWithWebUI(presentationAnchor: UIApplication.shared.windows.first!)
             .resultPublisher
             .sink {
                 if case let .failure(authError) = $0 {
-                    self.onReceiveCompletion(completed: AuthenticationError.AuthError(causedBy:authError))
+                    self.onReceiveCompletion(completed: AuthenticationError.AuthError(causedBy: authError))
                 }
             }
-            receiveValue: { val in
-                self.publishValue(value:AuthenticationEvent.started)
+            receiveValue: { _ in
+                self.publishValue(value: AuthenticationEvent.started)
             }
     }
-    
+
     func socialSignInWithWebUI() -> AnyCancellable {
         Amplify.Auth.signInWithWebUI(for: .facebook, presentationAnchor: UIApplication.shared.windows.first!)
             .resultPublisher
@@ -156,13 +164,13 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Sign in succeeded")
             }
     }
-    
+
     // signin with Cognito web user interface
     public func signIn() {
 
         _ = Amplify.Auth.signInWithWebUI(presentationAnchor: UIApplication.shared.windows.first!) { result in
             switch result {
-            case .success(_):
+            case .success:
                 print("Sign in succeeded")
             case .failure(let error):
                 print("Sign in failed \(error)")
@@ -173,7 +181,7 @@ public class AmplifyAuthenticationService : RuntimeService {
     // signout
     public func signOut() {
 
-        _ = Amplify.Auth.signOut() { (result) in
+        _ = Amplify.Auth.signOut { (result) in
             switch result {
             case .success:
                 print("Successfully signed out")
@@ -184,13 +192,13 @@ public class AmplifyAuthenticationService : RuntimeService {
     }
 
     // change our internal state, this triggers an UI update on the main thread
-    func updateUserData(withSignInStatus status : Bool) {
-        DispatchQueue.main.async() {
-            let userData : UserData = .shared
+    func updateUserData(withSignInStatus status: Bool) {
+        DispatchQueue.main.async {
+            let userData: UserData = .shared
             userData.isUserLoggedIn = status
         }
     }
-    
+
     func signIn(username: String, password: String) {
         Amplify.Auth.signIn(username: username, password: password) { result in
             do {
@@ -238,11 +246,11 @@ public class AmplifyAuthenticationService : RuntimeService {
                         print("Signin complete")
                     }
                 } catch {
-                    print ("Sign in failed \(error)")
+                    print("Sign in failed \(error)")
                 }
         }
     }
-    
+
     func confirmSignIn(newPasswordFromUser: String) -> AnyCancellable {
         Amplify.Auth.confirmSignIn(challengeResponse: newPasswordFromUser)
             .resultPublisher
@@ -263,7 +271,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 }
             }
     }
-    
+
     func resetPassword(username: String) -> AnyCancellable {
         Amplify.Auth.resetPassword(for: username)
             .resultPublisher
@@ -277,7 +285,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Next step: \(resetPasswordResult.nextStep)")
             }
     }
-    
+
     func fetchAttributes() -> AnyCancellable {
         Amplify.Auth.fetchUserAttributes()
             .resultPublisher
@@ -290,7 +298,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("User attributes - \(attributes)")
             }
     }
-    
+
     func updateAttribute() -> AnyCancellable {
         Amplify.Auth.update(userAttribute: AuthUserAttribute(.phoneNumber, value: "+2223334444"))
             .resultPublisher
@@ -308,7 +316,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 }
             }
     }
-    
+
     func confirmAttribute() -> AnyCancellable {
         Amplify.Auth.confirm(userAttribute: .email, confirmationCode: "390739")
             .resultPublisher
@@ -321,7 +329,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Attribute verified")
             }
     }
-    
+
     func resendCode() -> AnyCancellable {
         Amplify.Auth.resendConfirmationCode(for: .email)
             .resultPublisher
@@ -334,7 +342,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Resend code sent to - \(deliveryDetails)")
             }
     }
-    
+
     func rememberDevice() -> AnyCancellable {
         Amplify.Auth.rememberDevice()
             .resultPublisher
@@ -359,7 +367,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Forget device succeeded")
             }
     }
-    
+
     func fetchDevices() -> AnyCancellable {
         Amplify.Auth.fetchDevices()
             .resultPublisher
@@ -374,8 +382,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 }
             }
     }
-    
-    
+
     func confirmResetPassword(
         username: String,
         newPassword: String,
@@ -395,7 +402,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             print("Password reset confirmed")
         }
     }
-    
+
     func changePassword(oldPassword: String, newPassword: String) -> AnyCancellable {
         Amplify.Auth.update(oldPassword: oldPassword, to: newPassword)
             .resultPublisher
@@ -408,7 +415,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Change password succeeded")
             }
     }
-    
+
     func signOutLocally() -> AnyCancellable {
         Amplify.Auth.signOut()
             .resultPublisher
@@ -421,7 +428,7 @@ public class AmplifyAuthenticationService : RuntimeService {
                 print("Successfully signed out")
             }
     }
-    
+
     func signOutGlobally() -> AnyCancellable {
         let sink = Amplify.Auth.signOut(options: .init(globalSignOut: true))
             .resultPublisher
@@ -435,7 +442,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             }
         return sink
     }
-    
+
     func fetchAuthSession() {
 
         Amplify.Auth.fetchAuthSession { result in
@@ -466,7 +473,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             }
         }
     }
-    
+
     func getEscapeHatch() {
         do {
             let plugin = try Amplify.Auth.getPlugin(for: "awsCognitoAuthPlugin") as! AWSCognitoAuthPlugin
@@ -480,7 +487,7 @@ public class AmplifyAuthenticationService : RuntimeService {
             print("Error occurred while fetching the escape hatch \(error)")
         }
     }
-    
+
     func fetchCurrentAuthSession() {
         _ = Amplify.Auth.fetchAuthSession { result in
             switch result {
@@ -491,11 +498,5 @@ public class AmplifyAuthenticationService : RuntimeService {
             }
         }
     }
-    
-    
 
-    
 }
-
-
-

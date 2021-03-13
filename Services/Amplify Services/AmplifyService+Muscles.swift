@@ -9,10 +9,10 @@ import Foundation
 import Amplify
 
 extension AmplifyAPIService {
-    static func saveAll(muscles : [Muscle]) {
+    static func saveAll(muscles: [Muscle]) {
         muscles.forEach { (m) in
             Amplify.DataStore.save(m) { result in
-               switch(result) {
+               switch result {
                case .success(let savedItem):
                    print("Saved item: \(savedItem.friendlyName)")
                case .failure(let error):
