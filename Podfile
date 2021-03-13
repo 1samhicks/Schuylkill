@@ -16,6 +16,8 @@ target 'Schuylkill-App' do
     pod 'RxSwift', '6.1.0'
     pod 'RxCocoa', '6.1.0'
     pod "SettingsAppAccess"
+    pod 'SwiftLint'
+    pod 'Sourcery'
 
   target 'Schuylkill-AppTests' do
     inherit! :search_paths
