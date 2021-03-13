@@ -9,77 +9,70 @@ import Foundation
 import Combine
 import CoreMotion
 
-
 extension CMPedometer {
     static let shared = CMPedometer()
 }
 
-public class PedometerService : DeviceService {
-    func publishError(error: Error) {
-        
-    }
-    
-    func publishValue(value: Event) {
-        
-    }
-    
+public class PedometerService: DeviceService {
     var pedometer = CMPedometer.shared
-    
-    
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-    
-    
+    var lock: RecursiveLock = RecursiveLock()
     var state: ServiceState?
-    
-    var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     var resultSink: AnyCancellable = AnyCancellable({})
-    
+
     required public init() {
         state = .notStarted
     }
-    
-    func startService() {
-        dispatchSemaphore.wait()
+
+    func publishError(error: Error) {
+
+    }
+
+    func publishValue(value: Event) {
+
+    }
+
+    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
+        return nil
+    }
+
+    func start() {
+        lock.lock()
         state = .running
-        pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
+        pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
-                self.publishError(error:.PedometerError(innerError: error, description: "", ""))
-            }
-            else if let event = event {
-                self.publishValue(value:.pedometerEvent(event))
+                self.publishError(error: .PedometerError(innerError: error, description: "", ""))
+            } else if let event = event {
+                self.publishValue(value: .pedometerEvent(event))
             }
         }
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    func pauseService() {
-        dispatchSemaphore.wait()
+
+    func pause() {
+        lock.lock()
         state = .paused
         pedometer.stopEventUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    func unpauseService() {
-        dispatchSemaphore.wait()
+
+    func restart() {
+        lock.lock()
         state = .running
-        pedometer.startEventUpdates { (event : CMPedometerEvent?, error : Error?) in
+        pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
-                self.publishError(error:.PedometerError(innerError: error,description: "",""))
-            }
-            else if let event = event {
-                self.publishValue(value:.pedometerEvent(event))
+                self.publishError(error: .PedometerError(innerError: error, description: "", ""))
+            } else if let event = event {
+                self.publishValue(value: .pedometerEvent(event))
             }
         }
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    func endService() {
-        dispatchSemaphore.wait()
+
+    func terminate() {
+        lock.lock()
         state = .finished
         pedometer.stopEventUpdates()
         resultSink.cancel()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 }

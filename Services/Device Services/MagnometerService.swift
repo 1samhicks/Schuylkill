@@ -9,54 +9,60 @@ import Foundation
 import CoreMotion
 import Combine
 
-public class MagnometerService : DeviceService {
+public class MagnometerService: DeviceService {
+    var state: ServiceState?
+    var lock: RecursiveLock = RecursiveLock()
+
+    func publishValue(value: Event) {
+
+    }
+
+    func publishError(error: Error) {
+
+    }
+
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
-    
-    
-    var state: ServiceState?
-    
-    
-    var dispatchSemaphore : DispatchSemaphore = DispatchSemaphore(value:1)
+
     var resultSink: AnyCancellable = AnyCancellable({})
-    
+
     required public init() {
     }
-    
-    public func startService() {
-        dispatchSemaphore.wait()
+
+    public func start() {
+        lock.lock()
         state = .running
         motionManager.magnetometerUpdateInterval = 0.1
         motionManager.startMagnetometerUpdates()
-        resultSink = motionManager.publisher(for:\.magnetometerData)
+        resultSink = motionManager.publisher(for: \.magnetometerData)
             .filter({ $0 != nil})
-            .sink() { reading in
+            .sink { reading in
             self.publishValue(value: DeviceEvent.logItemEvent(reading!))
         }
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    func pauseService() {
-        dispatchSemaphore.wait()
+
+    func pause() {
+        lock.lock()
         state = .paused
         motionManager.stopMagnetometerUpdates()
+        lock.unlock()
     }
-    
-    func unpauseService() {
-        dispatchSemaphore.wait()
+
+    func restart() {
+        lock.lock()
         state = .running
         motionManager.startMagnetometerUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    func endService() {
-        dispatchSemaphore.wait()
+
+    func terminate() {
+        lock.lock()
         state = .finished
         motionManager.stopMagnetometerUpdates()
         resultSink.cancel()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
-    
-    
+
 }
