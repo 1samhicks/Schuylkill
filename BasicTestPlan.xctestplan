@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "14174E8C-83E9-403E-B5D0-CEC7FAA74896",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Schuylkill-App.xcodeproj",
+          "identifier" : "37F7C5A125CD388F000D8FAF",
+          "name" : "Schuylkill-App"
+        },
+        {
+          "containerPath" : "container:..\/..\/Library\/Developer\/Xcode\/DerivedData\/Schuylkill-App-aeyzpevskuqkzrapdrzsgbjwdnwd\/SourcePackages\/checkouts\/Resolver",
+          "identifier" : "Resolver",
+          "name" : "Resolver"
+        }
+      ]
+    },
+    "language" : "en",
+    "locationScenario" : {
+      "identifier" : "San Francisco, CA, USA",
+      "referenceType" : "built-in"
+    },
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+
+  ],
+  "version" : 1
+}
