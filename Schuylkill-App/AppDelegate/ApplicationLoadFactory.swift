@@ -9,14 +9,14 @@ import Foundation
 import SwiftUI
 
 public class ApplicationLoadFactory {
-    static func getFirstView<V : View>(status: UserData = UserData.shared) throws -> V {
-        if(!status.isUserLoggedIn) {
+    static func getFirstView<V: View>(status: UserData = UserData.shared) throws -> V {
+        if !status.isUserLoggedIn {
             return AuthenticationView() as! V
-        } else if(!status.hasOnboarded) {
+        } else if !status.hasOnboarded {
             return AuthenticationView() as! V
-        } else if(!status.isLocationServiceEnabled) {
+        } else if !status.isLocationServiceEnabled {
             return LocationNagView() as! V
         }
-        throw ApplicationRuntimeError.InconsistentState("The user is in a state not recognized","")
+        throw ApplicationRuntimeError.InconsistentState("The user is in a state not recognized", "")
     }
 }

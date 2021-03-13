@@ -9,23 +9,23 @@ import Foundation
 import Resolver
 
 extension Resolver {
-    
+
     public static func registerAllServices() {
-        
+
     }
     public static func registerFirebaseService() {
 
     }
-    
+
     public static func registerAmplifyService() {
-        
+
     }
-    
+
     public static func registerAmplifyAuthenticationService() {
-        
+
     }
-    
+
     public static func registerFirebaseAuthenticationService() {
-        
+
     }
 }

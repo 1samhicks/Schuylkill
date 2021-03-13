@@ -9,10 +9,9 @@ import Foundation
 import Combine
 import CoreMotion
 
-protocol RuntimeService : ResolverRegistrant {
+protocol RuntimeService: ServiceNaming {
     associatedtype publisher
-    var servicePublisher : publisher { get }
+    var servicePublisher: publisher { get }
     func publishValue(value: Event)
-    func publishError(error : Error)
+    func publishError(error: Error)
 }
-

@@ -9,7 +9,6 @@
 import CoreMotion
 import RxSwift
 
-
 // If the current device supports one of the capabilities, observable sequence will not be nil
 public struct MotionActivityManager {
     public let motionActivity: Observable<CMMotionActivity>?
@@ -17,14 +16,11 @@ public struct MotionActivityManager {
     public init(motionActivityManager: CMMotionActivityManager) {
         if CMMotionActivityManager.isActivityAvailable() {
             self.motionActivity = motionActivityManager.rx.motionActivity
-        }
-        else {
+        } else {
             self.motionActivity = nil
         }
     }
 }
-
-
 
 extension Reactive where Base: CMMotionActivityManager {
     static public func manager(createActivityManager: @escaping () throws -> CMMotionActivityManager = { CMMotionActivityManager() }) -> Observable<MotionActivityManager> {
@@ -32,8 +28,7 @@ extension Reactive where Base: CMMotionActivityManager {
             do {
                 let activityManager = try createActivityManager()
                 observer.on(.next(MotionActivityManager(motionActivityManager: activityManager)))
-            }
-            catch let e {
+            } catch let e {
                 observer.on(.error(e))
             }
             return Disposables.create()
@@ -58,14 +53,13 @@ extension Reactive where Base: CMMotionActivityManager {
                     observer.on(.next(data))
                 })
 
-                return Disposables.create() {
+                return Disposables.create {
                     activityManager.stopActivityUpdates()
                 }
             }.share(replay: 1)
         }
     }
 }
-
 
 extension Reactive where Base: CMMotionActivityManager {
     func memoize<D>(key: UnsafeRawPointer, createLazily: () -> Observable<D>) -> Observable<D> {
@@ -81,5 +75,3 @@ extension Reactive where Base: CMMotionActivityManager {
         return sequence
     }
 }
-
-

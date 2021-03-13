@@ -13,8 +13,7 @@ extension Reactive where Base: CMMotionManager {
             do {
                 let motionManager = try createMotionManager()
                 observer.on(.next(MotionManager(motionManager: motionManager)))
-            }
-            catch let e {
+            } catch let e {
                 observer.on(.error(e))
             }
             return Disposables.create()
@@ -36,21 +35,21 @@ extension Reactive where Base: CMMotionManager {
                 let motionManager = self.base
                 let operationQueue = OperationQueue()
                 operationQueue.maxConcurrentOperationCount = 1
-                
-                motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: { (data: CMAccelerometerData?, error: Error?) -> Void in
+
+                motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: { (data: CMAccelerometerData?, _: Error?) -> Void in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data.acceleration))
                 })
-                
-                return Disposables.create() {
+
+                return Disposables.create {
                     motionManager.stopAccelerometerUpdates()
                 }
             }.share(replay: 1)
         }
     }
-    
+
     public var accelerometerData: Observable<CMAccelerometerData> {
         return memoize(key: &accelerometerDataKey) {
             Observable.create { observer in
@@ -58,14 +57,14 @@ extension Reactive where Base: CMMotionManager {
                 let operationQueue = OperationQueue()
                 operationQueue.maxConcurrentOperationCount = 1
 
-                motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: { (data: CMAccelerometerData?, error: Error?) -> Void in
+                motionManager.startAccelerometerUpdates(to: operationQueue, withHandler: { (data: CMAccelerometerData?, _: Error?) -> Void in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data))
                 })
-                
-                return Disposables.create() {
+
+                return Disposables.create {
                     motionManager.stopAccelerometerUpdates()
                 }
             }.share(replay: 1)
@@ -78,57 +77,57 @@ extension Reactive where Base: CMMotionManager {
                 let motionManager = self.base
                 let operationQueue = OperationQueue()
                 operationQueue.maxConcurrentOperationCount = 1
-                
-                motionManager.startGyroUpdates(to: operationQueue, withHandler: { (data: CMGyroData?, error: Error?) -> Void in
+
+                motionManager.startGyroUpdates(to: operationQueue, withHandler: { (data: CMGyroData?, _: Error?) -> Void in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data.rotationRate))
                 })
-                
-                return Disposables.create() {
+
+                return Disposables.create {
                     motionManager.stopGyroUpdates()
                 }
             }.share(replay: 1)
         }
     }
-    
+
     public var magneticField: Observable<CMMagneticField> {
         return memoize(key: &magneticFieldKey) {
             Observable.create { observer in
                 let motionManager = self.base
                 let operationQueue = OperationQueue()
                 operationQueue.maxConcurrentOperationCount = 1
-                
-                motionManager.startMagnetometerUpdates(to: operationQueue, withHandler: { (data: CMMagnetometerData?, error: Error?) -> Void in
+
+                motionManager.startMagnetometerUpdates(to: operationQueue, withHandler: { (data: CMMagnetometerData?, _: Error?) -> Void in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data.magneticField))
                 })
-                
-                return Disposables.create() {
+
+                return Disposables.create {
                     motionManager.stopMagnetometerUpdates()
                 }
             }.share(replay: 1)
         }
     }
-    
+
     public var deviceMotion: Observable<CMDeviceMotion> {
         return memoize(key: &deviceMotionKey) {
             Observable.create { observer in
                 let motionManager = self.base
                 let operationQueue = OperationQueue()
                 operationQueue.maxConcurrentOperationCount = 1
-                
-                motionManager.startDeviceMotionUpdates(to: operationQueue, withHandler: { (data: CMDeviceMotion?, error: Error?) -> Void in
+
+                motionManager.startDeviceMotionUpdates(to: operationQueue, withHandler: { (data: CMDeviceMotion?, _: Error?) -> Void in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data))
                 })
-                
-                return Disposables.create() {
+
+                return Disposables.create {
                     motionManager.stopDeviceMotionUpdates()
                 }
             }.share(replay: 1)
@@ -136,18 +135,17 @@ extension Reactive where Base: CMMotionManager {
     }
 }
 
-
 extension Reactive where Base: CMMotionManager {
     func memoize<D>(key: UnsafeRawPointer, createLazily: () -> Observable<D>) -> Observable<D> {
         objc_sync_enter(self); defer { objc_sync_exit(self) }
-        
+
         if let sequence = objc_getAssociatedObject(self, key) as? Observable<D> {
             return sequence
         }
-        
+
         let sequence = createLazily()
         objc_setAssociatedObject(self, key, sequence, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        
+
         return sequence
     }
 }
@@ -157,14 +155,14 @@ extension Reactive where Base: CMPedometer {
         return memoize(key: &pedometerKey) {
             Observable.create { observer in
                 let pedometer = self.base
-                
-                pedometer.startUpdates(from: from, withHandler: {(data, error) in
+
+                pedometer.startUpdates(from: from, withHandler: {(data, _) in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data))
                 })
-                return Disposables.create() {
+                return Disposables.create {
                     pedometer.stopUpdates()
                     if #available(iOS 10.0, *) {
                         pedometer.stopEventUpdates()
@@ -173,20 +171,19 @@ extension Reactive where Base: CMPedometer {
             }.share(replay: 1)
         }
     }
-    
-    
+
     public var pedometer: Observable<CMPedometerData> {
         return memoize(key: &pedometerKey) {
             Observable.create { observer in
                 let pedometer = self.base
-                
-                pedometer.startUpdates(from: Date(), withHandler: {(data, error) in
+
+                pedometer.startUpdates(from: Date(), withHandler: {(data, _) in
                     guard let data = data else {
                         return
                     }
                     observer.on(.next(data))
                 })
-                return Disposables.create() {
+                return Disposables.create {
                     pedometer.stopUpdates()
                     if #available(iOS 10.0, *) {
                         pedometer.stopEventUpdates()
@@ -195,21 +192,20 @@ extension Reactive where Base: CMPedometer {
             }.share(replay: 1)
         }
     }
-    
+
     func memoize<D>(key: UnsafeRawPointer, createLazily: () -> Observable<D>) -> Observable<D> {
         objc_sync_enter(self); defer { objc_sync_exit(self) }
-        
+
         if let sequence = objc_getAssociatedObject(self, key) as? Observable<D> {
             return sequence
         }
-        
+
         let sequence = createLazily()
         objc_setAssociatedObject(self, key, sequence, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-        
+
         return sequence
     }
 }
-
 
 // If the current device supports one of the capabilities, observable sequence will not be nil
 public struct MotionManager {
@@ -218,35 +214,31 @@ public struct MotionManager {
     public let rotationRate: Observable<CMRotationRate>?
     public let magneticField: Observable<CMMagneticField>?
     public let deviceMotion: Observable<CMDeviceMotion>?
-    
+
     public init(motionManager: CMMotionManager) {
         if motionManager.isAccelerometerAvailable {
             self.acceleration = motionManager.rx.acceleration
             self.accelerometerData = motionManager.rx.accelerometerData
-        }
-        else {
+        } else {
             self.acceleration = nil
             self.accelerometerData = nil
         }
-        
+
         if motionManager.isGyroAvailable {
             self.rotationRate = motionManager.rx.rotationRate
-        }
-        else {
+        } else {
             self.rotationRate = nil
         }
-        
+
         if motionManager.isMagnetometerAvailable {
             self.magneticField = motionManager.rx.magneticField
-        }
-        else {
+        } else {
             self.magneticField = nil
         }
-        
+
         if motionManager.isDeviceMotionAvailable {
             self.deviceMotion = motionManager.rx.deviceMotion
-        }
-        else {
+        } else {
             self.deviceMotion = nil
         }
     }
