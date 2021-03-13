@@ -10,13 +10,19 @@ import CoreLocation
 import Combine
 
 public class LocationService : NSObject, DeviceService, CLLocationManagerDelegate {
+    func publishError(error: Error) {
+        
+    }
+    
+    func publishValue(value: Event) {
+        
+    }
+    
     var state: ServiceState?
     
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
-
-    
     
     var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value:1)
     
