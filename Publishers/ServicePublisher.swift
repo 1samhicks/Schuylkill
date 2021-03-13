@@ -8,11 +8,13 @@
 import Foundation
 import Combine
 
-protocol ServicePublisher : Publisher  {
+protocol ServicePublisher: Publisher {
+    associatedtype T = Event
+    associatedtype U = Error
+    
+    func send(input: T)
 
-    func send(input: Event)
-
-    func send(error: Error)
+    func send(error: U)
 
     func sendFinished()
 }
