@@ -87,6 +87,8 @@
 		377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
+		379400BA25FC115E00E173B7 /* Panic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400B925FC115E00E173B7 /* Panic.swift */; };
+		379400C525FC19FA00E173B7 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400C425FC19FA00E173B7 /* UserNotifications.swift */; };
 		379E62E125E2314300B894BA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
 		379E630D25E2379600B894BA /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
 		379E631425E237F900B894BA /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
@@ -142,6 +144,9 @@
 		37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
 		37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */; };
 		37A45CC425E8433600A7CAD1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37A45CC325E8433600A7CAD1 /* HealthKit.framework */; };
+		37AAD69625F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
+		37AAD69725F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
+		37AAD69825F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
 		37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
 		37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E225F381A00088E581 /* LocationNagView.swift */; };
 		37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E925F381FB0088E581 /* LocationNagViewController.swift */; };
@@ -210,8 +215,8 @@
 		37BC241F25F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
 		37BC242025F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
 		37BC242125F406770088E581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37BC241E25F406770088E581 /* Assets.xcassets */; };
-		37BC242725F409BD0088E581 /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
-		37BC242D25F409BE0088E581 /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
+		37BC242725F409BD0088E581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* App.swift */; };
+		37BC242D25F409BE0088E581 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* App.swift */; };
 		37BC243925F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
 		37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
 		37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC243825F417890088E581 /* StorageServiceError.swift */; };
@@ -243,7 +248,7 @@
 		37EE830F25E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831025E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
 		37EE831125E64E4600B07673 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 37EE830E25E64E4600B07673 /* FlickrFiles */; };
-		37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */; };
+		37F7C5A625CD388F000D8FAF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A525CD388F000D8FAF /* App.swift */; };
 		37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */; };
 		37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */; };
 		37F7C5B825CD3892000D8FAF /* Schuylkill_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5B725CD3892000D8FAF /* Schuylkill_AppTests.swift */; };
@@ -297,9 +302,6 @@
 		37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
 		37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
 		37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C71025CD49BB000D8FAF /* Storage.swift */; };
-		37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
-		37F7C72725CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
-		37F7C72825CD4A03000D8FAF /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C72525CD4A03000D8FAF /* AppSettings.swift */; };
 		37F7C74825CD5D3D000D8FAF /* RSBarcodes_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = 37F7C74725CD5D3D000D8FAF /* RSBarcodes_Swift */; };
 		37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
 		37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */; };
@@ -313,9 +315,9 @@
 		37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
 		37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
 		37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */; };
-		37F9441425D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */; };
-		37F9441525D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */; };
-		37F9441625D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */; };
+		37F9441425D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */; };
+		37F9441525D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */; };
+		37F9441625D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */; };
 		37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
 		37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
 		37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9442025D3E31A00243AC1 /* FirebaseService.swift */; };
@@ -453,6 +455,8 @@
 		377A503C25E9191500D8C5F1 /* MagnometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnometerService.swift; sourceTree = "<group>"; };
 		377A504725E9476200D8C5F1 /* RxCoreMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCoreMotion.swift; sourceTree = "<group>"; };
 		377A504825E9476200D8C5F1 /* MotionActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
+		379400B925FC115E00E173B7 /* Panic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic.swift; sourceTree = "<group>"; };
+		379400C425FC19FA00E173B7 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		379E62E025E2314300B894BA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GymWorkout+Extensions.swift"; sourceTree = "<group>"; };
 		379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FitnessCenter+Extensions.swift"; sourceTree = "<group>"; };
@@ -475,6 +479,7 @@
 		37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injections.swift"; sourceTree = "<group>"; };
 		37A45CC225E842CC00A7CAD1 /* Schuylkill-App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Schuylkill-App.entitlements"; sourceTree = "<group>"; };
 		37A45CC325E8433600A7CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIError.swift; sourceTree = "<group>"; };
 		37B9190225E7204B00F0BE01 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		37BC21E225F381A00088E581 /* LocationNagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagView.swift; sourceTree = "<group>"; };
 		37BC21E925F381FB0088E581 /* LocationNagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagViewController.swift; sourceTree = "<group>"; };
@@ -498,7 +503,6 @@
 		37BC243825F417890088E581 /* StorageServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceError.swift; sourceTree = "<group>"; };
 		37BC246425F505EA0088E581 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaver.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
-		37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TesterPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		37E8763A25F5333800B0F333 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		37E8765F25F5511200B0F333 /* PluginError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PluginError.swift; sourceTree = "<group>"; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
@@ -510,7 +514,7 @@
 		37EE82E825E630C500B07673 /* MuscleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuscleCell.swift; sourceTree = "<group>"; };
 		37EE830E25E64E4600B07673 /* FlickrFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlickrFiles; sourceTree = "<group>"; };
 		37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Schuylkill-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schuylkill_AppApp.swift; sourceTree = "<group>"; };
+		37F7C5A525CD388F000D8FAF /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		37F7C5A725CD388F000D8FAF /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		37F7C5AC25CD3891000D8FAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		37F7C5B325CD3892000D8FAF /* Schuylkill-AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Schuylkill-AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -543,11 +547,10 @@
 		37F7C6A025CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSessionChannelDelegate.swift; sourceTree = "<group>"; };
 		37F7C6AA25CD3CB1000D8FAF /* WatchSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchSettings.swift; sourceTree = "<group>"; };
 		37F7C71025CD49BB000D8FAF /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		37F7C72525CD4A03000D8FAF /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		37F7C77525CD6605000D8FAF /* Publisher+Assign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Assign.swift"; sourceTree = "<group>"; };
 		37F7C77F25CD6686000D8FAF /* FirebaseAuthenticationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthenticationService.swift; sourceTree = "<group>"; };
 		37F9440625D3E0A900243AC1 /* AmplifyAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIService.swift; sourceTree = "<group>"; };
-		37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver_Base+Injection.swift"; sourceTree = "<group>"; };
+		37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+ResolverRegistering.swift"; sourceTree = "<group>"; };
 		37F9442025D3E31A00243AC1 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Muscle+Extensions.swift"; sourceTree = "<group>"; };
 		37F9450D25D4207500243AC1 /* Amplify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Amplify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -660,6 +663,7 @@
 				3764F07825EE31B2000799A9 /* DeviceError.swift */,
 				37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */,
 				37BC243825F417890088E581 /* StorageServiceError.swift */,
+				37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */,
 			);
 			path = Errors;
 			sourceTree = "<group>";
@@ -695,6 +699,7 @@
 		3764F16F25EF52D5000799A9 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				379400B825FC114300E173B7 /* Alerts  */,
 				37BC23DF25F3FEFA0088E581 /* Helpers */,
 				3764F17225EF5322000799A9 /* Onboarding Flow */,
 			);
@@ -720,6 +725,22 @@
 				3764F17325EF5348000799A9 /* Onboarding.storyboard */,
 			);
 			path = "Onboarding Flow";
+			sourceTree = "<group>";
+		};
+		379400B825FC114300E173B7 /* Alerts  */ = {
+			isa = PBXGroup;
+			children = (
+				379400B925FC115E00E173B7 /* Panic.swift */,
+			);
+			path = "Alerts ";
+			sourceTree = "<group>";
+		};
+		379400C325FC19BC00E173B7 /* User Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				379400C425FC19FA00E173B7 /* UserNotifications.swift */,
+			);
+			path = "User Notifications";
 			sourceTree = "<group>";
 		};
 		379E64B925E3BD6B00B894BA /* Protocols */ = {
@@ -1003,7 +1024,6 @@
 				37F7C77E25CD6674000D8FAF /* Services */,
 				37F7C74E25CD5D90000D8FAF /* Firebase */,
 				191B4680E1B646FAB77A9E33 /* AmplifyConfig */,
-				37F7C72425CD49F0000D8FAF /* AppSettings */,
 				37F7C70F25CD49A5000D8FAF /* Property Wrappers */,
 				37F7C64F25CD3C72000D8FAF /* Connectivity */,
 				37F7C5A325CD388F000D8FAF /* Products */,
@@ -1065,7 +1085,6 @@
 			isa = PBXGroup;
 			children = (
 				37F7C5CC25CD3892000D8FAF /* Assets.xcassets */,
-				37D6DB9D25E77A1200EF2289 /* TesterPlayground.playground */,
 				37F7C5CE25CD3892000D8FAF /* Info.plist */,
 			);
 			path = "Schuylkill-App WatchKit App";
@@ -1100,11 +1119,12 @@
 		37F7C63925CD3BD9000D8FAF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				379400C325FC19BC00E173B7 /* User Notifications */,
 				377A504825E9476200D8C5F1 /* MotionActivityManager.swift */,
 				377A504725E9476200D8C5F1 /* RxCoreMotion.swift */,
 				37B9190125E7203100F0BE01 /* Extensions */,
-				37F7C5A525CD388F000D8FAF /* Schuylkill_AppApp.swift */,
-				37F9441325D3E23700243AC1 /* Resolver_Base+Injection.swift */,
+				37F7C5A525CD388F000D8FAF /* App.swift */,
+				37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */,
 				37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */,
 				37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */,
 			);
@@ -1133,14 +1153,6 @@
 				37F7C71025CD49BB000D8FAF /* Storage.swift */,
 			);
 			path = "Property Wrappers";
-			sourceTree = "<group>";
-		};
-		37F7C72425CD49F0000D8FAF /* AppSettings */ = {
-			isa = PBXGroup;
-			children = (
-				37F7C72525CD4A03000D8FAF /* AppSettings.swift */,
-			);
-			path = AppSettings;
 			sourceTree = "<group>";
 		};
 		37F7C74E25CD5D90000D8FAF /* Firebase */ = {
@@ -1250,6 +1262,7 @@
 				37F7C5F225CD3893000D8FAF /* Embed Watch Content */,
 				C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */,
 				37E8769C25F6B43700B0F333 /* Embed Frameworks */,
+				377A0B6625FC3C9600CAF7C4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1512,6 +1525,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Schuylkill-AppTests/Pods-Schuylkill-AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		377A0B6625FC3C9600CAF7C4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		4930B43F108B000D5DD4D49B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1665,7 +1695,7 @@
 				3764F15225EF4978000799A9 /* ExerciseRep+Schema.swift in Sources */,
 				3764F15D25EF4978000799A9 /* GymWorkout+Schema.swift in Sources */,
 				37F7C66225CD3C86000D8FAF /* CommandStatus.swift in Sources */,
-				37F7C5A625CD388F000D8FAF /* Schuylkill_AppApp.swift in Sources */,
+				37F7C5A625CD388F000D8FAF /* App.swift in Sources */,
 				3764F15925EF4978000799A9 /* Location+Schema.swift in Sources */,
 				37EE82EC25E630C500B07673 /* MuscleCell.swift in Sources */,
 				37F7C71125CD49BB000D8FAF /* Storage.swift in Sources */,
@@ -1676,6 +1706,7 @@
 				3764F18025EF5374000799A9 /* QRView.swift in Sources */,
 				37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				379E655E25E4F74200B894BA /* MusclesViewController.swift in Sources */,
+				379400C525FC19FA00E173B7 /* UserNotifications.swift in Sources */,
 				37F7C6AB25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */,
 				3764F0F625EF397E000799A9 /* Deletable.swift in Sources */,
@@ -1687,6 +1718,7 @@
 				3764F03B25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37BC243925F417890088E581 /* StorageServiceError.swift in Sources */,
 				37F7C65125CD3C82000D8FAF /* Command.swift in Sources */,
+				379400BA25FC115E00E173B7 /* Panic.swift in Sources */,
 				3764F1AC25F10125000799A9 /* ServiceState.swift in Sources */,
 				37F9442125D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC21FD25F38C180088E581 /* ApplicationLoadFactory.swift in Sources */,
@@ -1710,12 +1742,12 @@
 				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
-				37F9441425D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
+				37F9441425D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
 				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
-				37F7C72625CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */,
 				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
+				37AAD69625F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
 				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
 				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
@@ -1761,7 +1793,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3764F07125EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
-				37F7C72725CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E650F25E413BA00B894BA /* Resolver+Injection.swift in Sources */,
 				377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
@@ -1787,6 +1818,7 @@
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
+				37AAD69725F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
@@ -1802,7 +1834,7 @@
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
-				37F9441525D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
+				37F9441525D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
@@ -1813,7 +1845,7 @@
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
-				37BC242725F409BD0088E581 /* Schuylkill_AppApp.swift in Sources */,
+				37BC242725F409BD0088E581 /* App.swift in Sources */,
 				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */,
@@ -1834,7 +1866,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3764F07225EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
-				37F7C72825CD4A03000D8FAF /* AppSettings.swift in Sources */,
 				379E651025E413BA00B894BA /* Resolver+Injection.swift in Sources */,
 				377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
@@ -1860,6 +1891,7 @@
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
+				37AAD69825F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* Resolver+Registration.swift in Sources */,
 				37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
@@ -1875,7 +1907,7 @@
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
-				37F9441625D3E23700243AC1 /* Resolver_Base+Injection.swift in Sources */,
+				37F9441625D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
@@ -1886,7 +1918,7 @@
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
-				37BC242D25F409BE0088E581 /* Schuylkill_AppApp.swift in Sources */,
+				37BC242D25F409BE0088E581 /* App.swift in Sources */,
 				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */,
@@ -2206,7 +2238,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App/Schuylkill-App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
@@ -2234,7 +2266,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App/Schuylkill-App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
