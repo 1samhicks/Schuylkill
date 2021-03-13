@@ -19,13 +19,16 @@ extension OSLog {
     
     
     
-    static func registerService(resolved: ResolverRegistrant.Type,name : Resolver.Name, key : Int, containerName: String) {
+    static func registerService(resolved: ServiceNaming.Type,name : Resolver.Name, key : Int, containerName: String) {
         let message = "Registering service: \(resolved.self) named: \(name) with key: \(key) in container: \(containerName)"
         print(message)
     }
     
-    static func serviceStateChanged(resolved: ResolverRegistrant.Type,name : Resolver.Name, newState : ServiceState) {
+    static func serviceStateChanged(resolved: ServiceNaming.Type,name : Resolver.Name, newState : ServiceState) {
         let message = "Registering service: \(resolved.self) named: \(name) has changed to State: \(newState)"
         print(message)
     }
+    
+    
+
 }

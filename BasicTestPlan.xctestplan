@@ -28,6 +28,11 @@
       "identifier" : "San Francisco, CA, USA",
       "referenceType" : "built-in"
     },
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:..\/..\/Library\/Developer\/Xcode\/DerivedData\/Schuylkill-App-aeyzpevskuqkzrapdrzsgbjwdnwd\/SourcePackages\/checkouts\/Resolver",
+      "identifier" : "Resolver",
+      "name" : "Resolver"
+    },
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
