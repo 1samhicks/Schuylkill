@@ -34,6 +34,6 @@ import UIKit
 
 class MuscleCell: UICollectionViewCell {
   @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var titleText : UITextView!
-    @IBOutlet weak var secondaryText : UITextView!
+    @IBOutlet weak var titleText: UITextView!
+    @IBOutlet weak var secondaryText: UITextView!
 }

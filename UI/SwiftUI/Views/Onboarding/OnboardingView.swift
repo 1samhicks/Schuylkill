@@ -11,23 +11,22 @@ struct OnboardingView: UIViewControllerRepresentable {
     func makeUIViewController(context: Context) -> OnboardingEntryViewController {
         return onboardingEntryViewController
     }
-    
+
     func updateUIViewController(_ uiViewController: OnboardingEntryViewController, context: Context) {
-        
+
     }
-    
+
     public typealias UIViewControllerType = OnboardingEntryViewController
-    var onboardingEntryViewController : UIViewControllerType
-    
+    var onboardingEntryViewController: UIViewControllerType
+
     func performOnAppear() {
-        
+
     }
-    
+
     init() {
         self.onboardingEntryViewController = UIViewControllerType()
     }
-    
-    
+
     func makeCoordinator() -> Coordinator {
         return Coordinator(self)
     }

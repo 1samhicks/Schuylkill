@@ -10,16 +10,16 @@ import SwiftUI
 import UIKit
 import Combine
 
-public struct LocationNagView : UIViewControllerRepresentable {
-    
+public struct LocationNagView: UIViewControllerRepresentable {
+
     public typealias UIViewControllerType = LocationNagViewController
-    
+
     public func makeUIViewController(context: Context) -> UIViewControllerType {
         LocationNagViewController()
     }
-    
+
     public func updateUIViewController(_ uiViewController: LocationNagViewController, context: Context) {
-        
+
     }
 }
 

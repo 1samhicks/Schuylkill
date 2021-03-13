@@ -7,16 +7,16 @@
 
 import SwiftUI
 
-public struct QRView : UIViewControllerRepresentable {
-    
+public struct QRView: UIViewControllerRepresentable {
+
     public typealias UIViewControllerType = QRViewController
-    
+
     public func makeUIViewController(context: Context) -> QRViewController {
         return QRViewController()
     }
-    
+
     public func updateUIViewController(_ uiViewController: QRViewController, context: Context) {
-        
+
     }
 }
 

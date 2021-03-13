@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 import PaperOnboarding
 
-public class OnboardingEntryViewController : UIViewController, PaperOnboardingDataSource {
+public class OnboardingEntryViewController: UIViewController, PaperOnboardingDataSource {
     public func onboardingItemsCount() -> Int {
         return 3
     }
-    
+
     public func onboardingItem(at index: Int) -> OnboardingItemInfo {
 
        return [
@@ -25,7 +25,7 @@ public class OnboardingEntryViewController : UIViewController, PaperOnboardingDa
                                   titleColor: UIColor.green,
                             descriptionColor: UIColor.gray,
                             titleFont: UIFont.italicSystemFont(ofSize: 14),
-                             descriptionFont:UIFont.italicSystemFont(ofSize: 10) ),
+                             descriptionFont: UIFont.italicSystemFont(ofSize: 10) ),
 
          OnboardingItemInfo(informationImage: Asset.key.image,
                                         title: "title",
@@ -48,7 +48,7 @@ public class OnboardingEntryViewController : UIViewController, PaperOnboardingDa
                            descriptionFont: UIFont.italicSystemFont(ofSize: 10))
          ][index]
      }
-    
+
     public override func viewDidLoad() {
       super.viewDidLoad()
 

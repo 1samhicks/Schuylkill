@@ -12,9 +12,9 @@ import QRCodeReader
 import AVFoundation
 import Resolver
 
-public class QRViewController : UIViewController, QRCodeReaderViewControllerDelegate {
-    @LazyInjected var viewModel : QRViewModel
-    
+public class QRViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+    @LazyInjected var viewModel: QRViewModel
+
     @IBOutlet weak var previewView: QRCodeReaderView! {
       didSet {
         previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
@@ -27,7 +27,7 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
         })
       }
     }
-    
+
     lazy var reader: QRCodeReader = QRCodeReader()
     lazy var readerVC: QRCodeReaderViewController = {
       let builder = QRCodeReaderViewControllerBuilder {
@@ -36,13 +36,13 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
         $0.preferredStatusBarStyle = .lightContent
         $0.showOverlayView         = true
         $0.rectOfInterest          = CGRect(x: 0.2, y: 0.2, width: 0.6, height: 0.6)
-        
+
         $0.reader.stopScanningWhenCodeIsFound = false
       }
-      
+
       return QRCodeReaderViewController(builder: builder)
     }()
-    
+
     private func checkScanPermissions() -> Bool {
       do {
         return try QRCodeReader.supportsMetadataObjectTypes()
@@ -72,7 +72,7 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
         return false
       }
     }
-    
+
     @IBAction func scanInModalAction(_ sender: AnyObject) {
       guard checkScanPermissions() else { return }
 
@@ -87,7 +87,7 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
       present(readerVC, animated: true, completion: nil)
     }
-    
+
     @IBAction func scanInPreviewAction(_ sender: Any) {
       guard checkScanPermissions(), !reader.isRunning else { return }
 
@@ -126,10 +126,9 @@ public class QRViewController : UIViewController, QRCodeReaderViewControllerDele
 
       dismiss(animated: true, completion: nil)
     }
-    
-    
+
 }
 
-extension QRViewController : Resolving {
+extension QRViewController: Resolving {
     func makeViewModel() -> QRViewModel { return resolver.resolve() }
 }
