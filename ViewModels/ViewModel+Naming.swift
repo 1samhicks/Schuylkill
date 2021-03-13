@@ -8,7 +8,7 @@
 import Foundation
 import Resolver
 
-protocol ViewModel : ResolverRegistrant {
+protocol ViewModel : ServiceNaming {
     init()
 }
 
