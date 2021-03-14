@@ -5,12 +5,11 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
-import Foundation
 import CoreLocation
 import CoreMotion
+import Foundation
 
-
-public enum DeviceEvent : Event {
+public enum DeviceEvent: Event {
     case logItemEvent(CMLogItem)
     case locationEvent(CLLocation)
     case headingEvent(CLHeading)

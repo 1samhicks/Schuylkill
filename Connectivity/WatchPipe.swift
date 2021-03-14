@@ -9,9 +9,6 @@ import Foundation
 import WatchConnectivity
 
 public class WatchPipe {
-    
     init() {
-        
     }
-    
 }

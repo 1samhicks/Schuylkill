@@ -5,9 +5,9 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-import SwiftUI
-import Resolver
 import Combine
+import Resolver
+import SwiftUI
 import UIKit
 
 struct AuthenticationView: UIViewControllerRepresentable {
@@ -15,7 +15,6 @@ struct AuthenticationView: UIViewControllerRepresentable {
     var authenticationViewController: UIViewControllerType
 
     func performOnAppear() {
-
     }
 
     init() {
@@ -27,7 +26,6 @@ struct AuthenticationView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: AuthenticationViewController, context: Context) {
-
     }
 
     func makeCoordinator() -> AuthenticationView.Coordinator {

@@ -5,18 +5,16 @@
 //  Created by Sam Hicks on 3/2/21.
 //
 
-import Foundation
-import SwiftUI
-import Resolver
 import Combine
+import Foundation
+import Resolver
+import SwiftUI
 import UIKit
 
 struct BarcodeReaderView: UIViewControllerRepresentable {
-
     var barcodeReaderViewController: UIViewController!
 
     func performOnAppear() {
-
     }
 
     init() {
@@ -27,7 +25,6 @@ struct BarcodeReaderView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: BarcodeReaderViewController, context: Context) {
-
     }
 
     public typealias UIViewControllerType = BarcodeReaderViewController
@@ -37,5 +34,4 @@ struct BarcodeReaderView: UIViewControllerRepresentable {
             BarcodeReaderView()
         }
     }
-
 }

@@ -137,11 +137,10 @@ public class QRCodeReaderViewController: UIViewController {
     for attribute in [.left, .top, .right] as [NSLayoutConstraint.Attribute] {
         NSLayoutConstraint(item: builder.readerView.view, attribute: attribute, relatedBy: .equal, toItem: view, attribute: attribute, multiplier: 1, constant: 0).isActive = true
     }
-    
+
     if #available(iOS 11.0, *) {
         view.safeAreaLayoutGuide.bottomAnchor.constraint(equalTo: builder.readerView.view.bottomAnchor).isActive = true
-    }
-    else {
+    } else {
         NSLayoutConstraint(item: builder.readerView.view, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0).isActive = true
     }
   }
@@ -175,7 +174,7 @@ public class QRCodeReaderViewController: UIViewController {
       delegate?.reader(self, didSwitchCamera: newDevice)
     }
   }
-  
+
   @objc func toggleTorchAction(_ button: ToggleTorchButton) {
     codeReader.toggleTorch()
   }

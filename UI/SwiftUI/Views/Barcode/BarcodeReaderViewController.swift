@@ -6,10 +6,10 @@
 //
 import Foundation
 
-import UIKit
 import AVFoundation
-import RSBarcodes_Swift
 import Resolver
+import RSBarcodes_Swift
+import UIKit
 
 class BarcodeReaderViewController: RSCodeReaderViewController {
     @LazyInjected var viewModel: BarcodeReaderViewModel!
@@ -35,7 +35,7 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
     }
 
     var barcode: String = ""
-    var dispatched: Bool = false
+    var dispatched = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,13 +92,11 @@ class BarcodeReaderViewController: RSCodeReaderViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
         if segue.identifier == "nextView" && !self.barcode.isEmpty {
             if let destinationVC = segue.destination as? BarcodeDisplayViewController {
                 destinationVC.contents = self.barcode
             }
         }
-
     }
 }
 

@@ -5,8 +5,9 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
-import Foundation
 import Amplify
+import AmplifyPlugins
+import Foundation
 
 extension RuntimeService where Self: AmplifyS3StorageService {
     var servicePublisher : some ServicePublisher {
@@ -25,7 +26,7 @@ extension RuntimeService {
     internal func onReceiveCompletion(completed: ApplicationError) {
         switch completed {
         case is AuthenticationError:
-            onAuthenticationError(error: ApplicationError.self as! AmplifyError)
+            onAuthenticationError(error: completed)
         /*case .AuthError(let error) where AuthError.Type.self == AuthenticationError.self:
             servicePublisher.send(error: AuthenticationError.AuthError(message:error) as! ApplicationError)*/
         default:
@@ -34,24 +35,6 @@ extension RuntimeService {
     }
 
     private func onAuthenticationError(error: ApplicationError) {
-        let err = error as! AuthenticationError
-        switch err {
-            case .api: break
-            case .nonUniqueResult: break
-            case .configuration: break
-            case .conflict: break
-            case .invalidCondition: break
-            case .decodingError: break
-            case .internalOperation: break
-        case .invalidDatabase: break
-            case .invalidModelName: break
-            case .invalidOperation: break
-            case .sync: break
-            case .unknown: break
-        case .AuthError: break
-
-            default: break
-        }
     }
 
     @available(iOS 13.0, *)
@@ -60,9 +43,6 @@ extension RuntimeService {
     }
 
     func publishError(error: AmplifyAPIError) {
-        if servicePublisher is AmplifyServiceModelPublisher {
-            (servicePublisher as! AmplifyServiceModelPublisher).send(error: error)
-        }
+        (servicePublisher as? AmplifyServiceModelPublisher)?.send(error: error)
     }
-
 }

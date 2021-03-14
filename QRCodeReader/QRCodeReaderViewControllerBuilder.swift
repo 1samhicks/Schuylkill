@@ -105,7 +105,7 @@ public final class QRCodeReaderViewControllerBuilder {
    A UIStatusBarStyle key indicating your preferred status bar style for the view controller.
    Nil by default. It means it'll use the current context status bar style.
   */
-  public var preferredStatusBarStyle: UIStatusBarStyle? = nil
+  public var preferredStatusBarStyle: UIStatusBarStyle?
 
   /**
    Specifies a rectangle of interest for limiting the search area for visual metadata.

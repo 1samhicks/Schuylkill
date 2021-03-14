@@ -5,11 +5,17 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
-import CoreMotion
 import Combine
+import CoreMotion
+import Foundation
 
 public class AccelerometerService: DeviceService {
+    var state: ServiceState?
+    var lock = RecursiveLock()
+    var resultSink = AnyCancellable({})
+
+    public required init() {
+    }
 
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
@@ -18,24 +24,14 @@ public class AccelerometerService: DeviceService {
     func publishValue(value: Event) {}
     func publishError(error: Error) {}
 
-    var state: ServiceState?
-
-    var lock : NSLock = NSLock()
-    var resultSink = AnyCancellable({})
-
-    required public init() {
-
-    }
-
-    
     public func start() {
         lock.lock()
         state = .running
         resultSink = motionManager.publisher(for: \.gyroData)
-            .filter({ $0 != nil})
+            .filter({ $0 != nil })
             .sink { gyro in
             self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
-        }
+            }
         lock.unlock()
     }
 
@@ -46,7 +42,7 @@ public class AccelerometerService: DeviceService {
         lock.unlock()
     }
 
-    func suspend() {
+    func restart() {
         lock.lock()
         state = .running
         motionManager.startAccelerometerUpdates()
@@ -54,6 +50,7 @@ public class AccelerometerService: DeviceService {
     }
 
     func terminate() {
+        lock.lock()
+        lock.unlock()
     }
-
 }

@@ -16,7 +16,7 @@ struct CommandStatus {
     var file: WCSessionFile?
     var userInfoTranser: WCSessionUserInfoTransfer?
     var errorMessage: String?
-    
+
     init(command: Command, phrase: Phrase) {
         self.command = command
         self.phrase = phrase

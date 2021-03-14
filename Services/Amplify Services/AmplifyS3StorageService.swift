@@ -5,25 +5,22 @@
 //  Created by Sam Hicks on 2/26/21.
 //
 
-import Foundation
-import Combine
 import Amplify
+import Combine
+import Foundation
 
 class AmplifyS3StorageService: RuntimeService {
     func publishError(error: Error) {
-
     }
 
     func publishValue(value: Event) {
-
     }
 
     // In your type's instance variables
     var resultSink: AnyCancellable?
     var progressSink: AnyCancellable?
 
-    required public init() {
-
+    public required init() {
     }
 
     func uploadData(key: String, dataString: String) throws {
@@ -116,7 +113,6 @@ class AmplifyS3StorageService: RuntimeService {
                 print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
                 error = StorageServiceError.downloadError(storageError.errorDescription, storageError.recoverySuggestion)
             }
-
         }
         receiveValue: { data in
             returnData = data

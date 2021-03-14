@@ -11,20 +11,20 @@ import UIKit
 
 struct AppData {
     @Storage(key: "machine_region_distance", defaultValue: 3.0)
-        static var machine_region_distance: Double
+        static var machineRegionDistance: Double
     @Storage(key: "current_machine", defaultValue: nil)
-        static var current_machine: ExerciseMachine?
+        static var currentMachine: ExerciseMachine?
     @Storage(key: "current_workout", defaultValue: nil)
-        static var current_workout: GymWorkout?
+        static var currentWorkout: GymWorkout?
     @Storage(key: "current_fitness_center", defaultValue: nil)
-        static var current_fitness_center: FitnessCenter?
+        static var currentFitnessCenter: FitnessCenter?
     @Storage(key: "user_data", defaultValue: nil)
-        static var user_data: UserData?
+        static var userData: UserData?
 }
 
     extension UIApplication {
 
-        var FIREBASE_INFO_PLIST: [[String: String]]? {
+        var FirebaseInfoPlist: [[String: String]]? {
             guard let path = Bundle.main.path(forResource: "GoogleService-Info", ofType: "plist") else {
                 return nil
             }

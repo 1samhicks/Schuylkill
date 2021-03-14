@@ -5,14 +5,14 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
-import Foundation
 import Amplify
+import Foundation
 
-public enum AmplifyMutationEvent : Event {
+public enum AmplifyMutationEvent: Event {
     case mutationEvent(MutationEvent)
 }
 
-public enum AuthenticationEvent : Event {
+public enum AuthenticationEvent: Event {
     case started
     case mutationEvent(MutationEvent)
 }

@@ -5,54 +5,58 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
-import CoreMotion
 import Combine
+import CoreMotion
+import Foundation
 public class GyroService: DeviceService {
+    var lock = RecursiveLock()
     var state: ServiceState?
+    var resultSink = AnyCancellable({})
 
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
 
-    var dispatchSemaphore: DispatchSemaphore = DispatchSemaphore(value: 1)
-
-    var resultSink: AnyCancellable = AnyCancellable({})
-
-    required public init() {
+    func publishValue(value: Event) {
     }
 
-    public func startService() {
-        dispatchSemaphore.wait()
+    func publishError(error: Error) {
+    }
+
+    public required init() {
+    }
+
+    public func start() {
+        lock.lock()
         state = .running
         motionManager.startGyroUpdates()
         resultSink = motionManager.publisher(for: \.gyroData)
-            .filter({ $0 != nil})
+            .filter({ $0 != nil })
             .sink { gyro in
             self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
-        }
-        dispatchSemaphore.signal()
+            }
+        lock.unlock()
     }
 
-    func pauseService() {
-        dispatchSemaphore.wait()
+    func pause() {
+        lock.lock()
         state = .paused
         motionManager.stopGyroUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 
-    func unpauseService() {
-        dispatchSemaphore.wait()
+    func restart() {
+        lock.lock()
         state = .running
         motionManager.startGyroUpdates()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 
-    func endService() {
-        dispatchSemaphore.wait()
+    func terminate() {
+        lock.lock()
         state = .finished
         motionManager.stopGyroUpdates()
         resultSink.cancel()
-        dispatchSemaphore.signal()
+        lock.unlock()
     }
 }

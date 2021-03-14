@@ -5,13 +5,13 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
 import Combine
 import CoreMotion
+import Foundation
 
 protocol RuntimeService: ServiceNaming {
-    associatedtype publisher
-    var servicePublisher: publisher { get }
+    associatedtype P
+    var servicePublisher: P { get }
     func publishValue(value: Event)
     func publishError(error: Error)
 }

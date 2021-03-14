@@ -5,11 +5,11 @@
 //  Created by Sam Hicks on 3/7/21.
 //
 
+import Amplify
 import Foundation
 import SwiftyBeaver
-import Amplify
 
-protocol ErrorHandling {
+/*protocol ErrorHandling {
     func getDetails() -> [String : String]
     var errorDescription : ErrorDescription { get }
     var recoverySuggestion : RecoverySuggestion { get }
@@ -31,4 +31,4 @@ extension ErrorHandling {
         }
         return d
     }
-}
+}*/

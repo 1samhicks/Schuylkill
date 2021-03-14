@@ -9,13 +9,12 @@ import Foundation
 import Resolver
 
 #if !os(watchOS)
-import OSLog
 import Amplify
+import OSLog
 #endif
 
-extension Resolver {
-
-    public static func registerAllServices() {
+public extension Resolver {
+    static func registerAllServices() {
         #if !os(watchOS)
         Resolver.register(instance: AmplifyAPIService())
         Resolver.register(instance: AmplifyAuthenticationService())
@@ -29,19 +28,19 @@ extension Resolver {
         Resolver.register(instance: AccelerometerService())
         Resolver.register(instance: MagnometerService())
     }
-}
-
-extension Resolver {
+    
     /**
      public static func register<Service>(_ type: Service.Type = Service.self, name: Resolver.Name? = nil,
                                             factory: @escaping ResolverFactory<Service>) -> ResolverOptions<Service> {
      */
-    public static func register<R: ServiceNaming>(instance: R, withScope scope: ResolverScope = .application) {
+    static func register<R: ServiceNaming>(instance: R, withScope scope: ResolverScope = .application) {
         let typeOf = type(of: instance)
         let name = Resolver.Name.initialize(instance.name)
         let key = ObjectIdentifier(R.self).hashValue
 
-        Resolver.main.register(typeOf, name: Resolver.Name.initialize(instance.name), factory: { typeOf.init() }).scope(scope)
+        Resolver.main.register(typeOf,
+                               name: Resolver.Name.initialize(instance.name),
+                               factory: { typeOf.init() }).scope(scope)
 
         #if !os(watchOS)
         OSLog.registerService(resolved: typeOf, name: name, key: key, containerName: "Resolver.main")
@@ -51,3 +50,5 @@ extension Resolver {
         #endif
     }
 }
+
+

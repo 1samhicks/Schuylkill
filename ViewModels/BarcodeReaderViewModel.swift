@@ -5,13 +5,9 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
 import Combine
-class BarcodeReaderViewModel : ObservableObject, ViewModel {
-    
+import Foundation
+class BarcodeReaderViewModel: ObservableObject {
     required init() {
-        
     }
-    
-    
 }

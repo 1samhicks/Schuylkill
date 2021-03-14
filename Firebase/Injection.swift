@@ -5,19 +5,17 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-
+import FirebaseFirestore
+import FirebaseFunctions
 import Foundation
 import Resolver
-import FirebaseFunctions
-import FirebaseFirestore
-
 
 extension Resolver: ResolverRegistering {
   public static func registerAllServices() {
     // register Firebase services
     register { Functions.functions().useEmulator() }.scope(.application)
     register { Firestore.firestore().useEmulator() }.scope(.application)
-    
+
     // register application components
     register { AuthenticationService() }.scope(.application)
     register { FirestoreTaskRepository() as TaskRepository }.scope(.application)

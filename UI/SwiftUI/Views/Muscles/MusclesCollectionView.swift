@@ -105,7 +105,9 @@ extension MusclesCollectionView {
   }
 
   // 3
-  override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+  override func collectionView(_ collectionView: UICollectionView,
+                               cellForItemAt indexPath: IndexPath)
+                                                                    -> UICollectionViewCell {
     // 1
     let cell = collectionView.dequeueReusableCell(
       withReuseIdentifier: reuseIdentifier,

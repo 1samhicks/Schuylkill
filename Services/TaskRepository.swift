@@ -5,12 +5,11 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-import Foundation
 import Combine
+import Foundation
 import Resolver
 
 public protocol ListenerRegistration: NSObjectProtocol {
-
     /**
      * Removes the listener being tracked by this FIRListenerRegistration. After the initial call,
      * subsequent calls have no effect.
@@ -99,15 +98,12 @@ class LocalTaskRepository: BaseTaskRepository, TaskRepository, ObservableObject 
 
 class FirestoreTaskRepository: BaseTaskRepository, TaskRepository, ObservableObject {
     func addTask(_ task: Task) {
-
     }
 
     func removeTask(_ task: Task) {
-
     }
 
     func updateTask(_ task: Task) {
-
     }
 
  // @Injected var db: FirebaseDatabase

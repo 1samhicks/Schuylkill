@@ -36,13 +36,12 @@ protocol QRCodeReaderLifeCycleDelegate: class {
 public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegate {
   private let sessionQueue         = DispatchQueue(label: "session queue")
   private let metadataObjectsQueue = DispatchQueue(label: "com.yannickloriot.qr", attributes: [], target: nil)
-  
+
   let defaultDevice: AVCaptureDevice? = AVCaptureDevice.default(for: .video)
   let frontDevice: AVCaptureDevice?   = {
     if #available(iOS 10, *) {
       return AVCaptureDevice.default(.builtInWideAngleCamera, for: AVMediaType.video, position: .front)
-    }
-    else {
+    } else {
       for device in AVCaptureDevice.devices(for: AVMediaType.video) {
         if device.position == .front {
           return device
@@ -262,8 +261,7 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
       defaultDevice?.torchMode = defaultDevice?.torchMode == .on ? .off : .on
 
       defaultDevice?.unlockForConfiguration()
-    }
-    catch _ { }
+    } catch _ { }
   }
 
   // MARK: - Managing the Orientation
@@ -295,20 +293,15 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
 
     if supportedOrientations.contains(orientationMask(videoOrientation: result)) {
       return result
-    }
-    else if let orientation = fallbackOrientation , supportedOrientations.contains(orientationMask(videoOrientation: orientation)) {
+    } else if let orientation = fallbackOrientation, supportedOrientations.contains(orientationMask(videoOrientation: orientation)) {
       return orientation
-    }
-    else if supportedOrientations.contains(.portrait) {
+    } else if supportedOrientations.contains(.portrait) {
       return .portrait
-    }
-    else if supportedOrientations.contains(.landscapeLeft) {
+    } else if supportedOrientations.contains(.landscapeLeft) {
       return .landscapeLeft
-    }
-    else if supportedOrientations.contains(.landscapeRight) {
+    } else if supportedOrientations.contains(.landscapeRight) {
       return .landscapeRight
-    }
-    else {
+    } else {
       return .portraitUpsideDown
     }
   }
@@ -394,15 +387,14 @@ public final class QRCodeReader: NSObject, AVCaptureMetadataOutputObjectsDelegat
                 }
               }
 
-              let scannedResult = QRCodeReaderResult(value: sVal, metadataType:_readableCodeObject.type.rawValue)
+              let scannedResult = QRCodeReaderResult(value: sVal, metadataType: _readableCodeObject.type.rawValue)
 
               DispatchQueue.main.async {
                 weakSelf.didFindCode?(scannedResult)
               }
             }
           }
-        }
-        else {
+        } else {
           weakSelf.didFailDecoding?()
         }
       }

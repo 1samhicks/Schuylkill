@@ -9,7 +9,6 @@ import SwiftUI
 import Amplify
 import AWSS3
 import AmplifyPlugins
-import AmplifyPlugins.Swift
 import Resolver
 import Foundation
 import UIKit
@@ -33,4 +32,6 @@ struct Shredded: App {
 
     }
 }
+
+
 

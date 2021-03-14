@@ -5,13 +5,12 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
+import Combine
 import Foundation
 import SwiftUI
 import UIKit
-import Combine
 
 public struct LocationNagView: UIViewControllerRepresentable {
-
     public typealias UIViewControllerType = LocationNagViewController
 
     public func makeUIViewController(context: Context) -> UIViewControllerType {
@@ -19,7 +18,6 @@ public struct LocationNagView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: LocationNagViewController, context: Context) {
-
     }
 }
 

@@ -12,12 +12,12 @@ import Foundation
 //
 protocol TestDataProvider {
     var appContext: [String: Any] { get }
-    
+
     var message: [String: Any] { get }
     var messageData: Data { get }
-    
+
     var userInfo: [String: Any] { get }
-    
+
     var file: URL { get }
     var fileMetaData: [String: Any] { get }
 }

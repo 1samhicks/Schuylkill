@@ -9,16 +9,13 @@ import Foundation
 import SwiftUI
 
 @main
-struct WatchApp : App {
-    @WKExtensionDelegateAdaptor(ExtensionDelegate.self) var extensionDelegate
+struct WatchApp: App {
+    @WKExtensionDelegateAdaptor(ExtensionDelegate.self) weak var extensionDelegate
     var body: some Scene {
         WindowGroup {
         }
     }
-    
+
     public init() {
-        
     }
-    
-   
 }

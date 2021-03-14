@@ -5,8 +5,8 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
 import CoreMotion
+import Foundation
 
 /*public class DeviceMonitor : DeviceMonitoring {
     private static let _manager = CMMotionManager()

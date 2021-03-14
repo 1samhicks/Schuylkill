@@ -5,97 +5,75 @@
 //  Created by Sam Hicks on 2/28/21.
 //
 
-import Foundation
 import Amplify
+import Foundation
 
-public enum AuthenticationError: ApplicationError, ErrorHandling {
+public enum AuthenticationError: ApplicationError {
     public init(errorDescription: ErrorDescription, recoverySuggestion: RecoverySuggestion, error: Error) {
         self.init()
     }
-    
+
     public init() {
-        self = .unknown(nil, "The setting was made in the init() of AuthenticationError.", "Review code flow through constructor" )
+        self = .Unknown(nil, "The setting was made in the init() of AuthenticationError.", "Review code flow through constructor" )
     }
-    
+
     public init?(rawValue: String) {
-        //fatalError("Raw value passed into AuthenticationError: \(rawValue)")
+        // fatalError("Raw value passed into AuthenticationError: \(rawValue)")
         self.init()
     }
-    
+
     public var recoverySuggestion: RecoverySuggestion {
         switch self {
-        case .configuration(_,_,let suggestion):
-                fallthrough
-        case .invalidCondition(_,_,let suggestion):
-                fallthrough
-        case .decodingError(_,let suggestion):
-                fallthrough
-        case .internalOperation(_,_,let suggestion):
-                fallthrough
-        case .sync(_,_,let suggestion):
-                fallthrough
-        case .unknown(_,_,let suggestion):
+        case .configuration(_, _, let suggestion),.invalidCondition(_, _, let suggestion),.decodingError(_, let suggestion),
+        .internalOperation(_, _, let suggestion),.Sync(_, _, let suggestion),.Unknown(_, _, let suggestion):
             return suggestion
         default: return String.empty
        }
     }
-    
-    public var errorDescription : ErrorDescription {
+
+    public var errorDescription: ErrorDescription {
         switch self {
-            case .AuthError(let description, _):
+            case .AuthError(let description, _, _):
                 return description
-            case .configuration(_,let description, _):
+            case .configuration(_, let description, _):
                 return description
-            case .invalidCondition(_,let description, _):
+            case .invalidCondition(_, let description, _):
                 return description
             case .decodingError(let description, _):
                 return description
-            case .internalOperation(_,let description, _):
+            case .internalOperation(_, let description, _):
                 return description
-            case .invalidModelName(let description):
+            case .InvalidModelName(let description):
                 return description
             default: return String.empty
         }
     }
-    
-    public var underlyingError : Error? {
+
+    public var underlyingError: Error? {
         switch self {
         /*case .AuthError(let causedBy) where (causedBy == Error):
             return causedBy*/
-        case .configuration(let causedBy,_, _):
-            fallthrough
-        case .invalidCondition(let causedBy,_, _):
-            return causedBy
-        case .api(let causedBy,_):
-            return causedBy
-        case .internalOperation(let causedBy,_, _):
-            return causedBy
-        case .invalidDatabase(let causedBy,_):
-            return causedBy
-        case .sync(let causedBy,_,_):
-            fallthrough
-        case .unknown(let causedBy, _, _):
+        case .configuration(let causedBy, _, _),.invalidCondition(let causedBy, _, _),.api(let causedBy, _),.internalOperation(let causedBy, _, _),
+            .InvalidDatabase(let causedBy, _),.Sync(let causedBy, _, _),.Unknown(let causedBy, _, _):
             return causedBy
         default:
             return nil
         }
-    
     }
-    
-    typealias rawType = String
+
+    typealias RawType = String
     public typealias RawValue = String
-    case AuthError(causedBy: Error)
-    case AuthError(ErrorDescription, RecoverySuggestion)
-    case api(APIError, MutationEvent? = nil)
-    case configuration(Error? = nil,ErrorDescription, RecoverySuggestion)
+    case AuthError(ErrorDescription, RecoverySuggestion, Error)
+    case api(Error? = nil, MutationEvent? = nil)
+    case configuration(Error? = nil, ErrorDescription, RecoverySuggestion)
     case conflict(DataStoreSyncConflict)
-    case invalidCondition(Error? = nil,ErrorDescription, RecoverySuggestion)
+    case invalidCondition(Error? = nil, ErrorDescription, RecoverySuggestion)
     case decodingError(ErrorDescription, RecoverySuggestion)
-    case internalOperation(Error? = nil,ErrorDescription, RecoverySuggestion)
-    case invalidDatabase(Error? = nil,path: String)
-    case invalidModelName(ErrorDescription)
-    case invalidOperation(causedBy: Error? = nil)
-    case nonUniqueResult(ErrorDescription, count: Int)
-    case sync(Error? = nil,ErrorDescription, RecoverySuggestion)
-    case unknown(Error? = nil,ErrorDescription, RecoverySuggestion)
+    case internalOperation(Error? = nil, ErrorDescription, RecoverySuggestion)
+    case InvalidDatabase(Error? = nil, path: String)
+    case InvalidModelName(ErrorDescription)
+    case InvalidOperation(causedBy: Error? = nil)
+    case NonUniqueResult(ErrorDescription, count: Int)
+    case Sync(Error? = nil, ErrorDescription, RecoverySuggestion)
+    case Unknown(Error? = nil, ErrorDescription, RecoverySuggestion)
 }

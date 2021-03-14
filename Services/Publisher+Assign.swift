@@ -5,8 +5,8 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 /// https://forums.swift.org/t/does-assign-to-produce-memory-leaks/29546/11
 extension Publisher where Failure == Never {

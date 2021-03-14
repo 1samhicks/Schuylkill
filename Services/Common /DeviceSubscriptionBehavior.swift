@@ -5,12 +5,11 @@
 //  Created by Sam Hicks on 3/2/21.
 //
 
-import Foundation
-import CoreMotion
 import Combine
+import CoreMotion
+import Foundation
 
 protocol DeviceSubcriptionBehavior {
-
     var publisher: AnyPublisher<DeviceEvent, Error> { get }
 
     func send(input: CMLogItem)

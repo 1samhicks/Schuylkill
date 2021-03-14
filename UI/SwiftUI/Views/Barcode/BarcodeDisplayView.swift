@@ -7,16 +7,15 @@
 
 import Foundation
 
-import SwiftUI
-import Resolver
 import Combine
+import Resolver
+import SwiftUI
 import UIKit
 
 struct BarcodeDisplayView: UIViewControllerRepresentable {
     var barcodeDisplayViewController: UIViewController!
 
     func performOnAppear() {
-
     }
 
     init() {
@@ -27,7 +26,6 @@ struct BarcodeDisplayView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: BarcodeDisplayViewController, context: Context) {
-
     }
 
     public typealias UIViewControllerType = BarcodeDisplayViewController
@@ -37,5 +35,4 @@ struct BarcodeDisplayView: UIViewControllerRepresentable {
             BarcodeDisplayView()
         }
     }
-
 }

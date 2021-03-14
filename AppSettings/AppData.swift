@@ -10,14 +10,14 @@ import Foundation
  Data that needs to be persisted across sessions.
  */
 struct AppData {
-    @Storage(key: "machine_region_distance", defaultValue: 3.0)
-        static var machine_region_distance: Double
-    @Storage(key: "current_machine", defaultValue: nil)
-        static var current_machine : ExerciseMachine?
-    @Storage(key: "current_workout", defaultValue: nil)
-        static var current_workout : GymWorkout?
-    @Storage(key: "current_fitness_center", defaultValue: nil)
-        static var current_fitness_center : FitnessCenter?
-    @Storage(key: "user_data", defaultValue: nil)
-        static var user_data : UserData?
+    @Storage(key: "machineRegionDistance", defaultValue: 3.0)
+        static var machineRegionDistance: Double
+    @Storage(key: "currentMachine", defaultValue: nil)
+        static var currentMachine : ExerciseMachine?
+    @Storage(key: "currentWorkout", defaultValue: nil)
+        static var currentWorkout : GymWorkout?
+    @Storage(key: "currentFitnessCenter", defaultValue: nil)
+        static var currentFitnessCenter : FitnessCenter?
+    @Storage(key: "userData", defaultValue: nil)
+        static var userData : UserData?
 }

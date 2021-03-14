@@ -5,9 +5,9 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
-import CoreMotion
 import Combine
+import CoreMotion
+import Foundation
 #if !os(watchOS)
 import OSLog
 #endif

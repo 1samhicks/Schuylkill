@@ -13,14 +13,12 @@ struct OnboardingView: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ uiViewController: OnboardingEntryViewController, context: Context) {
-
     }
 
     public typealias UIViewControllerType = OnboardingEntryViewController
     var onboardingEntryViewController: UIViewControllerType
 
     func performOnAppear() {
-
     }
 
     init() {

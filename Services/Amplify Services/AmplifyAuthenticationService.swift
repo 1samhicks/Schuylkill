@@ -5,15 +5,14 @@
 //  Created by Sam Hicks on 2/21/21.
 //
 
-import Foundation
 import Amplify
-import Combine
-import AWSPluginsCore
 import AmplifyPlugins
+import AWSPluginsCore
+import Combine
+import Foundation
 import OSLog
 
 public class AmplifyAuthenticationService: RuntimeService {
-
     var _state: ServiceState?
     var sink: AnyCancellable?
 
@@ -27,11 +26,9 @@ public class AmplifyAuthenticationService: RuntimeService {
     }
 
     func publishValue(value: Event) {
-
     }
 
     func publishError(error: Error) {
-
     }
 
     public required init() {
@@ -75,7 +72,6 @@ public class AmplifyAuthenticationService: RuntimeService {
                 } else {
                     print("SignUp Complete")
                 }
-
             }
         return sink
     }
@@ -144,7 +140,7 @@ public class AmplifyAuthenticationService: RuntimeService {
             .resultPublisher
             .sink {
                 if case let .failure(authError) = $0 {
-                    self.onReceiveCompletion(completed: AuthenticationError.AuthError(causedBy: authError))
+                    self.onReceiveCompletion(completed: AuthenticationError.AuthError(String.empty, String.empty, authError))
                 }
             }
             receiveValue: { _ in
@@ -167,7 +163,6 @@ public class AmplifyAuthenticationService: RuntimeService {
 
     // signin with Cognito web user interface
     public func signIn() {
-
         _ = Amplify.Auth.signInWithWebUI(presentationAnchor: UIApplication.shared.windows.first!) { result in
             switch result {
             case .success:
@@ -180,8 +175,7 @@ public class AmplifyAuthenticationService: RuntimeService {
 
     // signout
     public func signOut() {
-
-        _ = Amplify.Auth.signOut { (result) in
+        _ = Amplify.Auth.signOut { result in
             switch result {
             case .success:
                 print("Successfully signed out")
@@ -444,7 +438,6 @@ public class AmplifyAuthenticationService: RuntimeService {
     }
 
     func fetchAuthSession() {
-
         Amplify.Auth.fetchAuthSession { result in
             do {
                 let session = try result.get()
@@ -467,7 +460,6 @@ public class AmplifyAuthenticationService: RuntimeService {
                     let tokens = try cognitoTokenProvider.getCognitoTokens().get()
                     print("Id token - \(tokens.idToken) ")
                 }
-
             } catch {
                 print("Fetch auth session failed with error - \(error)")
             }
@@ -482,7 +474,6 @@ public class AmplifyAuthenticationService: RuntimeService {
                 return
             }
             print("Fetched escape hatch - \(awsmobileclient)")
-
         } catch {
             print("Error occurred while fetching the escape hatch \(error)")
         }
@@ -498,5 +489,4 @@ public class AmplifyAuthenticationService: RuntimeService {
             }
         }
     }
-
 }

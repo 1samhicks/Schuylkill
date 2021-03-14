@@ -5,8 +5,8 @@
 //  Created by Sam Hicks on 2/6/21.
 //
 
-import SwiftUI
 import AVFoundation
+import SwiftUI
 import UIKit
 
 struct QRView: View {

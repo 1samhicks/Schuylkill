@@ -5,10 +5,10 @@
 //  Created by Sam Hicks on 3/13/21.
 //
 
+import CoreMotion
 import Foundation
 
 extension DeviceService {
-
     public var motionManager: CMMotionManager {
         CMMotionManager.shared
     }

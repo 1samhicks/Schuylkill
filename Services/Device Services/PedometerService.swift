@@ -5,9 +5,9 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
-import Foundation
 import Combine
 import CoreMotion
+import Foundation
 
 extension CMPedometer {
     static let shared = CMPedometer()
@@ -15,20 +15,18 @@ extension CMPedometer {
 
 public class PedometerService: DeviceService {
     var pedometer = CMPedometer.shared
-    var lock: RecursiveLock = RecursiveLock()
+    var lock = RecursiveLock()
     var state: ServiceState?
-    var resultSink: AnyCancellable = AnyCancellable({})
+    var resultSink = AnyCancellable({})
 
-    required public init() {
+    public required init() {
         state = .notStarted
     }
 
     func publishError(error: Error) {
-
     }
 
     func publishValue(value: Event) {
-
     }
 
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {

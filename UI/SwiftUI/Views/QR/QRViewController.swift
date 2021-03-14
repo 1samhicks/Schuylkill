@@ -5,17 +5,17 @@
 //  Created by Sam Hicks on 2/21/21.
 //
 
+import AVFoundation
 import Foundation
+import QRCodeReader
+import Resolver
 import SwiftUI
 import UIKit
-import QRCodeReader
-import AVFoundation
-import Resolver
 
 public class QRViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     @LazyInjected var viewModel: QRViewModel
 
-    @IBOutlet weak var previewView: QRCodeReaderView! {
+    @IBOutlet var previewView: QRCodeReaderView! {
       didSet {
         previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
           $0.reader                 = reader
@@ -28,7 +28,7 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
       }
     }
 
-    lazy var reader: QRCodeReader = QRCodeReader()
+    lazy var reader = QRCodeReader()
     lazy var readerVC: QRCodeReaderViewController = {
       let builder = QRCodeReaderViewControllerBuilder {
         $0.reader                  = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
@@ -50,10 +50,11 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
         let alert: UIAlertController
 
         switch error.code {
-        case -11852:
-          alert = UIAlertController(title: "Error", message: "This app is not authorized to use Back Camera.", preferredStyle: .alert)
+        case -11_852:
+          alert = UIAlertController(title: "Error",
+                                    message: "This app is not authorized to use Back Camera.", preferredStyle: .alert)
 
-          alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { (_) in
+          alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { _ in
             DispatchQueue.main.async {
               if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
                 UIApplication.shared.open(settingsURL)
@@ -63,7 +64,8 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
 
           alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
         default:
-          alert = UIAlertController(title: "Error", message: "Reader not supported by the current device", preferredStyle: .alert)
+          alert = UIAlertController(title: "Error",
+                                    message: "Reader not supported by the current device", preferredStyle: .alert)
           alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         }
 
@@ -126,7 +128,6 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
 
       dismiss(animated: true, completion: nil)
     }
-
 }
 
 extension QRViewController: Resolving {

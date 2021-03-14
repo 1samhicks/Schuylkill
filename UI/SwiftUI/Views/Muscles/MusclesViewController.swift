@@ -5,18 +5,18 @@
 //  Created by Sam Hicks on 2/23/21.
 //
 
-import Foundation
-import UIKit
-import SwiftUI
-import Resolver
 import Combine
+import Foundation
+import Resolver
+import SwiftUI
+import UIKit
 
 public class MuscleCollectionViewController: UIViewController {
     @State var muscleSubscription: AnyCancellable?
-    private lazy var collectionsView: MusclesCollectionView = MusclesCollectionView()
+    private lazy var collectionsView = MusclesCollectionView()
     lazy var viewModel: MusclesListViewModel = makeViewModel()
 
-    public override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+    override public init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
 
@@ -24,12 +24,11 @@ public class MuscleCollectionViewController: UIViewController {
         super.init(coder: coder)
     }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         self.addChild(collectionsView)
         muscleSubscription = viewModel.queryAll()
-
     }
-    public override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
     }
 }

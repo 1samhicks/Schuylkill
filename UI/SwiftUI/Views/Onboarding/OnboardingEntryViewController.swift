@@ -6,8 +6,8 @@
 //
 
 import Foundation
-import UIKit
 import PaperOnboarding
+import UIKit
 
 public class OnboardingEntryViewController: UIViewController, PaperOnboardingDataSource {
     public func onboardingItemsCount() -> Int {
@@ -15,7 +15,6 @@ public class OnboardingEntryViewController: UIViewController, PaperOnboardingDat
     }
 
     public func onboardingItem(at index: Int) -> OnboardingItemInfo {
-
        return [
          OnboardingItemInfo(informationImage: Asset.key.image,
                                        title: "title",
@@ -46,10 +45,10 @@ public class OnboardingEntryViewController: UIViewController, PaperOnboardingDat
                           descriptionColor: UIColor.gray,
                                  titleFont: UIFont.italicSystemFont(ofSize: 14),
                            descriptionFont: UIFont.italicSystemFont(ofSize: 10))
-         ][index]
+       ][index]
      }
 
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
       super.viewDidLoad()
 
       let onboarding = PaperOnboarding()
@@ -69,5 +68,4 @@ public class OnboardingEntryViewController: UIViewController, PaperOnboardingDat
         view.addConstraint(constraint)
       }
     }
-
 }

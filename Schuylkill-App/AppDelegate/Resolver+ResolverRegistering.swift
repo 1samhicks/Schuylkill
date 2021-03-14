@@ -7,6 +7,7 @@
 
 import Foundation
 import Resolver
+import SwifterSwift
 
 #if MOCK
 extension Resolver {

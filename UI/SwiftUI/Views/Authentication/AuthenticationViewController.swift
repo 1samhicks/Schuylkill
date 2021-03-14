@@ -5,19 +5,19 @@
     //  Created by Sam Hicks on 2/21/21.
     //
 
-    import Foundation
-    import UIKit
-    import CoreLocation
-    import SwiftUI
-    import Resolver
     import Combine
+    import CoreLocation
+    import Foundation
+    import Resolver
+    import SwiftUI
+    import UIKit
 
     public class AuthenticationViewController: UIViewController, CLLocationManagerDelegate {
         var viewModel: AuthenticationViewModel!
 
         private var cancellable: AnyCancellable?
 
-        public override func viewDidLoad() {
+        override public func viewDidLoad() {
             super.viewDidLoad()
             view.backgroundColor = .gray
 
@@ -32,9 +32,8 @@
 
         // MARK: - onboarding flow
 
-        public override func viewWillAppear(_ animated: Bool) {
+        override public func viewWillAppear(_ animated: Bool) {
             super.viewWillAppear(animated)
-
         }
 
         private func render() {

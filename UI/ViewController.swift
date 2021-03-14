@@ -33,12 +33,12 @@ import Foundation
  */
 
 import AVFoundation
-import UIKit
 import QRCodeReader
 import RSBarcodes_Swift
+import UIKit
 
 class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
-  @IBOutlet weak var previewView: QRCodeReaderView! {
+  @IBOutlet var previewView: QRCodeReaderView! {
     didSet {
       previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
         $0.reader                 = reader
@@ -50,7 +50,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
       })
     }
   }
-  lazy var reader: QRCodeReader = QRCodeReader()
+  lazy var reader = QRCodeReader()
   lazy var readerVC: QRCodeReaderViewController = {
     let builder = QRCodeReaderViewControllerBuilder {
       $0.reader                  = QRCodeReader(metadataObjectTypes: [.qr], captureDevicePosition: .back)
@@ -74,10 +74,10 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
       let alert: UIAlertController
 
       switch error.code {
-      case -11852:
+      case -11_852:
         alert = UIAlertController(title: "Error", message: "This app is not authorized to use Back Camera.", preferredStyle: .alert)
 
-        alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { (_) in
+        alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { _ in
           DispatchQueue.main.async {
             if let settingsURL = URL(string: UIApplication.openSettingsURLString) {
               UIApplication.shared.openURL(settingsURL)

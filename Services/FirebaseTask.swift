@@ -22,21 +22,19 @@ struct Task: Encodable, Identifiable {
   // @ServerTimestamp var createdTime: Date?
   var userId: String?
     init(title: String, priority: TaskPriority, completed: Bool) {
-        self.title=title
-        self.priority=priority
-        self.completed=completed
+        self.title = title
+        self.priority = priority
+        self.completed = completed
     }
     init(from decoder: Decoder) throws {
-
     }
 }
 
 struct Task: Decodable {
-
 }
 
 #if DEBUG
-let testDataTasks  = [
+let testDataTasks = [
     Task(title: "Implement UI", priority: .medium, completed: true),
     Task(title: "Connect to Firebase", priority: .medium, completed: false),
     Task(title: "????", priority: .high, completed: false),

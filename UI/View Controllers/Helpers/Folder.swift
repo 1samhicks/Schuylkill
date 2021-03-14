@@ -16,7 +16,6 @@ public class Folder {
     //
     var _folderURL: URL?
     private func folderURL(url: URL) -> URL? {
-
         guard _folderURL == nil else { return _folderURL }
 
         var folderURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).last!

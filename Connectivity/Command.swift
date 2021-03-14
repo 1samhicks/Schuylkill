@@ -17,5 +17,3 @@ enum Command: String {
     case transferFile = "TransferFile"
     case transferCurrentComplicationUserInfo = "TransferComplicationUserInfo"
 }
-
-

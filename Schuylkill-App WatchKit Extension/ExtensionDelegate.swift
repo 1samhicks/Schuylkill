@@ -4,46 +4,39 @@
 //
 //  Created by Sam Hicks on 2/5/21.
 //
-import Foundation
-import SwiftUI
 import CoreMotion
+import Foundation
+import Resolver
+import SwiftUI
 import WatchConnectivity
 import WatchKit
-import Resolver
 
 public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     // Hold the KVO observers as we want to keep oberving in the extension life time.
     //
     private var activationStateObservation: NSKeyValueObservation?
     private var hasContentPendingObservation: NSKeyValueObservation?
-    private var deviceServices = [LocationService.self,GyroService.self,MotionService.self,MagnometerService.self,AccelerometerService.self, PedometerService.self] as [Any]
+    private var deviceServices = [LocationService.self, GyroService.self, MotionService.self, MagnometerService.self, AccelerometerService.self, PedometerService.self] as [Any]
     // An array to keep the background tasks.
     //
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()
-    
+
     public func applicationDidFinishLaunching() {
         Resolver.registerAllServices()
-        
     }
 
     public func applicationDidBecomeActive() {
-        
     }
 
     public func applicationWillResignActive() {
-        
     }
-    
-
 
     public func applicationWillEnterForeground() {
-        
     }
 
     public func applicationDidEnterBackground() {
-        
     }
-    
+
     public func handle(_ backgroundTasks: Set<WKRefreshBackgroundTask>) {
         // Sent when the system needs to launch the application in the background to process tasks. Tasks arrive in a set, so loop through and process each one.
         for task in backgroundTasks {
@@ -73,6 +66,4 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
             }
         }
     }
-    
 }
-

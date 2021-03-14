@@ -5,13 +5,13 @@
 //  Created by Sam Hicks on 3/2/21.
 //
 
-import Foundation
 import Amplify
+import Foundation
 
 extension AmplifyAPIService {
     static func saveAll(muscles: [Muscle]) {
-        muscles.forEach { (m) in
-            Amplify.DataStore.save(m) { result in
+        muscles.forEach { muscle in
+            Amplify.DataStore.save(muscle) { result in
                switch result {
                case .success(let savedItem):
                    print("Saved item: \(savedItem.friendlyName)")

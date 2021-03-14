@@ -5,20 +5,18 @@
 //  Created by Sam Hicks on 2/10/21.
 //
 
-import Foundation
 import Amplify
-import CoreLocation
 import Combine
+import CoreLocation
+import Foundation
 
 public class AmplifyAPIService: RuntimeService {
     var state: ServiceState?
 
     func publishError(error: Error) {
-
     }
 
     func publishValue(value: Event) {
-
     }
 
     func createMuscle() -> AnyCancellable {
@@ -37,7 +35,7 @@ public class AmplifyAPIService: RuntimeService {
             case .failure(let graphQLError):
                 print("Could not decode result: \(graphQLError)")
             }
-        }
+            }
         return sink
     }
 
@@ -57,8 +55,7 @@ public class AmplifyAPIService: RuntimeService {
         }
     }
 
-    required public init() {
-
+    public required init() {
     }
 
     var servicePublisher: some ServicePublisher {
@@ -70,27 +67,21 @@ public class AmplifyAPIService: RuntimeService {
     // @Published var user: User?
 
     func retrieveFitnessCenterData(at location: Location? = nil) {
-
     }
 
     func startWorkout(with workout: GymWorkout? = nil) {
-
     }
 
     func endWorkout(with workout: GymWorkout? = nil) {
-
     }
 
     func addExerciseMachine(_ machine: ExerciseMachine, withLocation location: Location, at: FitnessCenter) {
-
     }
 
     func addExerciseSet(withMachine machine: ExerciseMachine, andReps: [ExerciseRep], from: Temporal.DateTime, to: Temporal.DateTime) {
-
     }
     func createSubscription<T: Model>(rawValue: String) -> GraphQLSubscriptionOperation<T> {
-        let subscription = Amplify.API.subscribe(request: .subscription(of: T.self, type: GraphQLSubscriptionType.init(rawValue: rawValue)!))
+        let subscription = Amplify.API.subscribe(request: .subscription(of: T.self, type: GraphQLSubscriptionType(rawValue: rawValue)!))
         return subscription
     }
-
 }

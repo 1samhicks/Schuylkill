@@ -21,7 +21,6 @@ protocol SessionCommands {
 }
 
 extension SessionCommands {
-    
     // Update app context if the session is activated and update UI with the command status.
     //
     func updateAppContext(_ context: [String: Any]) {
@@ -37,7 +36,7 @@ extension SessionCommands {
             commandStatus.phrase = .failed
             commandStatus.errorMessage = error.localizedDescription*/
         }
-        //postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)
+        // postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)
 
     // Send a message if the session is activated and update UI with the command status.
     //
@@ -61,7 +60,7 @@ extension SessionCommands {
         })
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
-    
+
     // Send  a piece of message data if the session is activated and update UI with the command status.
     //
     func sendMessageData(_ messageData: Data) {
@@ -84,7 +83,7 @@ extension SessionCommands {
         })
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
-    
+
     // Transfer a piece of user info if the session is activated and update UI with the command status.
     // A WCSessionUserInfoTransfer object is returned to monitor the progress or cancel the operation.
     //
@@ -99,7 +98,7 @@ extension SessionCommands {
         commandStatus.userInfoTranser = WCSession.default.transferUserInfo(userInfo)
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
-    
+
     // Transfer a file if the session is activated and update UI with the command status.
     // A WCSessionFileTransfer object is returned to monitor the progress or cancel the operation.
     //
@@ -113,7 +112,7 @@ extension SessionCommands {
         commandStatus.fileTransfer = WCSession.default.transferFile(file, metadata: metadata)
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
-    
+
     // Transfer a piece fo user info for current complications if the session is activated
     // and update UI with the command status.
     // a WCSessionUserInfoTransfer object is returned to monitor the progress or cancel the operation.
@@ -142,7 +141,7 @@ extension SessionCommands {
         
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
-    
+
     // Post a notification on the main thread asynchronously.
     //
     private func postNotificationOnMainQueueAsync(name: NSNotification.Name, object: CommandStatus) {
@@ -160,4 +159,3 @@ extension SessionCommands {
         postNotificationOnMainQueueAsync(name: .dataDidFlow, object: commandStatus)*/
     }
 }
-

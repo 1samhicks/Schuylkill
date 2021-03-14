@@ -5,29 +5,27 @@
 //  Created by Sam Hicks on 2/26/21.
 //
 
-import Foundation
-import CoreMotion
 import Combine
+import CoreMotion
+import Foundation
 
 public class MagnometerService: DeviceService {
     var state: ServiceState?
-    var lock: RecursiveLock = RecursiveLock()
+    var lock = RecursiveLock()
 
     func publishValue(value: Event) {
-
     }
 
     func publishError(error: Error) {
-
     }
 
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
 
-    var resultSink: AnyCancellable = AnyCancellable({})
+    var resultSink = AnyCancellable({})
 
-    required public init() {
+    public required init() {
     }
 
     public func start() {
@@ -36,10 +34,10 @@ public class MagnometerService: DeviceService {
         motionManager.magnetometerUpdateInterval = 0.1
         motionManager.startMagnetometerUpdates()
         resultSink = motionManager.publisher(for: \.magnetometerData)
-            .filter({ $0 != nil})
+            .filter({ $0 != nil })
             .sink { reading in
             self.publishValue(value: DeviceEvent.logItemEvent(reading!))
-        }
+            }
         lock.unlock()
     }
 
@@ -64,5 +62,4 @@ public class MagnometerService: DeviceService {
         resultSink.cancel()
         lock.unlock()
     }
-
 }

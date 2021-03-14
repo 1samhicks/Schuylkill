@@ -5,13 +5,15 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
+import Resolver
 import XCTest
+
 @testable import Schuylkill_App
 
-class Schuylkill_AppTests: XCTestCase {
-
+class SchuylkillAppTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        
     }
 
     override func tearDownWithError() throws {
@@ -21,6 +23,7 @@ class Schuylkill_AppTests: XCTestCase {
     func testExample() throws {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        Resolver.registerAllServices()
     }
 
     func testPerformanceExample() throws {
@@ -29,5 +32,4 @@ class Schuylkill_AppTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

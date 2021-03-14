@@ -230,7 +230,6 @@ extension GridDragViewModel {
     }
 
     private func recalcOffsets(newCellSize: CGFloat) -> [CGPoint] {
-
         // first time with a non-zero size - just makeCellOffsets
         guard cellSize != 0 else {
             self.cellSize = newCellSize

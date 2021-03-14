@@ -55,7 +55,7 @@ public final class ReaderOverlayView: UIView {
 
     return overlay
   }()
-  
+
   private var state: QRCodeReaderViewOverlayState = .normal {
     didSet {
       switch state {
@@ -66,17 +66,17 @@ public final class ReaderOverlayView: UIView {
       case .wrong:
         overlay.strokeColor = highlightWrongColor.cgColor
       }
-      
+
       setNeedsDisplay()
     }
   }
-  
+
   /// The default overlay color
   public var defaultColor: UIColor = .white
-  
+
   /// The overlay color when a valid code has been scanned
   public var highlightValidColor: UIColor = .green
-  
+
   /// The overlay color when a wrong code has been scanned
   public var highlightWrongColor: UIColor = .red
 
@@ -94,7 +94,7 @@ public final class ReaderOverlayView: UIView {
 
   private func setupOverlay() {
     state = .normal
-    
+
     layer.addSublayer(overlay)
   }
 

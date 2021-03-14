@@ -5,23 +5,20 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
-
 import Foundation
 import Resolver
 
-//extension Resolver: ResolverRegistering {
-  //public static func registerAllServices() {
+// extension Resolver: ResolverRegistering {
+  // public static func registerAllServices() {
     // register Firebase services
-    //register { Functions.functions().useEmulator() }.scope(.application)
-    //register { Firestore.firestore().useEmulator() }.scope(.application)
-    
+    // register { Functions.functions().useEmulator() }.scope(.application)
+    // register { Firestore.firestore().useEmulator() }.scope(.application)
+
     // register application components
-    
-    //register { FirestoreTaskRepository() as TaskRepository }.scope(.application)
+
+    // register { FirestoreTaskRepository() as TaskRepository }.scope(.application)
  // }
-//}
-
-
+// }
 
 /*extension Functions {
   func useEmulator() -> Functions {

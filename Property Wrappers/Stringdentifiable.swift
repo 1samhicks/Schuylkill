@@ -7,9 +7,9 @@
 
 import Foundation
 
-protocol StringIdentifiable : Identifiable {
+protocol StringIdentifiable: Identifiable {
     var id: ObjectIdentifier { get set }
-    
+
     typealias ObjectIdentifier = String
 
   // Implement protocol requirements here

@@ -2,15 +2,11 @@
 //  GridDragView.swift
 //  GridDrag
 //
-//  Created by David S Reich on 1/5/20.
-//  Copyright © 2020 StellarSoftware.
-//  All rights reserved except as defined by MIT license - see LICENSE file for more info.
-//
+
 
 import SwiftUI
 
 struct GridDragView: View {
-
     @ObservedObject var gridDragViewModel: GridDragViewModel
 
     init(gridDragViewModel: GridDragViewModel) {
@@ -52,7 +48,7 @@ struct GridDragView: View {
                     .onChanged { value in
                         self.gridDragViewModel.moveViews(index: cellIndex, translation: value.translation)
                         self.gridDragViewModel.dragging = true
-                }
+                    }
                 .onEnded { value in
                     self.gridDragViewModel.moveViews(index: cellIndex, translation: value.translation)
                     self.gridDragViewModel.snapToGrid()
@@ -75,7 +71,6 @@ struct GridDragView: View {
 
         return min(cellWidth, cellHeight)
     }
-
 }
 
 struct GridDragView_Previews: PreviewProvider {

@@ -5,14 +5,13 @@
 //  Created by Sam Hicks on 3/7/21.
 //
 
-import Foundation
 import Amplify
 import AmplifyPlugins
-extension PluginError : ErrorHandling {}
+import Foundation
+extension PluginError: ErrorHandling {}
 
-extension ConfigurationError : ErrorHandling {}
+extension ConfigurationError: ErrorHandling {}
 
-extension LoggingError : ErrorHandling {}
+extension LoggingError: ErrorHandling {}
 
-extension AnalyticsError : ErrorHandling {}
-
+extension AnalyticsError: ErrorHandling {}

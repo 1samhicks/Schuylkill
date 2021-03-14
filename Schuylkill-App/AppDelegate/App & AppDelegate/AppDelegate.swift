@@ -3,9 +3,7 @@ import SwiftUI
 import Amplify
 import AWSS3
 import AmplifyPlugins
-import AmplifyPlugins.Swift
 import Resolver
-import Foundation
 import UIKit
 import WatchConnectivity
 import RxSwift
@@ -16,6 +14,7 @@ import SwiftyBeaver
 let log = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+    
     var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
     private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
         return WatchSessionChannelDelegate()
@@ -32,9 +31,9 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             try Amplify.add(plugin: AWSS3StoragePlugin())
             Amplify.Logging.logLevel = .verbose
             try Amplify.configure()
-        } catch let e {
-            SwiftyBeaver.exceptionThrown(error: e)
-            let alertViewController = UIAlertController(title:"App Issue",error:e,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)
+        } catch let error {
+            SwiftyBeaver.exceptionThrown(error: error)
+            let alertViewController = UIAlertController(title:"App Issue",error:error,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)
             UIApplication.shared.windows.first?.rootViewController?.addChild(alertViewController)
         }
         registerForRemoteNotifications()

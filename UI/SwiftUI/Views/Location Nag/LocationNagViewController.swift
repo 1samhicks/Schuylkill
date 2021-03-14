@@ -6,18 +6,18 @@
 //
 
 import Foundation
-import UIKit
 import SettingsAppAccess
+import UIKit
 
 public class LocationNagViewController: UIViewController {
-    public override func viewDidLoad() {
+    override public func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Warning"
         let urlString = SettingsAppLocation.Settings.rawValue
         UIApplication.shared.open(URL(string: urlString)!)
     }
 
-    public override func viewWillAppear(_ animated: Bool) {
+    override public func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(false, animated: false)
     }

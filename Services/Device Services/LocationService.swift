@@ -5,45 +5,49 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
-import CoreLocation
 import Combine
+import CoreLocation
+import Foundation
 
 public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
-
-    var lock: RecursiveLock = RecursiveLock()
-    var resultSink: AnyCancellable = AnyCancellable({})
+    var lock = RecursiveLock()
+    var resultSink = AnyCancellable({})
     var state: ServiceState?
 
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
 
-    required public override init() {
-
+    override public required init() {
     }
 
     func publishError(error: Error) {
-
     }
 
     func publishValue(value: Event) {
-
     }
 
     func start() {
+        lock.lock()
+        defer { lock.unlock() }
         locationManager!.startUpdatingLocation()
     }
 
     func pause() {
-
+        lock.lock()
+        defer { lock.unlock() }
+        locationManager!.stopUpdatingLocation()
     }
 
     func restart() {
-
+        lock.lock()
+        defer { lock.unlock() }
+        locationManager!.startUpdatingLocation()
     }
 
     func terminate() {
+        lock.lock()
+        defer { lock.unlock() }
         locationManager!.stopUpdatingLocation()
         locationManager = nil
         resultSink.cancel()
@@ -84,7 +88,6 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
 
     #if !os(watchOS)
     public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
-
     }
 
     public func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
@@ -96,7 +99,6 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     }
 
     public func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
-
     }
     #endif
 
@@ -105,33 +107,25 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     }
 
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-
     }
 
     public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-
     }
 
     #if !os(watchOS)
     public func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
-
     }
 
     public func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
-
     }
 
     public func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
-
     }
 
     public func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
-
     }
 
     public func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
-
     }
     #endif
-
 }

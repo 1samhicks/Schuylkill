@@ -5,13 +5,13 @@
 //  Created by Sam Hicks on 2/22/21.
 //
 
-import Foundation
-import UIKit
 import AVFoundation
+import Foundation
 import RSBarcodes_Swift
+import UIKit
 
 class BarcodeDisplayViewController: UIViewController {
-    @IBOutlet weak var imageDisplayed: UIImageView!
+    @IBOutlet var imageDisplayed: UIImageView!
 
     var contents: String = "https://github.com/VMwareFusion/nautilus"
 
@@ -32,11 +32,10 @@ class BarcodeDisplayViewController: UIViewController {
         gen.fillColor = UIColor.white
         gen.strokeColor = UIColor.black
         print("generating image with barcode: " + contents)
-        if let image = gen.generateCode("Text Example", machineReadableCodeObjectType: AVMetadataObject.ObjectType.qr.rawValue, targetSize: CGSize(width: 1000, height: 1000)) {
+        if let image = gen.generateCode("Text Example", machineReadableCodeObjectType: AVMetadataObject.ObjectType.qr.rawValue, targetSize: CGSize(width: 1_000, height: 1_000)) {
             debugPrint(image.size)
             self.imageDisplayed.layer.borderWidth = 1
             self.imageDisplayed.image = RSAbstractCodeGenerator.resizeImage(image, targetSize: self.imageDisplayed.bounds.size, contentMode: UIView.ContentMode.bottomRight)
         }
-
     }
 }

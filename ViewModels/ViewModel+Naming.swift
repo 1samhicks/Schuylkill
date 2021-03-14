@@ -8,15 +8,12 @@
 import Foundation
 import Resolver
 
-protocol ViewModel : ServiceNaming {
+protocol ViewModel: ServiceNaming {
     init()
 }
 
-
-extension ViewModel {
-    
-    public var viewModelType : ViewModel.Type {
+internal extension ViewModel {
+    var viewModelType: ViewModel.Type {
         return ViewModel.self as! ViewModel.Type
     }
 }
-

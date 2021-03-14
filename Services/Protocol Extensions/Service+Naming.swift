@@ -14,7 +14,7 @@ extension ServiceNaming {
 
     var name: String {
         get {
-            return type(of: self).name
+            return Self.name
         }
     }
 }

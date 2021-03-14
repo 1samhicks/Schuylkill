@@ -5,16 +5,14 @@
 //  Created by Sam Hicks on 2/21/21.
 //
 
-import Foundation
 import Amplify
 import CoreLocation
+import Foundation
 
 extension FitnessCenter {
-    
-    static func create(withCenter center:FitnessCenter) throws  {
-        
+    static func create(withCenter center: FitnessCenter) throws {
         Amplify.DataStore.save(center) { result in
-            switch(result) {
+            switch result {
             case .success(let savedItem):
                 print("Saved item: \(savedItem.id)")
             case .failure(let error):
@@ -22,10 +20,10 @@ extension FitnessCenter {
             }
         }
     }
-    
+
     static func query() {
         Amplify.DataStore.query(FitnessCenter.self) { result in
-            switch(result) {
+            switch result {
             case .success(let items):
                 for item in items {
                     print("FitnessCenter ID: \(item.id)")
@@ -35,10 +33,10 @@ extension FitnessCenter {
             }
         }
     }
-    
+
     func update() {
         Amplify.DataStore.save(self) { result in
-            switch(result) {
+            switch result {
             case .success(let savedItem):
                 print("Saved item: \(savedItem.id)")
             case .failure(let error):
@@ -46,10 +44,10 @@ extension FitnessCenter {
             }
         }
     }
-    
+
     func delete() {
         Amplify.DataStore.delete(self) { result in
-            switch(result) {
+            switch result {
             case .success:
                 print("Deleted item: \(self.id)")
             case .failure(let error):

@@ -16,7 +16,6 @@ extension RuntimeService where Self: DeviceService {
         if servicePublisher is DeviceServicePublisher {
             (servicePublisher as! DeviceServicePublisher).send(input: value)
         }
-
     }
 
     func publishError(error: DeviceError) {

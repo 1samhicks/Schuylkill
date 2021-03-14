@@ -93,8 +93,7 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
     if builder.showCancelButton {
       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[cv][cb(40)]|", options: [], metrics: nil, views: views))
       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-[cb]-|", options: [], metrics: nil, views: views))
-    }
-    else {
+    } else {
       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|[cv]|", options: [], metrics: nil, views: views))
     }
 
@@ -108,7 +107,7 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
       addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[ttb(70)]", options: [], metrics: nil, views: views))
     }
 
-    for attribute in Array<NSLayoutConstraint.Attribute>([.left, .top, .right, .bottom]) {
+    for attribute in [NSLayoutConstraint.Attribute]([.left, .top, .right, .bottom]) {
       addConstraint(NSLayoutConstraint(item: ov, attribute: attribute, relatedBy: .equal, toItem: cameraView, attribute: attribute, multiplier: 1, constant: 0))
     }
 
@@ -139,7 +138,7 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
 
   func addGreenBorder() {
     self.startTimerForBorderReset()
-    
+
     self.overlayView?.setState(.valid)
   }
 
@@ -181,14 +180,14 @@ final public class QRCodeReaderView: UIView, QRCodeReaderDisplayable {
     if let ttb = toggleTorchButton {
       addSubview(ttb)
     }
-    
+
     if let cb = cancelButton {
       addSubview(cb)
     }
 
     if let reader = reader {
       cameraView.layer.insertSublayer(reader.previewLayer, at: 0)
-      
+
       setNeedsUpdateOrientation()
     }
   }

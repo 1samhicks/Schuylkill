@@ -5,12 +5,11 @@
 //  Created by Sam Hicks on 3/3/21.
 //
 
+import Combine
 import SwiftUI
 import UIKit
-import Combine
 
 public struct MuscleListView: UIViewControllerRepresentable {
-
     public typealias UIViewControllerType = MuscleCollectionViewController
 
     public func makeUIViewController(context: Context) -> MuscleCollectionViewController {
@@ -18,9 +17,7 @@ public struct MuscleListView: UIViewControllerRepresentable {
     }
 
     public func updateUIViewController(_ uiViewController: MuscleCollectionViewController, context: Context) {
-
     }
-
 }
 
 struct MuscleListView_Previews: PreviewProvider {
