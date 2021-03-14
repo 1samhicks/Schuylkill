@@ -11,7 +11,7 @@ import RxCocoa
 import CoreMotion
 import SwiftyBeaver
 
-let log = SwiftyBeaver.self
+let applicationLog = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     
@@ -24,13 +24,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         Resolver.register()
         do {
             try application.setupWatchConnectivity(delegate: wcSessionChannelDelegate)
-            try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
-            try Amplify.add(plugin: AWSCognitoAuthPlugin())
-            try Amplify.add(plugin: AWSAPIPlugin())
-            try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
-            try Amplify.add(plugin: AWSS3StoragePlugin())
-            Amplify.Logging.logLevel = .verbose
-            try Amplify.configure()
+            try amplifyPlugin()
         } catch let error {
             SwiftyBeaver.exceptionThrown(error: error)
             let alertViewController = UIAlertController(title:"App Issue",error:error,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)
@@ -39,6 +33,16 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         registerForRemoteNotifications()
 
         return true
+    }
+    
+    func amplifyPlugin() throws {
+        try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
+        try Amplify.add(plugin: AWSCognitoAuthPlugin())
+        try Amplify.add(plugin: AWSAPIPlugin())
+        try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
+        try Amplify.add(plugin: AWSS3StoragePlugin())
+        Amplify.Logging.logLevel = .verbose
+        try Amplify.configure()
     }
 
     func application(_ application: UIApplication,

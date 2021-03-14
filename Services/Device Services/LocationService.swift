@@ -19,12 +19,15 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     }
 
     override public required init() {
+        
     }
 
     func publishError(error: Error) {
+        
     }
 
     func publishValue(value: Event) {
+        servicePublisher.send(input: value)
     }
 
     func start() {

@@ -17,8 +17,8 @@ public typealias ErrorDescription = String
 /// Convenience typealias to disambiguate positional parameters of DeviceErrors
 public typealias RecoverySuggestion = String
 
-extension RecoverySuggestion {
-    public static let empty = ""
+public extension RecoverySuggestion {
+    static let empty = ""
 }
 
 extension ErrorDescription {

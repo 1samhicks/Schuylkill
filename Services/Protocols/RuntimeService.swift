@@ -10,8 +10,8 @@ import CoreMotion
 import Foundation
 
 protocol RuntimeService: ServiceNaming {
-    associatedtype P
-    var servicePublisher: P { get }
+    associatedtype MyPublisher
+    var servicePublisher: MyPublisher { get }
     func publishValue(value: Event)
     func publishError(error: Error)
 }

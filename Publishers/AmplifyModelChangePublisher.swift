@@ -10,10 +10,10 @@ import Foundation
 
 @available(iOS 13.0, *)
 protocol AmplifyModelChangePublisher: ServicePublisher
-    where T == AmplifyMutationEvent, U == AmplifyAPIError {
-    func send(input: T)
+    where MyEvent == AmplifyMutationEvent, MyError == AmplifyAPIError {
+    func send(input: MyEvent)
 
-    func send(error: U)
+    func send(error: MyError)
 
     func sendFinished()
 }

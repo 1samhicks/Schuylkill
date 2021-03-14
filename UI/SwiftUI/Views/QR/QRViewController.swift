@@ -75,7 +75,7 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
       }
     }
 
-    @IBAction func scanInModalAction(_ sender: AnyObject) {
+    @IBAction private func scanInModalAction(_ sender: AnyObject) {
       guard checkScanPermissions() else { return }
 
       readerVC.modalPresentationStyle = .formSheet
@@ -90,7 +90,7 @@ public class QRViewController: UIViewController, QRCodeReaderViewControllerDeleg
       present(readerVC, animated: true, completion: nil)
     }
 
-    @IBAction func scanInPreviewAction(_ sender: Any) {
+    @IBAction private func scanInPreviewAction(_ sender: Any) {
       guard checkScanPermissions(), !reader.isRunning else { return }
 
       reader.didFindCode = { result in

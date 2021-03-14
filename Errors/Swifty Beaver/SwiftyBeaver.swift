@@ -18,17 +18,17 @@ extension SwiftyBeaver {
         // let cloud = SBPlatformDestination(appID: "foo", appSecret: "bar", encryptionKey: "123") // to cloud
         console.format = "$DHH:mm:ss$d $L $M"
 
-        log.addDestination(console)
-        log.addDestination(BaseDestination())
-        log.addDestination(SBPlatformDestination(appID: Secrets.APP_ID, appSecret: Secrets.APP_SECRET, encryptionKey: Secrets.ENCRYPTION_KEY))
+        applicationLog.addDestination(console)
+        applicationLog.addDestination(BaseDestination())
+        applicationLog.addDestination(SBPlatformDestination(appID: Secrets.APP_ID, appSecret: Secrets.APP_SECRET, encryptionKey: Secrets.ENCRYPTION_KEY))
     }
 
     public static func exceptionThrown(error: Error) {
-        log.error(error)
+        applicationLog.error(error)
     }
 
     public static func exceptionThrown(args: [String: String]) {
-        log.error(args)
+        applicationLog.error(args)
     }
 }
 

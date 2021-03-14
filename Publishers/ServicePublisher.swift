@@ -9,12 +9,12 @@ import Combine
 import Foundation
 
 protocol ServicePublisher: Publisher {
-    associatedtype T = Event
-    associatedtype U = Error
+    associatedtype MyEvent = Event
+    associatedtype MyError = Error
 
-    func send(input: T)
+    func send(input: MyEvent)
 
-    func send(error: U)
+    func send(error: MyError)
 
     func sendFinished()
 }

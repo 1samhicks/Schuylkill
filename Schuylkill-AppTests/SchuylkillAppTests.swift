@@ -24,6 +24,16 @@ class SchuylkillAppTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         Resolver.registerAllServices()
+        
+        let test1 : LocationService = Resolver.resolve()
+        let test2 : GyroService = Resolver.resolve()
+        let test3 : PedometerService = Resolver.resolve()
+        
+        test1.start()
+        test2.start()
+        test3.start()
+        
+        
     }
 
     func testPerformanceExample() throws {
