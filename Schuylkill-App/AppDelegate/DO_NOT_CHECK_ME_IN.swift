@@ -12,5 +12,6 @@ public class SensitiveConstants {
         static let APP_SECRET = "yxuwjnbln3anVxxauD5wVmflpxfLipcv"
         static let ENCRYPTION_KEY = "ubuno56fndkaoMdohdoyuuGjmly3nNjn"
         static let PASSWORD = "g7zTH#WK%HaL564v"
+        static let PASTERY_API_KEY = "KkxpATdejYersCnVB9pJ97sE7Y8RY2hV"
     }
 }

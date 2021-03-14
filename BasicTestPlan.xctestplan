@@ -43,6 +43,13 @@
         "identifier" : "37F7C5B225CD3892000D8FAF",
         "name" : "Schuylkill-AppTests"
       }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Schuylkill-App.xcodeproj",
+        "identifier" : "37F7C5BD25CD3892000D8FAF",
+        "name" : "Schuylkill-AppUITests"
+      }
     }
   ],
   "version" : 1

@@ -12,13 +12,11 @@
     public class DeviceServicePublisher: ServicePublisher {
         public typealias Output = DeviceEvent
         public typealias Failure = DeviceError
-
-        static let shared: DeviceServicePublisher? = DeviceServicePublisher()
+        static let shared: DeviceServicePublisher? = DeviceServicePublisher.shared!
         private let subject = PassthroughSubject<Output, Failure>()
-
-        private init() {
-            fatalError("This init should never be called! Use the .shared instance!")
-        }
+        
+        @available(*, unavailable)
+        private init() {}
 
         var publisher: AnyPublisher<Output, Failure> {
             return subject.eraseToAnyPublisher()

@@ -14,11 +14,8 @@ import OSLog
 #endif
 
 public extension Resolver {
-    
-    internal static func registerAllServices<Service>(services : [Service]) where Service : ResolverRegistering {
-        
+    internal static func registerAllServices<Service>(services: [Service]) where Service: ResolverRegistering {
     }
-    
     static func registerAllServices() {
         #if !os(watchOS)
         Resolver.register(instance: AmplifyAPIService(), withScope: .application)
@@ -26,12 +23,12 @@ public extension Resolver {
         Resolver.register(instance: AmplifyS3StorageService(), withScope: .application)
         #endif
 
-        Resolver.register(instance: LocationService(),withScope: .application)
-        Resolver.register(instance: GyroService(),withScope: .application)
-        Resolver.register(instance: MotionService(),withScope: .application)
-        Resolver.register(instance: PedometerService(),withScope: .application)
+        Resolver.register(instance: LocationService(), withScope: .application)
+        Resolver.register(instance: GyroService(), withScope: .application)
+        Resolver.register(instance: MotionService(), withScope: .application)
+        Resolver.register(instance: PedometerService(), withScope: .application)
         Resolver.register(instance: AccelerometerService(), withScope: .application)
-        Resolver.register(instance: MagnometerService(),withScope: .application)
+        Resolver.register(instance: MagnometerService(), withScope: .application)
     }
     /**
      public static func register<Service>(_ type: Service.Type = Service.self, name: Resolver.Name? = nil,
@@ -62,10 +59,8 @@ public extension Resolver {
         print(message)
         #endif
     }
-    
     @inlinable
     static func keyName<R: ServiceNaming>(instance: R) -> Int {
         return ObjectIdentifier(R.self).hashValue
     }
 }
-

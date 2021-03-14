@@ -27,10 +27,7 @@ struct Shredded: App {
             OnboardingView()
         }
     }
-
-    public init() {
-
-    }
+    public init() {}
 }
 
 

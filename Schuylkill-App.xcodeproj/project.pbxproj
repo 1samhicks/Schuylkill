@@ -252,6 +252,29 @@
 		37E8769B25F6B43600B0F333 /* Danger in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 37E8769925F6B43600B0F333 /* Danger */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		37EBEFCA25FDE57900AC1F94 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400C425FC19FA00E173B7 /* UserNotifications.swift */; };
 		37EBEFCF25FDE57B00AC1F94 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400C425FC19FA00E173B7 /* UserNotifications.swift */; };
+		37EBEFD425FE0A8000AC1F94 /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
+		37EBEFD925FE0A8100AC1F94 /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
+		37EBEFDE25FE0A8200AC1F94 /* GymWorkout+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E630C25E2379600B894BA /* GymWorkout+Extensions.swift */; };
+		37EBEFE325FE0A8600AC1F94 /* ExerciseMachine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */; };
+		37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */; };
+		37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F9452C25D47A7000243AC1 /* ExerciseMachine+Extensions.swift */; };
+		37EBEFEA25FE0A8C00AC1F94 /* Muscle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F944FE25D41EDE00243AC1 /* Muscle+Extensions.swift */; };
+		37EBEFEB25FE0A9200AC1F94 /* FitnessCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631325E237F900B894BA /* FitnessCenter+Extensions.swift */; };
+		37EBEFF025FE0A9B00AC1F94 /* Model+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0ED25EF3431000799A9 /* Model+Extensions.swift */; };
+		37EBEFF125FE0A9B00AC1F94 /* Model+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0ED25EF3431000799A9 /* Model+Extensions.swift */; };
+		37EBEFF225FE0A9C00AC1F94 /* Model+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0ED25EF3431000799A9 /* Model+Extensions.swift */; };
+		37EBEFF725FE0AA000AC1F94 /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631A25E23B1D00B894BA /* Location+Extensions.swift */; };
+		37EBEFF825FE0AA100AC1F94 /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631A25E23B1D00B894BA /* Location+Extensions.swift */; };
+		37EBEFF925FE0AA200AC1F94 /* Location+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E631A25E23B1D00B894BA /* Location+Extensions.swift */; };
+		37EBEFFE25FE0AA900AC1F94 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
+		37EBEFFF25FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
+		37EBF00025FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19F25EF6D70000799A9 /* FlickrPhoto.swift */; };
+		37EBF00125FE0AAD00AC1F94 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
+		37EBF00225FE0AAE00AC1F94 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
+		37EBF00325FE0AAF00AC1F94 /* FlickrSearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F1A025EF6D70000799A9 /* FlickrSearchResults.swift */; };
+		37EBF00825FE0AB400AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
+		37EBF00925FE0AB400AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
+		37EBF00A25FE0AB500AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -1839,8 +1862,10 @@
 				37BC23E225F3FF080088E581 /* Image.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* SchuylkillAppTests.swift in Sources */,
+				37EBEFF225FE0A9C00AC1F94 /* Model+Extensions.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37E1D19925FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
+				37EBF00325FE0AAF00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C66025CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
@@ -1860,6 +1885,7 @@
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241725F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */,
+				37EBF00925FE0AB400AC1F94 /* Flickr.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				37BC244725F4F8B50088E581 /* UIApplication.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
@@ -1874,9 +1900,11 @@
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */,
+				37EBEFF925FE0AA200AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242725F409BD0088E581 /* App.swift in Sources */,
@@ -1887,10 +1915,12 @@
 				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37EBEFD425FE0A8000AC1F94 /* GymWorkout+Extensions.swift in Sources */,
 				37BC22EB25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37BC22DA25F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82ED25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				37EBF00025FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */,
 				3764F05925EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
 				3764F08325EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 			);
@@ -1917,8 +1947,10 @@
 				37BC23E325F3FF080088E581 /* Image.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* SchuylkillAppUITests.swift in Sources */,
+				37EBEFF125FE0A9B00AC1F94 /* Model+Extensions.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37E1D19A25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
+				37EBF00225FE0AAE00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C66325CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
@@ -1938,6 +1970,7 @@
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241825F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */,
+				37EBF00825FE0AB400AC1F94 /* Flickr.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				37BC244825F4F8B60088E581 /* UIApplication.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
@@ -1952,9 +1985,11 @@
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */,
+				37EBEFF825FE0AA100AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
+				37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242D25F409BE0088E581 /* App.swift in Sources */,
@@ -1965,10 +2000,12 @@
 				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37EBEFD925FE0A8100AC1F94 /* GymWorkout+Extensions.swift in Sources */,
 				37BC22EC25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37BC22E525F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82EE25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				37EBEFFF25FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */,
 				3764F05A25EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
 				3764F08425EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
 			);
@@ -1987,6 +2024,7 @@
 				37BC23A125F3C4070088E581 /* Resolver+DeviceInjection.swift in Sources */,
 				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
 				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
+				37EBEFFE25FE0AA900AC1F94 /* FlickrPhoto.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
 				37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */,
@@ -1995,17 +2033,21 @@
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37E1D1AD25FD1103000062EA /* AppDelegate.swift in Sources */,
 				37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */,
+				37EBEFF725FE0AA000AC1F94 /* Location+Extensions.swift in Sources */,
 				37BC227E25F394DE0088E581 /* Event.swift in Sources */,
 				37BC22B425F395E00088E581 /* DeviceError.swift in Sources */,
 				37BC232325F39B1A0088E581 /* ServiceNaming.swift in Sources */,
+				37EBF00A25FE0AB500AC1F94 /* Flickr.swift in Sources */,
 				37E1D19B25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
 				37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
+				37EBEFEA25FE0A8C00AC1F94 /* Muscle+Extensions.swift in Sources */,
 				37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */,
 				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
 				37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				37BC22CD25F3969A0088E581 /* ServicePublisher.swift in Sources */,
 				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */,
+				37EBF00125FE0AAD00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */,
 				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
@@ -2014,19 +2056,23 @@
 				37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */,
 				37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */,
+				37EBEFF025FE0A9B00AC1F94 /* Model+Extensions.swift in Sources */,
 				37F7C67C25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37E1D17025FCF9A7000062EA /* RecursiveLock.swift in Sources */,
 				37F7C66125CD3C86000D8FAF /* CommandStatus.swift in Sources */,
 				37F7C5DF25CD3892000D8FAF /* NotificationView.swift in Sources */,
 				37F7C66D25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
+				37EBEFEB25FE0A9200AC1F94 /* FitnessCenter+Extensions.swift in Sources */,
 				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
 				37E1D18525FD0838000062EA /* Service+Naming.swift in Sources */,
+				37EBEFE325FE0A8600AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
 				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */,
+				37EBEFDE25FE0A8200AC1F94 /* GymWorkout+Extensions.swift in Sources */,
 				37BC225025F3944C0088E581 /* ServiceState.swift in Sources */,
 				37E1D19225FD0867000062EA /* ServiceLifecycle.swift in Sources */,
 			);

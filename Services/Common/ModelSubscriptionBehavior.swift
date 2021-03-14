@@ -12,7 +12,7 @@ import Foundation
 protocol DevicePublisher: ServicePublisher {
     func send(input: DeviceEvent)
 
-    func send(error: ApplicationError)
+    func send(error: DeviceError)
 
     func sendFinished()
 }

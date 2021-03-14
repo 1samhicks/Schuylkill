@@ -10,10 +10,11 @@ import CoreLocation
 import Foundation
 
 public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
+    
     var lock = RecursiveLock()
     var resultSink = AnyCancellable({})
     var state: ServiceState?
-
+    
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
@@ -22,13 +23,13 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
         
     }
 
-    func publishError(error: Error) {
+    func publishError(error: MyError) {
         
     }
 
-    func publishValue(value: Event) {
+    /*func publishValue(value: MyEvent) {
         servicePublisher.send(input: value)
-    }
+    }*/
 
     func start() {
         lock.lock()
@@ -72,17 +73,17 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     } }
 
     func locationManagerReceivedError(_ error: NSString) {
-        self.publishError(error: DeviceError.LocationError(description: ErrorDescription.empty, suggestion: (error as String)))
+        self.publishError(error: .LocationError(description: ErrorDescription.empty, suggestion: (error as String)))
     }
 
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locations.forEach {
-            self.publishValue(value: DeviceEvent.locationEvent($0))
+            self.publishValue(value: .locationEvent($0))
         }
     }
 
     public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
-        self.publishValue(value: DeviceEvent.headingEvent(newHeading))
+        self.publishValue(value: .headingEvent(newHeading))
     }
 
     public func locationManagerShouldDisplayHeadingCalibration(_ manager: CLLocationManager) -> Bool {

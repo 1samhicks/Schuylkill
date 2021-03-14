@@ -37,8 +37,8 @@ import QRCodeReader
 import RSBarcodes_Swift
 import UIKit
 
-class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
-  @IBOutlet var previewView: QRCodeReaderView! {
+public class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
+  @IBOutlet private var previewView: QRCodeReaderView! {
     didSet {
       previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
         $0.reader                 = reader
@@ -75,7 +75,9 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
 
       switch error.code {
       case -11_852:
-        alert = UIAlertController(title: "Error", message: "This app is not authorized to use Back Camera.", preferredStyle: .alert)
+        alert = UIAlertController(title: "Error",
+                                  message: "This app is not authorized to use Back Camera.",
+                                  preferredStyle: .alert)
 
         alert.addAction(UIAlertAction(title: "Setting", style: .default, handler: { _ in
           DispatchQueue.main.async {
@@ -97,7 +99,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     }
   }
 
-  @IBAction func scanInModalAction(_ sender: AnyObject) {
+  @IBAction private func scanInModalAction(_ sender: AnyObject) {
     guard checkScanPermissions() else { return }
 
     readerVC.modalPresentationStyle = .formSheet
@@ -112,7 +114,7 @@ class ViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     present(readerVC, animated: true, completion: nil)
   }
 
-  @IBAction func scanInPreviewAction(_ sender: Any) {
+  @IBAction private func scanInPreviewAction(_ sender: Any) {
     guard checkScanPermissions(), !reader.isRunning else { return }
 
     reader.didFindCode = { result in
