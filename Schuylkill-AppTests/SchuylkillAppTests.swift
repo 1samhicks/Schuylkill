@@ -16,7 +16,6 @@ import WatchConnectivity
 let testLog = SwiftyBeaver.self
 
 class SchuylkillAppTests: XCTestCase {
-    
     override func setUpWithError() throws {
         do {
             try super.setUpWithError()

@@ -20,7 +20,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         do {
            try user.configureAmplify()
-           try user.configureWatchConnectivity(delegate: user.sessionDelegate)
+            try user.configureWatchConnectivity(delegate: user.sessionDelegate)
         } catch let error {
             SwiftyBeaver.exceptionThrown(error: error)
             let alertViewController = UIAlertController(title:"App Issue",error:error,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)

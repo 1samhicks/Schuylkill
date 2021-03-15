@@ -7,9 +7,14 @@
 
 import SwiftUI
 import UserNotifications
-import WatchKit
+import SwiftyBeaver
+import UIKit
+import WatchConnectivity
+import ClockKit
 
-class NotificationController: WKUserNotificationHostingController<NotificationView> {
+#if os(watchOS)
+
+class NotificationController: WKWKUserNotificationHostingController<NotificationView> {
     override var body: NotificationView {
         return NotificationView()
     }
@@ -32,29 +37,34 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
     var transport: GDTCORTransport = GDTCORTransport(mappingID: "1018", transformers: nil,
                                                      target: GDTCORTarget.FLL)!
 
-    @IBAction func generateDataEventCompanion(sender: AnyObject?) {
-      print("Generating data event on Companion watch app")
-      let transportToUse = transport
-      let event: GDTCOREvent = transportToUse.eventForTransport()
-      let testMessage = FirelogTestMessageHolder()
-      testMessage.root.identifier = "watchos_companion_test_app_data_event"
-      testMessage.root.repeatedID = ["id1", "id2", "id3"]
-      testMessage.root.warriorChampionships = 1_111_110
-      testMessage.root.subMessage.starTrekData = "technoBabble".data(using: String.Encoding.utf8)!
-      testMessage.root.subMessage.repeatedSubMessage = [
-        SubMessageTwo(),
-        SubMessageTwo(),
-      ]
-      testMessage.root.subMessage.repeatedSubMessage[0].samplingPercentage = 13.37
-      event.dataObject = testMessage
-      let encoder = JSONEncoder()
-      if let jsonData = try? encoder.encode(["needs_network_connection_info": true]) {
-        event.customBytes = jsonData
-      }
-      transportToUse.sendDataEvent(event)
+    func generateDataEventCompanion(sender: AnyObject?) {
+         /*
+          Beaver("Generating data event on Companion watch app")
+          let transportToUse = transport
+          let event: GDTCOREvent = transportToUse.eventForTransport()
+          let testMessage = FirelogTestMessageHolder()
+          
+          testMessage.root.identifier = "watchos_companion_test_app_data_event"
+          testMessage.root.repeatedID = ["id1", "id2", "id3"]
+          testMessage.root.warriorChampionships = 1_111_110
+          testMessage.root.subMessage.starTrekData = "technoBabble".data(using: String.Encoding.utf8)!
+          testMessage.root.subMessage.repeatedSubMessage = [
+            
+            SubMessageTwo(),
+            SubMessageTwo()
+          
+          ]
+          testMessage.root.subMessage.repeatedSubMessage[0].samplingPercentage = 13.37
+          event.dataObject = testMessage
+          let encoder = JSONEncoder()
+          if let jsonData = try? encoder.encode(["needs_network_connection_info": true]) {
+            event.customBytes = jsonData
+          }
+          transportToUse.sendDataEvent(event)*/
     }
 
-    @IBAction func generateTelemetryEventCompanion(sender: AnyObject?) {
+    private func generateTelemetryEventCompanion(sender: AnyObject?) {
+        /*
       print("Generating telemetry event on Companion watch app")
       let transportToUse = transport
       let event: GDTCOREvent = transportToUse.eventForTransport()
@@ -70,9 +80,11 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         event.customBytes = jsonData
       }
       transportToUse.sendTelemetryEvent(event)
+ */
     }
 
-    @IBAction func generateHighPriorityEventCompanion(sender: AnyObject?) {
+    private func generateHighPriorityEventCompanion(sender: AnyObject?) {
+        /*
       print("Generating high priority event on Companion watch app")
       let transportToUse = transport
       let event: GDTCOREvent = transportToUse.eventForTransport()
@@ -87,9 +99,11 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         event.customBytes = jsonData
       }
       transportToUse.sendDataEvent(event)
+ */
     }
 
-    @IBAction func generateWifiOnlyEventCompanion(sender: AnyObject?) {
+    private func generateWifiOnlyEventCompanion(sender: AnyObject?) {
+        /*
       print("Generating wifi only event on Companion watch app")
       let transportToUse = transport
       let event: GDTCOREvent = transportToUse.eventForTransport()
@@ -102,9 +116,11 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         event.customBytes = jsonData
       }
       transportToUse.sendDataEvent(event)
+ */
     }
 
-    @IBAction func generateDailyEventCompanion(sender: AnyObject?) {
+    private func generateDailyEventCompanion(sender: AnyObject?) {
+        /*
       print("Generating daily only event on Companion watch app")
       let transportToUse = transport
       let event: GDTCOREvent = transportToUse.eventForTransport()
@@ -124,6 +140,9 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         event.customBytes = jsonData
       }
       transportToUse.sendDataEvent(event)
+ */
     }
 
 }
+
+#endif

@@ -13,6 +13,10 @@
 		37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
 		371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
+		373F9AB525FF3A3A005FDB0A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373F9AB425FF3A39005FDB0A /* SwiftUI.framework */; };
+		373F9AB625FF3ADE005FDB0A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DE25CD3892000D8FAF /* NotificationView.swift */; };
+		373F9ABF25FF3ADE005FDB0A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DE25CD3892000D8FAF /* NotificationView.swift */; };
+		373F9AC025FF3ADF005FDB0A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DE25CD3892000D8FAF /* NotificationView.swift */; };
 		3764EFB625EBDD76000799A9 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
 		3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */; };
 		3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */; };
@@ -37,12 +41,6 @@
 		3764F08225EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
 		3764F08325EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
 		3764F08425EE3253000799A9 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
-		3764F0AC25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
-		3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
-		3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */; };
-		3764F0B525EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
-		3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
-		3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */; };
 		3764F0C425EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
 		3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
 		3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */; };
@@ -87,6 +85,10 @@
 		377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
 		377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503C25E9191500D8C5F1 /* MagnometerService.swift */; };
+		3780791125FF40D20078E3BF /* Resolver in Frameworks */ = {isa = PBXBuildFile; productRef = 3780791025FF40D20078E3BF /* Resolver */; };
+		3780791325FF40E90078E3BF /* PaperOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 3780791225FF40E90078E3BF /* PaperOnboarding */; };
+		3780791525FF40F10078E3BF /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 3780791425FF40F10078E3BF /* SwiftyBeaver */; };
+		3780793A25FF41C10078E3BF /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3780793925FF41C10078E3BF /* SwifterSwift */; };
 		379400BA25FC115E00E173B7 /* Panic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400B925FC115E00E173B7 /* Panic.swift */; };
 		379400C525FC19FA00E173B7 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400C425FC19FA00E173B7 /* UserNotifications.swift */; };
 		379E62E125E2314300B894BA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
@@ -125,12 +127,6 @@
 		379E651D25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
 		379E651E25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
 		379E651F25E4180900B894BA /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E651C25E4180900B894BA /* QRViewModel.swift */; };
-		379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
-		379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
-		379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */; };
-		379E654A25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */; };
-		379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */; };
-		379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */; };
 		379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E655325E41CF600B894BA /* BarcodeReaderViewModel.swift */; };
 		379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E655325E41CF600B894BA /* BarcodeReaderViewModel.swift */; };
 		379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E655325E41CF600B894BA /* BarcodeReaderViewModel.swift */; };
@@ -151,6 +147,11 @@
 		37AED7C225FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
 		37AED7C325FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
 		37AED7C425FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
+		37AED7CD25FF0C6700836E1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DC25CD3892000D8FAF /* NotificationController.swift */; };
+		37AED7D225FF0C6700836E1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DC25CD3892000D8FAF /* NotificationController.swift */; };
+		37AED7D325FF0C6800836E1D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F7C5DC25CD3892000D8FAF /* NotificationController.swift */; };
+		37AED7E325FF192700836E1D /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 37AED7E225FF192700836E1D /* SwiftyBeaver */; };
+		37AED7E525FF1F9D00836E1D /* Disk in Frameworks */ = {isa = PBXBuildFile; productRef = 37AED7E425FF1F9D00836E1D /* Disk */; };
 		37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
 		37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E225F381A00088E581 /* LocationNagView.swift */; };
 		37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E925F381FB0088E581 /* LocationNagViewController.swift */; };
@@ -534,6 +535,7 @@
 		1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_Schuylkill_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DO_NOT_CHECK_ME_IN.swift; sourceTree = "<group>"; };
+		373F9AB425FF3A39005FDB0A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyServiceModelPublisher.swift; sourceTree = "<group>"; };
 		3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSubscriptionBehavior.swift; sourceTree = "<group>"; };
 		3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationError.swift; sourceTree = "<group>"; };
@@ -546,8 +548,6 @@
 		3764F06F25EE314A000799A9 /* DeviceSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSubscriptionBehavior.swift; sourceTree = "<group>"; };
 		3764F07825EE31B2000799A9 /* DeviceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceError.swift; sourceTree = "<group>"; };
 		3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceServicePublisher.swift; sourceTree = "<group>"; };
-		3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDisplayView.swift; sourceTree = "<group>"; };
-		3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderView.swift; sourceTree = "<group>"; };
 		3764F0C325EF2FFE000799A9 /* AmplifyService+Muscles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AmplifyService+Muscles.swift"; sourceTree = "<group>"; };
 		3764F0ED25EF3431000799A9 /* Model+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+Extensions.swift"; sourceTree = "<group>"; };
 		3764F0F525EF397D000799A9 /* Deletable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deletable.swift; sourceTree = "<group>"; };
@@ -600,8 +600,6 @@
 		379E64ED25E3DAD400B894BA /* RuntimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeService.swift; sourceTree = "<group>"; };
 		379E650D25E413BA00B894BA /* Resolver+Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resolver+Injection.swift"; sourceTree = "<group>"; };
 		379E651C25E4180900B894BA /* QRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewModel.swift; sourceTree = "<group>"; };
-		379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeDisplayViewController.swift; sourceTree = "<group>"; };
-		379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderViewController.swift; sourceTree = "<group>"; };
 		379E655325E41CF600B894BA /* BarcodeReaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodeReaderViewModel.swift; sourceTree = "<group>"; };
 		379E655D25E4F74100B894BA /* MusclesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusclesViewController.swift; sourceTree = "<group>"; };
 		37A0507825CD795B00DCA1F9 /* Firebase+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Firebase+Injections.swift"; sourceTree = "<group>"; };
@@ -736,7 +734,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3780791125FF40D20078E3BF /* Resolver in Frameworks */,
 				DF19359363CF6194BF6023CE /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework in Frameworks */,
+				3780791325FF40E90078E3BF /* PaperOnboarding in Frameworks */,
+				3780793A25FF41C10078E3BF /* SwifterSwift in Frameworks */,
+				3780791525FF40F10078E3BF /* SwiftyBeaver in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -744,8 +746,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				373F9AB525FF3A3A005FDB0A /* SwiftUI.framework in Frameworks */,
 				37A0506F25CD781600DCA1F9 /* Resolver in Frameworks */,
 				7E8D08023B20926806A386BE /* Pods_Schuylkill_App_WatchKit_Extension.framework in Frameworks */,
+				37AED7E325FF192700836E1D /* SwiftyBeaver in Frameworks */,
+				37AED7E525FF1F9D00836E1D /* Disk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -839,7 +844,6 @@
 		3764F17025EF52E9000799A9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				37BC221725F38E4C0088E581 /* Barcode */,
 				37BC220C25F38E3E0088E581 /* QR */,
 				37BC220B25F38E010088E581 /* Muscles */,
 				37BC220A25F38DE30088E581 /* Authentication */,
@@ -904,6 +908,7 @@
 		37A0506D25CD781600DCA1F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				373F9AB425FF3A39005FDB0A /* SwiftUI.framework */,
 				37A45CC325E8433600A7CAD1 /* HealthKit.framework */,
 				37F9450D25D4207500243AC1 /* Amplify.framework */,
 				37CCF33425CEBE32009DBE02 /* AVFoundation.framework */,
@@ -987,17 +992,6 @@
 				379E63F525E26DD400B894BA /* QRViewController.swift */,
 			);
 			path = QR;
-			sourceTree = "<group>";
-		};
-		37BC221725F38E4C0088E581 /* Barcode */ = {
-			isa = PBXGroup;
-			children = (
-				379E653525E41C1E00B894BA /* BarcodeDisplayViewController.swift */,
-				379E654925E41C7600B894BA /* BarcodeReaderViewController.swift */,
-				3764F0AB25EE8088000799A9 /* BarcodeDisplayView.swift */,
-				3764F0B425EE809C000799A9 /* BarcodeReaderView.swift */,
-			);
-			path = Barcode;
 			sourceTree = "<group>";
 		};
 		37BC226F25F394C00088E581 /* Events */ = {
@@ -1440,6 +1434,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				37AED7DD25FF178500836E1D /* PBXTargetDependency */,
 				37F7C5B525CD3892000D8FAF /* PBXTargetDependency */,
 			);
 			name = "Schuylkill-AppTests";
@@ -1463,6 +1458,12 @@
 				37F7C5C025CD3892000D8FAF /* PBXTargetDependency */,
 			);
 			name = "Schuylkill-AppUITests";
+			packageProductDependencies = (
+				3780791025FF40D20078E3BF /* Resolver */,
+				3780791225FF40E90078E3BF /* PaperOnboarding */,
+				3780791425FF40F10078E3BF /* SwiftyBeaver */,
+				3780793925FF41C10078E3BF /* SwifterSwift */,
+			);
 			productName = "Schuylkill-AppUITests";
 			productReference = 37F7C5BE25CD3892000D8FAF /* Schuylkill-AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -1505,6 +1506,8 @@
 			name = "Schuylkill-App WatchKit Extension";
 			packageProductDependencies = (
 				37A0506E25CD781600DCA1F9 /* Resolver */,
+				37AED7E225FF192700836E1D /* SwiftyBeaver */,
+				37AED7E425FF1F9D00836E1D /* Disk */,
 			);
 			productName = "Schuylkill-App WatchKit Extension";
 			productReference = 37F7C5D325CD3892000D8FAF /* Schuylkill-App WatchKit Extension.appex */;
@@ -1792,7 +1795,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		C03CE3E569E5AC58FF5C4E4F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1823,8 +1825,6 @@
 				37EE82E925E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37F7C69725CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */,
-				3764F0AC25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
-				379E654A25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */,
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
 				37077A8325F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
@@ -1834,7 +1834,6 @@
 				37F7C67925CD3C94000D8FAF /* Phrase.swift in Sources */,
 				3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */,
 				3764F15A25EF4978000799A9 /* Muscle.swift in Sources */,
-				3764F0B525EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				3764F18725EF53F8000799A9 /* MuscleListView.swift in Sources */,
 				37F7C5A825CD388F000D8FAF /* AuthenticationView.swift in Sources */,
 				377A503325E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
@@ -1877,6 +1876,7 @@
 				37F7C6A125CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764EFE925EBED20000799A9 /* AnyCancellable+ServicePublisher.swift in Sources */,
 				3764F04A25EE0CF8000799A9 /* Logger.swift in Sources */,
+				373F9AC025FF3ADF005FDB0A /* NotificationView.swift in Sources */,
 				3764F07925EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37BC230B25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37F7C68325CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
@@ -1888,7 +1888,6 @@
 				37F7C68D25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
 				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
-				379E653625E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				37F9441425D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
 				3764F14E25EF4978000799A9 /* ExerciseRep.swift in Sources */,
@@ -1898,6 +1897,7 @@
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
 				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
 				37AED7C125FEF38800836E1D /* AppState.swift in Sources */,
+				37AED7CD25FF0C6700836E1D /* NotificationController.swift in Sources */,
 				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
@@ -1956,10 +1956,8 @@
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */,
 				37EBF06725FE138300AC1F94 /* AccelerometerReading.swift in Sources */,
-				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
-				3764F0AD25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				37BC227725F394DC0088E581 /* Event.swift in Sources */,
 				37BC23E225F3FF080088E581 /* Image.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
@@ -1992,6 +1990,7 @@
 				37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
 				37EBF12825FE80C300AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
+				37AED7D225FF0C6700836E1D /* NotificationController.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225625F3944E0088E581 /* ServiceState.swift in Sources */,
 				37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */,
@@ -2005,12 +2004,12 @@
 				37BC244725F4F8B50088E581 /* UIApplication.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				37E1D1AB25FD1103000062EA /* AppDelegate.swift in Sources */,
-				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37EBF0CC25FE140200AC1F94 /* FitnessCenter.swift in Sources */,
 				37EBF0C525FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */,
 				37EBF0C225FE13F600AC1F94 /* GymWorkout.swift in Sources */,
 				37F9441525D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
+				373F9ABF25FF3ADE005FDB0A /* NotificationView.swift in Sources */,
 				37EBF08025FE139700AC1F94 /* ExerciseMachine.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37E1D19025FD0867000062EA /* ServiceLifecycle.swift in Sources */,
@@ -2023,7 +2022,6 @@
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				37EBF04925FE12B000AC1F94 /* Deletable.swift in Sources */,
 				37EBF0B225FE13D400AC1F94 /* Location+Schema.swift in Sources */,
-				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
@@ -2071,10 +2069,8 @@
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */,
 				37EBF06C25FE138400AC1F94 /* AccelerometerReading.swift in Sources */,
-				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
-				3764F0AE25EE8088000799A9 /* BarcodeDisplayView.swift in Sources */,
 				37BC227825F394DE0088E581 /* Event.swift in Sources */,
 				37BC23E325F3FF080088E581 /* Image.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
@@ -2107,6 +2103,7 @@
 				37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
 				37EBF12D25FE80C400AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
+				37AED7D325FF0C6800836E1D /* NotificationController.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */,
 				37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */,
@@ -2120,12 +2117,12 @@
 				37BC244825F4F8B60088E581 /* UIApplication.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				37E1D1AC25FD1103000062EA /* AppDelegate.swift in Sources */,
-				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
 				37EBF0CD25FE140300AC1F94 /* FitnessCenter.swift in Sources */,
 				37EBF0C625FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */,
 				37EBF0C325FE13F700AC1F94 /* GymWorkout.swift in Sources */,
 				37F9441625D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
+				373F9AB625FF3ADE005FDB0A /* NotificationView.swift in Sources */,
 				37EBF08125FE139900AC1F94 /* ExerciseMachine.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37E1D19125FD0867000062EA /* ServiceLifecycle.swift in Sources */,
@@ -2138,7 +2135,6 @@
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				37EBF04E25FE12B100AC1F94 /* Deletable.swift in Sources */,
 				37EBF0B125FE13D300AC1F94 /* Location+Schema.swift in Sources */,
-				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
@@ -2265,6 +2261,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		37AED7DD25FF178500836E1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 37AED7DC25FF178500836E1D /* SwiftyBeaver */;
+		};
 		37F7C5B525CD3892000D8FAF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 37F7C5A125CD388F000D8FAF /* Schuylkill-App */;
@@ -2513,7 +2513,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App/Schuylkill-App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Resources/Schuylkill-App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
@@ -2541,7 +2541,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Schuylkill-App/Schuylkill-App/Schuylkill-App.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Resources/Schuylkill-App.entitlements";
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Schuylkill-App/Preview Content\"";
@@ -2807,10 +2807,45 @@
 			package = 3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */;
 			productName = Disk;
 		};
+		3780791025FF40D20078E3BF /* Resolver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
+			productName = Resolver;
+		};
+		3780791225FF40E90078E3BF /* PaperOnboarding */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3764F21825F3647A000799A9 /* XCRemoteSwiftPackageReference "paper-onboarding" */;
+			productName = PaperOnboarding;
+		};
+		3780791425FF40F10078E3BF /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		3780793925FF41C10078E3BF /* SwifterSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */;
+			productName = SwifterSwift;
+		};
 		37A0506E25CD781600DCA1F9 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 37F7C79025CD678E000D8FAF /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
+		};
+		37AED7DC25FF178500836E1D /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		37AED7E225FF192700836E1D /* SwiftyBeaver */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */;
+			productName = SwiftyBeaver;
+		};
+		37AED7E425FF1F9D00836E1D /* Disk */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3772D69A25CD6F7B008F04DD /* XCRemoteSwiftPackageReference "Disk" */;
+			productName = Disk;
 		};
 		37BC23AC25F3C58C0088E581 /* Resolver */ = {
 			isa = XCSwiftPackageProductDependency;
