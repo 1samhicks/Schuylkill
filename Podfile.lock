@@ -46,6 +46,9 @@ PODS:
     - AWSCore (~> 2.23.0)
   - AWSS3 (2.23.1):
     - AWSCore (= 2.23.1)
+  - Cuckoo (1.4.1):
+    - Cuckoo/Swift (= 1.4.1)
+  - Cuckoo/Swift (1.4.1)
   - RxBlocking (6.1.0):
     - RxSwift (= 6.1.0)
   - RxCocoa (6.1.0):
@@ -72,6 +75,7 @@ DEPENDENCIES:
   - AmplifyPlugins/AWSPinpointAnalyticsPlugin
   - AmplifyPlugins/AWSS3StoragePlugin
   - AWSS3
+  - Cuckoo
   - RxBlocking (= 6.1.0)
   - RxCocoa (= 6.1.0)
   - RxSwift (= 6.1.0)
@@ -93,6 +97,7 @@ SPEC REPOS:
     - AWSPinpoint
     - AWSPluginsCore
     - AWSS3
+    - Cuckoo
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -116,6 +121,7 @@ SPEC CHECKSUMS:
   AWSPinpoint: a89df232548a0634def16dc4963d8493ff07c2a1
   AWSPluginsCore: f41f8a478fe3fd8839ec16278b86dededefb0628
   AWSS3: 66bf4071639d0bebaec10e7b6587712df5f05a26
+  Cuckoo: 4625f7f54d9bb880123270e8969898d6c1d036b5
   RxBlocking: 602095fba0bce7b16b56ccec89edf780c248b7d9
   RxCocoa: 5c51f02d562cbd94629f6c26cf0c80fe4ab8d343
   RxRelay: 483e1a19fad961b41f0b0c0bee506f46c1ae14fe
@@ -127,6 +133,6 @@ SPEC CHECKSUMS:
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SwiftLint: 0c645fdc6feed3e390c1701ab3cc669f88b42752
 
-PODFILE CHECKSUM: a694b6adeb891d44190f5fe21fef95d0430a811e
+PODFILE CHECKSUM: 6f1b45d9ed26d90f1424631862af08288f5ba5a0
 
 COCOAPODS: 1.10.1

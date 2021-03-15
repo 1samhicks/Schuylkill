@@ -12,7 +12,7 @@ import SwiftyBeaver
 extension SwiftyBeaver {
     typealias Secrets = SensitiveConstants.SwiftyBeaver
 
-    public static func activate() {
+    public static func activate(forXCTest: Bool = false) {
         // add log destinations. at least one is needed!
         let console = ConsoleDestination()  // log to Xcode Console
         // let cloud = SBPlatformDestination(appID: "foo", appSecret: "bar", encryptionKey: "123") // to cloud

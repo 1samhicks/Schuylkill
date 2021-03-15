@@ -15,12 +15,3 @@ extension Resolver {
 }
 #endif
 
-extension Resolver: ResolverRegistering {
-    public static func register() {
-        registerAllServices()
-        registerViewModels()
-        #if MOCK
-        root = mock
-        #endif
-    }
-}

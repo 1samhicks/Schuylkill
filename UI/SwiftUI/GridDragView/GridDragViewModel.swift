@@ -2,10 +2,6 @@
 //  GridDragViewModel.swift
 //  GridDrag
 //
-//  Created by David S Reich on 9/5/20.
-//  Copyright © 2020 StellarSoftware.
-//  All rights reserved except as defined by MIT license - see LICENSE file for more info.
-//
 
 import SwiftUI
 

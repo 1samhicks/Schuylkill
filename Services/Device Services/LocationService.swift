@@ -68,7 +68,8 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
         locationManager!.delegate = self
     }
 
-    var serviceState: ServiceState? { get {
+    var serviceState: ServiceState? {
+        get {
         return nil
     } }
 

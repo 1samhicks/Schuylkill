@@ -29,11 +29,8 @@ class NotificationController: WKUserNotificationHostingController<NotificationVi
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
     }
-    
-    
     var transport: GDTCORTransport = GDTCORTransport(mappingID: "1018", transformers: nil,
                                                      target: GDTCORTarget.FLL)!
-
 
     @IBAction func generateDataEventCompanion(sender: AnyObject?) {
       print("Generating data event on Companion watch app")

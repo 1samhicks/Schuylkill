@@ -53,8 +53,8 @@ public enum AuthenticationError: ApplicationError {
         switch self {
         /*case .AuthError(let causedBy) where (causedBy == Error):
             return causedBy*/
-        case .configuration(let causedBy, _, _),.invalidCondition(let causedBy, _, _),.api(let causedBy, _),.internalOperation(let causedBy, _, _),
-            .InvalidDatabase(let causedBy, _),.Sync(let causedBy, _, _),.Unknown(let causedBy, _, _):
+        case .configuration(let causedBy, _, _), .invalidCondition(let causedBy, _, _), .api(let causedBy, _), .internalOperation(let causedBy, _, _),
+            .InvalidDatabase(let causedBy, _), .Sync(let causedBy, _, _), .Unknown(let causedBy, _, _):
             return causedBy
         default:
             return nil

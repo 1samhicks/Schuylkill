@@ -147,6 +147,10 @@
 		37AAD69625F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
 		37AAD69725F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
 		37AAD69825F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */; };
+		37AED7C125FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
+		37AED7C225FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
+		37AED7C325FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
+		37AED7C425FEF38800836E1D /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AED7C025FEF38800836E1D /* AppState.swift */; };
 		37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37B9190225E7204B00F0BE01 /* UIApplication.swift */; };
 		37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E225F381A00088E581 /* LocationNagView.swift */; };
 		37BC21EA25F381FB0088E581 /* LocationNagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21E925F381FB0088E581 /* LocationNagViewController.swift */; };
@@ -275,6 +279,89 @@
 		37EBF00825FE0AB400AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
 		37EBF00925FE0AB400AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
 		37EBF00A25FE0AB500AC1F94 /* Flickr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F19E25EF6D70000799A9 /* Flickr.swift */; };
+		37EBF00F25FE0E5600AC1F94 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
+		37EBF01425FE0E5700AC1F94 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
+		37EBF01925FE0E5B00AC1F94 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
+		37EBF01E25FE0E6100AC1F94 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
+		37EBF01F25FE0E6200AC1F94 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
+		37EBF02025FE0E6600AC1F94 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
+		37EBF02125FE0E6700AC1F94 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
+		37EBF02625FE0E6D00AC1F94 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377A503225E9116600D8C5F1 /* AuthenticationViewModel.swift */; };
+		37EBF04925FE12B000AC1F94 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0F525EF397D000799A9 /* Deletable.swift */; };
+		37EBF04E25FE12B100AC1F94 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0F525EF397D000799A9 /* Deletable.swift */; };
+		37EBF05325FE12B300AC1F94 /* Deletable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F0F525EF397D000799A9 /* Deletable.swift */; };
+		37EBF05825FE132100AC1F94 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14525EF4978000799A9 /* Muscle.swift */; };
+		37EBF05D25FE132100AC1F94 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14525EF4978000799A9 /* Muscle.swift */; };
+		37EBF06225FE134300AC1F94 /* Muscle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14525EF4978000799A9 /* Muscle.swift */; };
+		37EBF06725FE138300AC1F94 /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14025EF4977000799A9 /* AccelerometerReading.swift */; };
+		37EBF06C25FE138400AC1F94 /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14025EF4977000799A9 /* AccelerometerReading.swift */; };
+		37EBF06D25FE138500AC1F94 /* AccelerometerReading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14025EF4977000799A9 /* AccelerometerReading.swift */; };
+		37EBF07225FE138800AC1F94 /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */; };
+		37EBF07325FE138900AC1F94 /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */; };
+		37EBF07425FE138A00AC1F94 /* AccelerometerReading+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */; };
+		37EBF07525FE139000AC1F94 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13625EF4976000799A9 /* AmplifyModels.swift */; };
+		37EBF07625FE139100AC1F94 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13625EF4976000799A9 /* AmplifyModels.swift */; };
+		37EBF07B25FE139400AC1F94 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13625EF4976000799A9 /* AmplifyModels.swift */; };
+		37EBF08025FE139700AC1F94 /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13725EF4976000799A9 /* ExerciseMachine.swift */; };
+		37EBF08125FE139900AC1F94 /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13725EF4976000799A9 /* ExerciseMachine.swift */; };
+		37EBF08225FE139900AC1F94 /* ExerciseMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13725EF4976000799A9 /* ExerciseMachine.swift */; };
+		37EBF08325FE139D00AC1F94 /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */; };
+		37EBF08425FE139D00AC1F94 /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */; };
+		37EBF08525FE139E00AC1F94 /* ExerciseMachine+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14325EF4977000799A9 /* ExerciseMachine+Schema.swift */; };
+		37EBF08625FE13A100AC1F94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13E25EF4977000799A9 /* Location.swift */; };
+		37EBF08725FE13A200AC1F94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13E25EF4977000799A9 /* Location.swift */; };
+		37EBF08825FE13A200AC1F94 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13E25EF4977000799A9 /* Location.swift */; };
+		37EBF08D25FE13A500AC1F94 /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */; };
+		37EBF08E25FE13A700AC1F94 /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */; };
+		37EBF08F25FE13A800AC1F94 /* AccelerometerData+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF11E7EE66A04855BC65DDD8 /* AccelerometerData+Schema.swift */; };
+		37EBF09425FE13B200AC1F94 /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B839CF79FEA4003875B2087 /* AccelerometerData.swift */; };
+		37EBF09525FE13B400AC1F94 /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B839CF79FEA4003875B2087 /* AccelerometerData.swift */; };
+		37EBF09625FE13B500AC1F94 /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B839CF79FEA4003875B2087 /* AccelerometerData.swift */; };
+		37EBF09B25FE13B900AC1F94 /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13A25EF4977000799A9 /* Muscle+Schema.swift */; };
+		37EBF0A025FE13BB00AC1F94 /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13A25EF4977000799A9 /* Muscle+Schema.swift */; };
+		37EBF0A125FE13BC00AC1F94 /* Muscle+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13A25EF4977000799A9 /* Muscle+Schema.swift */; };
+		37EBF0A625FE13C400AC1F94 /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */; };
+		37EBF0A725FE13C500AC1F94 /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */; };
+		37EBF0A825FE13C600AC1F94 /* MotionAttitude+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13825EF4976000799A9 /* MotionAttitude+Schema.swift */; };
+		37EBF0A925FE13CB00AC1F94 /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14925EF4978000799A9 /* MotionAttitude.swift */; };
+		37EBF0AA25FE13CC00AC1F94 /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14925EF4978000799A9 /* MotionAttitude.swift */; };
+		37EBF0AB25FE13CD00AC1F94 /* MotionAttitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14925EF4978000799A9 /* MotionAttitude.swift */; };
+		37EBF0B025FE13D200AC1F94 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14425EF4977000799A9 /* Location+Schema.swift */; };
+		37EBF0B125FE13D300AC1F94 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14425EF4977000799A9 /* Location+Schema.swift */; };
+		37EBF0B225FE13D400AC1F94 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14425EF4977000799A9 /* Location+Schema.swift */; };
+		37EBF0B725FE13DF00AC1F94 /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */; };
+		37EBF0BC25FE13E200AC1F94 /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */; };
+		37EBF0BD25FE13E300AC1F94 /* GymWorkout+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14825EF4978000799A9 /* GymWorkout+Schema.swift */; };
+		37EBF0C225FE13F600AC1F94 /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14225EF4977000799A9 /* GymWorkout.swift */; };
+		37EBF0C325FE13F700AC1F94 /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14225EF4977000799A9 /* GymWorkout.swift */; };
+		37EBF0C425FE13F800AC1F94 /* GymWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14225EF4977000799A9 /* GymWorkout.swift */; };
+		37EBF0C525FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */; };
+		37EBF0C625FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */; };
+		37EBF0C725FE13FE00AC1F94 /* FitnessCenter+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14125EF4977000799A9 /* FitnessCenter+Schema.swift */; };
+		37EBF0CC25FE140200AC1F94 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13B25EF4977000799A9 /* FitnessCenter.swift */; };
+		37EBF0CD25FE140300AC1F94 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13B25EF4977000799A9 /* FitnessCenter.swift */; };
+		37EBF0CE25FE140400AC1F94 /* FitnessCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13B25EF4977000799A9 /* FitnessCenter.swift */; };
+		37EBF0CF25FE140700AC1F94 /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */; };
+		37EBF0D025FE140800AC1F94 /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */; };
+		37EBF0D125FE140900AC1F94 /* ExerciseSet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14725EF4978000799A9 /* ExerciseSet+Schema.swift */; };
+		37EBF0D625FE140C00AC1F94 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14A25EF4978000799A9 /* ExerciseSet.swift */; };
+		37EBF0D725FE140D00AC1F94 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14A25EF4978000799A9 /* ExerciseSet.swift */; };
+		37EBF0D825FE140E00AC1F94 /* ExerciseSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F14A25EF4978000799A9 /* ExerciseSet.swift */; };
+		37EBF0D925FE141400AC1F94 /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */; };
+		37EBF0DE25FE141500AC1F94 /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */; };
+		37EBF0E325FE141600AC1F94 /* ExerciseRep+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13D25EF4977000799A9 /* ExerciseRep+Schema.swift */; };
+		37EBF0E425FE141C00AC1F94 /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13925EF4977000799A9 /* ExerciseRep.swift */; };
+		37EBF0E525FE141D00AC1F94 /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13925EF4977000799A9 /* ExerciseRep.swift */; };
+		37EBF0E625FE141E00AC1F94 /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13925EF4977000799A9 /* ExerciseRep.swift */; };
+		37EBF10925FE7FA400AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
+		37EBF10E25FE7FA500AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
+		37EBF11E25FE803D00AC1F94 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */; };
+		37EBF12325FE803E00AC1F94 /* AuthenticationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFCE25EBE21F000799A9 /* AuthenticationError.swift */; };
+		37EBF12825FE80C300AC1F94 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
+		37EBF12D25FE80C400AC1F94 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
+		37EBF13225FE810800AC1F94 /* ApplicationRuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */; };
+		37EBF13725FE810900AC1F94 /* ApplicationRuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */; };
+		37EBF13C25FE811100AC1F94 /* ApplicationRuntimeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC21F525F384FD0088E581 /* ApplicationRuntimeError.swift */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -521,6 +608,7 @@
 		37A45CC225E842CC00A7CAD1 /* Schuylkill-App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Schuylkill-App.entitlements"; sourceTree = "<group>"; };
 		37A45CC325E8433600A7CAD1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		37AAD69525F9247C0037FCD0 /* AmplifyAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyAPIError.swift; sourceTree = "<group>"; };
+		37AED7C025FEF38800836E1D /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		37B9190225E7204B00F0BE01 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
 		37BC21E225F381A00088E581 /* LocationNagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagView.swift; sourceTree = "<group>"; };
 		37BC21E925F381FB0088E581 /* LocationNagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagViewController.swift; sourceTree = "<group>"; };
@@ -836,6 +924,14 @@
 				37EE82DC25E6307D00B07673 /* Storyboards */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		37AED7BF25FEF36D00836E1D /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				37AED7C025FEF38800836E1D /* AppState.swift */,
+			);
+			path = AppState;
 			sourceTree = "<group>";
 		};
 		37B9190125E7203100F0BE01 /* Extensions */ = {
@@ -1165,6 +1261,7 @@
 		37F7C63925CD3BD9000D8FAF /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				37AED7BF25FEF36D00836E1D /* AppState */,
 				37E1D1A825FD10E9000062EA /* App & AppDelegate */,
 				379400C325FC19BC00E173B7 /* User Notifications */,
 				377A504825E9476200D8C5F1 /* MotionActivityManager.swift */,
@@ -1800,6 +1897,7 @@
 				37AAD69625F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
 				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
+				37AED7C125FEF38800836E1D /* AppState.swift in Sources */,
 				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				377A503D25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				379E655425E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
@@ -1847,13 +1945,17 @@
 			files = (
 				3764F07125EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				379E650F25E413BA00B894BA /* Resolver+Injection.swift in Sources */,
+				37EBF08F25FE13A800AC1F94 /* AccelerometerData+Schema.swift in Sources */,
+				37AED7C225FEF38800836E1D /* AppState.swift in Sources */,
 				377A503E25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37E1D16E25FCF9A7000062EA /* RecursiveLock.swift in Sources */,
 				379E655525E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649D25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37EBF02025FE0E6600AC1F94 /* ViewModel+Naming.swift in Sources */,
 				37BC234F25F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764D25F5345E00B0F333 /* SwiftyBeaver.swift in Sources */,
+				37EBF06725FE138300AC1F94 /* AccelerometerReading.swift in Sources */,
 				3764F0B625EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507A25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68E25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
@@ -1861,38 +1963,55 @@
 				37BC227725F394DC0088E581 /* Event.swift in Sources */,
 				37BC23E225F3FF080088E581 /* Image.swift in Sources */,
 				379E64EF25E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				37EBF07625FE139100AC1F94 /* AmplifyModels.swift in Sources */,
 				37F7C5B825CD3892000D8FAF /* SchuylkillAppTests.swift in Sources */,
 				37EBEFF225FE0A9C00AC1F94 /* Model+Extensions.swift in Sources */,
+				37EBF01E25FE0E6100AC1F94 /* UserData.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
+				37EBF0E325FE141600AC1F94 /* ExerciseRep+Schema.swift in Sources */,
 				37E1D19925FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
+				37EBF00F25FE0E5600AC1F94 /* MusclesListViewModel.swift in Sources */,
+				37EBF05825FE132100AC1F94 /* Muscle.swift in Sources */,
+				37EBF11E25FE803D00AC1F94 /* AuthenticationError.swift in Sources */,
 				37EBF00325FE0AAF00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C66025CD3C86000D8FAF /* CommandStatus.swift in Sources */,
+				37EBF13225FE810800AC1F94 /* ApplicationRuntimeError.swift in Sources */,
 				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37EBF09625FE13B500AC1F94 /* AccelerometerData.swift in Sources */,
 				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */,
 				377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37EBF0A125FE13BC00AC1F94 /* Muscle+Schema.swift in Sources */,
+				37EBF08625FE13A100AC1F94 /* Location.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37AAD69725F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* ServiceNaming.swift in Sources */,
 				37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
+				37EBF12825FE80C300AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225625F3944E0088E581 /* ServiceState.swift in Sources */,
 				37BC22FE25F3987A0088E581 /* ApplicationError.swift in Sources */,
+				37EBF0D125FE140900AC1F94 /* ExerciseSet+Schema.swift in Sources */,
 				37EE82EA25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241725F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243A25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37EBF00925FE0AB400AC1F94 /* Flickr.swift in Sources */,
 				37F7C78125CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37EBF08325FE139D00AC1F94 /* ExerciseMachine+Schema.swift in Sources */,
 				37BC244725F4F8B50088E581 /* UIApplication.swift in Sources */,
 				3764F0C525EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				37E1D1AB25FD1103000062EA /* AppDelegate.swift in Sources */,
 				379E654B25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440825D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
+				37EBF0CC25FE140200AC1F94 /* FitnessCenter.swift in Sources */,
+				37EBF0C525FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */,
+				37EBF0C225FE13F600AC1F94 /* GymWorkout.swift in Sources */,
 				37F9441525D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
+				37EBF08025FE139700AC1F94 /* ExerciseMachine.swift in Sources */,
 				379E64A725E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37E1D19025FD0867000062EA /* ServiceLifecycle.swift in Sources */,
 				379E649325E3B92400B894BA /* GyroService.swift in Sources */,
@@ -1902,6 +2021,8 @@
 				37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */,
 				37EBEFF925FE0AA200AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
+				37EBF04925FE12B000AC1F94 /* Deletable.swift in Sources */,
+				37EBF0B225FE13D400AC1F94 /* Location+Schema.swift in Sources */,
 				379E653725E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
@@ -1909,20 +2030,27 @@
 				37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242725F409BD0088E581 /* App.swift in Sources */,
 				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
+				37EBF10925FE7FA400AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				37E1D18325FD0838000062EA /* Service+Naming.swift in Sources */,
 				3764F07A25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37EBF0A725FE13C500AC1F94 /* MotionAttitude+Schema.swift in Sources */,
 				37EBEFD425FE0A8000AC1F94 /* GymWorkout+Extensions.swift in Sources */,
+				37EBF0BC25FE13E200AC1F94 /* GymWorkout+Schema.swift in Sources */,
+				37EBF0AB25FE13CD00AC1F94 /* MotionAttitude.swift in Sources */,
 				37BC22EB25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37BC22DA25F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82ED25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647225E2862900B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				37EBF0E625FE141E00AC1F94 /* ExerciseRep.swift in Sources */,
+				37EBF07225FE138800AC1F94 /* AccelerometerReading+Schema.swift in Sources */,
 				37EBF00025FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */,
 				3764F05925EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
 				3764F08325EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
+				37EBF0D625FE140C00AC1F94 /* ExerciseSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1932,13 +2060,17 @@
 			files = (
 				3764F07225EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
 				379E651025E413BA00B894BA /* Resolver+Injection.swift in Sources */,
+				37EBF08E25FE13A700AC1F94 /* AccelerometerData+Schema.swift in Sources */,
+				37AED7C325FEF38800836E1D /* AppState.swift in Sources */,
 				377A503F25E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37E1D16F25FCF9A7000062EA /* RecursiveLock.swift in Sources */,
 				379E655625E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				379E649E25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37EBF02125FE0E6700AC1F94 /* ViewModel+Naming.swift in Sources */,
 				37BC235025F3A2C40088E581 /* PedometerService.swift in Sources */,
 				37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37E8764C25F5345D00B0F333 /* SwiftyBeaver.swift in Sources */,
+				37EBF06C25FE138400AC1F94 /* AccelerometerReading.swift in Sources */,
 				3764F0B725EE809C000799A9 /* BarcodeReaderView.swift in Sources */,
 				37A0507B25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C68F25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
@@ -1946,38 +2078,55 @@
 				37BC227825F394DE0088E581 /* Event.swift in Sources */,
 				37BC23E325F3FF080088E581 /* Image.swift in Sources */,
 				379E64F025E3DAD400B894BA /* RuntimeService.swift in Sources */,
+				37EBF07525FE139000AC1F94 /* AmplifyModels.swift in Sources */,
 				37F7C5C325CD3892000D8FAF /* SchuylkillAppUITests.swift in Sources */,
 				37EBEFF125FE0A9B00AC1F94 /* Model+Extensions.swift in Sources */,
+				37EBF01F25FE0E6200AC1F94 /* UserData.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
+				37EBF0DE25FE141500AC1F94 /* ExerciseRep+Schema.swift in Sources */,
 				37E1D19A25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
+				37EBF01425FE0E5700AC1F94 /* MusclesListViewModel.swift in Sources */,
+				37EBF05D25FE132100AC1F94 /* Muscle.swift in Sources */,
+				37EBF12325FE803E00AC1F94 /* AuthenticationError.swift in Sources */,
 				37EBF00225FE0AAE00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C66325CD3C86000D8FAF /* CommandStatus.swift in Sources */,
+				37EBF13725FE810900AC1F94 /* ApplicationRuntimeError.swift in Sources */,
 				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37EBF09525FE13B400AC1F94 /* AccelerometerData.swift in Sources */,
 				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */,
 				377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37EBF0A025FE13BB00AC1F94 /* Muscle+Schema.swift in Sources */,
+				37EBF08725FE13A200AC1F94 /* Location.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
 				37AAD69825F9247C0037FCD0 /* AmplifyAPIError.swift in Sources */,
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* ServiceNaming.swift in Sources */,
 				37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
+				37EBF12D25FE80C400AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
 				37BC225C25F3944F0088E581 /* ServiceState.swift in Sources */,
 				37BC22FD25F398790088E581 /* ApplicationError.swift in Sources */,
+				37EBF0D025FE140800AC1F94 /* ExerciseSet+Schema.swift in Sources */,
 				37EE82EB25E630C500B07673 /* MusclesCollectionView.swift in Sources */,
 				37BC241825F402530088E581 /* OnboardingView.swift in Sources */,
 				37BC243B25F417890088E581 /* StorageServiceError.swift in Sources */,
 				37EBF00825FE0AB400AC1F94 /* Flickr.swift in Sources */,
 				37F7C78225CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
+				37EBF08425FE139D00AC1F94 /* ExerciseMachine+Schema.swift in Sources */,
 				37BC244825F4F8B60088E581 /* UIApplication.swift in Sources */,
 				3764F0C625EF2FFE000799A9 /* AmplifyService+Muscles.swift in Sources */,
 				37E1D1AC25FD1103000062EA /* AppDelegate.swift in Sources */,
 				379E654C25E41C7600B894BA /* BarcodeReaderViewController.swift in Sources */,
 				37F9440925D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
+				37EBF0CD25FE140300AC1F94 /* FitnessCenter.swift in Sources */,
+				37EBF0C625FE13FC00AC1F94 /* FitnessCenter+Schema.swift in Sources */,
+				37EBF0C325FE13F700AC1F94 /* GymWorkout.swift in Sources */,
 				37F9441625D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
+				37EBF08125FE139900AC1F94 /* ExerciseMachine.swift in Sources */,
 				379E64A825E3B96600B894BA /* AccelerometerService.swift in Sources */,
 				37E1D19125FD0867000062EA /* ServiceLifecycle.swift in Sources */,
 				379E649425E3B92400B894BA /* GyroService.swift in Sources */,
@@ -1987,6 +2136,8 @@
 				37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */,
 				37EBEFF825FE0AA100AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
+				37EBF04E25FE12B100AC1F94 /* Deletable.swift in Sources */,
+				37EBF0B125FE13D300AC1F94 /* Location+Schema.swift in Sources */,
 				379E653825E41C1E00B894BA /* BarcodeDisplayViewController.swift in Sources */,
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
@@ -1994,20 +2145,27 @@
 				37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242D25F409BE0088E581 /* App.swift in Sources */,
 				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
+				37EBF10E25FE7FA500AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				37E1D18425FD0838000062EA /* Service+Naming.swift in Sources */,
 				3764F07B25EE31B2000799A9 /* DeviceError.swift in Sources */,
 				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
+				37EBF0A825FE13C600AC1F94 /* MotionAttitude+Schema.swift in Sources */,
 				37EBEFD925FE0A8100AC1F94 /* GymWorkout+Extensions.swift in Sources */,
+				37EBF0BD25FE13E300AC1F94 /* GymWorkout+Schema.swift in Sources */,
+				37EBF0AA25FE13CC00AC1F94 /* MotionAttitude.swift in Sources */,
 				37BC22EC25F397A20088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37BC22E525F3979E0088E581 /* ServicePublisher.swift in Sources */,
 				37EE82EE25E630C500B07673 /* MuscleCell.swift in Sources */,
 				379E647825E2862A00B894BA /* FitnessCenter+Extensions.swift in Sources */,
+				37EBF0E525FE141D00AC1F94 /* ExerciseRep.swift in Sources */,
+				37EBF07325FE138900AC1F94 /* AccelerometerReading+Schema.swift in Sources */,
 				37EBEFFF25FE0AAA00AC1F94 /* FlickrPhoto.swift in Sources */,
 				3764F05A25EE0D65000799A9 /* Bundle+Naming.swift in Sources */,
 				3764F08425EE3253000799A9 /* DeviceServicePublisher.swift in Sources */,
+				37EBF0D725FE140D00AC1F94 /* ExerciseSet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2015,22 +2173,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37EBF0D825FE140E00AC1F94 /* ExerciseSet.swift in Sources */,
 				37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */,
+				37EBF0A625FE13C400AC1F94 /* MotionAttitude+Schema.swift in Sources */,
+				37EBF0C425FE13F800AC1F94 /* GymWorkout.swift in Sources */,
 				37BC237E25F3BFAF0088E581 /* App.swift in Sources */,
+				37EBF0D925FE141400AC1F94 /* ExerciseRep+Schema.swift in Sources */,
+				37EBF08525FE139E00AC1F94 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C69025CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
 				37BC223125F393730088E581 /* UserData.swift in Sources */,
 				37F7C68625CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
+				37EBF08D25FE13A500AC1F94 /* AccelerometerData+Schema.swift in Sources */,
 				37BC23A125F3C4070088E581 /* Resolver+DeviceInjection.swift in Sources */,
+				37EBF0CE25FE140400AC1F94 /* FitnessCenter.swift in Sources */,
 				37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */,
 				37BC239425F3C06C0088E581 /* LocationService.swift in Sources */,
+				37EBF08225FE139900AC1F94 /* ExerciseMachine.swift in Sources */,
+				37EBF0B025FE13D200AC1F94 /* Location+Schema.swift in Sources */,
 				37EBEFFE25FE0AA900AC1F94 /* FlickrPhoto.swift in Sources */,
 				37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */,
 				37BC22F725F398780088E581 /* ApplicationError.swift in Sources */,
+				37EBF09425FE13B200AC1F94 /* AccelerometerData.swift in Sources */,
 				37E8764625F5345C00B0F333 /* SwiftyBeaver.swift in Sources */,
+				37EBF13C25FE811100AC1F94 /* ApplicationRuntimeError.swift in Sources */,
+				37EBF0E425FE141C00AC1F94 /* ExerciseRep.swift in Sources */,
 				37BC235125F3A2C40088E581 /* PedometerService.swift in Sources */,
+				37EBF07B25FE139400AC1F94 /* AmplifyModels.swift in Sources */,
 				37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */,
 				37F7C6AE25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
+				37EBF06225FE134300AC1F94 /* Muscle.swift in Sources */,
 				37E1D1AD25FD1103000062EA /* AppDelegate.swift in Sources */,
 				37BC238425F3C0400088E581 /* ExtensionDelegate.swift in Sources */,
 				37EBEFF725FE0AA000AC1F94 /* Location+Extensions.swift in Sources */,
@@ -2039,20 +2211,26 @@
 				37BC232325F39B1A0088E581 /* ServiceNaming.swift in Sources */,
 				37EBF00A25FE0AB500AC1F94 /* Flickr.swift in Sources */,
 				37E1D19B25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
+				37EBF07425FE138A00AC1F94 /* AccelerometerReading+Schema.swift in Sources */,
 				37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37EBEFEA25FE0A8C00AC1F94 /* Muscle+Extensions.swift in Sources */,
+				37EBF05325FE12B300AC1F94 /* Deletable.swift in Sources */,
 				37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */,
 				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
 				37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				37BC22CD25F3969A0088E581 /* ServicePublisher.swift in Sources */,
 				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
 				37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */,
+				37EBF01925FE0E5B00AC1F94 /* MusclesListViewModel.swift in Sources */,
 				37EBF00125FE0AAD00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */,
 				37F7C5DB25CD3892000D8FAF /* ContentView.swift in Sources */,
+				37EBF09B25FE13B900AC1F94 /* Muscle+Schema.swift in Sources */,
 				379E655725E41CF600B894BA /* BarcodeReaderViewModel.swift in Sources */,
 				37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */,
+				37EBF0B725FE13DF00AC1F94 /* GymWorkout+Schema.swift in Sources */,
+				37EBF0C725FE13FE00AC1F94 /* FitnessCenter+Schema.swift in Sources */,
 				37F7C5E125CD3892000D8FAF /* ComplicationController.swift in Sources */,
 				37F7C6A425CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				379E64A925E3B96600B894BA /* AccelerometerService.swift in Sources */,
@@ -2065,11 +2243,17 @@
 				37EBEFEB25FE0A9200AC1F94 /* FitnessCenter+Extensions.swift in Sources */,
 				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
+				37EBF0A925FE13CB00AC1F94 /* MotionAttitude.swift in Sources */,
+				37EBF0CF25FE140700AC1F94 /* ExerciseSet+Schema.swift in Sources */,
+				37EBF06D25FE138500AC1F94 /* AccelerometerReading.swift in Sources */,
 				37E1D18525FD0838000062EA /* Service+Naming.swift in Sources */,
 				37EBEFE325FE0A8600AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
+				37EBF08825FE13A200AC1F94 /* Location.swift in Sources */,
 				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
+				37AED7C425FEF38800836E1D /* AppState.swift in Sources */,
+				37EBF02625FE0E6D00AC1F94 /* AuthenticationViewModel.swift in Sources */,
 				37F7C78325CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				37BC23B925F3C68A0088E581 /* ViewModel+Injections.swift in Sources */,
 				37EBEFDE25FE0A8200AC1F94 /* GymWorkout+Extensions.swift in Sources */,

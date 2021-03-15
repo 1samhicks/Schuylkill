@@ -14,17 +14,13 @@ import SwiftyBeaver
 let applicationLog = SwiftyBeaver.self
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
-    
+    var user = AppState()
     var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
-    private lazy var wcSessionChannelDelegate: WatchSessionChannelDelegate = {
-        return WatchSessionChannelDelegate()
-    }()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
-        Resolver.register()
         do {
-            try application.setupWatchConnectivity(delegate: wcSessionChannelDelegate)
-            try amplifyPlugin()
+           try user.configureAmplify()
+           try user.configureWatchConnectivity(delegate: user.sessionDelegate)
         } catch let error {
             SwiftyBeaver.exceptionThrown(error: error)
             let alertViewController = UIAlertController(title:"App Issue",error:error,defaultActionButtonTitle:"Quit",preferredStyle:.alert,tintColor:UIColor.random)
@@ -35,15 +31,7 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         return true
     }
     
-    func amplifyPlugin() throws {
-        try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
-        try Amplify.add(plugin: AWSCognitoAuthPlugin())
-        try Amplify.add(plugin: AWSAPIPlugin())
-        try Amplify.add(plugin: AWSPinpointAnalyticsPlugin())
-        try Amplify.add(plugin: AWSS3StoragePlugin())
-        Amplify.Logging.logLevel = .verbose
-        try Amplify.configure()
-    }
+    
 
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {

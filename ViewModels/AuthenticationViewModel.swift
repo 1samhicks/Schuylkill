@@ -10,7 +10,7 @@ import Combine
 import Foundation
 import Resolver
 
-class AuthenticationViewModel: ObservableObject, Identifiable, ViewModel {
+class AuthenticationViewModel: ObservableObject, Identifiable {
     required convenience init() {
         self.init(userData: UserData.shared)
     }

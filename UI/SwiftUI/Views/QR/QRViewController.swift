@@ -15,7 +15,7 @@ import UIKit
 public class QRViewController: UIViewController, QRCodeReaderViewControllerDelegate {
     @LazyInjected var viewModel: QRViewModel
 
-    @IBOutlet var previewView: QRCodeReaderView! {
+    @IBOutlet private var previewView: QRCodeReaderView! {
       didSet {
         previewView.setupComponents(with: QRCodeReaderViewControllerBuilder {
           $0.reader                 = reader

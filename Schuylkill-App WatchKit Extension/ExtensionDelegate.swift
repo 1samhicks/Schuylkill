@@ -16,7 +16,9 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     //
     private var activationStateObservation: NSKeyValueObservation?
     private var hasContentPendingObservation: NSKeyValueObservation?
-    private var deviceServices = [LocationService.self, GyroService.self, MotionService.self, MagnometerService.self, AccelerometerService.self, PedometerService.self] as [Any]
+    private var deviceServices = [LocationService.self, GyroService.self,
+                                  MotionService.self, MagnometerService.self,
+                                  AccelerometerService.self, PedometerService.self] as [Any]
     // An array to keep the background tasks.
     //
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()

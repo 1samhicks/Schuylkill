@@ -18,7 +18,8 @@ target 'Schuylkill-App' do
     pod "SettingsAppAccess"
     pod 'SwiftLint'
     pod 'Sourcery'
-
+    pod "Cuckoo"
+    
   target 'Schuylkill-AppTests' do
     inherit! :search_paths
     # Pods for testing

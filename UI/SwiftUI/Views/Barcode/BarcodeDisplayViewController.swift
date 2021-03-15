@@ -11,7 +11,7 @@ import RSBarcodes_Swift
 import UIKit
 
 class BarcodeDisplayViewController: UIViewController {
-    @IBOutlet var imageDisplayed: UIImageView!
+    @IBOutlet private var imageDisplayed: UIImageView!
 
     var contents: String = "https://github.com/VMwareFusion/nautilus"
 
