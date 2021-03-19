@@ -10,6 +10,7 @@ import SwiftyBeaver
 import XCTest
 import UIKit
 import WatchConnectivity
+import CoreLocation
 
 @testable import Schuylkill_App
 
@@ -40,29 +41,39 @@ class SchuylkillAppTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         Resolver.registerAllServices()
-        
-        let test1: LocationService = Resolver.resolve(LocationService.self,name: "LocationService",args:nil)
-        let test2: GyroService = Resolver.resolve(GyroService.self,name:"GyroService",args:nil)
-        let test3: PedometerService = Resolver.resolve(PedometerService.self,name: "PedometerService",args:nil)
+        let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
+        let test2: GyroService = Resolver.resolve(GyroService.self, name: "GyroService", args: nil)
+        let test3: PedometerService = Resolver.resolve(PedometerService.self, name: "PedometerService", args: nil)
 
         XCTAssert(test1.name == LocationService.name)
         XCTAssert(test2.name == GyroService.name)
         XCTAssert(test3.name == PedometerService.name)
-
+    }
+    
+    func testStartServices() throws {
+        Resolver.registerAllServices()
+        let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
+        let test2: GyroService = Resolver.resolve(GyroService.self, name: "GyroService", args: nil)
+        let test3: PedometerService = Resolver.resolve(PedometerService.self, name: "PedometerService", args: nil)
         test1.start()
         test2.start()
         test3.start()
-
-
+    }
+    
+    func testLocationServicePublishValue() throws {
+        Resolver.registerAllServices()
+        let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
+        test1.start()
+        test1.publishValue(value: DeviceEvent.locationEvent(CLLocation.sample))
+    }
+    
+    func testLocationServicePublishError() throws {
+        Resolver.registerAllServices()
+        let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
+        test1.start()
+        test1.publishError(error: DeviceError.LocationError(description: "Testing publish error. Disregard", suggestion: "Look at the test code"))
     }
 
-    func testWatchConnectivity() throws {
-        var user = AppState()
-
-    }
-    func test2() throws {
-
-    }
     func testAmplifySetup() throws {
         do {
             try AppState().configureAmplify()
@@ -70,6 +81,8 @@ class SchuylkillAppTests: XCTestCase {
             SwiftyBeaver.debug(e.localizedDescription)
         }
     }
+    
+
     /*func test4() throws {
 
     }
