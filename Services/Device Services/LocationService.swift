@@ -10,68 +10,67 @@ import CoreLocation
 import Foundation
 
 public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
+    var servicePublisher: DeviceServicePublisher
     
     var lock = RecursiveLock()
     var resultSink = AnyCancellable({})
     var state: ServiceState?
-    
+    typealias MyPublisher = DeviceServicePublisher
+    typealias MyEvent = DeviceEvent
+    typealias MyError = DeviceError
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
 
     override public required init() {
-        
+        servicePublisher = DeviceServicePublisher.shared!
+        super.init()
+        locationManager.delegate = self
     }
 
-    func publishError(error: MyError) {
-        
+    func publishError(error: DeviceError) {
+        servicePublisher.send(error: error)
     }
 
-    /*func publishValue(value: MyEvent) {
+    func publishValue(value: DeviceEvent) {
         servicePublisher.send(input: value)
-    }*/
+    }
 
     func start() {
-        lock.lock()
-        defer { lock.unlock() }
-        locationManager!.startUpdatingLocation()
+        lock.lock(); defer { lock.unlock() }
+        locationManager.startUpdatingLocation()
     }
 
     func pause() {
-        lock.lock()
-        defer { lock.unlock() }
-        locationManager!.stopUpdatingLocation()
+        lock.lock(); defer { lock.unlock() }
+        locationManager.stopUpdatingLocation()
     }
 
     func restart() {
-        lock.lock()
-        defer { lock.unlock() }
-        locationManager!.startUpdatingLocation()
+        lock.lock(); defer { lock.unlock() }
+        locationManager.startUpdatingLocation()
     }
 
     func terminate() {
-        lock.lock()
-        defer { lock.unlock() }
-        locationManager!.stopUpdatingLocation()
-        locationManager = nil
+        lock.lock(); defer { lock.unlock() }
+        locationManager.stopUpdatingLocation()
         resultSink.cancel()
     }
 
-    private var locationManager: CLLocationManager?
-
+    private var locationManager: CLLocationManager = CLLocationManager()
+    
     init(locationManager loc: CLLocationManager) {
-        super.init()
+        servicePublisher = DeviceServicePublisher.shared!
         locationManager = loc
-        locationManager!.activityType = CLActivityType.fitness
-        locationManager!.allowsBackgroundLocationUpdates = true
-
-        locationManager!.delegate = self
+        locationManager.activityType = CLActivityType.fitness
+        locationManager.allowsBackgroundLocationUpdates = true
+        super.init()
+        locationManager.delegate = self
     }
 
     var serviceState: ServiceState? {
-        get {
-        return nil
-    } }
+            return nil
+    }
 
     func locationManagerReceivedError(_ error: NSString) {
         self.publishError(error: .LocationError(description: ErrorDescription.empty, suggestion: (error as String)))
@@ -92,7 +91,8 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     }
 
     #if !os(watchOS)
-    public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
+    public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState,
+                                for region: CLRegion) {
     }
 
     public func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
@@ -108,7 +108,8 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     #endif
 
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        self.publishError(error: DeviceError.LocationError(description: error.localizedDescription, suggestion: String.empty))
+        self.publishError(error: DeviceError.LocationError(description: error.localizedDescription,
+            suggestion: String.empty))
     }
 
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {

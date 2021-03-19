@@ -12,9 +12,7 @@ extension ServiceNaming {
         return String(describing: self)
     }
 
-    var name: String {
-        get {
-            return Self.name
-        }
+    public var name: String {
+            Self.name
     }
 }
