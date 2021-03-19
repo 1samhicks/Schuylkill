@@ -7,36 +7,62 @@
 
 import Foundation
 
-public enum DeviceError: ApplicationError, ErrorHandling {
-    
-    case LocationError(description: ErrorDescription,suggestion: RecoverySuggestion)
-    case PedometerError(innerError: Error, description : ErrorDescription,suggestion: RecoverySuggestion)
-    
-    var errorDescription: ErrorDescription {
+public enum DeviceError: RawRepresentable, ApplicationError {
+    typealias RawType = String
+
+    public var rawValue: String {
+                switch self {
+                case .LocationError:
+                    return "location_error"
+                default:
+                    return "pedometer_error"
+                }
+    }
+
+    public init?(rawValue: String) {
+        self = .LocationError(description: "", suggestion: "")
+            switch rawValue {
+            case "location_error":
+                break
+            case "pedometer_error":
+                break
+            default:
+                break
+        }
+    }
+
+    case LocationError(description: ErrorDescription, suggestion: RecoverySuggestion)
+    case PedometerError(innerError: Error, description: ErrorDescription, RecoverySuggestion)
+
+    public init(errorDescription: ErrorDescription, recoverySuggestion: RecoverySuggestion, error: Error) {
+        // Temoorary
+        self = .LocationError(description: "", suggestion: "")
+    }
+
+    public var errorDescription: ErrorDescription {
         switch self {
-            case .LocationError(let description,_):
+        case .LocationError(let description, _):
                 return description
-            case .PedometerError(_, let description,_):
+        case .PedometerError(_, let description, _):
                 return description
        }
     }
-    
-    var recoverySuggestion : RecoverySuggestion {
+
+    public var recoverySuggestion: RecoverySuggestion {
         switch self {
-            case .LocationError(_,let suggestion):
+            case .LocationError(_, let suggestion):
                 return suggestion
-            case .PedometerError(_,_,let suggestion):
+            case .PedometerError(_, _, let suggestion):
                 return suggestion
        }
     }
-    
-    var underlyingError : Error? {
+
+    public var underlyingError: Error? {
         switch self {
-        case .PedometerError(let innerError,_,_):
+        case .PedometerError(let innerError, _, _):
             return innerError
         default:
             return nil
         }
-    
     }
 }

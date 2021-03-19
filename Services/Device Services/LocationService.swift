@@ -57,7 +57,7 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
         resultSink.cancel()
     }
 
-    private var locationManager: CLLocationManager = CLLocationManager()
+    private var locationManager = CLLocationManager()
     
     init(locationManager loc: CLLocationManager) {
         servicePublisher = DeviceServicePublisher.shared!
