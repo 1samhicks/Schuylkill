@@ -10,7 +10,7 @@ import Foundation
 import SwiftyBeaver
 
 extension SwiftyBeaver {
-    typealias Secrets = SensitiveConstants.SwiftyBeaver
+    //typealias Secrets = SensitiveConstants.SwiftyBeaver
 
     public static func activate(forXCTest: Bool = false) {
         // add log destinations. at least one is needed!
@@ -20,7 +20,9 @@ extension SwiftyBeaver {
 
         applicationLog.addDestination(console)
         applicationLog.addDestination(BaseDestination())
-        applicationLog.addDestination(SBPlatformDestination(appID: Secrets.APP_ID, appSecret: Secrets.APP_SECRET, encryptionKey: Secrets.ENCRYPTION_KEY))
+        /*applicationLog.addDestination(SBPlatformDestination(appID:
+         //Secrets.APP_ID, appSecret: Secrets.APP_SECRET,
+         //encryptionKey: Secrets.ENCRYPTION_KEY))*/
     }
 
     public static func exceptionThrown(error: Error) {

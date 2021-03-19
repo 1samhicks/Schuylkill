@@ -40,9 +40,10 @@ class SchuylkillAppTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
         Resolver.registerAllServices()
-        let test1: LocationService = Resolver.resolve()
-        let test2: GyroService = Resolver.resolve()
-        let test3: PedometerService = Resolver.resolve()
+        
+        let test1: LocationService = Resolver.resolve(LocationService.self,name: "LocationService",args:nil)
+        let test2: GyroService = Resolver.resolve(GyroService.self,name:"GyroService",args:nil)
+        let test3: PedometerService = Resolver.resolve(PedometerService.self,name: "PedometerService",args:nil)
 
         XCTAssert(test1.name == LocationService.name)
         XCTAssert(test2.name == GyroService.name)
@@ -52,7 +53,6 @@ class SchuylkillAppTests: XCTestCase {
         test2.start()
         test3.start()
 
-        XCTAssert(test2.motionManager.isGyroActive)
 
     }
 
@@ -68,10 +68,9 @@ class SchuylkillAppTests: XCTestCase {
             try AppState().configureAmplify()
         } catch let e {
             SwiftyBeaver.debug(e.localizedDescription)
-            throw e
         }
     }
-    func test4() throws {
+    /*func test4() throws {
 
     }
     func test5() throws {
@@ -97,7 +96,7 @@ class SchuylkillAppTests: XCTestCase {
     }
     func test12() throws {
 
-    }
+    }*/
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
