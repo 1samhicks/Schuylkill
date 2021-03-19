@@ -229,6 +229,9 @@
 		37BC245825F500550088E581 /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 37BC245725F500550088E581 /* SwiftyBeaver */; };
 		37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC246425F505EA0088E581 /* SwiftyBeaver.swift */; };
 		37CCF33A25CEBE9C009DBE02 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37CCF33425CEBE32009DBE02 /* AVFoundation.framework */; };
+		37CFF2242605586800E3A955 /* CLLocation+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF2232605586800E3A955 /* CLLocation+Stub.swift */; };
+		37CFF2252605586800E3A955 /* CLLocation+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF2232605586800E3A955 /* CLLocation+Stub.swift */; };
+		37CFF2262605586800E3A955 /* CLLocation+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF2232605586800E3A955 /* CLLocation+Stub.swift */; };
 		37E1D16D25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
 		37E1D16E25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
 		37E1D16F25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
@@ -629,6 +632,7 @@
 		37BC243825F417890088E581 /* StorageServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageServiceError.swift; sourceTree = "<group>"; };
 		37BC246425F505EA0088E581 /* SwiftyBeaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBeaver.swift; sourceTree = "<group>"; };
 		37CCF33425CEBE32009DBE02 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.4.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		37CFF2232605586800E3A955 /* CLLocation+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocation+Stub.swift"; sourceTree = SOURCE_ROOT; };
 		37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveLock.swift; sourceTree = "<group>"; };
 		37E1D18125FD0838000062EA /* Service+Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Naming.swift"; sourceTree = "<group>"; };
 		37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLifecycle.swift; sourceTree = "<group>"; };
@@ -1094,6 +1098,14 @@
 			path = SwiftUI;
 			sourceTree = "<group>";
 		};
+		37CFF2222605584800E3A955 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				37CFF2232605586800E3A955 /* CLLocation+Stub.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		37E1D16B25FCF987000062EA /* Combine */ = {
 			isa = PBXGroup;
 			children = (
@@ -1359,6 +1371,7 @@
 		F95315D9A84B4C3DB29404B5 /* AmplifyModels */ = {
 			isa = PBXGroup;
 			children = (
+				37CFF2222605584800E3A955 /* Extensions */,
 				3764F14025EF4977000799A9 /* AccelerometerReading.swift */,
 				3764F14625EF4978000799A9 /* AccelerometerReading+Schema.swift */,
 				3764F13625EF4976000799A9 /* AmplifyModels.swift */,
@@ -1828,6 +1841,7 @@
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
+				37CFF2242605586800E3A955 /* CLLocation+Stub.swift in Sources */,
 				37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */,
 				37F7C67925CD3C94000D8FAF /* Phrase.swift in Sources */,
 				3764EFCF25EBE21F000799A9 /* AuthenticationError.swift in Sources */,
@@ -1975,6 +1989,7 @@
 				37EBF13225FE810800AC1F94 /* ApplicationRuntimeError.swift in Sources */,
 				37F9450025D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37EBF09625FE13B500AC1F94 /* AccelerometerData.swift in Sources */,
+				37CFF2252605586800E3A955 /* CLLocation+Stub.swift in Sources */,
 				37F7C66B25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71225CD49BB000D8FAF /* Storage.swift in Sources */,
 				377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
@@ -2088,6 +2103,7 @@
 				37EBF13725FE810900AC1F94 /* ApplicationRuntimeError.swift in Sources */,
 				37F9450125D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37EBF09525FE13B400AC1F94 /* AccelerometerData.swift in Sources */,
+				37CFF2262605586800E3A955 /* CLLocation+Stub.swift in Sources */,
 				37F7C66C25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				37F7C71325CD49BB000D8FAF /* Storage.swift in Sources */,
 				377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
