@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37077A8325F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
-		37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
-		37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
-		37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */; };
 		371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		373F9AB525FF3A3A005FDB0A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 373F9AB425FF3A39005FDB0A /* SwiftUI.framework */; };
@@ -89,6 +85,9 @@
 		3780791325FF40E90078E3BF /* PaperOnboarding in Frameworks */ = {isa = PBXBuildFile; productRef = 3780791225FF40E90078E3BF /* PaperOnboarding */; };
 		3780791525FF40F10078E3BF /* SwiftyBeaver in Frameworks */ = {isa = PBXBuildFile; productRef = 3780791425FF40F10078E3BF /* SwiftyBeaver */; };
 		3780793A25FF41C10078E3BF /* SwifterSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3780793925FF41C10078E3BF /* SwifterSwift */; };
+		37807963260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37807962260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift */; };
+		37807964260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37807962260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift */; };
+		37807965260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37807962260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift */; };
 		379400BA25FC115E00E173B7 /* Panic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400B925FC115E00E173B7 /* Panic.swift */; };
 		379400C525FC19FA00E173B7 /* UserNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379400C425FC19FA00E173B7 /* UserNotifications.swift */; };
 		379E62E125E2314300B894BA /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379E62E025E2314300B894BA /* UserData.swift */; };
@@ -534,7 +533,6 @@
 		1269CDCD8C888EE8609C3989 /* Pods-Schuylkill-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Schuylkill-App.release.xcconfig"; path = "Target Support Files/Pods-Schuylkill-App/Pods-Schuylkill-App.release.xcconfig"; sourceTree = "<group>"; };
 		1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_Schuylkill_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		351F6D723FBD536F02840801 /* Pods_Schuylkill_App_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Schuylkill_App_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DO_NOT_CHECK_ME_IN.swift; sourceTree = "<group>"; };
 		373F9AB425FF3A39005FDB0A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS7.2.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
 		3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyServiceModelPublisher.swift; sourceTree = "<group>"; };
 		3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelSubscriptionBehavior.swift; sourceTree = "<group>"; };
@@ -583,6 +581,7 @@
 		377A503C25E9191500D8C5F1 /* MagnometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnometerService.swift; sourceTree = "<group>"; };
 		377A504725E9476200D8C5F1 /* RxCoreMotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxCoreMotion.swift; sourceTree = "<group>"; };
 		377A504825E9476200D8C5F1 /* MotionActivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MotionActivityManager.swift; sourceTree = "<group>"; };
+		37807962260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DO_NOT_CHECK_ME_IN.swift; sourceTree = "<group>"; };
 		379400B925FC115E00E173B7 /* Panic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Panic.swift; sourceTree = "<group>"; };
 		379400C425FC19FA00E173B7 /* UserNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotifications.swift; sourceTree = "<group>"; };
 		379E62E025E2314300B894BA /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
@@ -1186,6 +1185,7 @@
 				37F7C63925CD3BD9000D8FAF /* AppDelegate */,
 				37F7C5AB25CD3891000D8FAF /* Preview Content */,
 				37BC241E25F406770088E581 /* Assets.xcassets */,
+				37807962260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift */,
 			);
 			path = "Schuylkill-App";
 			sourceTree = "<group>";
@@ -1263,7 +1263,6 @@
 				37B9190125E7203100F0BE01 /* Extensions */,
 				37F9441325D3E23700243AC1 /* Resolver+ResolverRegistering.swift */,
 				37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */,
-				37077A8225F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1827,7 +1826,6 @@
 				37B9190325E7204B00F0BE01 /* UIApplication.swift in Sources */,
 				37BC21F625F384FD0088E581 /* ApplicationRuntimeError.swift in Sources */,
 				3764F15025EF4978000799A9 /* FitnessCenter.swift in Sources */,
-				37077A8325F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				379E63F625E26DD400B894BA /* QRViewController.swift in Sources */,
 				37F944FF25D41EDE00243AC1 /* Muscle+Extensions.swift in Sources */,
 				37BC21E325F381A00088E581 /* LocationNagView.swift in Sources */,
@@ -1887,6 +1885,7 @@
 				37BC22D425F396BA0088E581 /* AmplifyModelChangePublisher.swift in Sources */,
 				37F7C68D25CD3C9E000D8FAF /* SessionCommands.swift in Sources */,
 				37F9440725D3E0A900243AC1 /* AmplifyAPIService.swift in Sources */,
+				37807963260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				3764EFC725EBDE78000799A9 /* ModelSubscriptionBehavior.swift in Sources */,
 				37F9441425D3E23700243AC1 /* Resolver+ResolverRegistering.swift in Sources */,
 				3764F14F25EF4978000799A9 /* Muscle+Schema.swift in Sources */,
@@ -1981,6 +1980,7 @@
 				377A502A25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68425CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				37EBF0A125FE13BC00AC1F94 /* Muscle+Schema.swift in Sources */,
+				37807964260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37EBF08625FE13A100AC1F94 /* Location.swift in Sources */,
 				371EFE1825E6691A00241090 /* ViewModel+Injections.swift in Sources */,
 				379E655F25E4F74200B894BA /* MusclesViewController.swift in Sources */,
@@ -2025,7 +2025,6 @@
 				379E64E525E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
-				37077A8425F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242725F409BD0088E581 /* App.swift in Sources */,
 				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37EBF10925FE7FA400AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
@@ -2094,6 +2093,7 @@
 				377A502B25E90E3400D8C5F1 /* AmplifyS3StorageService.swift in Sources */,
 				37F7C68525CD3C99000D8FAF /* TestDataProvider.swift in Sources */,
 				37EBF0A025FE13BB00AC1F94 /* Muscle+Schema.swift in Sources */,
+				37807965260543490078E3BF /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37EBF08725FE13A200AC1F94 /* Location.swift in Sources */,
 				371EFE1E25E6691B00241090 /* ViewModel+Injections.swift in Sources */,
 				379E656025E4F74200B894BA /* MusclesViewController.swift in Sources */,
@@ -2138,7 +2138,6 @@
 				379E64E625E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
-				37077A8525F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC242D25F409BE0088E581 /* App.swift in Sources */,
 				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37EBF10E25FE7FA500AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
@@ -2170,7 +2169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				37EBF0D825FE140E00AC1F94 /* ExerciseSet.swift in Sources */,
-				37077A8625F6E12700B5FC4B /* DO_NOT_CHECK_ME_IN.swift in Sources */,
 				37BC23B325F3C6340088E581 /* Resolver+Injection.swift in Sources */,
 				37EBF0A625FE13C400AC1F94 /* MotionAttitude+Schema.swift in Sources */,
 				37EBF0C425FE13F800AC1F94 /* GymWorkout.swift in Sources */,

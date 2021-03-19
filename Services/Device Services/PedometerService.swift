@@ -34,7 +34,7 @@ public class PedometerService: DeviceService {
     }
 
     func start() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
@@ -43,18 +43,16 @@ public class PedometerService: DeviceService {
                 self.publishValue(value: .pedometerEvent(event))
             }
         }
-        lock.unlock()
     }
 
     func pause() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .paused
         pedometer.stopEventUpdates()
-        lock.unlock()
     }
 
     func restart() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
@@ -63,14 +61,14 @@ public class PedometerService: DeviceService {
                 self.publishValue(value: .pedometerEvent(event))
             }
         }
-        lock.unlock()
+        
     }
 
     func terminate() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .finished
         pedometer.stopEventUpdates()
         resultSink.cancel()
-        lock.unlock()
+        
     }
 }

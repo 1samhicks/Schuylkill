@@ -12,5 +12,6 @@ import OSLog
 #endif
 
 public protocol ServiceNaming {
+    var name : String { get }
     init()
 }
