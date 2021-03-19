@@ -27,7 +27,7 @@ public class GyroService: DeviceService {
     }
 
     public func start() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         motionManager.startGyroUpdates()
         resultSink = motionManager.publisher(for: \.gyroData)
@@ -35,28 +35,24 @@ public class GyroService: DeviceService {
             .sink { gyro in
             self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
             }
-        lock.unlock()
     }
 
     func pause() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .paused
         motionManager.stopGyroUpdates()
-        lock.unlock()
     }
 
     func restart() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         motionManager.startGyroUpdates()
-        lock.unlock()
     }
 
     func terminate() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .finished
         motionManager.stopGyroUpdates()
         resultSink.cancel()
-        lock.unlock()
     }
 }
