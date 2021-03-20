@@ -61,7 +61,7 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 return suggestion
             case .GyroError( _, let suggestion):
                 return suggestion
-            case .GeneralDeviceError(_,let suggestion,_):
+            case .GeneralDeviceError(_, suggestion: let suggestion, innerError: let innerError, errorType: let errorType):
                 return suggestion
             }
     }

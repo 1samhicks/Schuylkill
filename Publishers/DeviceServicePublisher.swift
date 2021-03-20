@@ -11,7 +11,7 @@
 
     public class DeviceServicePublisher: ServicePublisher {
         public typealias Output = DeviceEvent
-        public typealias Failure = DeviceError
+        public typealias Failure = Error
         static let shared = DeviceServicePublisher()
         private let subject = PassthroughSubject<Output, Failure>()
         init() {}

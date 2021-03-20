@@ -7,8 +7,12 @@
 
 import Foundation
 
+
+typealias ErrorDescription = String
+typealias RecoverySuggestion = String
+
 public enum ApplicationRuntimeError: ApplicationError {
-    case InconsistentState(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
+    case InconsistentState(ErrorDescription, RecoverySuggestion = String.empty)
     case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
     case UnidentifiedError(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
 
@@ -23,7 +27,7 @@ public enum ApplicationRuntimeError: ApplicationError {
         }
     }
 
-    public var errorDescription: ErrorDescription {
+    internal var errorDescription: ErrorDescription {
         switch self {
             case .InconsistentState(let description, _):
                 fallthrough
@@ -34,13 +38,13 @@ public enum ApplicationRuntimeError: ApplicationError {
        }
     }
 
-    public var recoverySuggestion: RecoverySuggestion {
+    internal var recoverySuggestion: RecoverySuggestion {
         switch self {
-            case .InconsistentState(_, let suggestion):
+            case .InconsistentState(_,let suggestion):
                 fallthrough
-            case .WatchConfigurationIssue(_, let suggestion):
+            case .WatchConfigurationIssue(_,let suggestion):
                 fallthrough
-            case .UnidentifiedError(_, let suggestion):
+            case .UnidentifiedError(_,let suggestion):
                 return suggestion
        }
     }
