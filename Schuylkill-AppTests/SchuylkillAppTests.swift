@@ -11,6 +11,7 @@ import XCTest
 import UIKit
 import WatchConnectivity
 import CoreLocation
+import CoreMotion
 
 @testable import Schuylkill_App
 
@@ -59,21 +60,47 @@ class SchuylkillAppTests: XCTestCase {
         test2.start()
         test3.start()
     }
-    
     func testLocationServicePublishValue() throws {
         Resolver.registerAllServices()
         let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
         test1.start()
         test1.publishValue(value: DeviceEvent.locationEvent(try CLLocation.sample()))
     }
-    
     func testLocationServicePublishError() throws {
         Resolver.registerAllServices()
         let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
         test1.start()
-        test1.publishError(error: DeviceError.LocationError(description: "Testing publish error. Disregard", suggestion: "Look at the test code"))
+        test1.publishError(error:
+                            DeviceError.LocationError(
+                                description: "Testing publish error. Disregard", suggestion: "Look at the test code"))
     }
-
+    func testGyroServicePublishValue() throws {
+        Resolver.registerAllServices()
+        let test1: GyroService = Resolver.resolve(GyroService.self, name: "GyroService", args: nil)
+        test1.start()
+        test1.publishValue(value: .logItemEvent(CMLogItem()))
+    }
+    func testGyroServicePublishError() throws {
+        Resolver.registerAllServices()
+        let test1: GyroService = Resolver.resolve(GyroService.self, name: "GyroService", args: nil)
+        test1.start()
+        test1.publishError(error:
+                            .GyroError(
+                                description:"Testing publish error. Disregard", suggestion: "Look at the test code"))
+    }
+    func testAccServicePublishValue() throws {
+        Resolver.registerAllServices()
+        let test1: AccelerometerService = Resolver.resolve(AccelerometerService.self, name: "AccelerometerService", args: nil)
+        test1.start()
+        test1.publishValue(value: .logItemEvent(CMLogItem()))
+    }
+    func testAccServicePublishError() throws {
+        Resolver.registerAllServices()
+        let test1: AccelerometerService = Resolver.resolve(AccelerometerService.self, name: "AccelerometerService", args: nil)
+        test1.start()
+        test1.publishError(error:
+                            DeviceError.GeneralDeviceError(description: "",suggestion: "",innerError: nil))
+    }
     func testAmplifySetup() throws {
         do {
             try AppState().configureAmplify()
@@ -82,7 +109,13 @@ class SchuylkillAppTests: XCTestCase {
         }
     }
     
-
+    func testWatchConnectivity() throws {
+        do {
+            try AppState().configureWatchConnectivity(delegate: AppState().sessionDelegate)
+        } catch let e {
+            SwiftyBeaver.debug(e.localizedDescription)
+        }
+    }
     /*func test4() throws {
 
     }
