@@ -5,9 +5,13 @@
 //  Created by Sam Hicks on 3/7/21.
 //
 
+#if !os(watchOS)
 import Disk
+#endif
 import Foundation
 import SwiftyBeaver
+
+let applicationLog = SwiftyBeaver.self
 
 extension SwiftyBeaver {
     //typealias Secrets = SensitiveConstants.SwiftyBeaver
@@ -19,10 +23,13 @@ extension SwiftyBeaver {
         console.format = "$DHH:mm:ss$d $L $M"
 
         applicationLog.addDestination(console)
+        
         applicationLog.addDestination(BaseDestination())
+        #if os(watchOS)
         /*applicationLog.addDestination(SBPlatformDestination(appID:
          //Secrets.APP_ID, appSecret: Secrets.APP_SECRET,
          //encryptionKey: Secrets.ENCRYPTION_KEY))*/
+        #endif
     }
 
     public static func exceptionThrown(error: Error) {

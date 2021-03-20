@@ -14,7 +14,7 @@ import ClockKit
 
 #if os(watchOS)
 
-class NotificationController: WKWKUserNotificationHostingController<NotificationView> {
+class NotificationController: WKUserNotificationHostingController<NotificationView> {
     override var body: NotificationView {
         return NotificationView()
     }
@@ -34,8 +34,6 @@ class NotificationController: WKWKUserNotificationHostingController<Notification
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
     }
-    var transport = GDTCORTransport(mappingID: "1018", transformers: nil,
-                                                     target: GDTCORTarget.FLL)!
 
     func generateDataEventCompanion(sender: AnyObject?) {
          /*

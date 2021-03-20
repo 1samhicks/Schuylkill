@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct WatchApp: App {
-    @WKExtensionDelegateAdaptor(ExtensionDelegate.self) weak var extensionDelegate
+    @WKExtensionDelegateAdaptor(ExtensionDelegate.self) var extensionDelegate
     var body: some Scene {
         WindowGroup {
         }

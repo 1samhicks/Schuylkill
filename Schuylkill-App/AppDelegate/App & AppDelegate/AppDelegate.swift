@@ -11,8 +11,6 @@ import RxCocoa
 import CoreMotion
 import SwiftyBeaver
 
-let applicationLog = SwiftyBeaver.self
-
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     var user = AppState()
     var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
@@ -54,5 +52,4 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
         }
         UIApplication.shared.registerForRemoteNotifications()
     }
-
 }

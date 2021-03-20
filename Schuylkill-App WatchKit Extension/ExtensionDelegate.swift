@@ -32,6 +32,9 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let motionService = Resolver.resolve(MotionService.self, name: "MotionService", args: nil)
         let magnometerService = Resolver.resolve(MagnometerService.self, name: "MagnometerService", args: nil)
         deviceServices = [locationService,gyroService,pedometerService,accelerometerService,motionService,magnometerService]
+        deviceServices.map {
+            ($0 as! ServiceLifecycle).start()
+        }
     }
 
     public func applicationDidBecomeActive() {

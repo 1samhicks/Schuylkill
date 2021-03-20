@@ -218,6 +218,15 @@
         }
       },
       {
+        "package": "SwiftUIKit",
+        "repositoryURL": "https://github.com/danielsaidi/SwiftUIKit.git",
+        "state": {
+          "branch": null,
+          "revision": "6978f96a5fc1a22d6c477366f2b0181ba335e821",
+          "version": "1.2.2"
+        }
+      },
+      {
         "package": "SwiftyBeaver",
         "repositoryURL": "https://github.com/SwiftyBeaver/SwiftyBeaver.git",
         "state": {

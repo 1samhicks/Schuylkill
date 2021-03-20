@@ -38,7 +38,7 @@ public class PedometerService: DeviceService {
         state = .running
         pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
-                self.publishError(error: .PedometerError(innerError: error, description: "", ""))
+                self.publishError(error: DeviceError.PedometerError(innerError: error, description: "Pedometer Error", ""))
             } else if let event = event {
                 self.publishValue(value: .pedometerEvent(event))
             }
@@ -56,7 +56,7 @@ public class PedometerService: DeviceService {
         state = .running
         pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
-                self.publishError(error: .PedometerError(innerError: error, description: "", ""))
+                self.publishError(error: DeviceError.PedometerError(innerError: error, description: "", ""))
             } else if let event = event {
                 self.publishValue(value: .pedometerEvent(event))
             }

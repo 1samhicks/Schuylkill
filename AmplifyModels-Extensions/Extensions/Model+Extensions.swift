@@ -10,6 +10,7 @@ import Combine
 import Foundation
 import Resolver
 
+
 extension Model {
     public func save() {
         Amplify.DataStore.save(self) { result in
