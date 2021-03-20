@@ -30,7 +30,9 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 break
         }
     }
-
+    
+    case GeneralDeviceError(description : ErrorDescription, suggestion : RecoverySuggestion,innerError : Error?)
+    case GyroError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case LocationError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case PedometerError(innerError: Error, description: ErrorDescription, RecoverySuggestion)
 
@@ -38,23 +40,30 @@ public enum DeviceError: RawRepresentable, ApplicationError {
         // Temoorary
         self = .LocationError(description: "", suggestion: "")
     }
-
     public var errorDescription: ErrorDescription {
         switch self {
         case .LocationError(let description, _):
                 return description
         case .PedometerError(_, let description, _):
                 return description
-       }
+        case .GyroError(_, let description):
+                return description
+        case .GeneralDeviceError(let description, _, _):
+            return description
+        }
     }
 
     public var recoverySuggestion: RecoverySuggestion {
-        switch self {
+            switch self {
             case .LocationError(_, let suggestion):
                 return suggestion
             case .PedometerError(_, _, let suggestion):
                 return suggestion
-       }
+            case .GyroError( _, let suggestion):
+                return suggestion
+            case .GeneralDeviceError(_,let suggestion,_):
+                return suggestion
+            }
     }
 
     public var underlyingError: Error? {

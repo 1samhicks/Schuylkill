@@ -11,9 +11,9 @@ import SwifterSwift
 
 extension String {
     
-    func dictionary() throws -> [[String : String]] {
+    func dictionary() throws -> [String:(String,String)] {
             // make sure this JSON is in the format we expect
-        try JSONSerialization.jsonObject(with: Data(self.utf8), options: []) as! [[String : String]]
+        try JSONSerialization.jsonObject(with: Data(self.utf8), options: []) as! [String:(String,String)]
     }
 }
 
@@ -21,16 +21,17 @@ extension CLLocation {
     
     public static func sample() throws -> CLLocation {
         do {
-            let loc1 = try samples().randomElement()
-            guard let loc2 = try samples().randomElement() else
-            { return CLLocation(latitude: 0,longitude: 0) }
-            return (loc1?.midLocation(to: loc2))!
+            let loc1 = try samples()
+            let loc2 = try samples()
+            
+            return CLLocation(latitude: 0,longitude: 0)
+            //return (loc1?.midLocation(to: loc2))!
         } catch let e {
             throw ApplicationRuntimeError(errorDescription: "Problem in the JSON source for location sample data", recoverySuggestion: "Look closely at the JSON",error: e)
         }
     }
     
-    public static func samples() throws -> [CLLocation] {
+    public static func samples() throws -> Any? {
         try """
                 [
                 {
@@ -128,9 +129,7 @@ extension CLLocation {
                 "latitude":42.2373,
                 "longitude":-71.5314
                 }
-        ]
-        """.dictionary().map { (tuple: [String : String]) -> CLLocation in
-            CLLocation(latitude: tuple["latitude"]?.double() ?? 0, longitude: tuple["longitude"]?.double() ?? 0)
-        }
-}
+            ]
+            """
+    }
 }
