@@ -153,11 +153,6 @@
 		37BC227725F394DC0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
 		37BC227825F394DE0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
 		37BC227E25F394DE0088E581 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC227025F394D60088E581 /* Event.swift */; };
-		37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
-		37BC229125F3956D0088E581 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
-		37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
-		37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
-		37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC228925F3953B0088E581 /* DeviceEvent.swift */; };
 		37BC22AE25F395CB0088E581 /* DeviceServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F08125EE3253000799A9 /* DeviceServicePublisher.swift */; };
 		37BC22BA25F395F10088E581 /* ModelSubscriptionBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFC625EBDE78000799A9 /* ModelSubscriptionBehavior.swift */; };
 		37BC22C225F396570088E581 /* ServicePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC22C125F396570088E581 /* ServicePublisher.swift */; };
@@ -319,8 +314,6 @@
 		37EBF0E625FE141E00AC1F94 /* ExerciseRep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F13925EF4977000799A9 /* ExerciseRep.swift */; };
 		37EBF10925FE7FA400AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
 		37EBF10E25FE7FA500AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764EFB525EBDD76000799A9 /* AmplifyServiceModelPublisher.swift */; };
-		37EBF12825FE80C300AC1F94 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
-		37EBF12D25FE80C400AC1F94 /* AmplifyEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC229025F3956D0088E581 /* AmplifyEvent.swift */; };
 		37EE828525E61AE800B07673 /* ViewModel+Injections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE828425E61AE800B07673 /* ViewModel+Injections.swift */; };
 		37EE829B25E61EDA00B07673 /* MusclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37EE829A25E61EDA00B07673 /* MusclesListViewModel.swift */; };
 		37EE82CF25E6307100B07673 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37EE82CE25E6307100B07673 /* Main.storyboard */; };
@@ -566,8 +559,6 @@
 		37BC21E925F381FB0088E581 /* LocationNagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationNagViewController.swift; sourceTree = "<group>"; };
 		37BC21FC25F38C180088E581 /* ApplicationLoadFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLoadFactory.swift; sourceTree = "<group>"; };
 		37BC227025F394D60088E581 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
-		37BC228925F3953B0088E581 /* DeviceEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceEvent.swift; sourceTree = "<group>"; };
-		37BC229025F3956D0088E581 /* AmplifyEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyEvent.swift; sourceTree = "<group>"; };
 		37BC22C125F396570088E581 /* ServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePublisher.swift; sourceTree = "<group>"; };
 		37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModelChangePublisher.swift; sourceTree = "<group>"; };
 		37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+DeviceService.swift"; sourceTree = "<group>"; };
@@ -949,8 +940,6 @@
 			isa = PBXGroup;
 			children = (
 				37BC227025F394D60088E581 /* Event.swift */,
-				37BC228925F3953B0088E581 /* DeviceEvent.swift */,
-				37BC229025F3956D0088E581 /* AmplifyEvent.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -1855,7 +1844,6 @@
 				37BC246525F505EA0088E581 /* SwiftyBeaver.swift in Sources */,
 				379E648325E3B62700B894BA /* LocationService.swift in Sources */,
 				3764F15525EF4978000799A9 /* AccelerometerReading.swift in Sources */,
-				37BC228A25F3953B0088E581 /* DeviceEvent.swift in Sources */,
 				37AED7C125FEF38800836E1D /* AppState.swift in Sources */,
 				37AED7CD25FF0C6700836E1D /* NotificationController.swift in Sources */,
 				3764F07025EE314A000799A9 /* DeviceSubscriptionBehavior.swift in Sources */,
@@ -1868,7 +1856,6 @@
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
 				3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */,
 				37E1D19825FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
-				37BC229125F3956D0088E581 /* AmplifyEvent.swift in Sources */,
 				37BC23E125F3FF080088E581 /* Image.swift in Sources */,
 				3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
@@ -1947,7 +1934,6 @@
 				37F7C6A225CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03C25EDF186000799A9 /* ServiceNaming.swift in Sources */,
 				37BC23D825F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
-				37EBF12825FE80C300AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65225CD3C82000D8FAF /* Command.swift in Sources */,
 				37AED7D225FF0C6700836E1D /* NotificationController.swift in Sources */,
 				379E648425E3B62700B894BA /* LocationService.swift in Sources */,
@@ -1975,7 +1961,6 @@
 				37EBEFCA25FDE57900AC1F94 /* UserNotifications.swift in Sources */,
 				379E651E25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442225D3E31A00243AC1 /* FirebaseService.swift in Sources */,
-				37BC22A825F395A50088E581 /* DeviceEvent.swift in Sources */,
 				37EBEFF925FE0AA200AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04B25EE0CF8000799A9 /* Logger.swift in Sources */,
 				37EBF04925FE12B000AC1F94 /* Deletable.swift in Sources */,
@@ -2057,7 +2042,6 @@
 				37F7C6A325CD3CAA000D8FAF /* WatchSessionChannelDelegate.swift in Sources */,
 				3764F03D25EDF186000799A9 /* ServiceNaming.swift in Sources */,
 				37BC23D925F3FB2C0088E581 /* OnboardingEntryViewController.swift in Sources */,
-				37EBF12D25FE80C400AC1F94 /* AmplifyEvent.swift in Sources */,
 				37F7C65325CD3C82000D8FAF /* Command.swift in Sources */,
 				37AED7D325FF0C6800836E1D /* NotificationController.swift in Sources */,
 				379E648525E3B62700B894BA /* LocationService.swift in Sources */,
@@ -2085,7 +2069,6 @@
 				37EBEFCF25FDE57B00AC1F94 /* UserNotifications.swift in Sources */,
 				379E651F25E4180900B894BA /* QRViewModel.swift in Sources */,
 				37F9442325D3E31A00243AC1 /* FirebaseService.swift in Sources */,
-				37BC22A225F395A40088E581 /* DeviceEvent.swift in Sources */,
 				37EBEFF825FE0AA100AC1F94 /* Location+Extensions.swift in Sources */,
 				3764F04C25EE0CF8000799A9 /* Logger.swift in Sources */,
 				37EBF04E25FE12B100AC1F94 /* Deletable.swift in Sources */,
@@ -2149,7 +2132,6 @@
 				37F7C77925CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
 				37BC22CD25F3969A0088E581 /* ServicePublisher.swift in Sources */,
 				37F9442425D3E31A00243AC1 /* FirebaseService.swift in Sources */,
-				37BC229C25F395A30088E581 /* DeviceEvent.swift in Sources */,
 				37EBF00125FE0AAD00AC1F94 /* FlickrSearchResults.swift in Sources */,
 				37F7C69A25CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				37BC235725F3AF4A0088E581 /* GyroService.swift in Sources */,

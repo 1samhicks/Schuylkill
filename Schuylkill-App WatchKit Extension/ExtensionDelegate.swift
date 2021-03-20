@@ -28,11 +28,11 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let locationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
         let gyroService = Resolver.resolve(GyroService.self, name: "GyroService", args: nil)
         let pedometerService = Resolver.resolve(PedometerService.self, name: "PedometerService", args: nil)
-        let accelerometerService = Resolver.resolve(AccelerometerService.self, name: "AcceleromterService", args: nil)
+        let accelerometerService = Resolver.resolve(AccelerometerService.self, name: "AccelerometerService", args: nil)
         let motionService = Resolver.resolve(MotionService.self, name: "MotionService", args: nil)
         let magnometerService = Resolver.resolve(MagnometerService.self, name: "MagnometerService", args: nil)
         deviceServices = [locationService,gyroService,pedometerService,accelerometerService,motionService,magnometerService]
-        deviceServices.map {
+        _ = deviceServices.map {
             ($0 as! ServiceLifecycle).start()
         }
     }

@@ -34,5 +34,7 @@
 	</dict>
 	<key>WKRunsIndependentlyOfCompanionApp</key>
 	<true/>
+	<key>NSMotionUsageDescription</key>
+	<string>&quot;We need to observe your motion sensor data&quot;</string>
 </dict>
 </plist>
