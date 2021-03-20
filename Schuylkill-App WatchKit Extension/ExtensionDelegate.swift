@@ -12,6 +12,9 @@ import WatchConnectivity
 import WatchKit
 
 public class ExtensionDelegate: NSObject, WKExtensionDelegate {
+    private lazy weak var sessionDelegate: SessionDelegate = {
+        return SessionDelegate()
+    }()
     // Hold the KVO observers as we want to keep oberving in the extension life time.
     //
     private var activationStateObservation: NSKeyValueObservation?
@@ -23,6 +26,25 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     //
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()
 
+    // WKWatchConnectivityRefreshBackgroundTask should be completed – Otherwise they will keep consuming
+    // the background executing time and eventually causes an app crash.
+    // The timing to complete the tasks is when the current WCSession turns to not .activated or
+    // hasContentPending flipped to false (see completeBackgroundTasks), so KVO is set up here to observe
+    // the changes if the two properties.
+    //
+    override init() {
+        activationStateObservation = WCSession.default.observe(\.activationState) { _, _ in
+            DispatchQueue.main.async {
+                self.completeBackgroundTasks()
+            }
+        }
+        hasContentPendingObservation = WCSession.default.observe(\.hasContentPending) { _, _ in
+            DispatchQueue.main.async {
+                self.completeBackgroundTasks()
+            }
+        }
+    }
+
     public func applicationDidFinishLaunching() {
         Resolver.registerAllServices()
         let locationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
@@ -31,7 +53,7 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let accelerometerService = Resolver.resolve(AccelerometerService.self, name: "AccelerometerService", args: nil)
         let motionService = Resolver.resolve(MotionService.self, name: "MotionService", args: nil)
         let magnometerService = Resolver.resolve(MagnometerService.self, name: "MagnometerService", args: nil)
-        deviceServices = [locationService,gyroService,pedometerService,accelerometerService,motionService,magnometerService]
+        deviceServices = [locationService, gyroService, pedometerService, accelerometerService, motionService, magnometerService]
         _ = deviceServices.map {
             ($0 as! ServiceLifecycle).start()
         }
@@ -77,5 +99,32 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 task.setTaskCompletedWithSnapshot(false)
             }
         }
+    }
+
+    // Compelete the background tasks, and schedule a snapshot refresh.
+    //
+    func completeBackgroundTasks() {
+        guard !wcBackgroundTasks.isEmpty else { return }
+
+        guard WCSession.default.activationState == .activated,
+            WCSession.default.hasContentPending == false else { return }
+
+        wcBackgroundTasks.forEach { $0.setTaskCompleted() }
+
+        // Use Logger to log the tasks for debug purpose. A real app may remove the log
+        // to save the precious background time.
+        //
+        Logger.shared.append(line: "\(#function):\(wcBackgroundTasks) was completed!")
+
+        // Schedule a snapshot refresh if the UI is updated by background tasks.
+        //
+        let date = Date(timeIntervalSinceNow: 1)
+        WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: date, userInfo: nil) { error in
+
+            if let error = error {
+                print("scheduleSnapshotRefresh error: \(error)!")
+            }
+        }
+        wcBackgroundTasks.removeAll()
     }
 }

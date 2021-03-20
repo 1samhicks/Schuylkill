@@ -72,7 +72,7 @@ import Foundation
     }
 
     func locationManagerReceivedError(_ error: NSString) {
-        self.publishError(error: .LocationError(description: ErrorDescription.empty, suggestion: (error as String)))
+        self.publishError(error: .LocationError(description: "", suggestion: (error as String)))
     }
 
      func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

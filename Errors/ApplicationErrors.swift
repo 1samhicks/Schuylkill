@@ -19,11 +19,11 @@ public typealias RecoverySuggestion = String
 
 typealias ApplicationError = Error
 
+#endif
+
 public extension RecoverySuggestion {
     static let empty = ""
 }
-
-#endif
 
 public enum AuthenticationError: ApplicationError {
     public init(errorDescription: ErrorDescription, recoverySuggestion: RecoverySuggestion, error: Error) {
@@ -224,7 +224,7 @@ public enum ApplicationRuntimeError: ApplicationError {
         }
     }
 
-    internal var errorDescription: ErrorDescription {
+    public var errorDescription: ErrorDescription {
         switch self {
             case .InconsistentState(let description, _):
                 fallthrough
@@ -235,7 +235,7 @@ public enum ApplicationRuntimeError: ApplicationError {
        }
     }
 
-    internal var recoverySuggestion: RecoverySuggestion {
+    public var recoverySuggestion: RecoverySuggestion {
         switch self {
             case .InconsistentState(_,let suggestion):
                 fallthrough

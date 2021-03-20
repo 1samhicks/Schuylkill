@@ -17,12 +17,6 @@ public class GyroService: DeviceService {
         return nil
     }
 
-    func publishValue(value: Event) {
-    }
-
-    func publishError(error: Error) {
-    }
-
     public required init() {
     }
 
