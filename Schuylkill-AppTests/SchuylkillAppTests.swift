@@ -64,7 +64,7 @@ class SchuylkillAppTests: XCTestCase {
         Resolver.registerAllServices()
         let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
         test1.start()
-        test1.publishValue(value: DeviceEvent.locationEvent(CLLocation.sample))
+        test1.publishValue(value: DeviceEvent.locationEvent(try CLLocation.sample()))
     }
     
     func testLocationServicePublishError() throws {

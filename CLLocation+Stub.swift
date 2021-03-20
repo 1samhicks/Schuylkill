@@ -11,16 +11,14 @@ import SwifterSwift
 
 extension String {
     
-    func dictionaryRept() throws -> [[String : String]] {
+    func dictionary() throws -> [[String : String]] {
             // make sure this JSON is in the format we expect
-        if let json = try JSONSerialization.jsonObject(with: Data(self.utf8), options: []) as? [[String: String]] {
-                return json
-        } else { throw ApplicationRuntimeError.UnidentifiedError("JSON string didn't parse", "Look at the dictRept method in the String extension")
-        }
+        try JSONSerialization.jsonObject(with: Data(self.utf8), options: []) as! [[String : String]]
     }
 }
 
 extension CLLocation {
+    
     public static func sample() throws -> CLLocation {
         do {
             let loc1 = try samples().randomElement()
@@ -131,7 +129,7 @@ extension CLLocation {
                 "longitude":-71.5314
                 }
         ]
-        """.dictionaryRept().map { (tuple: [String : String]) -> CLLocation in
+        """.dictionary().map { (tuple: [String : String]) -> CLLocation in
             CLLocation(latitude: tuple["latitude"]?.double() ?? 0, longitude: tuple["longitude"]?.double() ?? 0)
         }
 }

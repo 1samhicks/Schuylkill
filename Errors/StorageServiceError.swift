@@ -35,7 +35,7 @@ enum StorageServiceError: ApplicationError {
     }
 
     var recoverySuggestion: RecoverySuggestion {
-        switch self {
+            switch self {
             case .uploadError(_, let suggestion):
                 fallthrough
             case .downloadError(_, let suggestion):
