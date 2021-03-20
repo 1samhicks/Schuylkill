@@ -9,7 +9,7 @@ import Combine
 import CoreLocation
 import Foundation
 
-public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
+ class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
     var servicePublisher: DeviceServicePublisher
     
     var lock = RecursiveLock()
@@ -22,19 +22,19 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
         return nil
     }
 
-    override public required init() {
-        servicePublisher = DeviceServicePublisher.shared!
+    override  required init() {
+        servicePublisher = DeviceServicePublisher.shared
         super.init()
         locationManager.delegate = self
     }
 
-    func publishError(error: DeviceError) {
+    /*func publishError(error: MyError) {
         servicePublisher.send(error: error)
     }
 
-    func publishValue(value: DeviceEvent) {
+    func publishValue(value: MyEvent) {
         servicePublisher.send(input: value)
-    }
+    }*/
 
     func start() {
         lock.lock(); defer { lock.unlock() }
@@ -58,9 +58,8 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
     }
 
     private var locationManager = CLLocationManager()
-    
     init(locationManager loc: CLLocationManager) {
-        servicePublisher = DeviceServicePublisher.shared!
+        servicePublisher = DeviceServicePublisher.shared
         locationManager = loc
         locationManager.activityType = CLActivityType.fitness
         locationManager.allowsBackgroundLocationUpdates = true
@@ -76,62 +75,67 @@ public class LocationService: NSObject, DeviceService, CLLocationManagerDelegate
         self.publishError(error: .LocationError(description: ErrorDescription.empty, suggestion: (error as String)))
     }
 
-    public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locations.forEach {
             self.publishValue(value: .locationEvent($0))
         }
     }
 
-    public func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
+     func locationManager(_ manager: CLLocationManager, didUpdateHeading newHeading: CLHeading) {
         self.publishValue(value: .headingEvent(newHeading))
     }
 
-    public func locationManagerShouldDisplayHeadingCalibration(_ manager: CLLocationManager) -> Bool {
+     func locationManagerShouldDisplayHeadingCalibration(_ manager: CLLocationManager) -> Bool {
         true
     }
 
     #if !os(watchOS)
-    public func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState,
+     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState,
                                 for region: CLRegion) {
     }
 
-    public func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
+     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         self.publishValue(value: DeviceEvent.enteredRegion(region))
     }
 
-    public func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         self.publishValue(value: DeviceEvent.exitedRegion(region))
     }
 
-    public func locationManager(_ manager: CLLocationManager, monitoringDidFailFor region: CLRegion?, withError error: Error) {
+     func locationManager(_ manager: CLLocationManager,
+                                monitoringDidFailFor region: CLRegion?,
+                                withError error: Error) {
+        
     }
     #endif
 
-    public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         self.publishError(error: DeviceError.LocationError(description: error.localizedDescription,
-            suggestion: String.empty))
+                                                           suggestion: String.empty))
+     }
+
+     func locationManager(_ manager: CLLocationManager,
+                                didChangeAuthorization status: CLAuthorizationStatus) {
     }
 
-    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-    }
-
-    public func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
     }
 
     #if !os(watchOS)
-    public func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
+     func locationManager(_ manager: CLLocationManager, didStartMonitoringFor region: CLRegion) {
     }
 
-    public func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
+     func locationManagerDidPauseLocationUpdates(_ manager: CLLocationManager) {
     }
 
-    public func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
+     func locationManagerDidResumeLocationUpdates(_ manager: CLLocationManager) {
     }
 
-    public func locationManager(_ manager: CLLocationManager, didFinishDeferredUpdatesWithError error: Error?) {
+     func locationManager(_ manager: CLLocationManager,
+                                didFinishDeferredUpdatesWithError error: Error?) {
     }
 
-    public func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
+     func locationManager(_ manager: CLLocationManager, didVisit visit: CLVisit) {
     }
     #endif
 }

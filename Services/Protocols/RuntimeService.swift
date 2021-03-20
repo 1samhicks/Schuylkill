@@ -11,7 +11,7 @@ import Foundation
 
 protocol RuntimeService: ServiceNaming {
     associatedtype MyPublisher
-    associatedtype MyEvent 
+    associatedtype MyEvent
     associatedtype MyError
     var servicePublisher: MyPublisher { get }
     func publishValue(value: MyEvent)

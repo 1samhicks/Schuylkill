@@ -155,143 +155,7 @@
                   endingLineNumber = "14"
                   offsetFromSymbolStart = "13">
                </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - 3108f72ada5b680f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.amplifyService.getter : Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "126">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - e6e570b48663703b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.amplifyService.setter : Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "145">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - 9cef76780bb4683e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.amplifyService.modify : Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "61">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - 2a3debb0c18dcfbb"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.amplifyService.modify : Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "17">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - f9c92b6cad3c386a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.$amplifyService.getter : Resolver.LazyInjected&lt;Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "225">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - f9c92b6cad3c386a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.$amplifyService.setter : Resolver.LazyInjected&lt;Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "197">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - 76533643a23fc3d1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.$amplifyService.modify : Resolver.LazyInjected&lt;Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;&gt;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "57">
-               </Location>
-               <Location
-                  uuid = "73AFECC2-DD74-420E-AAFB-44F4C2172B8F - 380928d2beb06664"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Schuylkill_AppTests.QRViewModel.$amplifyService.modify : Resolver.LazyInjected&lt;Swift.Optional&lt;Schuylkill_AppTests.AmplifyAPIService&gt;&gt; with unmangled suffix &quot;.resume.0&quot;"
-                  moduleName = "Schuylkill-AppTests"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/samhicks/Code/Schuylkill-App/ViewModels/QRViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "13">
-               </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E101C83A-871C-4581-8B3C-F1B6A861F035"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Schuylkill-AppTests/SchuylkillAppTests.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "testStartServices()"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -313,16 +177,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "63865A5B-9454-4449-A19C-38AFD1333C08"
+            uuid = "1435C1C9-D762-4A96-A5C5-64E9D17C5386"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Schuylkill-AppTests/SchuylkillAppTests.swift"
+            filePath = "CLLocation+Stub.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
-            landmarkName = "testResolveServices()"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "dictionary()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -12,11 +12,9 @@
     public class DeviceServicePublisher: ServicePublisher {
         public typealias Output = DeviceEvent
         public typealias Failure = DeviceError
-        static let shared: DeviceServicePublisher = DeviceServicePublisher()
+        static let shared = DeviceServicePublisher()
         private let subject = PassthroughSubject<Output, Failure>()
-        
-        @available(*, unavailable)
-        private init() {}
+        init() {}
 
         var publisher: AnyPublisher<Output, Failure> {
             return subject.eraseToAnyPublisher()

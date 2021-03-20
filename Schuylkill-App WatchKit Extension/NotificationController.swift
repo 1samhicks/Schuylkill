@@ -34,7 +34,7 @@ class NotificationController: WKWKUserNotificationHostingController<Notification
         // Implement it if you use a dynamic notification interface.
         // Populate your dynamic notification interface as quickly as possible.
     }
-    var transport: GDTCORTransport = GDTCORTransport(mappingID: "1018", transformers: nil,
+    var transport = GDTCORTransport(mappingID: "1018", transformers: nil,
                                                      target: GDTCORTarget.FLL)!
 
     func generateDataEventCompanion(sender: AnyObject?) {
@@ -142,7 +142,6 @@ class NotificationController: WKWKUserNotificationHostingController<Notification
       transportToUse.sendDataEvent(event)
  */
     }
-
 }
 
 #endif
