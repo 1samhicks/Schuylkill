@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 typealias ErrorDescription = String
 typealias RecoverySuggestion = String
 
@@ -40,11 +39,11 @@ public enum ApplicationRuntimeError: ApplicationError {
 
     internal var recoverySuggestion: RecoverySuggestion {
         switch self {
-            case .InconsistentState(_,let suggestion):
+            case .InconsistentState(_, let suggestion):
                 fallthrough
-            case .WatchConfigurationIssue(_,let suggestion):
+            case .WatchConfigurationIssue(_, let suggestion):
                 fallthrough
-            case .UnidentifiedError(_,let suggestion):
+            case .UnidentifiedError(_, let suggestion):
                 return suggestion
        }
     }

@@ -19,5 +19,3 @@ public extension Muscle {
                   exercisemachineID: "")
     }
 }
-
-

@@ -30,8 +30,8 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 break
         }
     }
-    
-    case GeneralDeviceError(description : ErrorDescription, suggestion : RecoverySuggestion,innerError : Error?)
+
+    case GeneralDeviceError(description: ErrorDescription, suggestion: RecoverySuggestion, innerError: Error?)
     case GyroError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case LocationError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case PedometerError(innerError: Error, description: ErrorDescription, RecoverySuggestion)

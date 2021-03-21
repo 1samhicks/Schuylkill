@@ -13,11 +13,11 @@ import SwiftyBeaver
 
 class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     var user = AppState()
-    var userNotifications: UNUserNotificationCenterCoordinator = UNUserNotificationCenterCoordinator()
+    var userNotifications = UNUserNotificationCenterCoordinator()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
         do {
-           try user.configureAmplify()
+            try user.configureAmplify()
             try user.configureWatchConnectivity(delegate: user.sessionDelegate)
         } catch let error {
             SwiftyBeaver.exceptionThrown(error: error)
@@ -25,12 +25,8 @@ class AppDelegate: NSObject, UIApplicationDelegate, UNUserNotificationCenterDele
             UIApplication.shared.windows.first?.rootViewController?.addChild(alertViewController)
         }
         registerForRemoteNotifications()
-
         return true
     }
-    
-    
-
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
         print(deviceToken)

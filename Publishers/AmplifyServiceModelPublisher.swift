@@ -14,7 +14,6 @@ struct AmplifyServiceModelPublisher: AmplifyModelChangePublisher {
     func receive<S>(subscriber sub: S) where S: Subscriber, Self.Failure == S.Failure, Self.Output == S.Input {
         // subject
     }
-
     typealias Output = AmplifyMutationEvent
     typealias Failure = AmplifyAPIError
 

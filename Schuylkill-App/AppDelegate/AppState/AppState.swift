@@ -9,7 +9,9 @@ import Foundation
 import WatchConnectivity
 import Amplify
 import AmplifyPlugins
-
+/*
+ func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Failure>) -> Publishers.Buffer<Fail<Output, Failure>>
+ */
 struct AppState {
     @Storage(key: "machine_region_distance", defaultValue: 3.0)
         static var machineRegionDistance: Double

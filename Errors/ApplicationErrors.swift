@@ -5,7 +5,6 @@
 //  Created by Sam Hicks on 3/20/21.
 //
 
-
 import Foundation
 #if !os(watchOS)
 import Amplify
@@ -41,8 +40,8 @@ public enum AuthenticationError: ApplicationError {
 
     public var recoverySuggestion: RecoverySuggestion {
         switch self {
-        case .configuration(_, _, let suggestion),.invalidCondition(_, _, let suggestion),.decodingError(_, let suggestion),
-        .internalOperation(_, _, let suggestion),.Sync(_, _, let suggestion),.Unknown(_, _, let suggestion):
+        case .configuration(_, _, let suggestion), .invalidCondition(_, _, let suggestion), .decodingError(_, let suggestion),
+        .internalOperation(_, _, let suggestion), .Sync(_, _, let suggestion), .Unknown(_, _, let suggestion):
             return suggestion
         default: return RecoverySuggestion.empty
        }
@@ -206,8 +205,6 @@ enum StorageServiceError: ApplicationError {
     }
 }
 
-
-
 public enum ApplicationRuntimeError: ApplicationError {
     case InconsistentState(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
     case WatchConfigurationIssue(ErrorDescription, RecoverySuggestion = RecoverySuggestion.empty)
@@ -237,11 +234,11 @@ public enum ApplicationRuntimeError: ApplicationError {
 
     public var recoverySuggestion: RecoverySuggestion {
         switch self {
-            case .InconsistentState(_,let suggestion):
+            case .InconsistentState(_, let suggestion):
                 fallthrough
-            case .WatchConfigurationIssue(_,let suggestion):
+            case .WatchConfigurationIssue(_, let suggestion):
                 fallthrough
-            case .UnidentifiedError(_,let suggestion):
+            case .UnidentifiedError(_, let suggestion):
                 return suggestion
        }
     }
@@ -254,6 +251,8 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 switch self {
                 case .LocationError:
                     return "location_error"
+                case .DeviceBufferError:
+                    return "device_buffer"
                 default:
                     return "pedometer_error"
                 }
@@ -270,8 +269,8 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 break
         }
     }
-    
-    case GeneralDeviceError(description : ErrorDescription, suggestion : RecoverySuggestion,innerError : Error?)
+    case DeviceBufferError(description: ErrorDescription, suggestion: RecoverySuggestion)
+    case GeneralDeviceError(description: ErrorDescription, suggestion: RecoverySuggestion, innerError: Error?)
     case GyroError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case LocationError(description: ErrorDescription, suggestion: RecoverySuggestion)
     case PedometerError(innerError: Error, description: ErrorDescription, RecoverySuggestion)
@@ -289,7 +288,9 @@ public enum DeviceError: RawRepresentable, ApplicationError {
         case .GyroError(_, let description):
                 return description
         case .GeneralDeviceError(let description, _, _):
-            return description
+                return description
+        case .DeviceBufferError(let description, _):
+                return description
         }
     }
 
@@ -301,7 +302,9 @@ public enum DeviceError: RawRepresentable, ApplicationError {
                 return suggestion
             case .GyroError( _, let suggestion):
                 return suggestion
-            case .GeneralDeviceError(_,let suggestion,_):
+            case .GeneralDeviceError(_, let suggestion, _):
+                return suggestion
+            case .DeviceBufferError(_, let suggestion):
                 return suggestion
             }
     }

@@ -5,12 +5,12 @@
 //  Created by Sam Hicks on 2/5/21.
 //
 
+import ClockKit
 import SwiftUI
-import UserNotifications
 import SwiftyBeaver
 import UIKit
+import UserNotifications
 import WatchConnectivity
-import ClockKit
 
 #if os(watchOS)
 

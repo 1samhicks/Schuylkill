@@ -5,9 +5,9 @@
 //  Created by Sam Hicks on 3/20/21.
 //
 
+import ClockKit
 import Foundation
 import WatchConnectivity
-import ClockKit
 
 public class SessionDelegate {
     // Called when WCSession activation state is changed.

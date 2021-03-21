@@ -3,7 +3,6 @@
 //  GridDrag
 //
 
-
 import SwiftUI
 
 struct GridDragView: View {

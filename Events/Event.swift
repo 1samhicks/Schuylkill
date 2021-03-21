@@ -5,9 +5,9 @@
 //  Created by Sam Hicks on 3/6/21.
 //
 
-import Foundation
 import CoreLocation
 import CoreMotion
+import Foundation
 
 public protocol Event {
 }
@@ -33,4 +33,3 @@ public enum AuthenticationEvent: Event {
     case mutationEvent(MutationEvent)
 }
 #endif
-

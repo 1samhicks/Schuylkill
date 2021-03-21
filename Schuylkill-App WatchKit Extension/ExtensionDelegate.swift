@@ -4,6 +4,7 @@
 //
 //  Created by Sam Hicks on 2/5/21.
 //
+import ClockKit
 import CoreMotion
 import Foundation
 import Resolver
@@ -11,9 +12,12 @@ import SwiftUI
 import WatchConnectivity
 import WatchKit
 
+/*
+ func buffer(size: Int, prefetch: Publishers.PrefetchStrategy, whenFull: Publishers.BufferingStrategy<Failure>) -> Publishers.Buffer<Fail<Output, Failure>>
+ */
 public class ExtensionDelegate: NSObject, WKExtensionDelegate {
-    private lazy weak var sessionDelegate: SessionDelegate = {
-        return SessionDelegate()
+    private weak var sessionDelegate: WatchSessionChannelDelegate? = {
+        return WatchSessionChannelDelegate()
     }()
     // Hold the KVO observers as we want to keep oberving in the extension life time.
     //
@@ -119,7 +123,6 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
         //
         let date = Date(timeIntervalSinceNow: 1)
         WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: date, userInfo: nil) { error in
-
             if let error = error {
                 print("scheduleSnapshotRefresh error: \(error)!")
             }

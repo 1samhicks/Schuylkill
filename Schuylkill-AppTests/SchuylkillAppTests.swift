@@ -4,14 +4,14 @@
 //
 //  Created by Sam Hicks on 2/5/21.
 
+import CoreLocation
+import CoreMotion
 import Disk
 import Resolver
 import SwiftyBeaver
-import XCTest
 import UIKit
 import WatchConnectivity
-import CoreLocation
-import CoreMotion
+import XCTest
 
 @testable import Schuylkill_App
 
@@ -50,7 +50,7 @@ class SchuylkillAppTests: XCTestCase {
         XCTAssert(test2.name == GyroService.name)
         XCTAssert(test3.name == PedometerService.name)
     }
-    
+
     func testStartServices() throws {
         Resolver.registerAllServices()
         let test1: LocationService = Resolver.resolve(LocationService.self, name: "LocationService", args: nil)
@@ -99,7 +99,7 @@ class SchuylkillAppTests: XCTestCase {
         let test1: AccelerometerService = Resolver.resolve(AccelerometerService.self, name: "AccelerometerService", args: nil)
         test1.start()
         test1.publishError(error:
-                            DeviceError.GeneralDeviceError(description: "",suggestion: "",innerError: nil))
+                            DeviceError.GeneralDeviceError(description: "", suggestion: "", innerError: nil))
     }
     func testAmplifySetup() throws {
         do {
@@ -108,7 +108,7 @@ class SchuylkillAppTests: XCTestCase {
             SwiftyBeaver.debug(e.localizedDescription)
         }
     }
-    
+
     func testWatchConnectivity() throws {
         do {
             try AppState().configureWatchConnectivity(delegate: AppState().sessionDelegate)

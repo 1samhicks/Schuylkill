@@ -10,4 +10,3 @@ import AVFoundation
 import Resolver
 import RSBarcodes_Swift
 import UIKit
-

@@ -11,6 +11,5 @@ import SwiftyBeaver
 
 typealias ApplicationError = AmplifyError
 
-
 extension ApplicationError {
 }

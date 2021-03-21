@@ -24,8 +24,8 @@ public enum AuthenticationError: ApplicationError {
 
     public var recoverySuggestion: RecoverySuggestion {
         switch self {
-        case .configuration(_, _, let suggestion),.invalidCondition(_, _, let suggestion),.decodingError(_, let suggestion),
-        .internalOperation(_, _, let suggestion),.Sync(_, _, let suggestion),.Unknown(_, _, let suggestion):
+        case .configuration(_, _, let suggestion), .invalidCondition(_, _, let suggestion), .decodingError(_, let suggestion),
+        .internalOperation(_, _, let suggestion), .Sync(_, _, let suggestion), .Unknown(_, _, let suggestion):
             return suggestion
         default: return String.empty
        }

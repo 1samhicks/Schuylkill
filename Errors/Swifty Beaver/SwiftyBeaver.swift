@@ -14,7 +14,7 @@ import SwiftyBeaver
 let applicationLog = SwiftyBeaver.self
 
 extension SwiftyBeaver {
-    //typealias Secrets = SensitiveConstants.SwiftyBeaver
+    // typealias Secrets = SensitiveConstants.SwiftyBeaver
 
     public static func activate(forXCTest: Bool = false) {
         // add log destinations. at least one is needed!
@@ -23,7 +23,7 @@ extension SwiftyBeaver {
         console.format = "$DHH:mm:ss$d $L $M"
 
         applicationLog.addDestination(console)
-        
+
         applicationLog.addDestination(BaseDestination())
         #if os(watchOS)
         /*applicationLog.addDestination(SBPlatformDestination(appID:
