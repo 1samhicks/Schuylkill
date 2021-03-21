@@ -8,8 +8,10 @@
 import Foundation
 
 protocol ServiceLifecycle {
+    var state: ServiceState? { get set }
     func start()
     func pause()
     func restart()
     func terminate()
+    
 }

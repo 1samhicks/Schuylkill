@@ -8,49 +8,44 @@
 import Combine
 import CoreMotion
 import Foundation
-
+/*
+ Rotation rate: x,y,z
+ timestamp
+ */
 public class AccelerometerService: DeviceService {
+    var lock: RecursiveLock = RecursiveLock()
     var state: ServiceState?
-    var lock = RecursiveLock()
     var resultSink = AnyCancellable({})
 
     public required init() {
+        
     }
-
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-
-    func publishValue(value: Event) {}
-    func publishError(error: Error) {}
+    
+    // MARK: - ServiceLifecycle methods
 
     public func start() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter({ $0 != nil })
             .sink { gyro in
-            self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
+                self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
             }
-        lock.unlock()
     }
 
     func pause() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .paused
         motionManager.stopAccelerometerUpdates()
-        lock.unlock()
     }
 
     func restart() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         motionManager.startAccelerometerUpdates()
-        lock.unlock()
     }
 
     func terminate() {
-        lock.lock()
-        lock.unlock()
+        lock.lock(); defer { lock.unlock() }
     }
 }

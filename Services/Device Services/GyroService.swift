@@ -13,12 +13,11 @@ public class GyroService: DeviceService {
     var state: ServiceState?
     var resultSink = AnyCancellable({})
 
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-
     public required init() {
+        state = .notStarted
     }
+    
+    // MARK: - ServiceLifeCycle protocol
 
     public func start() {
         lock.lock(); defer { lock.unlock() }
@@ -27,7 +26,7 @@ public class GyroService: DeviceService {
         resultSink = motionManager.publisher(for: \.gyroData)
             .filter({ $0 != nil })
             .sink { gyro in
-            self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
+                self.publishValue(value: DeviceEvent.logItemEvent(gyro!))
             }
     }
 

@@ -13,7 +13,9 @@ protocol RuntimeService: ServiceNaming {
     associatedtype MyPublisher
     associatedtype MyEvent
     associatedtype MyError
-    var servicePublisher: MyPublisher { get }
     func publishValue(value: MyEvent)
     func publishError(error: MyError)
+    var lock : RecursiveLock { get }
+    var servicePublisher: MyPublisher { get }
 }
+

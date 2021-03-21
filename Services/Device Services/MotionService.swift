@@ -4,7 +4,11 @@
 //
 //  Created by Sam Hicks on 2/22/21.
 //
-
+/*
+ roll, pitch, yaw
+ 3x3 rotation matrix
+ quartnion w,x,y, z
+ */
 import Combine
 import CoreMotion
 import Foundation
@@ -16,16 +20,6 @@ public class MotionService: DeviceService {
     var state: ServiceState?
     var resultSink = AnyCancellable({})
 
-    func publishError(error: Error) {
-    }
-
-    func publishValue(value: Event) {
-    }
-
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-
     typealias CMDeviceMotionHandler = (CMDeviceMotion?, Error?) -> Void
 
     public required init() {
@@ -33,34 +27,30 @@ public class MotionService: DeviceService {
     }
 
     public func start() {
-        lock.lock()
-        state = .running
-        motionManager.deviceMotionUpdateInterval = 0.1
-        motionManager.startDeviceMotionUpdates()
-        resultSink = motionManager.publisher(for: \.deviceMotion).sink { _ in
+            lock.lock(); defer {lock.unlock() }
+            state = .running
+            motionManager.deviceMotionUpdateInterval = 0.1
+            motionManager.startDeviceMotionUpdates()
+            resultSink = motionManager.publisher(for: \.deviceMotion).sink { _ in
         }
-        lock.unlock()
     }
 
     func pause() {
-        lock.lock()
-        state = .paused
-        motionManager.stopDeviceMotionUpdates()
-        lock.unlock()
+            lock.lock(); defer {lock.unlock() }
+            state = .paused
+            motionManager.stopDeviceMotionUpdates()
     }
 
     func restart() {
-        lock.lock()
-        state = .running
-        motionManager.startDeviceMotionUpdates()
-        lock.unlock()
+            lock.lock(); defer {lock.unlock() }
+            state = .running
+            motionManager.startDeviceMotionUpdates()
     }
 
     func terminate() {
-        lock.lock()
-        state = .finished
-        motionManager.stopDeviceMotionUpdates()
-        resultSink.cancel()
-        lock.unlock()
+            lock.lock(); defer {lock.unlock() }
+            state = .finished
+            motionManager.stopDeviceMotionUpdates()
+            resultSink.cancel()
     }
 }

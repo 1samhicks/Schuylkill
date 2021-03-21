@@ -23,22 +23,15 @@ public class PedometerService: DeviceService {
         state = .notStarted
     }
 
-    func publishError(error: Error) {
-    }
-
-    func publishValue(value: Event) {
-    }
-
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-
     func start() {
         lock.lock(); defer { lock.unlock() }
         state = .running
         pedometer.startEventUpdates { (event: CMPedometerEvent?, error: Error?) in
             if let error = error {
-                self.publishError(error: DeviceError.PedometerError(innerError: error, description: "Pedometer Error", ""))
+                self.publishError(error: DeviceError.PedometerError(
+                                  innerError: error,
+                                  description: "Pedometer Error", "")
+                )
             } else if let event = event {
                 self.publishValue(value: .pedometerEvent(event))
             }
@@ -61,7 +54,6 @@ public class PedometerService: DeviceService {
                 self.publishValue(value: .pedometerEvent(event))
             }
         }
-        
     }
 
     func terminate() {
@@ -69,6 +61,5 @@ public class PedometerService: DeviceService {
         state = .finished
         pedometer.stopEventUpdates()
         resultSink.cancel()
-        
     }
 }

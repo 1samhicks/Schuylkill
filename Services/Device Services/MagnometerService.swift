@@ -13,12 +13,6 @@ public class MagnometerService: DeviceService {
     var state: ServiceState?
     var lock = RecursiveLock()
 
-    func publishValue(value: Event) {
-    }
-
-    func publishError(error: Error) {
-    }
-
     func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
         return nil
     }
@@ -28,8 +22,9 @@ public class MagnometerService: DeviceService {
     public required init() {
     }
 
+    // MARK: - ServiceLifecycle methods
     public func start() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         motionManager.magnetometerUpdateInterval = 0.1
         motionManager.startMagnetometerUpdates()
@@ -38,28 +33,25 @@ public class MagnometerService: DeviceService {
             .sink { reading in
             self.publishValue(value: DeviceEvent.logItemEvent(reading!))
             }
-        lock.unlock()
+        
     }
 
     func pause() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .paused
         motionManager.stopMagnetometerUpdates()
-        lock.unlock()
     }
 
     func restart() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .running
         motionManager.startMagnetometerUpdates()
-        lock.unlock()
     }
 
     func terminate() {
-        lock.lock()
+        lock.lock(); defer { lock.unlock() }
         state = .finished
         motionManager.stopMagnetometerUpdates()
         resultSink.cancel()
-        lock.unlock()
     }
 }

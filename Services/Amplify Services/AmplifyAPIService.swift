@@ -13,12 +13,6 @@ import Foundation
 public class AmplifyAPIService: RuntimeService {
     var state: ServiceState?
 
-    func publishError(error: Error) {
-    }
-
-    func publishValue(value: Event) {
-    }
-
     func createMuscle() -> AnyCancellable {
         let muscle = Muscle(friendlyName: "Abs")
         let sink = Amplify.API.mutate(request: .create(muscle))
@@ -59,9 +53,7 @@ public class AmplifyAPIService: RuntimeService {
     }
 
     var servicePublisher: some ServicePublisher {
-        get {
-            return AmplifyServiceModelPublisher()
-        }
+            AmplifyServiceModelPublisher()
     }
 
     // @Published var user: User?

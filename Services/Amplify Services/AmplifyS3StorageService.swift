@@ -10,17 +10,12 @@ import Combine
 import Foundation
 
 class AmplifyS3StorageService: RuntimeService {
-    func publishError(error: Error) {
-    }
-
-    func publishValue(value: Event) {
-    }
 
     // In your type's instance variables
     var resultSink: AnyCancellable?
     var progressSink: AnyCancellable?
 
-    public required init() {
+    required init() {
     }
 
     func uploadData(key: String, dataString: String) throws {
@@ -92,7 +87,7 @@ class AmplifyS3StorageService: RuntimeService {
         resultSink = storageOperation.resultPublisher.sink {
             if case let .failure(storageError) = $0 {
                 print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-                error = StorageServiceError.downloadError(storageError.errorDescription, storageError.recoverySuggestion)
+                error = StorageServiceError.downloadError(storageError.errorDescription,storageError.recoverySuggestion)
             }
         }
         receiveValue: {

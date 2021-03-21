@@ -156,7 +156,7 @@ enum AmplifyAPIError: RawRepresentable, ApplicationError {
     }
 
     var recoverySuggestion: RecoverySuggestion {
-        switch self {
+            switch self {
             case .unknown(_, _, let suggestion):
                 return suggestion
             case .QueryError(_, _, let suggestion):

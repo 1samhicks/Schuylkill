@@ -14,8 +14,6 @@ import OSLog
 
 protocol DeviceService: RuntimeService, ServiceLifecycle {
     typealias DeviceServiceStateTransition = (() -> Void)?
-    var state: ServiceState? { get set } // TODO: This shouldn't be visible to the outside world
-    var lock: RecursiveLock { get set }
     var resultSink: AnyCancellable { get set }
     var motionManager: CMMotionManager { get }
     var fifoOperationQueue: OperationQueue { get }

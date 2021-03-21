@@ -11,30 +11,18 @@ import Foundation
 
  class LocationService: NSObject, DeviceService, CLLocationManagerDelegate {
     var servicePublisher: DeviceServicePublisher
-    
     var lock = RecursiveLock()
     var resultSink = AnyCancellable({})
     var state: ServiceState?
     typealias MyPublisher = DeviceServicePublisher
     typealias MyEvent = DeviceEvent
     typealias MyError = DeviceError
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
 
-    override  required init() {
+    override required init() {
         servicePublisher = DeviceServicePublisher.shared
         super.init()
         locationManager.delegate = self
     }
-
-    /*func publishError(error: MyError) {
-        servicePublisher.send(error: error)
-    }
-
-    func publishValue(value: MyEvent) {
-        servicePublisher.send(input: value)
-    }*/
 
     func start() {
         lock.lock(); defer { lock.unlock() }
@@ -90,8 +78,7 @@ import Foundation
     }
 
     #if !os(watchOS)
-     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState,
-                                for region: CLRegion) {
+     func locationManager(_ manager: CLLocationManager, didDetermineState state: CLRegionState, for region: CLRegion) {
     }
 
      func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
