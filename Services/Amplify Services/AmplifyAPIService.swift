@@ -11,6 +11,7 @@ import CoreLocation
 import Foundation
 
 public class AmplifyAPIService: RuntimeService {
+    var lock = RecursiveLock()
     var state: ServiceState?
 
     func createMuscle() -> AnyCancellable {

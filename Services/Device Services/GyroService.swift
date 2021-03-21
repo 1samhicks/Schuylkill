@@ -16,7 +16,7 @@ public class GyroService: DeviceService {
     public required init() {
         state = .notStarted
     }
-    
+
     // MARK: - ServiceLifeCycle protocol
 
     public func start() {

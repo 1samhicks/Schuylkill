@@ -13,26 +13,11 @@ import Foundation
 import OSLog
 
 public class AmplifyAuthenticationService: RuntimeService {
-    var _state: ServiceState?
+    var lock = RecursiveLock()
     var sink: AnyCancellable?
 
-    var serviceState: ServiceState? {
-        get {
-            return _state
-        }
-        set {
-            _state = newValue
-        }
-    }
-
-    func publishValue(value: Event) {
-    }
-
-    func publishError(error: Error) {
-    }
-
     public required init() {
-        _state = .stopped
+        // state = .stopped
         // Assumes `sink` is declared as an instance variable in your view controller
         sink = Amplify.Hub
             .publisher(for: .auth)
@@ -143,8 +128,8 @@ public class AmplifyAuthenticationService: RuntimeService {
                     self.onReceiveCompletion(completed: AuthenticationError.AuthError(String.empty, String.empty, authError))
                 }
             }
-            receiveValue: { _ in
-                self.publishValue(value: AuthenticationEvent.started)
+            receiveValue: {_  in
+                // self.publishValue(value: nil)
             }
     }
 

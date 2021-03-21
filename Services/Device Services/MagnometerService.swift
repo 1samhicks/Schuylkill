@@ -33,7 +33,6 @@ public class MagnometerService: DeviceService {
             .sink { reading in
             self.publishValue(value: DeviceEvent.logItemEvent(reading!))
             }
-        
     }
 
     func pause() {

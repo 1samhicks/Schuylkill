@@ -92,7 +92,6 @@ import Foundation
      func locationManager(_ manager: CLLocationManager,
                                 monitoringDidFailFor region: CLRegion?,
                                 withError error: Error) {
-        
     }
     #endif
 

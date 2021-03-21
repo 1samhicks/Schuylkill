@@ -27,28 +27,28 @@ public class MotionService: DeviceService {
     }
 
     public func start() {
-            lock.lock(); defer {lock.unlock() }
+            lock.lock(); defer { lock.unlock() }
             state = .running
             motionManager.deviceMotionUpdateInterval = 0.1
             motionManager.startDeviceMotionUpdates()
             resultSink = motionManager.publisher(for: \.deviceMotion).sink { _ in
-        }
+            }
     }
 
     func pause() {
-            lock.lock(); defer {lock.unlock() }
+            lock.lock(); defer { lock.unlock() }
             state = .paused
             motionManager.stopDeviceMotionUpdates()
     }
 
     func restart() {
-            lock.lock(); defer {lock.unlock() }
+            lock.lock(); defer { lock.unlock() }
             state = .running
             motionManager.startDeviceMotionUpdates()
     }
 
     func terminate() {
-            lock.lock(); defer {lock.unlock() }
+            lock.lock(); defer { lock.unlock() }
             state = .finished
             motionManager.stopDeviceMotionUpdates()
             resultSink.cancel()

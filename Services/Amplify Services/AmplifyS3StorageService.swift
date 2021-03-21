@@ -10,6 +10,7 @@ import Combine
 import Foundation
 
 class AmplifyS3StorageService: RuntimeService {
+    var lock = RecursiveLock()
 
     // In your type's instance variables
     var resultSink: AnyCancellable?
@@ -87,7 +88,7 @@ class AmplifyS3StorageService: RuntimeService {
         resultSink = storageOperation.resultPublisher.sink {
             if case let .failure(storageError) = $0 {
                 print("Failed: \(storageError.errorDescription). \(storageError.recoverySuggestion)")
-                error = StorageServiceError.downloadError(storageError.errorDescription,storageError.recoverySuggestion)
+                error = StorageServiceError.downloadError(storageError.errorDescription, storageError.recoverySuggestion)
             }
         }
         receiveValue: {

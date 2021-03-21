@@ -13,14 +13,13 @@ import Foundation
  timestamp
  */
 public class AccelerometerService: DeviceService {
-    var lock: RecursiveLock = RecursiveLock()
+    var lock = RecursiveLock()
     var state: ServiceState?
     var resultSink = AnyCancellable({})
 
     public required init() {
-        
     }
-    
+
     // MARK: - ServiceLifecycle methods
 
     public func start() {
