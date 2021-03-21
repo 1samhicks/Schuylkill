@@ -25,7 +25,6 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
     // An array to keep the background tasks.
     //
     private var wcBackgroundTasks = [WKWatchConnectivityRefreshBackgroundTask]()
-
     // WKWatchConnectivityRefreshBackgroundTask should be completed – Otherwise they will keep consuming
     // the background executing time and eventually causes an app crash.
     // The timing to complete the tasks is when the current WCSession turns to not .activated or
@@ -55,7 +54,7 @@ public class ExtensionDelegate: NSObject, WKExtensionDelegate {
         let magnometerService = Resolver.resolve(MagnometerService.self, name: "MagnometerService", args: nil)
         deviceServices = [locationService, gyroService, pedometerService, accelerometerService, motionService, magnometerService]
         _ = deviceServices.map {
-            ($0 as! ServiceLifecycle).start()
+            ($0 as? ServiceLifecycle).start()
         }
     }
 

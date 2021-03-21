@@ -74,7 +74,6 @@ public class SessionDelegate {
     //
     func session(_ session: WCSession, didFinish userInfoTransfer: WCSessionUserInfoTransfer, error: Error?) {
         var commandStatus = CommandStatus(command: .transferUserInfo, phrase: .finished)
-        commandStatus.timedColor = TimedColor(userInfoTransfer.userInfo)
         #if os(iOS)
         if userInfoTransfer.isCurrentComplicationInfo {
             commandStatus.command = .transferCurrentComplicationUserInfo
