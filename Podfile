@@ -19,6 +19,8 @@ target 'Schuylkill-App' do
     pod 'SwiftLint'
     pod 'Sourcery'
     pod "Cuckoo"
+    pod "Spruce", '~> 1.0.0'
+
     
   target 'Schuylkill-AppTests' do
     inherit! :search_paths
