@@ -17,6 +17,12 @@ protocol DeviceService: RuntimeService, ServiceLifecycle {
     var resultSink: AnyCancellable { get set }
     var motionManager: CMMotionManager { get }
     var fifoOperationQueue: OperationQueue { get }
+    func buffer(value: DeviceEvent)
+}
+
+extension DeviceService {
+    func buffer(value: DeviceEvent) {
+    }
 }
 
 extension CMMotionManager {

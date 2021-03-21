@@ -13,5 +13,4 @@ protocol ServiceLifecycle {
     func pause()
     func restart()
     func terminate()
-    
 }

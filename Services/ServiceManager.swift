@@ -15,5 +15,4 @@ internal class ServiceManager<R: DeviceService, S: RuntimeService> {
         }
     }
     var runtimeService: [S] = []
-    
 }
