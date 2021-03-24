@@ -10,7 +10,7 @@ import Foundation
 
 enum AmplifyAPIError: RawRepresentable, ApplicationError {
     var rawValue: String {
-            switch self {
+                switch self {
                 case .unknown:
                     return "unknown"
                 default:
@@ -26,9 +26,9 @@ enum AmplifyAPIError: RawRepresentable, ApplicationError {
         self = .unknown(causedBy: nil, "init", "")
     }
 
-    public init?(rawValue: String) {
+    init?(rawValue: String) {
         self = .unknown(causedBy: nil, "failable init", "")
-        switch rawValue {
+            switch rawValue {
             case "unknown":
                 break
             case "query_editor":
@@ -37,32 +37,29 @@ enum AmplifyAPIError: RawRepresentable, ApplicationError {
         }
     }
 
-    public typealias RawType = String
-    public typealias RawValue = String
+    typealias RawType = String
+    typealias RawValue = String
 
     case unknown(causedBy: Error? = nil, ErrorDescription, RecoverySuggestion)
     case QueryError(causedBy: Error? = nil, message: ErrorDescription, RecoverySuggestion)
 
     var underlyingError: Error? {
         switch self {
-        case .unknown(let causedBy, _, _):
-            fallthrough
-        case .QueryError(let causedBy, _, _):
+        case .unknown(let causedBy, _, _),.QueryError(let causedBy, _, _):
             return causedBy
         }
     }
 
     var errorDescription: ErrorDescription {
-        switch self {
-            case .unknown(_, let description, _):
-                fallthrough
-            case .QueryError(_, let description, _):
+            switch self {
+            case .unknown(_, let description, _),
+                 .QueryError(_, let description, _):
                 return description
        }
     }
 
     var recoverySuggestion: RecoverySuggestion {
-        switch self {
+            switch self {
             case .unknown(_, _, let suggestion):
                 return suggestion
             case .QueryError(_, _, let suggestion):
