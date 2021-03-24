@@ -168,9 +168,6 @@
 		37BC230C25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
 		37BC230D25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
 		37BC230E25F399960088E581 /* RuntimeService+DeviceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */; };
-		37BC231525F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
-		37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
-		37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */; };
 		37BC232325F39B1A0088E581 /* ServiceNaming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F03A25EDF186000799A9 /* ServiceNaming.swift */; };
 		37BC232925F39B4E0088E581 /* ViewModel+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3764F00025EBFD31000799A9 /* ViewModel+Naming.swift */; };
 		37BC234E25F3A2C40088E581 /* PedometerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37BC234D25F3A2C40088E581 /* PedometerService.swift */; };
@@ -220,22 +217,15 @@
 		37CFF33B260695F200E3A955 /* ApplicationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF339260695F100E3A955 /* ApplicationErrors.swift */; };
 		37CFF33C260695F200E3A955 /* ApplicationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF339260695F100E3A955 /* ApplicationErrors.swift */; };
 		37CFF378260698F800E3A955 /* ApplicationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CFF339260695F100E3A955 /* ApplicationErrors.swift */; };
+		37DFBE17260A669300641386 /* BackedCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 37DFBE16260A669300641386 /* BackedCodable */; };
 		37E1D16D25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
 		37E1D16E25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
 		37E1D16F25FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
 		37E1D17025FCF9A7000062EA /* RecursiveLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */; };
-		37E1D18225FD0838000062EA /* Service+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18125FD0838000062EA /* Service+Naming.swift */; };
-		37E1D18325FD0838000062EA /* Service+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18125FD0838000062EA /* Service+Naming.swift */; };
-		37E1D18425FD0838000062EA /* Service+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18125FD0838000062EA /* Service+Naming.swift */; };
-		37E1D18525FD0838000062EA /* Service+Naming.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18125FD0838000062EA /* Service+Naming.swift */; };
 		37E1D18F25FD0867000062EA /* ServiceLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */; };
 		37E1D19025FD0867000062EA /* ServiceLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */; };
 		37E1D19125FD0867000062EA /* ServiceLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */; };
 		37E1D19225FD0867000062EA /* ServiceLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */; };
-		37E1D19825FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */; };
-		37E1D19925FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */; };
-		37E1D19A25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */; };
-		37E1D19B25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */; };
 		37E1D1AA25FD1103000062EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D1A925FD1103000062EA /* AppDelegate.swift */; };
 		37E1D1AB25FD1103000062EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D1A925FD1103000062EA /* AppDelegate.swift */; };
 		37E1D1AC25FD1103000062EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1D1A925FD1103000062EA /* AppDelegate.swift */; };
@@ -415,7 +405,6 @@
 		7F618245CF71383F02F02DC2 /* Pods_Schuylkill_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C16086E9AD481E319EE970DF /* Pods_Schuylkill_App.framework */; };
 		D389D17849A14398B17E9032 /* AccelerometerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B839CF79FEA4003875B2087 /* AccelerometerData.swift */; };
 		D462FE4480CB66104CCC8157 /* Pods_Schuylkill_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BEE2F6CFFB70681CDD68A9 /* Pods_Schuylkill_AppTests.framework */; };
-		DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 45BE0B7F93644E48BD7CC927 /* amplifyconfiguration.json */; };
 		DF19359363CF6194BF6023CE /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F84E1DB4C306C0F99B101DA /* Pods_Schuylkill_App_Schuylkill_AppUITests.framework */; };
 		E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E1A220B3F7340A0B2998737 /* awsconfiguration.json */; };
 /* End PBXBuildFile section */
@@ -563,7 +552,6 @@
 		37BC22C125F396570088E581 /* ServicePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicePublisher.swift; sourceTree = "<group>"; };
 		37BC22D325F396BA0088E581 /* AmplifyModelChangePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmplifyModelChangePublisher.swift; sourceTree = "<group>"; };
 		37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+DeviceService.swift"; sourceTree = "<group>"; };
-		37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RuntimeService+AmplifyService.swift"; sourceTree = "<group>"; };
 		37BC234D25F3A2C40088E581 /* PedometerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerService.swift; sourceTree = "<group>"; };
 		37BC236B25F3BD420088E581 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		37BC237D25F3BFAF0088E581 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
@@ -578,9 +566,7 @@
 		37CFF2332605CC9500E3A955 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
 		37CFF339260695F100E3A955 /* ApplicationErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationErrors.swift; sourceTree = "<group>"; };
 		37E1D16C25FCF9A7000062EA /* RecursiveLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecursiveLock.swift; sourceTree = "<group>"; };
-		37E1D18125FD0838000062EA /* Service+Naming.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Service+Naming.swift"; sourceTree = "<group>"; };
 		37E1D18E25FD0867000062EA /* ServiceLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLifecycle.swift; sourceTree = "<group>"; };
-		37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DeviceService+CMMotionManager.swift"; sourceTree = "<group>"; };
 		37E1D1A925FD1103000062EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37EE828425E61AE800B07673 /* ViewModel+Injections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewModel+Injections.swift"; sourceTree = "<group>"; };
 		37EE828D25E61DCF00B07673 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -655,6 +641,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37A45CC425E8433600A7CAD1 /* HealthKit.framework in Frameworks */,
+				37DFBE17260A669300641386 /* BackedCodable in Frameworks */,
 				37F7C74825CD5D3D000D8FAF /* RSBarcodes_Swift in Frameworks */,
 				37F9448A25D3F24E00243AC1 /* QRCodeReader in Frameworks */,
 				3772D69C25CD6F7B008F04DD /* Disk in Frameworks */,
@@ -983,9 +970,6 @@
 			isa = PBXGroup;
 			children = (
 				37BC230A25F399960088E581 /* RuntimeService+DeviceService.swift */,
-				37BC231425F399CF0088E581 /* RuntimeService+AmplifyService.swift */,
-				37E1D18125FD0838000062EA /* Service+Naming.swift */,
-				37E1D19725FD08A8000062EA /* DeviceService+CMMotionManager.swift */,
 			);
 			path = "Protocol Extensions";
 			sourceTree = "<group>";
@@ -1042,6 +1026,13 @@
 				37CFF2232605586800E3A955 /* CLLocation+Stub.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		37DFBE43260AB60E00641386 /* Resolver */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resolver;
 			sourceTree = "<group>";
 		};
 		37E1D16B25FCF987000062EA /* Combine */ = {
@@ -1151,6 +1142,7 @@
 		37F7C5B625CD3892000D8FAF /* Schuylkill-AppTests */ = {
 			isa = PBXGroup;
 			children = (
+				37DFBE43260AB60E00641386 /* Resolver */,
 				37EE830E25E64E4600B07673 /* FlickrFiles */,
 				37F7C5B725CD3892000D8FAF /* SchuylkillAppTests.swift */,
 				37F7C5B925CD3892000D8FAF /* Info.plist */,
@@ -1368,6 +1360,7 @@
 				37BC245725F500550088E581 /* SwiftyBeaver */,
 				37E8769925F6B43600B0F333 /* Danger */,
 				37CFF32D2605F7DC00E3A955 /* SwiftUIKit */,
+				37DFBE16260A669300641386 /* BackedCodable */,
 			);
 			productName = "Schuylkill-App";
 			productReference = 37F7C5A225CD388F000D8FAF /* Schuylkill-App.app */;
@@ -1518,6 +1511,7 @@
 				37BC245625F500550088E581 /* XCRemoteSwiftPackageReference "SwiftyBeaver" */,
 				37E8769825F6B43600B0F333 /* XCRemoteSwiftPackageReference "swift" */,
 				37CFF32C2605F7DC00E3A955 /* XCRemoteSwiftPackageReference "SwiftUIKit" */,
+				37DFBE15260A669300641386 /* XCRemoteSwiftPackageReference "BackedCodable" */,
 			);
 			productRefGroup = 37F7C5A325CD388F000D8FAF /* Products */;
 			projectDirPath = "";
@@ -1540,7 +1534,6 @@
 				37EE830F25E64E4600B07673 /* FlickrFiles in Resources */,
 				377A4FCB25E9064800D8C5F1 /* amplifyconfiguration.json in Resources */,
 				37F7C5AD25CD3891000D8FAF /* Preview Assets.xcassets in Resources */,
-				DED76C06CD5B49E2A1016372 /* amplifyconfiguration.json in Resources */,
 				3764F17425EF5348000799A9 /* Onboarding.storyboard in Resources */,
 				E56BCB7FC7354123B5E96171 /* awsconfiguration.json in Resources */,
 				37BC241F25F406770088E581 /* Assets.xcassets in Resources */,
@@ -1798,11 +1791,9 @@
 				37EE82EC25E630C500B07673 /* MuscleCell.swift in Sources */,
 				37F7C71125CD49BB000D8FAF /* Storage.swift in Sources */,
 				379E636F25E2442400B894BA /* AuthenticationViewController.swift in Sources */,
-				37E1D18225FD0838000062EA /* Service+Naming.swift in Sources */,
 				37F7C78025CD6686000D8FAF /* FirebaseAuthenticationService.swift in Sources */,
 				3764F15B25EF4978000799A9 /* AccelerometerReading+Schema.swift in Sources */,
 				37E1D1AA25FD1103000062EA /* AppDelegate.swift in Sources */,
-				37BC231525F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				3764F18025EF5374000799A9 /* QRView.swift in Sources */,
 				37F7C66A25CD3C8F000D8FAF /* PayloadKey.swift in Sources */,
 				379E655E25E4F74200B894BA /* MusclesViewController.swift in Sources */,
@@ -1857,7 +1848,6 @@
 				379E649225E3B92400B894BA /* GyroService.swift in Sources */,
 				379E649C25E3B93E00B894BA /* MotionService.swift in Sources */,
 				3764F1A325EF6D71000799A9 /* FlickrSearchResults.swift in Sources */,
-				37E1D19825FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
 				37BC23E125F3FF080088E581 /* Image.swift in Sources */,
 				3764F15825EF4978000799A9 /* ExerciseMachine+Schema.swift in Sources */,
 				37F7C77625CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
@@ -1916,7 +1906,6 @@
 				37EBF01E25FE0E6100AC1F94 /* UserData.swift in Sources */,
 				37F7C67A25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37EBF0E325FE141600AC1F94 /* ExerciseRep+Schema.swift in Sources */,
-				37E1D19925FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
 				37EBF00F25FE0E5600AC1F94 /* MusclesListViewModel.swift in Sources */,
 				37EBF05825FE132100AC1F94 /* Muscle.swift in Sources */,
 				37EBF00325FE0AAF00AC1F94 /* FlickrSearchResults.swift in Sources */,
@@ -1971,11 +1960,9 @@
 				37EBEFE925FE0A8800AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23BF25F3C79B0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37BC242725F409BD0088E581 /* App.swift in Sources */,
-				37BC231625F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37EBF10925FE7FA400AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
 				37CFF33B260695F200E3A955 /* ApplicationErrors.swift in Sources */,
 				37F7C77725CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
-				37E1D18325FD0838000062EA /* Service+Naming.swift in Sources */,
 				37F7C6AC25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69825CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503425E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
@@ -2024,7 +2011,6 @@
 				37EBF01F25FE0E6200AC1F94 /* UserData.swift in Sources */,
 				37F7C67B25CD3C94000D8FAF /* Phrase.swift in Sources */,
 				37EBF0DE25FE141500AC1F94 /* ExerciseRep+Schema.swift in Sources */,
-				37E1D19A25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
 				37EBF01425FE0E5700AC1F94 /* MusclesListViewModel.swift in Sources */,
 				37EBF05D25FE132100AC1F94 /* Muscle.swift in Sources */,
 				37EBF00225FE0AAE00AC1F94 /* FlickrSearchResults.swift in Sources */,
@@ -2079,11 +2065,9 @@
 				37EBEFE825FE0A8700AC1F94 /* ExerciseMachine+Extensions.swift in Sources */,
 				37BC23C525F3C79C0088E581 /* AmplifyAuthenticationService.swift in Sources */,
 				37BC242D25F409BE0088E581 /* App.swift in Sources */,
-				37BC231725F399CF0088E581 /* RuntimeService+AmplifyService.swift in Sources */,
 				37EBF10E25FE7FA500AC1F94 /* AmplifyServiceModelPublisher.swift in Sources */,
 				37CFF33C260695F200E3A955 /* ApplicationErrors.swift in Sources */,
 				37F7C77825CD6605000D8FAF /* Publisher+Assign.swift in Sources */,
-				37E1D18425FD0838000062EA /* Service+Naming.swift in Sources */,
 				37F7C6AD25CD3CB1000D8FAF /* WatchSettings.swift in Sources */,
 				37F7C69925CD3CA4000D8FAF /* WatchPipe.swift in Sources */,
 				377A503525E9116600D8C5F1 /* AuthenticationViewModel.swift in Sources */,
@@ -2127,7 +2111,6 @@
 				37BC227E25F394DE0088E581 /* Event.swift in Sources */,
 				37BC232325F39B1A0088E581 /* ServiceNaming.swift in Sources */,
 				37EBF00A25FE0AB500AC1F94 /* Flickr.swift in Sources */,
-				37E1D19B25FD08A8000062EA /* DeviceService+CMMotionManager.swift in Sources */,
 				37A0507C25CD795B00DCA1F9 /* Firebase+Injections.swift in Sources */,
 				37F7C71425CD49BB000D8FAF /* Storage.swift in Sources */,
 				37F7C5DD25CD3892000D8FAF /* NotificationController.swift in Sources */,
@@ -2151,7 +2134,6 @@
 				37CFF2372605CC9500E3A955 /* ServiceManager.swift in Sources */,
 				379E64E725E3D8BC00B894BA /* DeviceService.swift in Sources */,
 				379E649F25E3B93E00B894BA /* MotionService.swift in Sources */,
-				37E1D18525FD0838000062EA /* Service+Naming.swift in Sources */,
 				377A504025E9191500D8C5F1 /* MagnometerService.swift in Sources */,
 				37F7C65425CD3C82000D8FAF /* Command.swift in Sources */,
 				37BC230425F399310088E581 /* RuntimeService.swift in Sources */,
@@ -2666,6 +2648,14 @@
 				minimumVersion = 1.2.2;
 			};
 		};
+		37DFBE15260A669300641386 /* XCRemoteSwiftPackageReference "BackedCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:jegnux/BackedCodable.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		37E8769825F6B43600B0F333 /* XCRemoteSwiftPackageReference "swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danger/swift.git";
@@ -2773,6 +2763,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 37F7C70725CD47B3000D8FAF /* XCRemoteSwiftPackageReference "SwifterSwift" */;
 			productName = SwifterSwift;
+		};
+		37DFBE16260A669300641386 /* BackedCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 37DFBE15260A669300641386 /* XCRemoteSwiftPackageReference "BackedCodable" */;
+			productName = BackedCodable;
 		};
 		37E8769925F6B43600B0F333 /* Danger */ = {
 			isa = XCSwiftPackageProductDependency;
