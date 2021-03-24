@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "BackedCodable",
+        "repositoryURL": "git@github.com:jegnux/BackedCodable.git",
+        "state": {
+          "branch": null,
+          "revision": "c28a4e556298bd81ba068f0f1c534af73ffd46f9",
+          "version": "0.1.1"
+        }
+      },
+      {
         "package": "BoringSSL-GRPC",
         "repositoryURL": "https://github.com/firebase/boringssl-SwiftPM.git",
         "state": {
