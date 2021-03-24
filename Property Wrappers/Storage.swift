@@ -16,7 +16,7 @@ struct Storage<T: Any> {
         self.key = key
         self.defaultValue = defaultValue
     }
-
+    // swiftlint:disable force_cast
     var wrappedValue: T {
         get {
             // Read value from UserDefaults
@@ -27,9 +27,9 @@ struct Storage<T: Any> {
             UserDefaults.standard.set(newValue, forKey: key)
         }
     }
-
+    // swiftlint:enable
     func query<T: Any>(t: T) -> (_ key: String) -> Any? {
-        switch t.self {
+            switch t.self {
             case is String:
                 return UserDefaults.standard.string(forKey:)
             case is Double:
