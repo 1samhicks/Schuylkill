@@ -13,10 +13,6 @@ public class MagnometerService: DeviceService {
     var state: ServiceState?
     var lock = RecursiveLock()
 
-    func setNewServiceState(newState: ServiceState) -> DeviceServiceStateTransition {
-        return nil
-    }
-
     var resultSink = AnyCancellable({})
 
     public required init() {
