@@ -27,6 +27,9 @@ struct AppState {
     private var watchSessionChannelDelegate = WatchSessionChannelDelegate()
     private var userNotifications = UNUserNotificationCenterCoordinator()
     
+    /// Configures the Amplify Plugins via the Amplify quickstart.
+    /// Called from AppDelegate didFinishLaunchingWithOptions:
+    /// - Throws: This can throw an AmplifyError
     public func configureAmplify() throws {
         try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
         try Amplify.add(plugin: AWSCognitoAuthPlugin())
@@ -42,10 +45,16 @@ struct AppState {
     }
     
     
+    /// The instance of the session delegate we'll use for the duration of the session.
+    /// WatchConnectivity is configured with this instance in App Delegate didFinishLaunchingWithOptions
     public var sessionDelegate : WatchSessionChannelDelegate {
         get { watchSessionChannelDelegate }
     }
     
+    /// This 'configures' watch connectivity. In other words, we pass it the delegate stored property from this
+    /// class and assign it as the delegate to the WCSession object. Then activate WCSession.
+    /// - Parameter delegate: This is the delegate we have created to deal with the WCSession callbacks.
+    /// - Throws: If there is an issue, ApplicationRuntimeError
     func configureWatchConnectivity(delegate: WatchSessionChannelDelegate) throws {
         guard WCSession.isSupported() else {
             throw ApplicationRuntimeError.WatchConfigurationIssue("WCSession.isSupported() returned false for this iOS device")
